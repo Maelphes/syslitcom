@@ -1,0 +1,25 @@
+---
+other-links:
+      - text: NASA Open Data
+        href: https://data.nasa.gov/
+---
+
+# Welcome {#sec-about .unnumbered}
+
+This is a compendium for the field of systematic literature searching. It 
+contains technical terms, methods and background information related to the 
+retrieval of references from literature databases. 
+
+The main idea is to inform anyone who undertakes a systematic literature search
+about relevant terms of the trade.
+
+In @sec-databases you will learn about all kinds of data sources and search 
+interfaces as well as their syntax.
+
+Technical terms of all sorts are explained in @sec-technicalterms.
+
+@sec-tools tells you about various tools and useful concepts for creating
+your search for evidence.
+
+This document  was originally written in German as a glossary for lectures and 
+as a mnemonic for the author. It was originally typeset in LaTeX.

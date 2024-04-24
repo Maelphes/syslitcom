@@ -1,0 +1,11 @@
+---
+format: html
+bibliography: glossar.bib
+link-citations: true
+link-bibliography: true
+---
+
+# References {.unnumbered}
+
+::: {#refs}
+:::

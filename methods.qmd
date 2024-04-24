@@ -1,0 +1,88 @@
+---
+format: html
+bibliography: glossar.bib
+link-citations: true
+link-bibliography: true
+filters:
+  - parse-latex
+---
+
+# Methods {#sec-methods}
+
+## Boolean operators {#sec-boolean}
+
+Databases usually allow a search to be structured using the three basic 
+operations of Boolean algebra, which are expressed with the 
+**Boolean operators** `AND` (conjunction), `OR` (disjunction) and `NOT` 
+(negation). The `AND` operator creates an intersection of sets, `OR` creates a 
+union of sets and `NOT` excludes sets (see @fig-boolean).
+
+![Boolean Operators](./fig/boole.svg){#fig-boolean width=80%}
+
+::: {.callout-tip appearance="simple"}
+## Examples
+- The query `"heart attack" AND diabetes AND obesity` retrieves only records 
+featuring all three terms. 
+- The query `"cardiac arrest" OR asystole` retrieves records containing at 
+least one of the two terms. 
+- The query `animals NOT humans` removes all records mentioning humans from the
+set `animals`. 
+:::
+
+::: {.callout-important appearance="simple"}
+## Caution
+Using the `NOT` operator can be dangerous, as it excludes records regardless of
+any relevant search terms they might contain. The above example excludes also
+records with animals if they mention humans.
+:::
+
+### Properties {.unnumbered}
+
+The Boolean operators `AND` and `OR` possess similar properties as the 
+multiplication and addition. See @tbl-2. (@ORegan2012)
+
+::: {#tbl-2}
+```python
+ (a OR b) = (b OR a)                        # <1>
+ (a AND b) = (b AND a)                      # <1>
+ ----
+ (a OR b) OR c = a OR (b OR c)              # <2>
+ (a AND b) AND c = a AND (b AND c)          # <2>
+ ----
+ a AND (b OR c) = (a AND b) OR (a AND c)    # <3>
+ a OR (b AND c) = (a OR b) AND (a OR c)     # <3>
+```
+1. commutative property
+2. associative property
+3. distributive property
+:::
+
+
+## citation analysis
+
+Relevant references can be retrieved by analyzing citation relationships between
+known relevant articles (*core papers*) and cited or citing references. This 
+technique is called **citation analysis** or **citation tracking** (@Hirt2021, 
+@Belter2016, @Hinde2015.
+
+Citation analysis can be advisable at the very beginning of a systematic 
+literature search in order to find additional core papers and to identify 
+additional search terms. After finishing the final search it can be used to 
+find additional relevant studies that were not retrieved by systematic searching
+using search strategies.
+
+There are different approaches to tracking citations: First, in the **backward 
+citation tracking** method the lists of references cited in the core papers are 
+screened for relevant articles. Second, the analysis of publications citing the 
+core paper as reference is called **forward citation tracking**. 
+See @fig-citing-cited. 
+
+![backward and forward citation tracking](./fig/citing-cited.svg){#fig-citing-cited width=80%}
+
+
+Third, the identification of relevant literature by counting co-cited or co-citing 
+references is called **co-citation tracking**, see @fig-cociting and @fig-cocited.
+
+![co-citation tracking using the citing articles which the core paper has in common with other papers](./fig/co-citing.svg){#fig-cociting width=80%}
+
+![co-citation tracking using the cited references which the core paper has in common with other papers](./fig/co-cited.svg){#fig-cocited width=80%}
