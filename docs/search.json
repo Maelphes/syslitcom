@@ -1,0 +1,112 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SysLit Compendium",
+    "section": "",
+    "text": "Welcome\nThis is a compendium for the field of systematic literature searching. It contains technical terms, methods and background information related to the retrieval of references from literature databases.\nThe main idea is to inform anyone who undertakes a systematic literature search about relevant terms of the trade.\nIn 1  Databases you will learn about all kinds of data sources and search interfaces as well as their syntax.\nTechnical terms of all sorts are explained in 2  Technical terms.\n3  Tools tells you about various tools and useful concepts for creating your search for evidence.\nThis document was originally written in German as a glossary for lectures and as a mnemonic for the author. It was originally typeset in LaTeX.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "databases.html",
+    "href": "databases.html",
+    "title": "1  Databases",
+    "section": "",
+    "text": "1.1 Cochrane Library\nThe Cochrane Library is the collection of Cochrane’s databases, most importantly theCochrane Database of Systematic Reviews (CDSR) and the Cochrane Central Register of Controlled Trials (CENTRAL), which contain different types evidence to inform healthcare decision-making. Switzerland has complete access to the Cochrane Library due to a national license.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Databases</span>"
+    ]
+  },
+  {
+    "objectID": "databases.html#cochrane-library",
+    "href": "databases.html#cochrane-library",
+    "title": "1  Databases",
+    "section": "",
+    "text": "1.1.1 Cochrane Database of Systematic Reviews (CDSR)\nThe Cochrane Database of Systematic Reviews (CDSR) is a leading journal (ISSN: 1469-493X) and database for systematic reviews in health care. Cochrane Reviews are published in CDSR, which is accessible via the Cochrane Library.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Databases</span>"
+    ]
+  },
+  {
+    "objectID": "technicalterms.html",
+    "href": "technicalterms.html",
+    "title": "2  Technical terms",
+    "section": "",
+    "text": "2.1 abstract\nAls Abstract bezeichnet man eine Kurzzusammenfassung einer wissenschaftlichen Publikation, z.B. eines Zeitschriftenartikels, einer Dissertation oder eines Konferenzbeitrags. Neben dem Titel ist der Abstract einer der wichtigsten Bestandteile einer Publikation, da er häufig der einzige Teil des Textes ist, der frei lesbar und in bibliographischen Datenbanken zur Verfügung steht. Er ist damit auch einer der wichtigsten Bestandteile der Stichwortsuche. Cals and Kotz (2013) Pitkin and Branagan (1998)\nAn abstract is the short summary at the beginning of scientific publications, e.g. journal articles, theses or conference papers. The abstract is among the most important parts of a publication as it is usually the only part of the text which is freely available and can be retrieved from bibliographic databases. Title and abstract are the key elements of a textword search. (Cals and Kotz (2013), Pitkin and Branagan (1998))",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Technical terms</span>"
+    ]
+  },
+  {
+    "objectID": "technicalterms.html#sec-accuraccy",
+    "href": "technicalterms.html#sec-accuraccy",
+    "title": "2  Technical terms",
+    "section": "2.2 accuracy",
+    "text": "2.2 accuracy\nAccuracy (auch Treffergenauigkeit, Vertrauenswahrscheinlichkeit) ist ein statistisches Gütemass und gibt an, welcher Anteil aller Datensätze korrekterweise true gefunden bzw. nicht gefunden wurde. Sie wird als Quotient aus der Summe von gefundenen relevanten (true positives) und nicht gefundenen irrelevanten Datensätzen (true negatives) und der Gesamtheit aller Datensätze angegeben. (Haynes and Wilczynski (2004), Lefebvre et al. (2017), Fawcett (2006))\nIn der nachfolgenden Tabelle Table 2.1 entspricht dies \\(\\tfrac{tp + tn}{tp + fp + fn + tn}\\).\nSiehe auch precision, sensitivity, specificity.\n\n\n\nTable 2.1: This is a table caption.\n\n\n\n\n\n\n\nDatensatz\nrelevant\nirrelevant\n\n\n\n\ngefunden\ntp\nfp\n\n\nnicht gefunden\nfn\ntn\n\n\n\n\n\n\n\n\n\n\n\nCals, Jochen W. L., and Daniel Kotz. 2013. “Effective writing and publishing scientific papers, part II: title and abstract.” J Clin Epidemiol 66 (6): 585. https://doi.org/10.1016/j.jclinepi.2013.01.005.\n\n\nFawcett, Tom. 2006. “An Introduction to ROC Analysis.” Pattern Recognit Lett 27 (8): 861–74. https://doi.org/10.1016/j.patrec.2005.10.010.\n\n\nHaynes, R. Brian, and Nancy L. Wilczynski. 2004. “Optimal search strategies for retrieving scientifically strong studies of diagnosis from Medline: analytical survey.” BMJ 328 (7447): 1040. https://doi.org/10.1136/bmj.38068.557998.EE.\n\n\nLefebvre, Carol, Julie Glanville, Sophie Beale, Charles Boachie, Steven Duffy, Cynthia Fraser, Jenny Harbour, Rachael McCool, and Lynne Smith. 2017. “Assessing the Performance of Methodological Search Filters to Improve the Efficiency of Evidence Information Retrieval: Five Literature Reviews and a Qualitative Study.” Health Technol Assess 21 (69): 1–148. https://doi.org/10.3310/hta21690.\n\n\nPitkin, Roy M., and Mary Ann Branagan. 1998. “Can the Accuracy of Abstracts Be Improved by Providing Specific Instructions? A Randomized Controlled Trial.” JAMA 280 (3): 267–69. https://doi.org/10.1001/jama.280.3.267.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Technical terms</span>"
+    ]
+  },
+  {
+    "objectID": "tools.html",
+    "href": "tools.html",
+    "title": "3  Tools",
+    "section": "",
+    "text": "3.1 FINER\nFINER is an acronym for the five criteria feasible, interesting, novel, ethical and relevant which can be used as guidance when formulating a good clinical research question. See Table 3.1. (Cummings, Browner, and Hulley (2013))",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Tools</span>"
+    ]
+  },
+  {
+    "objectID": "tools.html#finer",
+    "href": "tools.html#finer",
+    "title": "3  Tools",
+    "section": "",
+    "text": "Table 3.1\n\n\n\n\n\n\nCriterion\nMeaning\n\n\n\n\nfeasible\nThe research question should not exceed the available resources, i.e. participants, expertise, time and money).\n\n\ninteresting\nThe research question should in itself be interesting, not only to the researcher, but also to a broader public.\n\n\nnovel\nThe gain of knowledge and new information should be at the heart of the question. Research usually does not only reiterate already established data unless it is designed as a confirmatory study.\n\n\nethical\nProper research has to be ethical and must not bear unacceptable risks for its participants.\n\n\nrelevant\nThe expected impact of the research on scientific knowledge and clinical processes can be a good measurement parameter for the relevance.\n\n\n\n\n\n\n\n\n\n\n\nCummings, Steven R., Warren S. Browner, and Stephen B. Hulley. 2013. “Conceiving the Research Question and Developing the Study Plan.” In Designing Clinical Research, edited by Stephen B. Hulley, Steven R. Cummings, Warren S. Browner, Deborah G. Grady, and Thomas B. Newman, 4. ed., 14–22. Philadelphia: Lippincott Williams & Wilkins. https://swisscovery.slsp.ch/permalink/41SLSP_UBE/99pfpl/alma99117040391205511.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Tools</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html",
+    "href": "methods.html",
+    "title": "4  Methods",
+    "section": "",
+    "text": "4.1 Boolean operators\nDatabases usually allow a search to be structured using the three basic operations of Boolean algebra, which are expressed with the Boolean operators AND (conjunction), OR (disjunction) and NOT (negation). The AND operator creates an intersection of sets, OR creates a union of sets and NOT excludes sets (see Figure 4.1).",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methods</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#sec-boolean",
+    "href": "methods.html#sec-boolean",
+    "title": "4  Methods",
+    "section": "",
+    "text": "Figure 4.1: Boolean Operators\n\n\n\n\n\n\n\n\n\nExamples\n\n\n\n\nThe query \"heart attack\" AND diabetes AND obesity retrieves only records featuring all three terms.\nThe query \"cardiac arrest\" OR asystole retrieves records containing at least one of the two terms.\nThe query animals NOT humans removes all records mentioning humans from the set animals.\n\n\n\n\n\n\n\n\n\nCaution\n\n\n\nUsing the NOT operator can be dangerous, as it excludes records regardless of any relevant search terms they might contain. The above example excludes also records with animals if they mention humans.\n\n\n\nProperties\nThe Boolean operators AND and OR possess similar properties as the multiplication and addition. See Table 4.1. (O’Regan (2012))\n1 (a OR b) = (b OR a)\n (a AND b) = (b AND a)\n ----\n2 (a OR b) OR c = a OR (b OR c)\n (a AND b) AND c = a AND (b AND c)\n ----\n3 a AND (b OR c) = (a AND b) OR (a AND c)\n a OR (b AND c) = (a OR b) AND (a OR c)\n\n\n\nTable 4.1\n\n\n\n1\n\ncommutative property\n\n2\n\nassociative property\n\n3\n\ndistributive property",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methods</span>"
+    ]
+  },
+  {
+    "objectID": "methods.html#citation-analysis",
+    "href": "methods.html#citation-analysis",
+    "title": "4  Methods",
+    "section": "4.2 citation analysis",
+    "text": "4.2 citation analysis\nRelevant references can be retrieved by analyzing citation relationships between known relevant articles (core papers) and cited or citing references. This technique is called citation analysis or citation tracking (Hirt et al. (2021), Belter (2016), Hinde and Spackman (2015).\nCitation analysis can be advisable at the very beginning of a systematic literature search in order to find additional core papers and to identify additional search terms. After finishing the final search it can be used to find additional relevant studies that were not retrieved by systematic searching using search strategies.\nThere are different approaches to tracking citations: First, in the backward citation tracking method the lists of references cited in the core papers are screened for relevant articles. Second, the analysis of publications citing the core paper as reference is called forward citation tracking. See Figure 4.2.\n\n\n\n\n\n\nFigure 4.2: backward and forward citation tracking\n\n\n\nThird, the identification of relevant literature by counting co-cited or co-citing references is called co-citation tracking, see Figure 4.3 and Figure 4.4.\n\n\n\n\n\n\nFigure 4.3: co-citation tracking using the citing articles which the core paper has in common with other papers\n\n\n\n\n\n\n\n\n\nFigure 4.4: co-citation tracking using the cited references which the core paper has in common with other papers\n\n\n\n\n\n\n\nBelter, Christopher W. 2016. “Citation Analysis as a Literature Search Method for Systematic Reviews.” J Assn Inf Sci Tec 67 (11): 2766–77. https://doi.org/10.1002/asi.23605.\n\n\nHinde, Sebastian, and Eldon Spackman. 2015. “Bidirectional Citation Searching to Completion: An Exploration of Literature Searching Methods.” PharmacoEconomics 33 (1): 5–11. https://doi.org/10.1007/s40273-014-0205-3.\n\n\nHirt, Julian, Thomas Nordhausen, Christian Appenzeller-Herzog, and Hannah Ewald. 2021. “Using citation tracking for systematic literature searching – study protocol for a scoping review of methodological studies and a Delphi study.” F1000Res 9 (September): 1386. https://doi.org/10.12688/f1000research.27337.3.\n\n\nO’Regan, Gerard. 2012. A Brief History of Computing. Second. Springer, London. https://doi.org/10.1007/978-1-4471-2359-0.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Methods</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Belter, Christopher W. 2016. “Citation Analysis as a Literature\nSearch Method for Systematic Reviews.” J Assn Inf Sci\nTec 67 (11): 2766–77. https://doi.org/10.1002/asi.23605.\n\n\nCals, Jochen W. L., and Daniel Kotz. 2013. “Effective writing and publishing scientific papers, part\nII: title and abstract.” J Clin Epidemiol 66 (6):\n585. https://doi.org/10.1016/j.jclinepi.2013.01.005.\n\n\nCummings, Steven R., Warren S. Browner, and Stephen B. Hulley. 2013.\n“Conceiving the Research Question and\nDeveloping the Study Plan.” In Designing\nClinical Research, edited by Stephen B. Hulley, Steven R.\nCummings, Warren S. Browner, Deborah G. Grady, and Thomas B. Newman, 4.\ned., 14–22. Philadelphia: Lippincott Williams & Wilkins. https://swisscovery.slsp.ch/permalink/41SLSP_UBE/99pfpl/alma99117040391205511.\n\n\nFawcett, Tom. 2006. “An Introduction to ROC\nAnalysis.” Pattern Recognit Lett 27 (8): 861–74. https://doi.org/10.1016/j.patrec.2005.10.010.\n\n\nHaynes, R. Brian, and Nancy L. Wilczynski. 2004. “Optimal search strategies for retrieving scientifically\nstrong studies of diagnosis from Medline: analytical\nsurvey.” BMJ 328 (7447): 1040. https://doi.org/10.1136/bmj.38068.557998.EE.\n\n\nHinde, Sebastian, and Eldon Spackman. 2015. “Bidirectional Citation Searching to Completion: An\nExploration of Literature Searching Methods.”\nPharmacoEconomics 33 (1): 5–11. https://doi.org/10.1007/s40273-014-0205-3.\n\n\nHirt, Julian, Thomas Nordhausen, Christian Appenzeller-Herzog, and\nHannah Ewald. 2021. “Using citation tracking\nfor systematic literature searching – study protocol for a scoping\nreview of methodological studies and a Delphi study.”\nF1000Res 9 (September): 1386. https://doi.org/10.12688/f1000research.27337.3.\n\n\nLefebvre, Carol, Julie Glanville, Sophie Beale, Charles Boachie, Steven\nDuffy, Cynthia Fraser, Jenny Harbour, Rachael McCool, and Lynne Smith.\n2017. “Assessing the Performance of Methodological Search Filters\nto Improve the Efficiency of Evidence Information Retrieval: Five\nLiterature Reviews and a Qualitative Study.” Health Technol\nAssess 21 (69): 1–148. https://doi.org/10.3310/hta21690.\n\n\nO’Regan, Gerard. 2012. A Brief History of\nComputing. Second. Springer, London. https://doi.org/10.1007/978-1-4471-2359-0.\n\n\nPitkin, Roy M., and Mary Ann Branagan. 1998. “Can the Accuracy of Abstracts Be Improved by Providing\nSpecific Instructions? A Randomized Controlled Trial.”\nJAMA 280 (3): 267–69. https://doi.org/10.1001/jama.280.3.267.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]
