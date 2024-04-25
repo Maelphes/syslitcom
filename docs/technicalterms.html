@@ -203,6 +203,15 @@ window.Quarto = {
   <ul>
   <li><a href="#sec-abstract" id="toc-sec-abstract" class="nav-link active" data-scroll-target="#sec-abstract"><span class="header-section-number">2.1</span> abstract</a></li>
   <li><a href="#sec-accuraccy" id="toc-sec-accuraccy" class="nav-link" data-scroll-target="#sec-accuraccy"><span class="header-section-number">2.2</span> accuracy</a></li>
+  <li><a href="#sec-ambiguity" id="toc-sec-ambiguity" class="nav-link" data-scroll-target="#sec-ambiguity"><span class="header-section-number">2.3</span> ambiguity</a></li>
+  <li><a href="#sec-appendix" id="toc-sec-appendix" class="nav-link" data-scroll-target="#sec-appendix"><span class="header-section-number">2.4</span> appendix</a></li>
+  <li><a href="#sec-authorkeywords" id="toc-sec-authorkeywords" class="nav-link" data-scroll-target="#sec-authorkeywords"><span class="header-section-number">2.5</span> author keyword</a></li>
+  <li><a href="#bias" id="toc-bias" class="nav-link" data-scroll-target="#bias"><span class="header-section-number">2.6</span> bias</a>
+  <ul class="collapse">
+  <li><a href="#selection-bias" id="toc-selection-bias" class="nav-link" data-scroll-target="#selection-bias"><span class="header-section-number">2.6.1</span> selection bias</a></li>
+  <li><a href="#publication-bias" id="toc-publication-bias" class="nav-link" data-scroll-target="#publication-bias"><span class="header-section-number">2.6.2</span> publication bias</a></li>
+  <li><a href="#language-of-publication-bias" id="toc-language-of-publication-bias" class="nav-link" data-scroll-target="#language-of-publication-bias"><span class="header-section-number">2.6.3</span> language of publication bias</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -230,55 +239,118 @@ window.Quarto = {
 
 <section id="sec-abstract" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="sec-abstract"><span class="header-section-number">2.1</span> abstract</h2>
-<p>Als Abstract bezeichnet man eine Kurzzusammenfassung einer wissenschaftlichen Publikation, z.B. eines Zeitschriftenartikels, einer Dissertation oder eines Konferenzbeitrags. Neben dem Titel ist der Abstract einer der wichtigsten Bestandteile einer Publikation, da er häufig der einzige Teil des Textes ist, der frei lesbar und in bibliographischen Datenbanken zur Verfügung steht. Er ist damit auch einer der wichtigsten Bestandteile der Stichwortsuche. <span class="citation" data-cites="Cals2013">Cals and Kotz (<a href="references.html#ref-Cals2013" role="doc-biblioref">2013</a>)</span> <span class="citation" data-cites="Pitkin1998">Pitkin and Branagan (<a href="references.html#ref-Pitkin1998" role="doc-biblioref">1998</a>)</span></p>
 <p>An abstract is the short summary at the beginning of scientific publications, e.g.&nbsp;journal articles, theses or conference papers. The abstract is among the most important parts of a publication as it is usually the only part of the text which is freely available and can be retrieved from bibliographic databases. Title and abstract are the key elements of a textword search. (<span class="citation" data-cites="Cals2013">Cals and Kotz (<a href="references.html#ref-Cals2013" role="doc-biblioref">2013</a>)</span>, <span class="citation" data-cites="Pitkin1998">Pitkin and Branagan (<a href="references.html#ref-Pitkin1998" role="doc-biblioref">1998</a>)</span>)</p>
 </section>
 <section id="sec-accuraccy" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="sec-accuraccy"><span class="header-section-number">2.2</span> accuracy</h2>
 <p>Accuracy (auch Treffergenauigkeit, Vertrauenswahrscheinlichkeit) ist ein statistisches Gütemass und gibt an, welcher Anteil aller Datensätze korrekterweise <em>true</em> gefunden bzw. nicht gefunden wurde. Sie wird als Quotient aus der Summe von gefundenen relevanten (<em>true positives</em>) und nicht gefundenen irrelevanten Datensätzen (<em>true negatives</em>) und der Gesamtheit aller Datensätze angegeben. (<span class="citation" data-cites="Haynes2004">Haynes and Wilczynski (<a href="references.html#ref-Haynes2004" role="doc-biblioref">2004</a>)</span>, <span class="citation" data-cites="Lefebvre2017">Lefebvre et al. (<a href="references.html#ref-Lefebvre2017" role="doc-biblioref">2017</a>)</span>, <span class="citation" data-cites="Fawcett2006">Fawcett (<a href="references.html#ref-Fawcett2006" role="doc-biblioref">2006</a>)</span>)</p>
-<p>In der nachfolgenden Tabelle <a href="#tbl-1" class="quarto-xref">Table&nbsp;<span>2.1</span></a> entspricht dies <span class="math inline">\(\tfrac{tp + tn}{tp + fp + fn + tn}\)</span>.</p>
+<p>In der nachfolgenden Tabelle <a href="#tbl-truth" class="quarto-xref">Table&nbsp;<span>2.1</span></a> entspricht dies <span class="math inline">\(\tfrac{tp + tn}{tp + fp + fn + tn}\)</span>.</p>
 <p>Siehe auch precision, sensitivity, specificity.</p>
-<div id="tbl-1" class="quarto-float anchored">
+<div id="tbl-truth" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2.1: This is a table caption.
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-truth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.1: Truth table
 </figcaption>
-<div aria-describedby="tbl-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="table*">
-<p><span id="confmatrix" label="confmatrix"></span></p>
+<div aria-describedby="tbl-truth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table">
 <thead>
 <tr class="header">
-<th style="text-align: left;"><strong>Datensatz</strong></th>
+<th style="text-align: center;"><strong>record</strong></th>
 <th style="text-align: center;">relevant</th>
 <th style="text-align: center;">irrelevant</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">gefunden</td>
+<td style="text-align: center;">found</td>
 <td style="text-align: center;"><em>tp</em></td>
 <td style="text-align: center;"><em>fp</em></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">nicht gefunden</td>
+<td style="text-align: center;">not found</td>
 <td style="text-align: center;"><em>fn</em></td>
 <td style="text-align: center;"><em>tn</em></td>
 </tr>
 </tbody>
 </table>
 </div>
-</div>
 </figure>
 </div>
+</section>
+<section id="sec-ambiguity" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="sec-ambiguity"><span class="header-section-number">2.3</span> ambiguity</h2>
+<p>A term or statement which has more than one possible meaning or definition is ambiguous. Ambiguity proves to be an obstacle in creating search strategies, because any free text search with ambiguous terms will inevitably retrieve records for all meanings of the term regardless of the context. In this case, it is an option to render such terms more specific by using phrases or proximity operators.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Examples">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Examples
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><code>apothecary</code> might refer to the occuopation of pharmacist or the community pharmacy as a location or institution.</li>
+<li>The term <code>pharmacy</code> may refer to the pharmaceutical sciences, the manufacture of drugs or the pharmacy as a retail shop.</li>
+<li>In anatomy, a <code>styloid process</code> is a pointed outgrowth from a bone. However, there are serveral of these in the human body, for instance in the temporal bone, the radius bone, the ulna bone or the metacarpal bones.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="sec-appendix" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="sec-appendix"><span class="header-section-number">2.4</span> appendix</h2>
+<p>An appendix provides additional content to a publication and is often called <em>supplementary material</em> or <em>supplementary information</em>. Full search strategies are often published within the appendix of a publication.</p>
+</section>
+<section id="sec-authorkeywords" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="sec-authorkeywords"><span class="header-section-number">2.5</span> author keyword</h2>
+<p>Publishers often require the authors of a publication to provide keywords describing the content of the publication. These keywords don’t necessarily correspond to controlled vocabulary (index terms), which are assigned to the records by the database and should not be confused with them. (<span class="citation" data-cites="Neveol2010">Névéol, Doğan, and Lu (<a href="references.html#ref-Neveol2010" role="doc-biblioref">2010</a>)</span>) The data field for author keywords is often used as part of the free text search.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Examples">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Examples
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Within PubMed the field codes <code>[OT]</code> or <code>[Other Term]</code> can be used for searching the author keywords. This field is automatically searched when <code>[TIAB]</code>(or <code>[Title/Abstract]</code>) or <code>[TW]</code> (or <code>[Text Word]</code>) are used. In Ovid MEDLINE the corresponding field codes <code>.kw</code> or <code>.kf</code> can be used for searching the author keywords.</p>
+</div>
+</div>
+</section>
+<section id="bias" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="bias"><span class="header-section-number">2.6</span> bias</h2>
+<p>Bias is a systematic deviation between results and facts that may lead to under- or over-estimation of intervention effects. As a result bias might lead to conclusions which do not accurately represent the truth. There are various types and sources for bias, as well as methods to avoid some forms of bias, such as randomization or blinding of participants in clinical trials.</p>
+<p>Systematic literature searching is a means to reduce bias. Systematic reviews strive to minimise these deviations by assessing the risk of bias in results of included studies. (<span class="citation" data-cites="Braun2021">Braun et al. (<a href="references.html#ref-Braun2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Boutron2022">Boutron et al. (<a href="references.html#ref-Boutron2022" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="Gough2017">Gough, Oliver, and Thomas (<a href="references.html#ref-Gough2017" role="doc-biblioref">2017</a>)</span>)</p>
+<section id="selection-bias" class="level3" data-number="2.6.1">
+<h3 data-number="2.6.1" class="anchored" data-anchor-id="selection-bias"><span class="header-section-number">2.6.1</span> selection bias</h3>
+<p>Systematic differences between comparison groups lead to a deviation from the true effect of an intervention. This so-called selection bias can be prevented by measures such as the sufficient randomization and concealment of allocation of trial participants to different study arms.(<span class="citation" data-cites="Gough2017">Gough, Oliver, and Thomas (<a href="references.html#ref-Gough2017" role="doc-biblioref">2017</a>)</span>, <span class="citation" data-cites="OdgaardJensen2011">Odgaard‐Jensen et al. (<a href="references.html#ref-OdgaardJensen2011" role="doc-biblioref">2011</a>)</span>)</p>
+</section>
+<section id="publication-bias" class="level3" data-number="2.6.2">
+<h3 data-number="2.6.2" class="anchored" data-anchor-id="publication-bias"><span class="header-section-number">2.6.2</span> publication bias</h3>
+<p>Results perceived as “positive” are more likely to be published than those results which are perceived as “negative”, which gives the positive results more weight. (<span class="citation" data-cites="Gough2017">Gough, Oliver, and Thomas (<a href="references.html#ref-Gough2017" role="doc-biblioref">2017</a>)</span>)</p>
+</section>
+<section id="language-of-publication-bias" class="level3" data-number="2.6.3">
+<h3 data-number="2.6.3" class="anchored" data-anchor-id="language-of-publication-bias"><span class="header-section-number">2.6.3</span> language of publication bias</h3>
+<p>In systematic literature searches it is often tempting to restrict the search to languages which are easily understood by the screeners and researchers. Not only will this practive keep the number of records at a more manageable level, it also makes the translation of foreign publications unnecessary. However, this so-called language of publication bias can have a significant impact on the quality of the review. (<span class="citation" data-cites="Gough2017">Gough, Oliver, and Thomas (<a href="references.html#ref-Gough2017" role="doc-biblioref">2017</a>)</span>, <span class="citation" data-cites="Morrison2012">Morrison et al. (<a href="references.html#ref-Morrison2012" role="doc-biblioref">2012</a>)</span>, <span class="citation" data-cites="Moher2003">Moher et al. (<a href="references.html#ref-Moher2003" role="doc-biblioref">2003</a>)</span>)</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Boutron2022" class="csl-entry" role="listitem">
+Boutron, I., M. J. Page, J. P. T. Higgins, D. G. Altman, A. Lundh, and A. Hróbjartsson. 2022. <span>“Chapter 7: Considering Bias and Conflicts of Interest Among the Included Studies.”</span> In <em>Cochrane Handbook for Systematic Reviews of Interventions</em>, edited by J. P. T. Higgins, J. Thomas, J. Chandler, M. Cumpston, T. Li, M. J. Page, and V. A. Welch. Cochrane.
+</div>
+<div id="ref-Braun2021" class="csl-entry" role="listitem">
+Braun, Cordula, Christine Schmucker, Monika Nothacker, Kai Nitschke, Corinna Schaefer, Claudia Bollig, Cathleen Muche-Borowski, Ina B. Kopp, and Jörg Meerpohl. 2021. <span>“<span class="nocase">Manual Bewertung des Biasrisikos in Interventionsstudien</span>.”</span> Albert-Ludwigs-Universit<span>ä</span>t Freiburg. <a href="https://doi.org/10.6094/UNIFR/194900">https://doi.org/10.6094/UNIFR/194900</a>.
+</div>
 <div id="ref-Cals2013" class="csl-entry" role="listitem">
 Cals, Jochen W. L., and Daniel Kotz. 2013. <span>“<span class="nocase">Effective writing and publishing scientific papers, part II: title and abstract</span>.”</span> <em>J Clin Epidemiol</em> 66 (6): 585. <a href="https://doi.org/10.1016/j.jclinepi.2013.01.005">https://doi.org/10.1016/j.jclinepi.2013.01.005</a>.
 </div>
 <div id="ref-Fawcett2006" class="csl-entry" role="listitem">
 Fawcett, Tom. 2006. <span>“An Introduction to <span>ROC</span> Analysis.”</span> <em>Pattern Recognit Lett</em> 27 (8): 861–74. <a href="https://doi.org/10.1016/j.patrec.2005.10.010">https://doi.org/10.1016/j.patrec.2005.10.010</a>.
+</div>
+<div id="ref-Gough2017" class="csl-entry" role="listitem">
+Gough, David, Sandy Oliver, and James Thomas. 2017. <em><span class="nocase">An Introduction to Systematic Reviews</span></em>. Second. London: SAGE Publications.
 </div>
 <div id="ref-Haynes2004" class="csl-entry" role="listitem">
 Haynes, R. Brian, and Nancy L. Wilczynski. 2004. <span>“<span class="nocase">Optimal search strategies for retrieving scientifically strong studies of diagnosis from Medline: analytical survey</span>.”</span> <em>BMJ</em> 328 (7447): 1040. <a href="https://doi.org/10.1136/bmj.38068.557998.EE">https://doi.org/10.1136/bmj.38068.557998.EE</a>.
@@ -286,10 +358,23 @@ Haynes, R. Brian, and Nancy L. Wilczynski. 2004. <span>“<span class="nocase">O
 <div id="ref-Lefebvre2017" class="csl-entry" role="listitem">
 Lefebvre, Carol, Julie Glanville, Sophie Beale, Charles Boachie, Steven Duffy, Cynthia Fraser, Jenny Harbour, Rachael McCool, and Lynne Smith. 2017. <span>“Assessing the Performance of Methodological Search Filters to Improve the Efficiency of Evidence Information Retrieval: Five Literature Reviews and a Qualitative Study.”</span> <em>Health Technol Assess</em> 21 (69): 1–148. <a href="https://doi.org/10.3310/hta21690">https://doi.org/10.3310/hta21690</a>.
 </div>
+<div id="ref-Moher2003" class="csl-entry" role="listitem">
+Moher, D., B. Pham, M. L. Lawson, and T. P. Klassen. 2003. <span>“<span class="nocase">The inclusion of reports of randomised trials published in languages other than English in systematic reviews.</span>”</span> <em>Health Technol Assess</em> 7: 1–90. <a href="https://doi.org/10.3310/hta7410">https://doi.org/10.3310/hta7410</a>.
+</div>
+<div id="ref-Morrison2012" class="csl-entry" role="listitem">
+Morrison, Andra, Julie Polisena, Don Husereau, Kristen Moulton, Michelle Clark, Michelle Fiander, Monika Mierzwinski-Urban, et al. 2012. <span>“<span class="nocase">The effect of English-language restriction on systematic review-based meta-analyses: a systematic review of empirical studies</span>.”</span> <em>Int J Technol Assess Health Care</em> 28 (2): 138–44. <a href="https://doi.org/10.1017/S0266462312000086">https://doi.org/10.1017/S0266462312000086</a>.
+</div>
+<div id="ref-Neveol2010" class="csl-entry" role="listitem">
+Névéol, Aurélie, Rezarta Islamaj Doğan, and Zhiyong Lu. 2010. <span>“<span class="nocase">Author Keywords in Biomedical Journal Articles</span>.”</span> <em>AMIA Annu Symp Proc</em> 2010 (November): 537–41. <a href="https://pubmed.ncbi.nlm.nih.gov/21347036/">https://pubmed.ncbi.nlm.nih.gov/21347036/</a>.
+</div>
+<div id="ref-OdgaardJensen2011" class="csl-entry" role="listitem">
+Odgaard‐Jensen, Jan, Gunn E. Vist, Antje Timmer, R. Kunz, Elie A. Akl, Holger Schünemann, Matthias Briel, Alain J. Nordmann, Silvia Pregno, and Andrew D. Oxman. 2011. <span>“Randomisation to Protect Against Selection Bias in Healthcare Trials.”</span> <em>Cochrane Database Syst Rev</em>   (4). <a href="https://doi.org/10.1002/14651858.MR000012.pub3">https://doi.org/10.1002/14651858.MR000012.pub3</a>.
+</div>
 <div id="ref-Pitkin1998" class="csl-entry" role="listitem">
 Pitkin, Roy M., and Mary Ann Branagan. 1998. <span>“<span class="nocase">Can the Accuracy of Abstracts Be Improved by Providing Specific Instructions? A Randomized Controlled Trial</span>.”</span> <em>JAMA</em> 280 (3): 267–69. <a href="https://doi.org/10.1001/jama.280.3.267">https://doi.org/10.1001/jama.280.3.267</a>.
 </div>
 </div>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -388,6 +473,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

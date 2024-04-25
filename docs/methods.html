@@ -210,7 +210,10 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#properties" id="toc-properties" class="nav-link" data-scroll-target="#properties">Properties</a></li>
   </ul></li>
-  <li><a href="#citation-analysis" id="toc-citation-analysis" class="nav-link" data-scroll-target="#citation-analysis"><span class="header-section-number">4.2</span> citation analysis</a></li>
+  <li><a href="#sec-citationanalysis" id="toc-sec-citationanalysis" class="nav-link" data-scroll-target="#sec-citationanalysis"><span class="header-section-number">4.2</span> citation analysis</a></li>
+  <li><a href="#sec-filters" id="toc-sec-filters" class="nav-link" data-scroll-target="#sec-filters"><span class="header-section-number">4.3</span> filters</a></li>
+  <li><a href="#sec-fieldcode" id="toc-sec-fieldcode" class="nav-link" data-scroll-target="#sec-fieldcode"><span class="header-section-number">4.4</span> field code</a></li>
+  <li><a href="#focus" id="toc-focus" class="nav-link" data-scroll-target="#focus"><span class="header-section-number">4.5</span> Focus</a></li>
   </ul>
 </nav>
     </div>
@@ -249,7 +252,7 @@ Figure&nbsp;4.1: Boolean Operators
 </figcaption>
 </figure>
 </div>
-<div class="callout callout-style-simple callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled" title="Examples">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -266,7 +269,7 @@ Examples
 </ul>
 </div>
 </div>
-<div class="callout callout-style-simple callout-important callout-titled">
+<div class="callout callout-style-default callout-important callout-titled" title="Caution">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -315,8 +318,8 @@ Table&nbsp;4.1
 </div>
 </section>
 </section>
-<section id="citation-analysis" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="citation-analysis"><span class="header-section-number">4.2</span> citation analysis</h2>
+<section id="sec-citationanalysis" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="sec-citationanalysis"><span class="header-section-number">4.2</span> citation analysis</h2>
 <p>Relevant references can be retrieved by analyzing citation relationships between known relevant articles (<em>core papers</em>) and cited or citing references. This technique is called <strong>citation analysis</strong> or <strong>citation tracking</strong> (<span class="citation" data-cites="Hirt2021">Hirt et al. (<a href="references.html#ref-Hirt2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Belter2016">Belter (<a href="references.html#ref-Belter2016" role="doc-biblioref">2016</a>)</span>, <span class="citation" data-cites="Hinde2015">Hinde and Spackman (<a href="references.html#ref-Hinde2015" role="doc-biblioref">2015</a>)</span>.</p>
 <p>Citation analysis can be advisable at the very beginning of a systematic literature search in order to find additional core papers and to identify additional search terms. After finishing the final search it can be used to find additional relevant studies that were not retrieved by systematic searching using search strategies.</p>
 <p>There are different approaches to tracking citations: First, in the <strong>backward citation tracking</strong> method the lists of references cited in the core papers are screened for relevant articles. Second, the analysis of publications citing the core paper as reference is called <strong>forward citation tracking</strong>. See <a href="#fig-citing-cited" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>.</p>
@@ -351,11 +354,127 @@ Figure&nbsp;4.4: co-citation tracking using the cited references which the core 
 </figcaption>
 </figure>
 </div>
+</section>
+<section id="sec-filters" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="sec-filters"><span class="header-section-number">4.3</span> filters</h2>
+<p>Filters (also search filters, filter strategies or hedges) are search strategies designed to retrieve records for a specific concept of the research question.</p>
+<p>There are filters for specific patient groups or diseases, outcomes, study types (for instance to retrieve only randomized controlled trials (RCTs), or filters for other aspects of the research question, e.g.&nbsp;adverse effects, diagnostic accuracy or patient values. (<span class="citation" data-cites="Waffenschmidt2020">Waffenschmidt et al. (<a href="references.html#ref-Waffenschmidt2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="SalvadorOlivan2021">Salvador-Oliván, Marco-Cuenca, and Arquero-Avilés (<a href="references.html#ref-SalvadorOlivan2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Lee2012">Lee et al. (<a href="references.html#ref-Lee2012" role="doc-biblioref">2012</a>)</span>, <span class="citation" data-cites="Golder2006a">Golder et al. (<a href="references.html#ref-Golder2006a" role="doc-biblioref">2006</a>)</span>)</p>
+<p>Validated filters are developed, tested and optimized for sensitivity and precision by experts. (<span class="citation" data-cites="Haynes2004">Haynes and Wilczynski (<a href="references.html#ref-Haynes2004" role="doc-biblioref">2004</a>)</span>, <span class="citation" data-cites="Glanville2008">Glanville et al. (<a href="references.html#ref-Glanville2008" role="doc-biblioref">2008</a>)</span>)</p>
+<p>Filter strategies can be implemented in a search strategy just like any concept of the research question. <a href="#tbl-filterstrategy" class="quarto-xref">Table&nbsp;<span>4.2</span></a> illustrates a search strategy with a short qualitative research filter in lines 8 to 11, which is added to the overall search in line 12.</p>
+<div id="tbl-filterstrategy" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-filterstrategy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.2
+</figcaption>
+<div aria-describedby="tbl-filterstrategy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="sourceCode anchored" id="tbl-filterstrategy"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="tbl-filterstrategy-1"><a href="#tbl-filterstrategy-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   hypertension<span class="op">/</span></span>
+<span id="tbl-filterstrategy-2"><a href="#tbl-filterstrategy-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>   (hypertension <span class="kw">or</span> high blood pressure).ti,ab.</span>
+<span id="tbl-filterstrategy-3"><a href="#tbl-filterstrategy-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>   <span class="dv">1</span> <span class="kw">or</span> <span class="dv">2</span></span>
+<span id="tbl-filterstrategy-4"><a href="#tbl-filterstrategy-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   exp patient attitude<span class="op">/</span></span>
+<span id="tbl-filterstrategy-5"><a href="#tbl-filterstrategy-5" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span>   <span class="op">*</span>patient satisfaction<span class="op">/</span></span>
+<span id="tbl-filterstrategy-6"><a href="#tbl-filterstrategy-6" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span>   (choice$ <span class="kw">or</span> empower$).ti.</span>
+<span id="tbl-filterstrategy-7"><a href="#tbl-filterstrategy-7" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span>   <span class="kw">or</span><span class="op">/</span><span class="dv">4</span><span class="op">-</span><span class="dv">6</span></span>
+<span id="tbl-filterstrategy-8"><a href="#tbl-filterstrategy-8" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span>   interview$.mp.</span>
+<span id="tbl-filterstrategy-9"><a href="#tbl-filterstrategy-9" aria-hidden="true" tabindex="-1"></a><span class="dv">9</span>   experience$.mp.</span>
+<span id="tbl-filterstrategy-10"><a href="#tbl-filterstrategy-10" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span>  qualitative.tw.</span>
+<span id="tbl-filterstrategy-11"><a href="#tbl-filterstrategy-11" aria-hidden="true" tabindex="-1"></a><span class="dv">11</span>  <span class="kw">or</span><span class="op">/</span><span class="dv">8</span><span class="op">-</span><span class="dv">10</span></span>
+<span id="tbl-filterstrategy-12"><a href="#tbl-filterstrategy-12" aria-hidden="true" tabindex="-1"></a><span class="dv">12</span>  <span class="dv">3</span> <span class="kw">and</span> <span class="dv">7</span> <span class="kw">and</span> <span class="dv">11</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Sources of filter strategies">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Sources of filter strategies
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="https://sites.google.com/a/york.ac.uk/issg-search-filters-resource">ISSG Search Filter Resource</a></li>
+<li><a href="https://searchfilters.cadth.ca/">Canadian Agency for Drugs and Technologies in Health (CADTH)</a></li>
+<li><a href="https://www.sign.ac.uk/what-we-do/methodology/search-filters">SIGN Health Improvement Scotland</a></li>
+<li><a href="https://hiru.mcmaster.ca/hiru/HIRU_Hedges_MEDLINE_Strategies.aspx">McMaster University</a></li>
+<li><a href="https://work.cochrane.org/pubmed">Cochrane</a></li>
+<li><a href="https://tools.ovid.com/ovidtools/expertsearches.html">Ovid (Wolters Kluwer)</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/help/#clinical-queries-filters">PubMed Clinical Queries</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="sec-fieldcode" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="sec-fieldcode"><span class="header-section-number">4.4</span> field code</h2>
+<p>The data fields of databases possess short designations called field codes, field tags or field labels, which allow to search the fields separately as part of a search query or search strategy. Depending on the syntax of the database or search interface different field codes are available for searching. If no field code is used in a search query, the search term is usually searched in all fields or a preset variety of fields.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In PubMed the query <code>hypnosis[TIAB]</code> will basically search for records with “hypnosis” in the title or abstract. In Ovid the same search would be written as <code>hypnosis.ti,ab.</code></p>
+</div>
+</div>
+<p>See also <a href="https://pubmed.gov/help/#search-tags" class="uri">https://pubmed.gov/help/#search-tags</a> and <a href="https://ospguides.ovid.com/OSPguides/medline.htm#search" class="uri">https://ospguides.ovid.com/OSPguides/medline.htm#search</a>.</p>
+</section>
+<section id="focus" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="focus"><span class="header-section-number">4.5</span> Focus</h2>
+<p>Focus topics (also called <em>major topics</em>) are weighted index terms. If a particular topic is at the heart of a publication, index terms for that topic will be assigned as a so-called focus topic. This is often displayed in the databases by writing an <a href="https://en.wikipedia.org/wiki/Asterisk">asterisk</a> before or after the index term.</p>
+<div class="callout callout-style-default callout-caution callout-titled" title="Risk of confusion">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Risk of confusion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The asterisk <code>*</code> appears also as a wildcard character for truncation. The two look the same, but have different meanings and uses. Don’t let them confound you.</p>
+</div>
+</div>
+<p>By labeling an index term this way, its significance for the publication is visualized. Moreover, searching for the focus topic instead of the index term allows for a search to be focused only on the most important papers for a particular topic.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>A systematic review on hypertension will most likely feature the focus topic <code>*hypertension</code>, whereas an artikle about vascular diseases might be indexed with <code>hypertension</code> as a normal subject heading. Searching for <code>hypertension[majr]</code> in PubMed or <code>*hypertension/</code> in Ovid would yield only the first of those two articles. A search for <code>hypertension[mh]</code> <code>hypertension/</code> would find both of them.</p></li>
+<li><p>The article <a href="https://pubmed.ncbi.nlm.nih.gov/38030551/">Apnoeic oxygenation during paediatric tracheal intubation</a> by <span class="citation" data-cites="Fuchs2024">Fuchs et al. (<a href="references.html#ref-Fuchs2024" role="doc-biblioref">2024</a>)</span> is indexed with <code>Intubation, Intratracheal* / adverse effects</code> and <code>Intubation, Intratracheal* / methods</code> as major topics, whereas <code>Hypoxia / etiology</code> was added as a regular MeSH term as it is not the main focus of the article.</p></li>
+</ol>
+</div>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-Belter2016" class="csl-entry" role="listitem">
 Belter, Christopher W. 2016. <span>“Citation Analysis as a Literature Search Method for Systematic Reviews.”</span> <em>J Assn Inf Sci Tec</em> 67 (11): 2766–77. <a href="https://doi.org/10.1002/asi.23605">https://doi.org/10.1002/asi.23605</a>.
+</div>
+<div id="ref-Fuchs2024" class="csl-entry" role="listitem">
+Fuchs, Alexander, Gabriela Koepp, Markus Huber, Jonas Aebli, Arash Afshari, Rachele Bonfiglio, Robert Greif, et al. 2024. <span>“Apnoeic Oxygenation During Paediatric Tracheal Intubation: A Systematic Review and Meta-Analysis.”</span> <em>Brit J Anaesth</em> 132 (February): 392–406. <a href="https://doi.org/10.1016/j.bja.2023.10.039">https://doi.org/10.1016/j.bja.2023.10.039</a>.
+</div>
+<div id="ref-Glanville2008" class="csl-entry" role="listitem">
+Glanville, Julie, Sue Bayliss, Andrew Booth, Yenal Dundar, Hasina Fernandes, Nigel David Fleeman, Louise Foster, et al. 2008. <span>“So Many Filters, so Little Time: The Development of a Search Filter Appraisal Checklist.”</span> <em>J Med Libr Assoc</em> 96 (18974813): 356–61. <a href="https://doi.org/10.3163/1536-5050.96.4.011">https://doi.org/10.3163/1536-5050.96.4.011</a>.
+</div>
+<div id="ref-Golder2006a" class="csl-entry" role="listitem">
+Golder, Su, Heather M. McIntosh, Steve Duffy, and Julie Glanville. 2006. <span>“<span class="nocase">Developing efficient search strategies to identify reports of adverse effects in MEDLINE and EMBASE.</span>”</span> <em>Health Info Libr J</em> 23 (March): 3–12. <a href="https://doi.org/10.1111/j.1471-1842.2006.00634.x">https://doi.org/10.1111/j.1471-1842.2006.00634.x</a>.
+</div>
+<div id="ref-Haynes2004" class="csl-entry" role="listitem">
+Haynes, R. Brian, and Nancy L. Wilczynski. 2004. <span>“<span class="nocase">Optimal search strategies for retrieving scientifically strong studies of diagnosis from Medline: analytical survey</span>.”</span> <em>BMJ</em> 328 (7447): 1040. <a href="https://doi.org/10.1136/bmj.38068.557998.EE">https://doi.org/10.1136/bmj.38068.557998.EE</a>.
 </div>
 <div id="ref-Hinde2015" class="csl-entry" role="listitem">
 Hinde, Sebastian, and Eldon Spackman. 2015. <span>“<span class="nocase">Bidirectional Citation Searching to Completion: An Exploration of Literature Searching Methods</span>.”</span> <em>PharmacoEconomics</em> 33 (1): 5–11. <a href="https://doi.org/10.1007/s40273-014-0205-3">https://doi.org/10.1007/s40273-014-0205-3</a>.
@@ -363,8 +482,17 @@ Hinde, Sebastian, and Eldon Spackman. 2015. <span>“<span class="nocase">Bidire
 <div id="ref-Hirt2021" class="csl-entry" role="listitem">
 Hirt, Julian, Thomas Nordhausen, Christian Appenzeller-Herzog, and Hannah Ewald. 2021. <span>“<span class="nocase">Using citation tracking for systematic literature searching –&nbsp;study protocol for a scoping review of methodological studies and a Delphi study</span>.”</span> <em>F1000Res</em> 9 (September): 1386. <a href="https://doi.org/10.12688/f1000research.27337.3">https://doi.org/10.12688/f1000research.27337.3</a>.
 </div>
+<div id="ref-Lee2012" class="csl-entry" role="listitem">
+Lee, Edwin, Maureen Dobbins, Kara DeCorby, Lyndsey McRae, Daiva Tirilis, and Heather Husson. 2012. <span>“An Optimal Search Filter for Retrieving Systematic Reviews and Meta-Analyses.”</span> <em>BMC Med Res Methodol</em> 12 (1): 51. <a href="https://doi.org/10.1186/1471-2288-12-51">https://doi.org/10.1186/1471-2288-12-51</a>.
+</div>
 <div id="ref-ORegan2012" class="csl-entry" role="listitem">
 O’Regan, Gerard. 2012. <em><span class="nocase">A Brief History of Computing</span></em>. Second. Springer, London. <a href="https://doi.org/10.1007/978-1-4471-2359-0">https://doi.org/10.1007/978-1-4471-2359-0</a>.
+</div>
+<div id="ref-SalvadorOlivan2021" class="csl-entry" role="listitem">
+Salvador-Oliván, José Antonio, Gonzalo Marco-Cuenca, and Rosario Arquero-Avilés. 2021. <span>“<span class="nocase">Development of an efficient search filter to retrieve systematic reviews from PubMed</span>.”</span> <em>J Med Libr Assoc</em> 109 (4). <a href="https://doi.org/10.5195/jmla.2021.1223">https://doi.org/10.5195/jmla.2021.1223</a>.
+</div>
+<div id="ref-Waffenschmidt2020" class="csl-entry" role="listitem">
+Waffenschmidt, Siw, Tamara Navarro-Ruan, Nick Hobson, Elke Hausner, Stefan Sauerland, and R. Brian Haynes. 2020. <span>“<span class="nocase">Development and validation of study filters for identifying controlled non-randomized studies in PubMed and Ovid MEDLINE</span>.”</span> <em>Res Syn Meth</em> 11 (5): 617–26. <a href="https://doi.org/10.1002/jrsm.1425">https://doi.org/10.1002/jrsm.1425</a>.
 </div>
 </div>
 </section>
@@ -465,6 +593,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

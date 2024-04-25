@@ -19,8 +19,7 @@ union of sets and `NOT` excludes sets (see @fig-boolean).
 
 ![Boolean Operators](./fig/boole.svg){#fig-boolean width=80%}
 
-::: {.callout-tip appearance="simple"}
-## Examples
+::: {.callout-tip title="Examples"}
 - The query `"heart attack" AND diabetes AND obesity` retrieves only records 
 featuring all three terms. 
 - The query `"cardiac arrest" OR asystole` retrieves records containing at 
@@ -29,8 +28,7 @@ least one of the two terms.
 set `animals`. 
 :::
 
-::: {.callout-important appearance="simple"}
-## Caution
+::: {.callout-important title="Caution"}
 Using the `NOT` operator can be dangerous, as it excludes records regardless of
 any relevant search terms they might contain. The above example excludes also
 records with animals if they mention humans.
@@ -58,7 +56,7 @@ multiplication and addition. See @tbl-2. (@ORegan2012)
 :::
 
 
-## citation analysis
+## citation analysis {#sec-citationanalysis}
 
 Relevant references can be retrieved by analyzing citation relationships between
 known relevant articles (*core papers*) and cited or citing references. This 
@@ -86,3 +84,98 @@ references is called **co-citation tracking**, see @fig-cociting and @fig-cocite
 ![co-citation tracking using the citing articles which the core paper has in common with other papers](./fig/co-citing.svg){#fig-cociting width=80%}
 
 ![co-citation tracking using the cited references which the core paper has in common with other papers](./fig/co-cited.svg){#fig-cocited width=80%}
+
+
+## filters {#sec-filters}
+
+Filters (also search filters, filter strategies or hedges) are search strategies
+designed to retrieve records for a specific concept of the research question.
+
+There are filters for specific patient groups or diseases, outcomes, study types
+(for instance to retrieve only randomized controlled trials (RCTs), or filters 
+for other aspects of the research question, e.g. adverse effects, diagnostic 
+accuracy or patient values. (@Waffenschmidt2020, @SalvadorOlivan2021, @Lee2012, @Golder2006a)
+
+Validated filters are developed, tested and optimized for sensitivity and 
+precision by experts. (@Haynes2004, @Glanville2008)
+
+Filter strategies can be implemented in a search strategy just like any concept 
+of the research question. @tbl-filterstrategy illustrates a search strategy with
+a short qualitative research filter in lines 8 to 11, which is added to the 
+overall search in line 12.
+
+::: {#tbl-filterstrategy}
+```python
+1	hypertension/
+2	(hypertension or high blood pressure).ti,ab.
+3	1 or 2
+4	exp patient attitude/
+5	*patient satisfaction/
+6	(choice$ or empower$).ti.
+7	or/4-6
+8	interview$.mp.
+9	experience$.mp.
+10	qualitative.tw.
+11	or/8-10
+12	3 and 7 and 11
+```
+:::
+
+::: {.callout-tip title="Sources of filter strategies" collapse="true"}
+- [ISSG Search Filter Resource](https://sites.google.com/a/york.ac.uk/issg-search-filters-resource)
+- [Canadian Agency for Drugs and Technologies in Health (CADTH)](https://searchfilters.cadth.ca/)
+- [SIGN Health Improvement Scotland](https://www.sign.ac.uk/what-we-do/methodology/search-filters)
+- [McMaster University](https://hiru.mcmaster.ca/hiru/HIRU_Hedges_MEDLINE_Strategies.aspx)
+- [Cochrane](https://work.cochrane.org/pubmed)
+- [Ovid (Wolters Kluwer)](https://tools.ovid.com/ovidtools/expertsearches.html)
+- [PubMed Clinical Queries](https://pubmed.ncbi.nlm.nih.gov/help/\#clinical-queries-filters)
+:::
+
+## field code {#sec-fieldcode}
+The data fields of databases possess short designations called field codes, 
+field tags or field labels, which allow to search the fields separately as part 
+of a search query or search strategy. Depending on the syntax of the database or
+search interface different field codes are available for searching. If no field
+code is used in a search query, the search term is usually searched in all 
+fields or a preset variety of fields. 
+
+::: {.callout-tip title="Example"}
+In PubMed the query `hypnosis[TIAB]` will basically search for records with 
+"hypnosis" in the title or abstract. In Ovid the same search would be written 
+as `hypnosis.ti,ab.`
+:::
+
+See also <https://pubmed.gov/help/#search-tags> and <https://ospguides.ovid.com/OSPguides/medline.htm#search>.
+
+## Focus 
+Focus topics (also called _major topics_) are weighted index terms. If a 
+particular topic is at the heart of a publication, index terms for that topic 
+will be assigned as a so-called focus topic. This is often displayed in the
+databases by writing an [asterisk](https://en.wikipedia.org/wiki/Asterisk) 
+before or after the index term.
+
+::: {.callout-caution title="Risk of confusion"}
+The asterisk `*` appears also as a wildcard character for truncation. The two 
+look the same, but have different meanings and uses. Don't let them confound 
+you.
+:::
+
+By labeling an index term this way, its significance for the publication is 
+visualized. Moreover, searching for the focus topic instead of the index term 
+allows for a search to be focused only on the most important papers for a 
+particular topic.
+
+::: {.callout-tip title="Example"}
+1. A systematic review on hypertension will most likely feature the focus topic 
+`*hypertension`, whereas an artikle about vascular diseases might be indexed 
+with `hypertension` as a normal subject heading. Searching for 
+`hypertension[majr]` in PubMed or `*hypertension/` in Ovid would yield only the 
+first of those two articles. A search for `hypertension[mh]` `hypertension/` 
+would find both of them.
+
+2. The article [Apnoeic oxygenation during paediatric tracheal intubation](https://pubmed.ncbi.nlm.nih.gov/38030551/) by 
+@Fuchs2024 is indexed with `Intubation, Intratracheal* / adverse effects` and 
+`Intubation, Intratracheal* / methods` as major topics, whereas 
+`Hypoxia / etiology` was added as a regular MeSH term as it is not the main 
+focus of the article.
+:::
