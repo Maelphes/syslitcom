@@ -10,6 +10,11 @@ This is a compendium for the field of systematic literature searching. It
 contains technical terms, methods and background information related to the 
 retrieval of references from literature databases. 
 
+::: {.callout-warning}
+This website is still being setup. It may contain errors and certainly raises no
+claims to completeness.
+:::
+
 The main idea is to inform anyone who undertakes a systematic literature search
 about relevant terms of the trade.
 
@@ -21,5 +26,10 @@ Technical terms of all sorts are explained in @sec-technicalterms.
 @sec-tools tells you about various tools and useful concepts for creating
 your search for evidence.
 
-This document  was originally written in German as a glossary for lectures and 
-as a mnemonic for the author. It was originally typeset in LaTeX.
+Chapter @sec-methods describes various techniques of building and conducting 
+a systematic search.
+
+This website is created and maintained by Marc von Gernler (Medical Library, 
+University Library of Bern, University of Bern). The "compendium" was originally 
+written in German as a glossary for lectures and as a mnemonic for the author. 
+It was originally typeset in LaTeX ([Link to the original document](https://www.ub.unibe.ch/unibe/portal/unibiblio/content/e6250/e6264/e984201/e1237678/e1237679/pane1237693/e1237707/e1377201/Glossar_ger.pdf)).
