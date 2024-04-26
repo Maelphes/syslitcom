@@ -154,7 +154,7 @@ will be assigned as a so-called focus topic. This is often displayed in the
 databases by writing an [asterisk](https://en.wikipedia.org/wiki/Asterisk) 
 before or after the index term.
 
-::: {.callout-caution title="Risk of confusion"}
+::: {.callout-warning title="Risk of confusion"}
 The asterisk `*` appears also as a wildcard character for truncation. The two 
 look the same, but have different meanings and uses. Don't let them confound 
 you.
@@ -165,7 +165,7 @@ visualized. Moreover, searching for the focus topic instead of the index term
 allows for a search to be focused only on the most important papers for a 
 particular topic.
 
-::: {.callout-tip title="Example"}
+:::  {.callout-tip title="Example"}
 1. A systematic review on hypertension will most likely feature the focus topic 
 `*hypertension`, whereas an artikle about vascular diseases might be indexed 
 with `hypertension` as a normal subject heading. Searching for 
@@ -179,3 +179,36 @@ would find both of them.
 `Hypoxia / etiology` was added as a regular MeSH term as it is not the main 
 focus of the article.
 :::
+
+## frequency operators 
+Records in which a relevant expression occurs multiple times might be more 
+relevant than records with fewer instances of the same expression. Therefore 
+some search interfaces allow the use of a so-called frequency operator, which 
+only retrieves records only if the search term occurs at least the specified 
+number of times in the searched data field. 
+
+::: {.callout-tip title="Example"}
+Example from Ovid: The query `"pharmacy".ab/freq=5` will retrieve articles, in 
+which the term `pharmacy` occurs at least five times within the abstract.
+:::
+
+
+## limits {#sec-limits}
+There are various means to restrict the results of a search. One of them are 
+so-called limits which are filter options provided by the search interface,
+which allow the search results to be limited to characteristics such as 
+publication type, language or year of publication.
+
+::: {.callout-warning}
+1. Database limits are not to be mistaken for validated filter strategies. Limits 
+are usually based on certain data fields, whereas validated search filters are 
+more complex search strategies. See also @sec-filters.
+
+2. Database limits based on index terms may lead to the unintended exclusion of
+non-indexed records.
+
+3. The usage of database limits is not always evident from the search history. 
+If it is not possible to display applied limits in the search history, its use
+should be reported in the documentation.
+:::
+

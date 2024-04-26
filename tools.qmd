@@ -35,3 +35,24 @@ relevant & The expected impact of the research on scientific knowledge and clini
 \end{table*}
 ```
 :::
+
+## Reference Management software
+Bibliographic records and similar sets of data such as clinical study metadata 
+can be stored and managed using reference management programs (also called 
+citation management software). 
+
+These programs are usually able to perform tasks with the records, such as
+- import and export of various formats (e.g. RIS, NBIB, BIB, TXT, CSV, XML)
+- creation, editing and updating
+- deduplication
+- retrieval of full-texts
+- output of citations in various styles
+
+::: {.callout-tip title="Examples of reference managers" collapse="true"} 
+- [Citavi](https://www.citavi.com)
+- [EndNote](https://www.endnote.com)
+- [JabRef](https://www.jabref.org)
+- [Mendeley](https://www.mendeley.com)
+- [Zotero](https://www.zotero.org)
+:::
+For comparisons of reference management software see also <https://mediatum.ub.tum.de/1320978> and <https://en.wikipedia.org/wiki/Comparison_of_reference_management_software>.
