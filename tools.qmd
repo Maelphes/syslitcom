@@ -42,6 +42,7 @@ can be stored and managed using reference management programs (also called
 citation management software). 
 
 These programs are usually able to perform tasks with the records, such as
+
 - import and export of various formats (e.g. RIS, NBIB, BIB, TXT, CSV, XML)
 - creation, editing and updating
 - deduplication

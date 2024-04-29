@@ -37,9 +37,9 @@ records with animals if they mention humans.
 ### Properties {.unnumbered}
 
 The Boolean operators `AND` and `OR` possess similar properties as the 
-multiplication and addition. See @tbl-2. (@ORegan2012)
+multiplication and addition. See @tbl-booleanproperties. (@ORegan2012)
 
-::: {#tbl-2}
+::: {#tbl-booleanproperties}
 ```python
  (a OR b) = (b OR a)                        # <1>
  (a AND b) = (b AND a)                      # <1>
@@ -49,7 +49,7 @@ multiplication and addition. See @tbl-2. (@ORegan2012)
  ----
  a AND (b OR c) = (a AND b) OR (a AND c)    # <3>
  a OR (b AND c) = (a OR b) AND (a OR c)     # <3>
-```
+ ```
 1. commutative property
 2. associative property
 3. distributive property
@@ -210,5 +210,94 @@ non-indexed records.
 3. The usage of database limits is not always evident from the search history. 
 If it is not possible to display applied limits in the search history, its use
 should be reported in the documentation.
+:::
+
+
+## Nesting
+
+**Nesting** refers to the use of parentheses `( )` to group search terms within 
+a query. The purpose of nesting a search query is to define the order in which 
+the search terms and operators processed. The properties of the operators in 
+combination with parentheses are displayed in @tbl-booleanproperties.
+
+Without nesting the order in which the elements of a search query are processed 
+depends on the rules of the respective search interface. This means that the 
+same query might produce very different results in the individual databases.
+
+::: {.callout-tip title="Examples"}
+1. Within PubMed all searches are processed [in a left-to-right sequence](https://pubmed.ncbi.nlm.nih.gov/help/#combining-with-boolean-operators). 
+
+Thus the following PubMed queries yield completely different results:
+
+- `exercise[MH] AND infection[MH] OR heart[MH]`
+- `exercise[MH] AND heart[MH] OR infection[MH]`
+- `heart[MH] OR infection[MH] AND exercise[MH]`
+
+On the other hand the following nested queries are identical:
+
+- `exercise[MH] AND (infection[MH] OR heart[MH])`
+- `exercise[MH] AND (heart[MH] OR infection[MH])`
+- `(heart[MH] OR infection[MH]) AND exercise[MH]`
+
+2. Web of Science executes the search in an [order of precedence](https://webofscience.help.clarivate.com/en-us/Content/search-operators.html#Search) of the operators.
+:::
+
+## Phrases
+
+Most databases can be searched for verbatim expressions, called _phrases_ or 
+_literal strings_, by putting search terms in quotation marks `" "`. 
+
+::: {.callout-note title="Effects"} 
+The use of phrases usually terminates any automatically applied 
+techniques, such as _lemmatization_, _stemming_ or _automated term mapping_ 
+(ATM) for those expressions. In this way, the use of phrases usually reduces the 
+amount of search results as it makes the search more precise and less sensitive.
+
+Example:
+
+Due to automated term mapping the PubMed query `heart arrest` will be translated
+to  
+`"heart arrest"[MeSH Terms] OR "heart"[All Fields] AND "arrest"[All Fields] OR "heart arrest"[All Fields]`
+
+However, the query `"heart arrest"` translates to `"heart arrest"[All Fields]`, 
+because [phrases are not automatically mapped in PubMed](https://pubmed.ncbi.nlm.nih.gov/help/#searching-for-a-phrase).
+:::
+
+::: {.callout-warning title="Phrases and Truncation"}
+In some cases the simultaneous use of phrases and truncation is not supported by
+the search interface.
+
+Searching for `"hearing aid*"` in the Cochrane Library will prompt an error
+message suggesting the use of the `NEXT` operator to work around the problem. 
+In other words, the search query should be `hearing NEXT aid*` instead.
+:::
+
+::: {.callout-tip title="Required quotation marks"}
+Phrases are absolutely necessary when the search string contains a special 
+character or anything the search interface would interpret as an operator or 
+syntax. Examples for Ovid:
+
+- `"go/no-go".ti,ab.` -- Without the quotation marks the forward slash `/` would
+be understood as command to search the expression `go` as an index term.
+- `"Sensitivity and Specificity"/` -- `and` is also an operator and must be 
+escaped using the quotation marks.
+- `"5".ip` -- This search retrieves all records with the number 5 in the 
+Issue/Part field. Without the quotation marks, the query would search for the
+*contents of line 5* in the field `.ip`. (That procedure is called 
+*postqualification* of search sets). 
+:::
+
+::: {.callout-warning title="Straight quotes vs. curly quotes"}
+There are several types of [quotation marks](https://en.wikipedia.org/wiki/Quotation_mark). 
+Search interfaces often only understand so-called _straight quotes_ `" "` (the 
+ones that have been used in typewriters). Modern word processors often change 
+straight quotes automatically into the [typographically correct](https://practicaltypography.com/straight-and-curly-quotes.html) 
+_curly quotes_ `“ ”` (the way they are printed in books), which can cause a 
+syntax error, if they are copied into a search query. This is a [known issue in Ovid](https://wkhealth.force.com/ovidsupport/s/article/How-can-I-copy-and-paste-my-search-strategy-from-Word-to-Ovid). 
+
+Options to counter this problem:
+
+1. Deactivation of the responsible autocorrection feature of the word processor.
+2. Using a simpler [plain text editor](https://en.wikipedia.org/wiki/Text_editor).
 :::
 

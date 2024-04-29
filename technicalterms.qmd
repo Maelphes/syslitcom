@@ -68,15 +68,16 @@ are often published within the appendix of a publication.
 ## author keyword {#sec-authorkeywords}
 Publishers often require the authors of a publication to provide keywords 
 describing the content of the publication. These keywords don't necessarily 
-correspond to controlled vocabulary (index terms), which are assigned to the 
-records by the database and should not be confused with them. (@Neveol2010)
-The data field for author keywords is often used as part of the free text 
-search.
+correspond to controlled vocabulary (i.e. index terms, which are assigned to the 
+records by the database) and should not be confused with them. (@Neveol2010)
+
+Author keywords are often used as part of the free text search.
 
 ::: {.callout-tip title="Examples"}
 Within PubMed the field codes `[OT]` or `[Other Term]` can be used for searching
 the author keywords. This field is automatically searched when `[TIAB] `(or 
-`[Title/Abstract]`) or `[TW]` (or `[Text Word]`) are used. 
+`[Title/Abstract]`) or `[TW]` (or `[Text Word]`) are used.
+
 In Ovid MEDLINE the corresponding field codes `.kw` or `.kf` can be used for 
 searching the author keywords.
 :::

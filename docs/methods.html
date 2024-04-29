@@ -216,6 +216,8 @@ div.csl-indent {
   <li><a href="#focus" id="toc-focus" class="nav-link" data-scroll-target="#focus"><span class="header-section-number">4.5</span> Focus</a></li>
   <li><a href="#frequency-operators" id="toc-frequency-operators" class="nav-link" data-scroll-target="#frequency-operators"><span class="header-section-number">4.6</span> frequency operators</a></li>
   <li><a href="#sec-limits" id="toc-sec-limits" class="nav-link" data-scroll-target="#sec-limits"><span class="header-section-number">4.7</span> limits</a></li>
+  <li><a href="#nesting" id="toc-nesting" class="nav-link" data-scroll-target="#nesting"><span class="header-section-number">4.8</span> Nesting</a></li>
+  <li><a href="#phrases" id="toc-phrases" class="nav-link" data-scroll-target="#phrases"><span class="header-section-number">4.9</span> Phrases</a></li>
   </ul>
 </nav>
     </div>
@@ -286,7 +288,7 @@ Caution
 </div>
 <section id="properties" class="level3 unnumbered">
 <h3 class="unnumbered anchored" data-anchor-id="properties">Properties</h3>
-<p>The Boolean operators <code>AND</code> and <code>OR</code> possess similar properties as the multiplication and addition. See <a href="#tbl-2" class="quarto-xref">Table&nbsp;<span>4.1</span></a>. (<span class="citation" data-cites="ORegan2012">O’Regan (<a href="references.html#ref-ORegan2012" role="doc-biblioref">2012</a>)</span>)</p>
+<p>The Boolean operators <code>AND</code> and <code>OR</code> possess similar properties as the multiplication and addition. See <a href="#tbl-booleanproperties" class="quarto-xref">Table&nbsp;<span>4.1</span></a>. (<span class="citation" data-cites="ORegan2012">O’Regan (<a href="references.html#ref-ORegan2012" role="doc-biblioref">2012</a>)</span>)</p>
 <div class="sourceCode" id="annotated-cell-1"><pre class="sourceCode python code-annotation-code code-with-copy code-annotated"><code class="sourceCode python"><a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-1-1" class="code-annotation-target"><a href="#annotated-cell-1-1" aria-hidden="true" tabindex="-1"></a> (a OR b) <span class="op">=</span> (b OR a)</span>
 <span id="annotated-cell-1-2"><a href="#annotated-cell-1-2" aria-hidden="true" tabindex="-1"></a> (a AND b) <span class="op">=</span> (b AND a)</span>
 <span id="annotated-cell-1-3"><a href="#annotated-cell-1-3" aria-hidden="true" tabindex="-1"></a> <span class="op">----</span></span>
@@ -295,12 +297,12 @@ Caution
 <span id="annotated-cell-1-6"><a href="#annotated-cell-1-6" aria-hidden="true" tabindex="-1"></a> <span class="op">----</span></span>
 <a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="3" onclick="event.preventDefault();">3</a><span id="annotated-cell-1-7" class="code-annotation-target"><a href="#annotated-cell-1-7" aria-hidden="true" tabindex="-1"></a> a AND (b OR c) <span class="op">=</span> (a AND b) OR (a AND c)</span>
 <span id="annotated-cell-1-8"><a href="#annotated-cell-1-8" aria-hidden="true" tabindex="-1"></a> a OR (b AND c) <span class="op">=</span> (a OR b) AND (a OR c)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="tbl-2" class="quarto-float anchored">
+<div id="tbl-booleanproperties" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-booleanproperties-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;4.1
 </figcaption>
-<div aria-describedby="tbl-2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div aria-describedby="tbl-booleanproperties-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
 <dd>
@@ -495,6 +497,112 @@ Warning
 <li><p>Database limits are not to be mistaken for validated filter strategies. Limits are usually based on certain data fields, whereas validated search filters are more complex search strategies. See also <a href="#sec-filters" class="quarto-xref"><span>Section 4.3</span></a>.</p></li>
 <li><p>Database limits based on index terms may lead to the unintended exclusion of non-indexed records.</p></li>
 <li><p>The usage of database limits is not always evident from the search history. If it is not possible to display applied limits in the search history, its use should be reported in the documentation.</p></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="nesting" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="nesting"><span class="header-section-number">4.8</span> Nesting</h2>
+<p><strong>Nesting</strong> refers to the use of parentheses <code>( )</code> to group search terms within a query. The purpose of nesting a search query is to define the order in which the search terms and operators processed. The properties of the operators in combination with parentheses are displayed in <a href="#tbl-booleanproperties" class="quarto-xref">Table&nbsp;<span>4.1</span></a>.</p>
+<p>Without nesting the order in which the elements of a search query are processed depends on the rules of the respective search interface. This means that the same query might produce very different results in the individual databases.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Examples">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Examples
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Within PubMed all searches are processed <a href="https://pubmed.ncbi.nlm.nih.gov/help/#combining-with-boolean-operators">in a left-to-right sequence</a>.</li>
+</ol>
+<p>Thus the following PubMed queries yield completely different results:</p>
+<ul>
+<li><code>exercise[MH] AND infection[MH] OR heart[MH]</code></li>
+<li><code>exercise[MH] AND heart[MH] OR infection[MH]</code></li>
+<li><code>heart[MH] OR infection[MH] AND exercise[MH]</code></li>
+</ul>
+<p>On the other hand the following nested queries are identical:</p>
+<ul>
+<li><code>exercise[MH] AND (infection[MH] OR heart[MH])</code></li>
+<li><code>exercise[MH] AND (heart[MH] OR infection[MH])</code></li>
+<li><code>(heart[MH] OR infection[MH]) AND exercise[MH]</code></li>
+</ul>
+<ol start="2" type="1">
+<li>Web of Science executes the search in an <a href="https://webofscience.help.clarivate.com/en-us/Content/search-operators.html#Search">order of precedence</a> of the operators.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="phrases" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="phrases"><span class="header-section-number">4.9</span> Phrases</h2>
+<p>Most databases can be searched for verbatim expressions, called <em>phrases</em> or <em>literal strings</em>, by putting search terms in quotation marks <code>" "</code>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Effects">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Effects
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The use of phrases usually terminates any automatically applied techniques, such as <em>lemmatization</em>, <em>stemming</em> or <em>automated term mapping</em> (ATM) for those expressions. In this way, the use of phrases usually reduces the amount of search results as it makes the search more precise and less sensitive.</p>
+<p>Example:</p>
+<p>Due to automated term mapping the PubMed query <code>heart arrest</code> will be translated to<br>
+<code>"heart arrest"[MeSH Terms] OR "heart"[All Fields] AND "arrest"[All Fields] OR "heart arrest"[All Fields]</code></p>
+<p>However, the query <code>"heart arrest"</code> translates to <code>"heart arrest"[All Fields]</code>, because <a href="https://pubmed.ncbi.nlm.nih.gov/help/#searching-for-a-phrase">phrases are not automatically mapped in PubMed</a>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Phrases and Truncation">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Phrases and Truncation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In some cases the simultaneous use of phrases and truncation is not supported by the search interface.</p>
+<p>Searching for <code>"hearing aid*"</code> in the Cochrane Library will prompt an error message suggesting the use of the <code>NEXT</code> operator to work around the problem. In other words, the search query should be <code>hearing NEXT aid*</code> instead.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Required quotation marks">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Required quotation marks
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Phrases are absolutely necessary when the search string contains a special character or anything the search interface would interpret as an operator or syntax. Examples for Ovid:</p>
+<ul>
+<li><code>"go/no-go".ti,ab.</code> – Without the quotation marks the forward slash <code>/</code> would be understood as command to search the expression <code>go</code> as an index term.</li>
+<li><code>"Sensitivity and Specificity"/</code> – <code>and</code> is also an operator and must be escaped using the quotation marks.</li>
+<li><code>"5".ip</code> – This search retrieves all records with the number 5 in the Issue/Part field. Without the quotation marks, the query would search for the <em>contents of line 5</em> in the field <code>.ip</code>. (That procedure is called <em>postqualification</em> of search sets).</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Straight quotes vs. curly quotes">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Straight quotes vs.&nbsp;curly quotes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There are several types of <a href="https://en.wikipedia.org/wiki/Quotation_mark">quotation marks</a>. Search interfaces often only understand so-called <em>straight quotes</em> <code>" "</code> (the ones that have been used in typewriters). Modern word processors often change straight quotes automatically into the <a href="https://practicaltypography.com/straight-and-curly-quotes.html">typographically correct</a> <em>curly quotes</em> <code>“ ”</code> (the way they are printed in books), which can cause a syntax error, if they are copied into a search query. This is a <a href="https://wkhealth.force.com/ovidsupport/s/article/How-can-I-copy-and-paste-my-search-strategy-from-Word-to-Ovid">known issue in Ovid</a>.</p>
+<p>Options to counter this problem:</p>
+<ol type="1">
+<li>Deactivation of the responsible autocorrection feature of the word processor.</li>
+<li>Using a simpler <a href="https://en.wikipedia.org/wiki/Text_editor">plain text editor</a>.</li>
 </ol>
 </div>
 </div>
