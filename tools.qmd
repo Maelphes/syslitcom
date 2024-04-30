@@ -14,7 +14,7 @@ filters:
 
 # Tools {#sec-tools}
 
-## FINER
+## FINER {#sec-finer}
 FINER is an acronym for the five criteria **feasible**, **interesting**, **novel**, **ethical** and **relevant** which can be used as guidance when formulating a good clinical research question. See @tbl-finer. (@Cummings2013)
 
 
@@ -36,9 +36,45 @@ relevant & The expected impact of the research on scientific knowledge and clini
 ```
 :::
 
-## Reference Management software
+## PICO {#sec-pico}
+PICO is a mnemonic for the concepts *Population*, *Intervention*, *Comparison* 
+and *Outcome*. Concepts like these are used for defining research questions as 
+well as eligibility criteria for the studies relevant for answering the 
+question.
+
+There are other concepts and mnemonics for different kinds of research 
+questions, such as SPIDER, ECLIPSE, PIRD or PICOS. (@Munn2018a, @Methley2014, 
+@Eriksen2018)
+
+## PRESS {#sec-press}
+**Peer Review of Electronic Search Strategies (PRESS)** by @McGowan2016 is an 
+evidence-based guideline for the peer review of search strategies. It is mainly 
+focused on systematic review projects, health technology assesments (HTAs) and 
+other kinds of reviews. A main tool for PRESS is a checklist which guides the 
+reader through the process of peer review.
+
+## PRISMA {#sec-prisma}
+
+**Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)**
+by @Page2021a is a set of minimum requirements for the reporting and 
+documentation of systematic reviews. The goal of PRISMA is to set standards for
+reporting and in doing so increase the overall quality of systematic reviews. 
+A detailed explanatory paper was published by @Page2021b.
+
+PRISMA also provides tools such as a checklist and a flowchart, which can be 
+used for creating the recommended tables and figures for publication. 
+(@rethlefsen_page_2021)
+
+There are additional extensions of PRISMA for various purposes, such as 
+PRISMA-S for the documentation of systematic literature searches 
+(@Rethlefsen2021) or PRISMA-ScR for scoping reviews (@Tricco2018).
+
+See also <https://prisma-statement.org>.
+
+
+## Reference Management software {#sec-refmanagement}
 Bibliographic records and similar sets of data such as clinical study metadata 
-can be stored and managed using reference management programs (also called 
+can be stored and managed using **reference management programs** (also called 
 citation management software). 
 
 These programs are usually able to perform tasks with the records, such as

@@ -180,7 +180,7 @@ would find both of them.
 focus of the article.
 :::
 
-## frequency operators 
+## frequency operators {#sec-frequencyops}
 Records in which a relevant expression occurs multiple times might be more 
 relevant than records with fewer instances of the same expression. Therefore 
 some search interfaces allow the use of a so-called frequency operator, which 
@@ -213,7 +213,7 @@ should be reported in the documentation.
 :::
 
 
-## Nesting
+## nesting {#sec-nesting}
 
 **Nesting** refers to the use of parentheses `( )` to group search terms within 
 a query. The purpose of nesting a search query is to define the order in which 
@@ -242,7 +242,7 @@ On the other hand the following nested queries are identical:
 2. Web of Science executes the search in an [order of precedence](https://webofscience.help.clarivate.com/en-us/Content/search-operators.html#Search) of the operators.
 :::
 
-## Phrases
+## phrases {#sec-phrases}
 
 Most databases can be searched for verbatim expressions, called _phrases_ or 
 _literal strings_, by putting search terms in quotation marks `" "`. 

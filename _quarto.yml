@@ -6,6 +6,7 @@ book:
   title: "SysLit Compendium"
   author: "Marc von Gernler"
   date: 04/24/2024
+  cover-image: ./fig/logo.svg
   chapters:
     - index.qmd
     - databases.qmd

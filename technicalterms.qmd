@@ -82,7 +82,7 @@ In Ovid MEDLINE the corresponding field codes `.kw` or `.kf` can be used for
 searching the author keywords.
 :::
 
-## bias
+## bias {#sec-bias}
 Bias is a systematic deviation between results and facts that may lead to under-
 or over-estimation of intervention effects. As a result bias might lead to 
 conclusions which do not accurately represent the truth. There are various types
@@ -111,3 +111,22 @@ Not only will this practive keep the number of records at a more manageable
 level, it also makes the translation of foreign publications unnecessary. 
 However, this so-called language of publication bias can have a significant 
 impact on the quality of the review. (@Gough2017, @Morrison2012, @Moher2003)
+
+
+## PMID and PMCID {#sec-pmid-pmcid}
+The PubMed ID (PMID) and the PubMed Central ID (PMCID) are unique identifiers
+assigned to the records within the databases [PubMed](https://pubmed.ncbi.nlm.nih.gov/) 
+and [PubMed Central](https://www.ncbi.nlm.nih.gov/pmc/). They are similar to the
+digital object identifier (DOI).
+
+PMIDs are unique integer values, e.g. [32256971](https://pubmed.ncbi.nlm.nih.gov/32256971/), 
+PMCIDs are composed of the prefix **PMC** followed by a series of numbers, e.g. [PMC7106990](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7106990/).
+
+PubMed records can easily be found simply by entering their [PMIDs as search terms](https://pubmed.ncbi.nlm.nih.gov/?term=31541534+28475312+21995656+33223580+29327483+35602613+29905334+37465961+35472729+37983749) into the PubMed search.
+
+::: {.callout-tip title="Conversion tool"}
+The [National Library of Medicine](https://www.nlm.nih.gov) provides a 
+[tool](https://www.ncbi.nlm.nih.gov/pmc/tools/idconv/) for the conversion of the
+PMID, PMCID and DOI into one another. This tool only works for records which are
+both part of PubMed and PubMed Central.
+:::

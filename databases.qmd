@@ -1,6 +1,6 @@
 # Databases {#sec-databases}
 
-## Cochrane Library
+## Cochrane Library {#sec-cochranelibrary}
 
 The [Cochrane Library](https://www.cochranelibrary.com) is the collection of 
 Cochrane's databases, most importantly theCochrane Database of Systematic 
@@ -9,7 +9,7 @@ which contain different types evidence to inform healthcare decision-making.
 Switzerland has complete access to the Cochrane Library due to a national 
 license. 
 
-### Cochrane Database of Systematic Reviews (CDSR)
+### Cochrane Database of Systematic Reviews (CDSR) {#sec-cdsr}
 
 The [Cochrane Database of Systematic Reviews (CDSR)](https://www.cochranelibrary.com/cdsr/about-cdsr)
 is a leading journal (ISSN: [1469-493X](https://portal.issn.org/resource/ISSN/1469-493X)) 
