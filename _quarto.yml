@@ -6,7 +6,8 @@ book:
   title: "SysLit Compendium"
   subtitle: "a candle in the dark"
   author: "Marc von Gernler"
-  date: 04/24/2024
+  description: A compendium for systematic literature searching
+  keyword: systematic searching, information retrieval, bibliographic databases, evidence-based medicine
   cover-image: ./fig/logo.svg
   chapters:
     - index.qmd
@@ -16,11 +17,14 @@ book:
     - methods.qmd
     - references.qmd
   navbar:
-    search: true
     logo: ./fig/logo_small.svg
+    background: "#305090"
   search:
     location: sidebar
     type: textbox
+  repo-url: https://www.github.com/Maelphes/syslitcom
+  repo-branch: gh-pages
+  repo-actions: [edit, issue, source]
 
 bibliography: glossar.bib
 
@@ -28,6 +32,7 @@ format:
   html:
     theme: united
     link-external-newwindow: true
+    linkcolor: "#5080AA"
   pdf:
     documentclass: scrreprt
 
