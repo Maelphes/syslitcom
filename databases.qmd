@@ -1,9 +1,41 @@
 # Databases {#sec-databases}
 
+## Clinical Trials Registries {#sec-ctr}
+
+Before clinical trials are performed, they are registered in in dedicated 
+databases, so-called **clinical trials registries (CTR)**. The purpose
+of this practice is to combat publication bias (see @sec-bias) and to increase
+transparency and provide access to the clinical trials. 
+
+These records clinical trials registries usually comprise information such as 
+study title, short description, study type, eligibility criteria for 
+participants, interventions, randomization, study status and contact 
+information. (See also @Glanville2014, @Knelangen2018).
+
+Table @tbl-ctr lists a range of trial registries. A [comprehensive list of resources](https://sites.google.com/a/york.ac.uk/yhectrialsregisters) is maintained by Julie Glanville and Carol Lefebvre.
+
+::: {#tbl-ctr}
+|Country| Website               										|
+|-------|-------------------------------------------|
+| AU/NZ | [Australian and New Zealand Clinical Trials Registry (ANZCTR)](https://www.anzctr.org.au)    |
+| CH    | [Swiss National Clinical Trials Portal (SNCTP)](https://kofam.ch/en/snctp-portal/searching-for-a-clinical-trial) |
+| CN    | [Chinese Clinical Trial Registry (ChiCTR)](https://www.chictr.org.cn/indexEN.html)  |
+| DE    | [German Clinical Trials Register (DRKS)](https://www.drks.de)		            |
+| EU    | [EU Clinical Trials Register (EUCTR)](https://www.clinicaltrialsregister.eu/ctr-search/search) (only records prior to 31-01-2022) |
+| EU    | [Clinical Trials Information System (CTIS)](https://euclinicaltrials.eu/search-for-clinical-trials/) |
+| IN    | [Clinical Trials Registry India (CTRI)](https://ctri.nic.in/Clinicaltrials/)      |
+| NL    | [Overview of Medical Research in the Netherlands (OMON)](https://onderzoekmetmensen.nl/en)     |
+| UK    | [ISRCTN](https://www.isrctn.com/)                  |
+| US    | [ClinialTrials.gov](https://clinicaltrials.gov)              |
+| WHO   | [International Clinical Trials Registry Platform (ICTRP)](https://trialsearch.who.int)             |
+
+: Clinical Trials Registries {.striped .hover}
+:::
+
 ## Cochrane Library {#sec-cochranelibrary}
 
-The [Cochrane Library](https://www.cochranelibrary.com) is the collection of 
-Cochrane's databases, most importantly theCochrane Database of Systematic 
+The [**Cochrane Library**](https://www.cochranelibrary.com) is the collection of 
+Cochrane's databases, most importantly the Cochrane Database of Systematic 
 Reviews (CDSR) and the Cochrane Central Register of Controlled Trials (CENTRAL),
 which contain different types evidence to inform healthcare decision-making. 
 Switzerland has complete access to the Cochrane Library due to a national 
@@ -11,7 +43,35 @@ license.
 
 ### Cochrane Database of Systematic Reviews (CDSR) {#sec-cdsr}
 
-The [Cochrane Database of Systematic Reviews (CDSR)](https://www.cochranelibrary.com/cdsr/about-cdsr)
+The [**Cochrane Database of Systematic Reviews (CDSR)**](https://www.cochranelibrary.com/cdsr/about-cdsr)
 is a leading journal (ISSN: [1469-493X](https://portal.issn.org/resource/ISSN/1469-493X)) 
 and database for systematic reviews in health care. Cochrane Reviews are 
 published in CDSR, which is accessible via the Cochrane Library.
+
+## PubMed {#sec-pubmed}
+
+[**PubMed**](https://pubmed.ncbi.nlm.nih.gov/) is a public and freely available 
+database, maintained by the [National Center of Biotechnology Information (NCBI)](https://www.ncbi.nlm.nih.gov/) 
+at the [U.S. National Library of Medicine (NLM)](https://www.nlm.nih.gov/). 
+In 2024, it contains over [37 million records](https://pubmed.ncbi.nlm.nih.gov/?term=all%5Bsb%5D&sort=date) of biomedical and life science literature. 
+
+*PubMed* and *MEDLINE* are often used synonymously. However, there is a 
+difference, explained in detail at <https://nlm.nih.gov/bsd/difference.html>.
+
+PubMed facilitates searching within 
+the databases [MEDLINE](https://www.nlm.nih.gov/medline/), 
+[PubMed Central](https://www.ncbi.nlm.nih.gov/pmc/) (PMC) and
+[Bookshelf](https://www.ncbi.nlm.nih.gov/books/). 
+
+All records in PubMed possess a unique identifier, the PubMed ID (PMID),
+see also @sec-pmid-pmcid.
+
+Roughly 84 percent of the records in PubMed are [indexed](https://pubmed.ncbi.nlm.nih.gov/?term=medline%5Bsb%5D) using [Medical Subject Headings (MeSH)](https://www.ncbi.nlm.nih.gov/mesh/).
+
+## PubMed Central {#sec-pmc}
+[**PubMed Central (PMC)**](https://www.ncbi.nlm.nih.gov/pmc/) is a free full-text database of the [NLM](https://www.nlm.nih.gov/). It features Open Access articles from biomedicine and life sciences. 
+
+PMC can be searched directly or as part of the PubMed database.
+
+PMC records possess the PubMed Central ID (PMCID) as a digital identifier, see
+@sec-pmid-pmcid.

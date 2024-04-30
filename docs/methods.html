@@ -107,7 +107,6 @@ div.csl-indent {
     "/",
     "s"
   ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -126,10 +125,24 @@ div.csl-indent {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="././fig/logo_small.svg" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">SysLit Compendium</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools tools-end">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -145,14 +158,9 @@ div.csl-indent {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">SysLit Compendium</a> 
-    </div>
-      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -213,11 +221,12 @@ div.csl-indent {
   <li><a href="#sec-citationanalysis" id="toc-sec-citationanalysis" class="nav-link" data-scroll-target="#sec-citationanalysis"><span class="header-section-number">4.2</span> citation analysis</a></li>
   <li><a href="#sec-filters" id="toc-sec-filters" class="nav-link" data-scroll-target="#sec-filters"><span class="header-section-number">4.3</span> filters</a></li>
   <li><a href="#sec-fieldcode" id="toc-sec-fieldcode" class="nav-link" data-scroll-target="#sec-fieldcode"><span class="header-section-number">4.4</span> field code</a></li>
-  <li><a href="#focus" id="toc-focus" class="nav-link" data-scroll-target="#focus"><span class="header-section-number">4.5</span> Focus</a></li>
+  <li><a href="#focus" id="toc-focus" class="nav-link" data-scroll-target="#focus"><span class="header-section-number">4.5</span> focus</a></li>
   <li><a href="#sec-frequencyops" id="toc-sec-frequencyops" class="nav-link" data-scroll-target="#sec-frequencyops"><span class="header-section-number">4.6</span> frequency operators</a></li>
   <li><a href="#sec-limits" id="toc-sec-limits" class="nav-link" data-scroll-target="#sec-limits"><span class="header-section-number">4.7</span> limits</a></li>
   <li><a href="#sec-nesting" id="toc-sec-nesting" class="nav-link" data-scroll-target="#sec-nesting"><span class="header-section-number">4.8</span> nesting</a></li>
   <li><a href="#sec-phrases" id="toc-sec-phrases" class="nav-link" data-scroll-target="#sec-phrases"><span class="header-section-number">4.9</span> phrases</a></li>
+  <li><a href="#sec-searchstrategy" id="toc-sec-searchstrategy" class="nav-link" data-scroll-target="#sec-searchstrategy"><span class="header-section-number">4.10</span> search strategy</a></li>
   </ul>
 </nav>
     </div>
@@ -364,7 +373,7 @@ Figure&nbsp;4.4: co-citation tracking using the cited references which the core 
 <p>Filters (also search filters, filter strategies or hedges) are search strategies designed to retrieve records for a specific concept of the research question.</p>
 <p>There are filters for specific patient groups or diseases, outcomes, study types (for instance to retrieve only randomized controlled trials (RCTs), or filters for other aspects of the research question, e.g.&nbsp;adverse effects, diagnostic accuracy or patient values. (<span class="citation" data-cites="Waffenschmidt2020">Waffenschmidt et al. (<a href="references.html#ref-Waffenschmidt2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="SalvadorOlivan2021">Salvador-Oliván, Marco-Cuenca, and Arquero-Avilés (<a href="references.html#ref-SalvadorOlivan2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Lee2012">Lee et al. (<a href="references.html#ref-Lee2012" role="doc-biblioref">2012</a>)</span>, <span class="citation" data-cites="Golder2006a">Golder et al. (<a href="references.html#ref-Golder2006a" role="doc-biblioref">2006</a>)</span>)</p>
 <p>Validated filters are developed, tested and optimized for sensitivity and precision by experts. (<span class="citation" data-cites="Haynes2004">Haynes and Wilczynski (<a href="references.html#ref-Haynes2004" role="doc-biblioref">2004</a>)</span>, <span class="citation" data-cites="Glanville2008">Glanville et al. (<a href="references.html#ref-Glanville2008" role="doc-biblioref">2008</a>)</span>)</p>
-<p>Filter strategies can be implemented in a search strategy just like any concept of the research question. <a href="#tbl-filterstrategy" class="quarto-xref">Table&nbsp;<span>4.2</span></a> illustrates a search strategy with a short qualitative research filter in lines 8 to 11, which is added to the overall search in line 12.</p>
+<p>Filter strategies can be implemented in a search strategy just like any concept of the research question. <a href="#tbl-filterstrategy" class="quarto-xref">Table&nbsp;<span>4.2</span></a> illustrates a search strategy with a short qualitative research filter in lines 8 to 11, which is added to the overall search in line 12. (see also <a href="#sec-searchstrategy" class="quarto-xref"><span>Section 4.10</span></a>).</p>
 <div id="tbl-filterstrategy" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-filterstrategy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -413,7 +422,7 @@ Sources of filter strategies
 </section>
 <section id="sec-fieldcode" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="sec-fieldcode"><span class="header-section-number">4.4</span> field code</h2>
-<p>The data fields of databases possess short designations called field codes, field tags or field labels, which allow to search the fields separately as part of a search query or search strategy. Depending on the syntax of the database or search interface different field codes are available for searching. If no field code is used in a search query, the search term is usually searched in all fields or a preset variety of fields.</p>
+<p>The data fields of databases possess short designations called <strong>field codes</strong>, field tags or field labels, which allow to search the fields separately as part of a search query or search strategy (see <a href="#sec-searchstrategy" class="quarto-xref"><span>Section 4.10</span></a>). Depending on the syntax of the database or search interface different field codes are available for searching. If no field code is used in a search query, the search term is usually searched in all fields or a preset variety of fields.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Example">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -430,8 +439,8 @@ Example
 <p>See also <a href="https://pubmed.gov/help/#search-tags" class="uri">https://pubmed.gov/help/#search-tags</a> and <a href="https://ospguides.ovid.com/OSPguides/medline.htm#search" class="uri">https://ospguides.ovid.com/OSPguides/medline.htm#search</a>.</p>
 </section>
 <section id="focus" class="level2" data-number="4.5">
-<h2 data-number="4.5" class="anchored" data-anchor-id="focus"><span class="header-section-number">4.5</span> Focus</h2>
-<p>Focus topics (also called <em>major topics</em>) are weighted index terms. If a particular topic is at the heart of a publication, index terms for that topic will be assigned as a so-called focus topic. This is often displayed in the databases by writing an <a href="https://en.wikipedia.org/wiki/Asterisk">asterisk</a> before or after the index term.</p>
+<h2 data-number="4.5" class="anchored" data-anchor-id="focus"><span class="header-section-number">4.5</span> focus</h2>
+<p><strong>Focus topics</strong> (also called <strong>major topics</strong>) are weighted index terms. If a particular topic is at the heart of a publication, index terms for that topic will be assigned as a so-called focus topic. This is often displayed in the databases by writing an <a href="https://en.wikipedia.org/wiki/Asterisk">asterisk</a> before or after the index term.</p>
 <div class="callout callout-style-default callout-warning callout-titled" title="Risk of confusion">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -606,6 +615,37 @@ Straight quotes vs.&nbsp;curly quotes
 </ol>
 </div>
 </div>
+</section>
+<section id="sec-searchstrategy" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="sec-searchstrategy"><span class="header-section-number">4.10</span> search strategy</h2>
+<p>A <strong>search strategy</strong> is a coherent set of search queries designed to retrieve references for a particular topic. A search strategy is dependent on the syntax and index terms of the searched database. As a consequence, the search strategy needs to be translated for the use in other databases.</p>
+<p>Search strategies are supposed to be consistent with the predefined eligibility criteria of the research project (<span class="citation" data-cites="Gough2017">Gough, Oliver, and Thomas (<a href="references.html#ref-Gough2017" role="doc-biblioref">2017</a>)</span>).</p>
+<p>Depending on the purpose and detail of the search, the extent of a search strategy might range from a simple search string to numerous lines of search terms connected by boolean operators (see <a href="#sec-boolean" class="quarto-xref"><span>Section 4.1</span></a>).</p>
+<p><a href="#tbl-searchstrategy-pubmed" class="quarto-xref">Table&nbsp;<span>4.3</span></a> and <a href="#tbl-searchstrategy-ovid" class="quarto-xref">Table&nbsp;<span>4.4</span></a> show examples for both types of search strategies.</p>
+<div id="tbl-searchstrategy-pubmed" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-searchstrategy-pubmed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.3: Single-line <a href="https://pubmed.ncbi.nlm.nih.gov/?term=%28%22analgesics%22%5BMH%5D+OR+%22analgesic%2A%22%5BTIAB%5D+OR+%22analgesic%2A%22%5BPA%5D+OR+%22anodynes%22%5BTIAB%5D+OR+%22antinociceptive%2A%22%5BTIAB%5D%29+AND+%22pain+management%22%5BMAJR%5D">PubMed Search strategy</a>
+</figcaption>
+<div aria-describedby="tbl-searchstrategy-pubmed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="sourceCode anchored" id="tbl-searchstrategy-pubmed"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="tbl-searchstrategy-pubmed-1"><a href="#tbl-searchstrategy-pubmed-1" aria-hidden="true" tabindex="-1"></a>"analgesics"[MH] OR "analgesic*"[TIAB] OR "analgesic*"[PA] OR "anodynes"[TIAB] </span>
+<span id="tbl-searchstrategy-pubmed-2"><a href="#tbl-searchstrategy-pubmed-2" aria-hidden="true" tabindex="-1"></a>OR "antinociceptive*"[TIAB]) AND "pain management"[MAJR]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</figure>
+</div>
+<div id="tbl-searchstrategy-ovid" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-searchstrategy-ovid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.4: Multi-line search strategy for Ovid MEDLINE
+</figcaption>
+<div aria-describedby="tbl-searchstrategy-ovid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="sourceCode anchored" id="tbl-searchstrategy-ovid"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="tbl-searchstrategy-ovid-1"><a href="#tbl-searchstrategy-ovid-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> exp analgesics<span class="op">/</span></span>
+<span id="tbl-searchstrategy-ovid-2"><a href="#tbl-searchstrategy-ovid-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> (analge<span class="co">#ic? or anodyne? or antinoceptive?).ti,ab,kw.</span></span>
+<span id="tbl-searchstrategy-ovid-3"><a href="#tbl-searchstrategy-ovid-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="op">*</span>pain management<span class="op">/</span></span>
+<span id="tbl-searchstrategy-ovid-4"><a href="#tbl-searchstrategy-ovid-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span> (<span class="dv">1</span> <span class="kw">or</span> <span class="dv">2</span>) <span class="kw">and</span> <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</figure>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
@@ -620,6 +660,9 @@ Glanville, Julie, Sue Bayliss, Andrew Booth, Yenal Dundar, Hasina Fernandes, Nig
 </div>
 <div id="ref-Golder2006a" class="csl-entry" role="listitem">
 Golder, Su, Heather M. McIntosh, Steve Duffy, and Julie Glanville. 2006. <span>“<span class="nocase">Developing efficient search strategies to identify reports of adverse effects in MEDLINE and EMBASE.</span>”</span> <em>Health Info Libr J</em> 23 (March): 3–12. <a href="https://doi.org/10.1111/j.1471-1842.2006.00634.x">https://doi.org/10.1111/j.1471-1842.2006.00634.x</a>.
+</div>
+<div id="ref-Gough2017" class="csl-entry" role="listitem">
+Gough, David, Sandy Oliver, and James Thomas. 2017. <em><span class="nocase">An Introduction to Systematic Reviews</span></em>. Second. London: SAGE Publications.
 </div>
 <div id="ref-Haynes2004" class="csl-entry" role="listitem">
 Haynes, R. Brian, and Nancy L. Wilczynski. 2004. <span>“<span class="nocase">Optimal search strategies for retrieving scientifically strong studies of diagnosis from Medline: analytical survey</span>.”</span> <em>BMJ</em> 328 (7447): 1040. <a href="https://doi.org/10.1136/bmj.38068.557998.EE">https://doi.org/10.1136/bmj.38068.557998.EE</a>.

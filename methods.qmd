@@ -102,7 +102,7 @@ precision by experts. (@Haynes2004, @Glanville2008)
 Filter strategies can be implemented in a search strategy just like any concept 
 of the research question. @tbl-filterstrategy illustrates a search strategy with
 a short qualitative research filter in lines 8 to 11, which is added to the 
-overall search in line 12.
+overall search in line 12. (see also @sec-searchstrategy).
 
 ::: {#tbl-filterstrategy}
 ```python
@@ -132,12 +132,12 @@ overall search in line 12.
 :::
 
 ## field code {#sec-fieldcode}
-The data fields of databases possess short designations called field codes, 
+The data fields of databases possess short designations called **field codes**, 
 field tags or field labels, which allow to search the fields separately as part 
-of a search query or search strategy. Depending on the syntax of the database or
-search interface different field codes are available for searching. If no field
-code is used in a search query, the search term is usually searched in all 
-fields or a preset variety of fields. 
+of a search query or search strategy (see @sec-searchstrategy). Depending on the
+syntax of the database or search interface different field codes are available 
+for searching. If no field code is used in a search query, the search term is 
+usually searched in all fields or a preset variety of fields. 
 
 ::: {.callout-tip title="Example"}
 In PubMed the query `hypnosis[TIAB]` will basically search for records with 
@@ -147,8 +147,8 @@ as `hypnosis.ti,ab.`
 
 See also <https://pubmed.gov/help/#search-tags> and <https://ospguides.ovid.com/OSPguides/medline.htm#search>.
 
-## Focus 
-Focus topics (also called _major topics_) are weighted index terms. If a 
+## focus 
+**Focus topics** (also called **major topics**) are weighted index terms. If a 
 particular topic is at the heart of a publication, index terms for that topic 
 will be assigned as a so-called focus topic. This is often displayed in the
 databases by writing an [asterisk](https://en.wikipedia.org/wiki/Asterisk) 
@@ -299,5 +299,39 @@ Options to counter this problem:
 
 1. Deactivation of the responsible autocorrection feature of the word processor.
 2. Using a simpler [plain text editor](https://en.wikipedia.org/wiki/Text_editor).
+:::
+
+## search strategy {#sec-searchstrategy}
+A **search strategy** is a coherent set of search queries designed to retrieve 
+references for a particular topic. A search strategy is dependent on the syntax
+and index terms of the searched database. As a consequence, the search strategy
+needs to be translated for the use in other databases.
+
+Search strategies are supposed to be consistent with the predefined eligibility 
+criteria of the research project (@Gough2017).
+
+Depending on the purpose and detail of the search, the extent of a search 
+strategy might range from a simple search string to numerous lines of search 
+terms connected by boolean operators (see @sec-boolean).
+
+@tbl-searchstrategy-pubmed and @tbl-searchstrategy-ovid show examples for both 
+types of search strategies.
+
+::: {#tbl-searchstrategy-pubmed}
+```default
+"analgesics"[MH] OR "analgesic*"[TIAB] OR "analgesic*"[PA] OR "anodynes"[TIAB] 
+OR "antinociceptive*"[TIAB]) AND "pain management"[MAJR]
+```
+Single-line [PubMed Search strategy](https://pubmed.ncbi.nlm.nih.gov/?term=%28%22analgesics%22%5BMH%5D+OR+%22analgesic%2A%22%5BTIAB%5D+OR+%22analgesic%2A%22%5BPA%5D+OR+%22anodynes%22%5BTIAB%5D+OR+%22antinociceptive%2A%22%5BTIAB%5D%29+AND+%22pain+management%22%5BMAJR%5D)
+:::
+
+::: {#tbl-searchstrategy-ovid}
+```python
+1 exp analgesics/
+2 (analge#ic? or anodyne? or antinoceptive?).ti,ab,kw.
+3 *pain management/
+4 (1 or 2) and 3
+```
+Multi-line search strategy for Ovid MEDLINE
 :::
 

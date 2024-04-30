@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -53,7 +73,6 @@ ul.task-list li input[type="checkbox"] {
     "/",
     "s"
   ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -72,10 +91,24 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="././fig/logo_small.svg" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">SysLit Compendium</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools tools-end">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -91,14 +124,9 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header">
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">SysLit Compendium</a> 
-    </div>
-      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -152,10 +180,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-cochranelibrary" id="toc-sec-cochranelibrary" class="nav-link active" data-scroll-target="#sec-cochranelibrary"><span class="header-section-number">1.1</span> Cochrane Library</a>
+  <li><a href="#sec-ctr" id="toc-sec-ctr" class="nav-link active" data-scroll-target="#sec-ctr"><span class="header-section-number">1.1</span> Clinical Trials Registries</a></li>
+  <li><a href="#sec-cochranelibrary" id="toc-sec-cochranelibrary" class="nav-link" data-scroll-target="#sec-cochranelibrary"><span class="header-section-number">1.2</span> Cochrane Library</a>
   <ul class="collapse">
-  <li><a href="#sec-cdsr" id="toc-sec-cdsr" class="nav-link" data-scroll-target="#sec-cdsr"><span class="header-section-number">1.1.1</span> Cochrane Database of Systematic Reviews (CDSR)</a></li>
+  <li><a href="#sec-cdsr" id="toc-sec-cdsr" class="nav-link" data-scroll-target="#sec-cdsr"><span class="header-section-number">1.2.1</span> Cochrane Database of Systematic Reviews (CDSR)</a></li>
   </ul></li>
+  <li><a href="#sec-pubmed" id="toc-sec-pubmed" class="nav-link" data-scroll-target="#sec-pubmed"><span class="header-section-number">1.3</span> PubMed</a></li>
+  <li><a href="#sec-pmc" id="toc-sec-pmc" class="nav-link" data-scroll-target="#sec-pmc"><span class="header-section-number">1.4</span> PubMed Central</a></li>
   </ul>
 </nav>
     </div>
@@ -181,15 +212,106 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="sec-cochranelibrary" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="sec-cochranelibrary"><span class="header-section-number">1.1</span> Cochrane Library</h2>
-<p>The <a href="https://www.cochranelibrary.com">Cochrane Library</a> is the collection of Cochrane’s databases, most importantly theCochrane Database of Systematic Reviews (CDSR) and the Cochrane Central Register of Controlled Trials (CENTRAL), which contain different types evidence to inform healthcare decision-making. Switzerland has complete access to the Cochrane Library due to a national license.</p>
-<section id="sec-cdsr" class="level3" data-number="1.1.1">
-<h3 data-number="1.1.1" class="anchored" data-anchor-id="sec-cdsr"><span class="header-section-number">1.1.1</span> Cochrane Database of Systematic Reviews (CDSR)</h3>
-<p>The <a href="https://www.cochranelibrary.com/cdsr/about-cdsr">Cochrane Database of Systematic Reviews (CDSR)</a> is a leading journal (ISSN: <a href="https://portal.issn.org/resource/ISSN/1469-493X">1469-493X</a>) and database for systematic reviews in health care. Cochrane Reviews are published in CDSR, which is accessible via the Cochrane Library.</p>
-
-
+<section id="sec-ctr" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="sec-ctr"><span class="header-section-number">1.1</span> Clinical Trials Registries</h2>
+<p>Before clinical trials are performed, they are registered in in dedicated databases, so-called <strong>clinical trials registries (CTR)</strong>. The purpose of this practice is to combat publication bias (see <a href="technicalterms.html#sec-bias" class="quarto-xref"><span>Section 2.6</span></a>) and to increase transparency and provide access to the clinical trials.</p>
+<p>These records clinical trials registries usually comprise information such as study title, short description, study type, eligibility criteria for participants, interventions, randomization, study status and contact information. (See also <span class="citation" data-cites="Glanville2014">Glanville et al. (<a href="references.html#ref-Glanville2014" role="doc-biblioref">2014</a>)</span>, <span class="citation" data-cites="Knelangen2018">Knelangen et al. (<a href="references.html#ref-Knelangen2018" role="doc-biblioref">2018</a>)</span>).</p>
+<p>Table <a href="#tbl-ctr" class="quarto-xref">Table&nbsp;<span>1.1</span></a> lists a range of trial registries. A <a href="https://sites.google.com/a/york.ac.uk/yhectrialsregisters">comprehensive list of resources</a> is maintained by Julie Glanville and Carol Lefebvre.</p>
+<div id="tbl-ctr" class="striped hover quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-ctr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1.1: Clinical Trials Registries
+</figcaption>
+<div aria-describedby="tbl-ctr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped table-hover table">
+<thead>
+<tr class="header">
+<th>Country</th>
+<th>Website</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AU/NZ</td>
+<td><a href="https://www.anzctr.org.au">Australian and New Zealand Clinical Trials Registry (ANZCTR)</a></td>
+</tr>
+<tr class="even">
+<td>CH</td>
+<td><a href="https://kofam.ch/en/snctp-portal/searching-for-a-clinical-trial">Swiss National Clinical Trials Portal (SNCTP)</a></td>
+</tr>
+<tr class="odd">
+<td>CN</td>
+<td><a href="https://www.chictr.org.cn/indexEN.html">Chinese Clinical Trial Registry (ChiCTR)</a></td>
+</tr>
+<tr class="even">
+<td>DE</td>
+<td><a href="https://www.drks.de">German Clinical Trials Register (DRKS)</a></td>
+</tr>
+<tr class="odd">
+<td>EU</td>
+<td><a href="https://www.clinicaltrialsregister.eu/ctr-search/search">EU Clinical Trials Register (EUCTR)</a> (only records prior to 31-01-2022)</td>
+</tr>
+<tr class="even">
+<td>EU</td>
+<td><a href="https://euclinicaltrials.eu/search-for-clinical-trials/">Clinical Trials Information System (CTIS)</a></td>
+</tr>
+<tr class="odd">
+<td>IN</td>
+<td><a href="https://ctri.nic.in/Clinicaltrials/">Clinical Trials Registry India (CTRI)</a></td>
+</tr>
+<tr class="even">
+<td>NL</td>
+<td><a href="https://onderzoekmetmensen.nl/en">Overview of Medical Research in the Netherlands (OMON)</a></td>
+</tr>
+<tr class="odd">
+<td>UK</td>
+<td><a href="https://www.isrctn.com/">ISRCTN</a></td>
+</tr>
+<tr class="even">
+<td>US</td>
+<td><a href="https://clinicaltrials.gov">ClinialTrials.gov</a></td>
+</tr>
+<tr class="odd">
+<td>WHO</td>
+<td><a href="https://trialsearch.who.int">International Clinical Trials Registry Platform (ICTRP)</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
 </section>
+<section id="sec-cochranelibrary" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="sec-cochranelibrary"><span class="header-section-number">1.2</span> Cochrane Library</h2>
+<p>The <a href="https://www.cochranelibrary.com"><strong>Cochrane Library</strong></a> is the collection of Cochrane’s databases, most importantly the Cochrane Database of Systematic Reviews (CDSR) and the Cochrane Central Register of Controlled Trials (CENTRAL), which contain different types evidence to inform healthcare decision-making. Switzerland has complete access to the Cochrane Library due to a national license.</p>
+<section id="sec-cdsr" class="level3" data-number="1.2.1">
+<h3 data-number="1.2.1" class="anchored" data-anchor-id="sec-cdsr"><span class="header-section-number">1.2.1</span> Cochrane Database of Systematic Reviews (CDSR)</h3>
+<p>The <a href="https://www.cochranelibrary.com/cdsr/about-cdsr"><strong>Cochrane Database of Systematic Reviews (CDSR)</strong></a> is a leading journal (ISSN: <a href="https://portal.issn.org/resource/ISSN/1469-493X">1469-493X</a>) and database for systematic reviews in health care. Cochrane Reviews are published in CDSR, which is accessible via the Cochrane Library.</p>
+</section>
+</section>
+<section id="sec-pubmed" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="sec-pubmed"><span class="header-section-number">1.3</span> PubMed</h2>
+<p><a href="https://pubmed.ncbi.nlm.nih.gov/"><strong>PubMed</strong></a> is a public and freely available database, maintained by the <a href="https://www.ncbi.nlm.nih.gov/">National Center of Biotechnology Information (NCBI)</a> at the <a href="https://www.nlm.nih.gov/">U.S. National Library of Medicine (NLM)</a>. In 2024, it contains over <a href="https://pubmed.ncbi.nlm.nih.gov/?term=all%5Bsb%5D&amp;sort=date">37 million records</a> of biomedical and life science literature.</p>
+<p><em>PubMed</em> and <em>MEDLINE</em> are often used synonymously. However, there is a difference, explained in detail at <a href="https://nlm.nih.gov/bsd/difference.html" class="uri">https://nlm.nih.gov/bsd/difference.html</a>.</p>
+<p>PubMed facilitates searching within the databases <a href="https://www.nlm.nih.gov/medline/">MEDLINE</a>, <a href="https://www.ncbi.nlm.nih.gov/pmc/">PubMed Central</a> (PMC) and <a href="https://www.ncbi.nlm.nih.gov/books/">Bookshelf</a>.</p>
+<p>All records in PubMed possess a unique identifier, the PubMed ID (PMID), see also <a href="technicalterms.html#sec-pmid-pmcid" class="quarto-xref"><span>Section 2.7</span></a>.</p>
+<p>Roughly 84 percent of the records in PubMed are <a href="https://pubmed.ncbi.nlm.nih.gov/?term=medline%5Bsb%5D">indexed</a> using <a href="https://www.ncbi.nlm.nih.gov/mesh/">Medical Subject Headings (MeSH)</a>.</p>
+</section>
+<section id="sec-pmc" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="sec-pmc"><span class="header-section-number">1.4</span> PubMed Central</h2>
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/"><strong>PubMed Central (PMC)</strong></a> is a free full-text database of the <a href="https://www.nlm.nih.gov/">NLM</a>. It features Open Access articles from biomedicine and life sciences.</p>
+<p>PMC can be searched directly or as part of the PubMed database.</p>
+<p>PMC records possess the PubMed Central ID (PMCID) as a digital identifier, see <a href="technicalterms.html#sec-pmid-pmcid" class="quarto-xref"><span>Section 2.7</span></a>.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Glanville2014" class="csl-entry" role="listitem">
+Glanville, Julie M., Steven Duffy, Rachael McCool, and Danielle Varley. 2014. <span>“<span class="nocase">Searching ClinicalTrials.gov and the International Clinical Trials Registry Platform to inform systematic reviews: what are the optimal search approaches?</span>”</span> <em>J Med Libr Assoc</em> 102 (25031558): 177–83. <a href="https://doi.org/10.3163/1536-5050.102.3.007">https://doi.org/10.3163/1536-5050.102.3.007</a>.
+</div>
+<div id="ref-Knelangen2018" class="csl-entry" role="listitem">
+Knelangen, Marco, Elke Hausner, Maria-Inti Metzendorf, Sibylle Sturtz, and Siw Waffenschmidt. 2018. <span>“Trial Registry Searches for Randomized Controlled Trials of New Drugs Required Registry-Specific Adaptation to Achieve Adequate Sensitivity.”</span> <em>J Clin Epidemiol</em> 94: 69–75. <a href="https://doi.org/10.1016/j.jclinepi.2017.11.003">https://doi.org/10.1016/j.jclinepi.2017.11.003</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

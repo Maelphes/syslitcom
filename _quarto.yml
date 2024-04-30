@@ -4,6 +4,7 @@ project:
 
 book:
   title: "SysLit Compendium"
+  subtitle: "a candle in the dark"
   author: "Marc von Gernler"
   date: 04/24/2024
   cover-image: ./fig/logo.svg
@@ -14,6 +15,12 @@ book:
     - tools.qmd
     - methods.qmd
     - references.qmd
+  navbar:
+    search: true
+    logo: ./fig/logo_small.svg
+  search:
+    location: sidebar
+    type: textbox
 
 bibliography: glossar.bib
 

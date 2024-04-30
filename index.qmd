@@ -1,9 +1,3 @@
----
-other-links:
-      - text: NASA Open Data
-        href: https://data.nasa.gov/
----
-
 # Welcome {#sec-about .unnumbered}
 
 This is a compendium for the field of systematic literature searching. It 
