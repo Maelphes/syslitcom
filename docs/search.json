@@ -14,7 +14,7 @@
     "href": "databases.html",
     "title": "1  Databases",
     "section": "",
-    "text": "1.1 Clinical Trials Registries\nBefore clinical trials are performed, they are registered in in dedicated databases, so-called clinical trials registries (CTR). The purpose of this practice is to combat publication bias (see Section 2.6) and to increase transparency and provide access to the clinical trials.\nThese records clinical trials registries usually comprise information such as study title, short description, study type, eligibility criteria for participants, interventions, randomization, study status and contact information. (See also Glanville et al. (2014), Knelangen et al. (2018)).\nTable Table 1.1 lists a range of trial registries. A comprehensive list of resources is maintained by Julie Glanville and Carol Lefebvre.",
+    "text": "1.1 Clinical Trials Registries\nBefore clinical trials are performed, they are registered in in dedicated databases, so-called clinical trials registries (CTR). The purpose of this practice is to combat publication bias (see Section 2.6) and to increase transparency and provide access to the clinical trials.\nThese records clinical trials registries usually comprise information such as study title, short description, study type, eligibility criteria for participants, interventions, randomization, study status and contact information. (See also Glanville et al. (2014), Knelangen et al. (2018)).\nA comprehensive list of resources is maintained by Julie Glanville and Carol Lefebvre.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Databases</span>"
     ]
@@ -24,7 +24,7 @@
     "href": "databases.html#sec-ctr",
     "title": "1  Databases",
     "section": "",
-    "text": "Table 1.1: Clinical Trials Registries\n\n\n\n\n\nCountry\nWebsite\n\n\n\n\nAU/NZ\nAustralian and New Zealand Clinical Trials Registry (ANZCTR)\n\n\nCH\nSwiss National Clinical Trials Portal (SNCTP)\n\n\nCN\nChinese Clinical Trial Registry (ChiCTR)\n\n\nDE\nGerman Clinical Trials Register (DRKS)\n\n\nEU\nEU Clinical Trials Register (EUCTR) (only records prior to 31-01-2022)\n\n\nEU\nClinical Trials Information System (CTIS)\n\n\nIN\nClinical Trials Registry India (CTRI)\n\n\nNL\nOverview of Medical Research in the Netherlands (OMON)\n\n\nUK\nISRCTN\n\n\nUS\nClinialTrials.gov\n\n\nWHO\nInternational Clinical Trials Registry Platform (ICTRP)",
+    "text": "Clinical Trial Registries\n\n\n\n\n\n\n\n\nCountry\nWebsite\n\n\n\n\nAU/NZ\nAustralian and New Zealand Clinical Trials Registry (ANZCTR)\n\n\nCH\nSwiss National Clinical Trials Portal (SNCTP)\n\n\nCN\nChinese Clinical Trial Registry (ChiCTR)\n\n\nDE\nGerman Clinical Trials Register (DRKS)\n\n\nEU\nEU Clinical Trials Register (EUCTR) (only records prior to 31-01-2022)\n\n\nEU\nClinical Trials Information System (CTIS)\n\n\nIN\nClinical Trials Registry India (CTRI)\n\n\nNL\nOverview of Medical Research in the Netherlands (OMON)\n\n\nUK\nISRCTN\n\n\nUS\nClinialTrials.gov\n\n\nWHO\nInternational Clinical Trials Registry Platform (ICTRP)",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Databases</span>"
     ]
@@ -70,11 +70,11 @@
     ]
   },
   {
-    "objectID": "technicalterms.html#sec-accuraccy",
-    "href": "technicalterms.html#sec-accuraccy",
+    "objectID": "technicalterms.html#sec-class-metrics",
+    "href": "technicalterms.html#sec-class-metrics",
     "title": "2  Technical terms",
-    "section": "2.2 accuracy",
-    "text": "2.2 accuracy\nAccuracy (auch Treffergenauigkeit, Vertrauenswahrscheinlichkeit) ist ein statistisches Gütemass und gibt an, welcher Anteil aller Datensätze korrekterweise true gefunden bzw. nicht gefunden wurde. Sie wird als Quotient aus der Summe von gefundenen relevanten (true positives) und nicht gefundenen irrelevanten Datensätzen (true negatives) und der Gesamtheit aller Datensätze angegeben. (Haynes and Wilczynski (2004), Lefebvre et al. (2017), Fawcett (2006))\nIn der nachfolgenden Tabelle Table 2.1 entspricht dies \\(\\tfrac{tp + tn}{tp + fp + fn + tn}\\).\nSiehe auch precision, sensitivity, specificity.\n\n\n\nTable 2.1: Truth table\n\n\n\n\n\nrecord\nrelevant\nirrelevant\n\n\n\n\nfound\ntp\nfp\n\n\nnot found\nfn\ntn",
+    "section": "2.2 classification metrics",
+    "text": "2.2 classification metrics\nIn information retrieval the performance of a systematic search, a search strategy or a search filter is described by certain metrics for binary classification tasks, such as accuracy, precision, sensitivity and specificity.\nA classifier (the search) makes a prediction about the condition of a record (by retrieving or not retrieving the record). The classification (the search result) is evaluated by comparing the prediction with the actual condition (the relevance of the records).\nIn other words: The literature search is supposed to retrieve mostly relevant references and ignore non-relevant ones. A retrieved relevant record equals a true positive (tp), whereas a retrieved non-relevant record equals a false positive (fp). See Table 2.1 for reference.\n\n\n\nTable 2.1: Truth table\n\n\n\n\n\nrecord\nrelevant\nirrelevant\n\n\n\n\nretrieved\ntp\nfp\n\n\nnot retrieved\nfn\ntn\n\n\n\n\n\n\n\n2.2.1 accuracy\nAccuracy, also called fraction correct (FC), is a statistical measure how well a binary classifier correctly (“true”) identifies a condition (“positive or negative”). It is defined as the ratio of all true classifications (true positives and true negatives) to the total number of classifications. (Haynes and Wilczynski (2004), Lefebvre et al. (2017), Fawcett (2006))\nIt can be calculated according to the following equation: \\[\n\\text{accuracy} = \\tfrac{tp + tn}{tp + fp + fn + tn}\n\\]\n\n\n2.2.2 precision\nPrecision, also called positive predictive value (PPV), is a performance metric for the retrieval of information. It is the fraction of all relevant records among all retrieved records, which can be written as:\n\\[\n\\text{precision} = \\tfrac{tp}{tp + fp}\n\\]\nA high-precision search tries to retrieve as few non-relevant records as possible, usually missing out on relevant records.\n\n\n2.2.3 sensitivity\nSensitivity, also called true positive rate (TPR), recall or hit rate, is a performance metric for the retrieval of informaton, similar to the precision. It equals the probability with which relevant records are correctly identified. (See Haynes and Wilczynski (2004), Lefebvre et al. (2017)).\nIt is the ratio of all relevant retrieved records and the total of all relevant records: \\[\n\\text{sensitivity} = \\tfrac{tp}{tp + fn}\n\\] The idea of a sensitive search is to retrieve as many relevant records as possible, which results in retrieving more non-relevant records in the process.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Technical terms</span>"
     ]
@@ -94,7 +94,7 @@
     "href": "technicalterms.html#sec-appendix",
     "title": "2  Technical terms",
     "section": "2.4 appendix",
-    "text": "2.4 appendix\nAn appendix provides additional content to a publication and is often called supplementary material or supplementary information. Full search strategies are often published within the appendix of a publication.",
+    "text": "2.4 appendix\nAn appendix provides additional content to a publication and is often called supplementary material or supplementary information. Usually any content which goes beyond the constraints of the publication is provided there. Examples are the full search strategies of systematic literature searches, detailed descriptions of methods or measurements.\nIt is also possible to publish such supplementary information or research data independently in online repositories.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Technical terms</span>"
     ]

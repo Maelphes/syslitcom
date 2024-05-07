@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.553">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -212,7 +212,12 @@ window.Quarto = {
    
   <ul>
   <li><a href="#sec-abstract" id="toc-sec-abstract" class="nav-link active" data-scroll-target="#sec-abstract"><span class="header-section-number">2.1</span> abstract</a></li>
-  <li><a href="#sec-accuraccy" id="toc-sec-accuraccy" class="nav-link" data-scroll-target="#sec-accuraccy"><span class="header-section-number">2.2</span> accuracy</a></li>
+  <li><a href="#sec-class-metrics" id="toc-sec-class-metrics" class="nav-link" data-scroll-target="#sec-class-metrics"><span class="header-section-number">2.2</span> classification metrics</a>
+  <ul class="collapse">
+  <li><a href="#sec-accuracy" id="toc-sec-accuracy" class="nav-link" data-scroll-target="#sec-accuracy"><span class="header-section-number">2.2.1</span> accuracy</a></li>
+  <li><a href="#sec-precision" id="toc-sec-precision" class="nav-link" data-scroll-target="#sec-precision"><span class="header-section-number">2.2.2</span> precision</a></li>
+  <li><a href="#sensitivity" id="toc-sensitivity" class="nav-link" data-scroll-target="#sensitivity"><span class="header-section-number">2.2.3</span> sensitivity</a></li>
+  </ul></li>
   <li><a href="#sec-ambiguity" id="toc-sec-ambiguity" class="nav-link" data-scroll-target="#sec-ambiguity"><span class="header-section-number">2.3</span> ambiguity</a></li>
   <li><a href="#sec-appendix" id="toc-sec-appendix" class="nav-link" data-scroll-target="#sec-appendix"><span class="header-section-number">2.4</span> appendix</a></li>
   <li><a href="#sec-authorkeywords" id="toc-sec-authorkeywords" class="nav-link" data-scroll-target="#sec-authorkeywords"><span class="header-section-number">2.5</span> author keyword</a></li>
@@ -252,18 +257,18 @@ window.Quarto = {
 <h2 data-number="2.1" class="anchored" data-anchor-id="sec-abstract"><span class="header-section-number">2.1</span> abstract</h2>
 <p>An abstract is the short summary at the beginning of scientific publications, e.g.&nbsp;journal articles, theses or conference papers. The abstract is among the most important parts of a publication as it is usually the only part of the text which is freely available and can be retrieved from bibliographic databases. Title and abstract are the key elements of a textword search. (<span class="citation" data-cites="Cals2013">Cals and Kotz (<a href="references.html#ref-Cals2013" role="doc-biblioref">2013</a>)</span>, <span class="citation" data-cites="Pitkin1998">Pitkin and Branagan (<a href="references.html#ref-Pitkin1998" role="doc-biblioref">1998</a>)</span>)</p>
 </section>
-<section id="sec-accuraccy" class="level2" data-number="2.2">
-<h2 data-number="2.2" class="anchored" data-anchor-id="sec-accuraccy"><span class="header-section-number">2.2</span> accuracy</h2>
-<p>Accuracy (auch Treffergenauigkeit, Vertrauenswahrscheinlichkeit) ist ein statistisches Gütemass und gibt an, welcher Anteil aller Datensätze korrekterweise <em>true</em> gefunden bzw. nicht gefunden wurde. Sie wird als Quotient aus der Summe von gefundenen relevanten (<em>true positives</em>) und nicht gefundenen irrelevanten Datensätzen (<em>true negatives</em>) und der Gesamtheit aller Datensätze angegeben. (<span class="citation" data-cites="Haynes2004">Haynes and Wilczynski (<a href="references.html#ref-Haynes2004" role="doc-biblioref">2004</a>)</span>, <span class="citation" data-cites="Lefebvre2017">Lefebvre et al. (<a href="references.html#ref-Lefebvre2017" role="doc-biblioref">2017</a>)</span>, <span class="citation" data-cites="Fawcett2006">Fawcett (<a href="references.html#ref-Fawcett2006" role="doc-biblioref">2006</a>)</span>)</p>
-<p>In der nachfolgenden Tabelle <a href="#tbl-truth" class="quarto-xref">Table&nbsp;<span>2.1</span></a> entspricht dies <span class="math inline">\(\tfrac{tp + tn}{tp + fp + fn + tn}\)</span>.</p>
-<p>Siehe auch precision, sensitivity, specificity.</p>
-<div id="tbl-truth" class="quarto-float anchored">
+<section id="sec-class-metrics" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="sec-class-metrics"><span class="header-section-number">2.2</span> classification metrics</h2>
+<p>In information retrieval the performance of a systematic search, a search strategy or a search filter is described by certain metrics for binary classification tasks, such as <strong>accuracy</strong>, <strong>precision</strong>, <strong>sensitivity</strong> and <strong>specificity</strong>.</p>
+<p>A classifier (the search) makes a prediction about the condition of a record (by retrieving or not retrieving the record). The classification (the search result) is evaluated by comparing the prediction with the actual condition (the relevance of the records).</p>
+<p>In other words: The literature search is supposed to retrieve mostly relevant references and ignore non-relevant ones. A retrieved relevant record equals a true positive (<em>tp</em>), whereas a retrieved non-relevant record equals a false positive (<em>fp</em>). See <a href="#tbl-truth" class="quarto-xref">Table&nbsp;<span>2.1</span></a> for reference.</p>
+<div id="tbl-truth" class="striped quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-truth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;2.1: Truth table
 </figcaption>
 <div aria-describedby="tbl-truth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<table class="table">
+<table class="table-striped table">
 <thead>
 <tr class="header">
 <th style="text-align: center;"><strong>record</strong></th>
@@ -273,12 +278,12 @@ Table&nbsp;2.1: Truth table
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">found</td>
+<td style="text-align: center;">retrieved</td>
 <td style="text-align: center;"><em>tp</em></td>
 <td style="text-align: center;"><em>fp</em></td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">not found</td>
+<td style="text-align: center;">not retrieved</td>
 <td style="text-align: center;"><em>fn</em></td>
 <td style="text-align: center;"><em>tn</em></td>
 </tr>
@@ -287,6 +292,28 @@ Table&nbsp;2.1: Truth table
 </div>
 </figure>
 </div>
+<section id="sec-accuracy" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="sec-accuracy"><span class="header-section-number">2.2.1</span> accuracy</h3>
+<p><strong>Accuracy</strong>, also called <strong>fraction correct (FC)</strong>, is a statistical measure how well a binary classifier correctly (“true”) identifies a condition (“positive or negative”). It is defined as the ratio of all true classifications (true positives and true negatives) to the total number of classifications. (<span class="citation" data-cites="Haynes2004">Haynes and Wilczynski (<a href="references.html#ref-Haynes2004" role="doc-biblioref">2004</a>)</span>, <span class="citation" data-cites="Lefebvre2017">Lefebvre et al. (<a href="references.html#ref-Lefebvre2017" role="doc-biblioref">2017</a>)</span>, <span class="citation" data-cites="Fawcett2006">Fawcett (<a href="references.html#ref-Fawcett2006" role="doc-biblioref">2006</a>)</span>)</p>
+<p>It can be calculated according to the following equation: <span class="math display">\[
+\text{accuracy} = \tfrac{tp + tn}{tp + fp + fn + tn}
+\]</span></p>
+</section>
+<section id="sec-precision" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="sec-precision"><span class="header-section-number">2.2.2</span> precision</h3>
+<p><strong>Precision</strong>, also called <strong>positive predictive value (PPV)</strong>, is a performance metric for the retrieval of information. It is the fraction of all relevant records among all retrieved records, which can be written as:</p>
+<p><span class="math display">\[
+\text{precision} = \tfrac{tp}{tp + fp}
+\]</span></p>
+<p>A high-precision search tries to retrieve as few non-relevant records as possible, usually missing out on relevant records.</p>
+</section>
+<section id="sensitivity" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="sensitivity"><span class="header-section-number">2.2.3</span> sensitivity</h3>
+<p><strong>Sensitivity</strong>, also called <strong>true positive rate (TPR)</strong>, <strong>recall</strong> or <strong>hit rate</strong>, is a performance metric for the retrieval of informaton, similar to the <em>precision</em>. It equals the probability with which relevant records are correctly identified. (See <span class="citation" data-cites="Haynes2004">Haynes and Wilczynski (<a href="references.html#ref-Haynes2004" role="doc-biblioref">2004</a>)</span>, <span class="citation" data-cites="Lefebvre2017">Lefebvre et al. (<a href="references.html#ref-Lefebvre2017" role="doc-biblioref">2017</a>)</span>).</p>
+<p>It is the ratio of all relevant retrieved records and the total of all relevant records: <span class="math display">\[
+\text{sensitivity} = \tfrac{tp}{tp + fn}
+\]</span> The idea of a sensitive search is to retrieve as many relevant records as possible, which results in retrieving more non-relevant records in the process.</p>
+</section>
 </section>
 <section id="sec-ambiguity" class="level2" data-number="2.3">
 <h2 data-number="2.3" class="anchored" data-anchor-id="sec-ambiguity"><span class="header-section-number">2.3</span> ambiguity</h2>
@@ -311,7 +338,8 @@ Examples
 </section>
 <section id="sec-appendix" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="sec-appendix"><span class="header-section-number">2.4</span> appendix</h2>
-<p>An appendix provides additional content to a publication and is often called <em>supplementary material</em> or <em>supplementary information</em>. Full search strategies are often published within the appendix of a publication.</p>
+<p>An appendix provides additional content to a publication and is often called <em>supplementary material</em> or <em>supplementary information</em>. Usually any content which goes beyond the constraints of the publication is provided there. Examples are the full search strategies of systematic literature searches, detailed descriptions of methods or measurements.</p>
+<p>It is also possible to publish such supplementary information or research data independently in online repositories.</p>
 </section>
 <section id="sec-authorkeywords" class="level2" data-number="2.5">
 <h2 data-number="2.5" class="anchored" data-anchor-id="sec-authorkeywords"><span class="header-section-number">2.5</span> author keyword</h2>

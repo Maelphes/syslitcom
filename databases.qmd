@@ -12,9 +12,8 @@ study title, short description, study type, eligibility criteria for
 participants, interventions, randomization, study status and contact 
 information. (See also @Glanville2014, @Knelangen2018).
 
-Table @tbl-ctr lists a range of trial registries. A [comprehensive list of resources](https://sites.google.com/a/york.ac.uk/yhectrialsregisters) is maintained by Julie Glanville and Carol Lefebvre.
 
-::: {#tbl-ctr}
+:::{.callout-note title="Clinical Trial Registries" collapse="true"}
 |Country| Website               										|
 |-------|-------------------------------------------|
 | AU/NZ | [Australian and New Zealand Clinical Trials Registry (ANZCTR)](https://www.anzctr.org.au)    |
@@ -29,8 +28,10 @@ Table @tbl-ctr lists a range of trial registries. A [comprehensive list of resou
 | US    | [ClinialTrials.gov](https://clinicaltrials.gov)              |
 | WHO   | [International Clinical Trials Registry Platform (ICTRP)](https://trialsearch.who.int)             |
 
-: Clinical Trials Registries {.striped .hover}
+: {.striped .hover}
 :::
+
+A [comprehensive list of resources](https://sites.google.com/a/york.ac.uk/yhectrialsregisters) is maintained by Julie Glanville and Carol Lefebvre.
 
 ## Cochrane Library {#sec-cochranelibrary}
 
