@@ -8,7 +8,7 @@ book:
   author: "Marc von Gernler"
   description: A compendium for systematic literature searching
   keyword: systematic searching, information retrieval, bibliographic databases, evidence-based medicine
-  cover-image: ./fig/logo.svg
+  cover-image: ./fig/logo_2.svg
   chapters:
     - index.qmd
     - databases.qmd
@@ -18,7 +18,7 @@ book:
     - references.qmd
   navbar:
     logo: ./fig/logo_small.svg
-    background: "#305090"
+    background: "#2a536b" 
   search:
     location: sidebar
     type: textbox
