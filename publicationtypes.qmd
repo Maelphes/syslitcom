@@ -1,0 +1,6 @@
+# Publication Types
+
+
+## Reviews {#sec-review}
+
+![What Type of Review is Right for you? - adopted from @cornell2021](./fig/decisiontree.svg){#fig-decisiontree width=80%}

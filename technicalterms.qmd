@@ -18,73 +18,6 @@ databases. Title and abstract are the key elements of a textword search.
 (@Cals2013, @Pitkin1998)
 
 
-## classification metrics {#sec-class-metrics}
-
-In information retrieval the performance of a systematic search, a search
-strategy or a search filter is described by certain metrics for binary 
-classification tasks, such as **accuracy**, **precision**, **sensitivity** 
-and **specificity**.
-
-A classifier (the search) makes a prediction about the condition of a record 
-(by retrieving or not retrieving the record). The classification (the search 
-result) is evaluated by comparing the prediction with the actual condition (the 
-relevance of the records).
-
-In other words: The literature search is supposed to retrieve mostly relevant 
-references and ignore non-relevant ones. A retrieved relevant record equals a
-true positive (*tp*), whereas a retrieved non-relevant record equals a false 
-positive (*fp*). See @tbl-truth for reference.
-
-::: {#tbl-truth}
-|   **record**    | relevant | irrelevant |
-|:---------------:|:--------:|:----------:|
-|    retrieved    |   _tp_   |    _fp_    |
-|  not retrieved  |   _fn_   |    _tn_    |
-: Truth table {.striped}
-:::
-
-
-### accuracy {#sec-accuracy} 
-**Accuracy**, also called **fraction correct (FC)**, is a statistical measure 
-how well a binary classifier correctly ("true") identifies a condition 
-("positive or negative"). It is defined as the ratio of all true 
-classifications (true positives and true negatives) to the total number of
-classifications. (@Haynes2004,  @Lefebvre2017, @Fawcett2006)
-
-It can be calculated according to the following equation:
-$$
-\text{accuracy} = \tfrac{tp + tn}{tp + fp + fn + tn}
-$$
-
-
-### precision {#sec-precision}
-**Precision**, also called **positive predictive value (PPV)**, is a performance 
-metric for the retrieval of information. It is the fraction of all relevant 
-records among all retrieved records, which can be written as:
-
-$$
-\text{precision} = \tfrac{tp}{tp + fp}
-$$
-
-A high-precision search tries to retrieve as few non-relevant records as 
-possible, usually missing out on relevant records.
-
-
-### sensitivity
-
-**Sensitivity**, also called **true positive rate (TPR)**, **recall** or 
-**hit rate**, is a performance metric for the retrieval of informaton, similar 
-to the *precision*. It equals the probability with which relevant records are 
-correctly identified. (See @Haynes2004, @Lefebvre2017).
-
-It is the ratio of all relevant retrieved records and the total of all relevant 
-records:
-$$
-\text{sensitivity} = \tfrac{tp}{tp + fn}
-$$
-The idea of a sensitive search is to retrieve as many relevant records as 
-possible, which results in retrieving more non-relevant records in the process.
-
 ## ambiguity {#sec-ambiguity}
 A term or statement which has more than one possible meaning or definition is 
 ambiguous. Ambiguity proves to be an obstacle in creating search strategies, 
@@ -161,6 +94,75 @@ However, this so-called language of publication bias can have a significant
 impact on the quality of the review. (@Gough2017, @Morrison2012, @Moher2003)
 
 
+## classification metrics {#sec-class-metrics}
+
+In information retrieval the performance of a systematic search, a search
+strategy or a search filter is described by certain metrics for binary 
+classification tasks, such as **accuracy**, **precision**, **sensitivity** 
+and **specificity**.
+
+A classifier (the search) makes a prediction about the condition of a record 
+(by retrieving or not retrieving the record). The classification (the search 
+result) is evaluated by comparing the prediction with the actual condition (the 
+relevance of the records).
+
+In other words: The literature search is supposed to retrieve mostly relevant 
+references and ignore non-relevant ones. A retrieved relevant record equals a
+true positive (*tp*), whereas a retrieved non-relevant record equals a false 
+positive (*fp*). See @tbl-truth for reference.
+
+::: {#tbl-truth}
+|   **record**    | relevant | irrelevant |
+|:---------------:|:--------:|:----------:|
+|    retrieved    |   _tp_   |    _fp_    |
+|  not retrieved  |   _fn_   |    _tn_    |
+: Truth table {.striped}
+:::
+
+
+### accuracy {#sec-accuracy} 
+**Accuracy**, also called **fraction correct (FC)**, is a statistical measure of
+how well a binary classifier correctly ("true") identifies a condition 
+("positive or negative"). It is defined as the ratio of all true 
+classifications (true positives and true negatives) to the total number of
+classifications. (@Haynes2004,  @Lefebvre2017, @Fawcett2006)
+
+It can be calculated according to the following equation:
+$$
+\text{accuracy} = \tfrac{tp + tn}{tp + fp + fn + tn}
+$$
+
+
+### precision {#sec-precision}
+**Precision**, also called **positive predictive value (PPV)**, is a performance 
+metric for the retrieval of information. It is the fraction of all relevant 
+records among all retrieved records, which can be written as:
+
+$$
+\text{precision} = \tfrac{tp}{tp + fp}
+$$
+
+A high-precision search tries to retrieve as few non-relevant records as 
+possible, usually missing out on relevant records.
+
+
+### sensitivity
+
+**Sensitivity**, also called **true positive rate (TPR)**, **recall** or 
+**hit rate**, is a performance metric for the retrieval of informaton, similar 
+to the *precision*. It equals the probability with which relevant records are 
+correctly identified. (See @Haynes2004, @Lefebvre2017).
+
+It is the ratio of all relevant retrieved records and the total of all relevant 
+records:
+$$
+\text{sensitivity} = \tfrac{tp}{tp + fn}
+$$
+The idea of a sensitive search is to retrieve as many relevant records as 
+possible, which results in retrieving more non-relevant records in the process.
+
+
+
 ## PMID and PMCID {#sec-pmid-pmcid}
 The PubMed ID (PMID) and the PubMed Central ID (PMCID) are unique identifiers
 assigned to the records within the databases [PubMed](https://pubmed.ncbi.nlm.nih.gov/) 
@@ -177,4 +179,28 @@ The [National Library of Medicine](https://www.nlm.nih.gov) provides a
 [tool](https://www.ncbi.nlm.nih.gov/pmc/tools/idconv/) for the conversion of the
 PMID, PMCID and DOI into one another. This tool only works for records which are
 both part of PubMed and PubMed Central.
+:::
+
+## Syntax {#sec-syntax}
+Similar to programming, the **syntax** is the set of rules that applies 
+for setting up search queries and building search strategies in databases. 
+It defines the operators, field codes and special characters (such as wildcard 
+symbols, parentheses, slashes, quotation marks, etc.) that are available 
+within a particular search interface.
+
+As a consequence, search strategies cannot be used freely in every database. 
+They have to be translated due to different syntax and due to different 
+index terms. (See @Clark2020, @Glanville2019, @Wanner2019, @Damarell2013).
+
+::: {#tbl-syntax}
+|          |                              |
+|----------|------------------------------|
+|PubMed | `"ocular hypertension"[tiab]` | 
+|Embase | `'ocular hypertension':ti,ab`  |
+|Ovid |`"ocular hypertension".ti,ab.`  |
+|Cochrane Library |`"ocular hypertension":ti,ab`  |
+|Scopus |`TITLE-ABS({ocular hypertension})`  |
+|Web of Science | `TI=("ocular hypertension") OR AB=("ocular hypertension")`  |
+|EBSCO*host*| `(TI "ocular hypertension") OR (AB "ocular hypertension")`  |
+: Examples for syntax in different search interfaces {.hover}
 :::
