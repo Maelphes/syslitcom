@@ -4,3 +4,23 @@
 ## Reviews {#sec-review}
 
 ![What Type of Review is Right for you? - adopted from @cornell2021](./fig/decisiontree.svg){#fig-decisiontree width=80%}
+
+
+### systematic review {#sec-sysrev}
+
+A **systematic review** (SR) is a comprehensive review of the best available 
+evidence (i.e. all relevant research results) pertaining to a certain topic or 
+research question. SRs are usually conducted by research groups over the time of
+several months. The purpose of SRs is to inform evidence-based decision making.
+
+SRs are regarded as the gold standard in evidence synthesis due to the strict 
+and rigorous methodology that should be followed by the SR project team.
+
+In many cases a so-called **meta-analysis** is also performed, which quantifies
+the results of the systematic review. (See @Murad2014, @Nagendrababu2020, @Mulrow1994)
+
+::: {.callout-tip title="Recommended reading"}
+- *Doing a Systematic Review* by @Cherry2024  
+- *Systematic Reviews in Health Research* by @Egger2022  
+- *An Introduction to Systematic Reviews* by @Gough2017
+:::

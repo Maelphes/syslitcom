@@ -88,7 +88,7 @@ references is called **co-citation tracking**, see @fig-cociting and @fig-cocite
 
 ## filters {#sec-filters}
 
-Filters (also search filters, filter strategies or hedges) are search strategies
+Filters (also search filters, filter strategies or hedges) are [search strategies](#sec-searchstrategy)
 designed to retrieve records for a specific concept of the research question.
 
 There are filters for specific patient groups or diseases, outcomes, study types
@@ -134,10 +134,10 @@ overall search in line 12. (see also @sec-searchstrategy).
 ## field code {#sec-fieldcode}
 The data fields of databases possess short designations called **field codes**, 
 field tags or field labels, which allow to search the fields separately as part 
-of a search query or search strategy (see @sec-searchstrategy). Depending on the
-syntax of the database or search interface different field codes are available 
-for searching. If no field code is used in a search query, the search term is 
-usually searched in all fields or a preset variety of fields. 
+of a search query or [search strategy](#sec-searchstrategy). Depending on the
+[syntax](#sec-syntax) of the database or search interface different field codes
+are available for searching. If no field code is used in a search query, the 
+search term is usually searched in all fields or a preset variety of fields. 
 
 ::: {.callout-tip title="Example"}
 In PubMed the query `hypnosis[TIAB]` will basically search for records with 
@@ -303,16 +303,17 @@ Options to counter this problem:
 
 ## search strategy {#sec-searchstrategy}
 A **search strategy** is a coherent set of search queries designed to retrieve 
-references for a particular topic. A search strategy is dependent on the syntax
-and index terms of the searched database. As a consequence, the search strategy
-needs to be translated for the use in other databases.
+references for a particular topic. A search strategy is dependent on the 
+[syntax](#sec-syntax) and index terms of the searched database. As a 
+consequence, the search strategy needs to be translated for the use in other 
+databases.
 
 Search strategies are supposed to be consistent with the predefined eligibility 
 criteria of the research project (@Gough2017).
 
 Depending on the purpose and detail of the search, the extent of a search 
 strategy might range from a simple search string to numerous lines of search 
-terms connected by boolean operators (see @sec-boolean).
+terms connected by [Boolean operators](#sec-boolean).
 
 @tbl-searchstrategy-pubmed and @tbl-searchstrategy-ovid show examples for both 
 types of search strategies.
@@ -335,3 +336,86 @@ Single-line [PubMed Search strategy](https://pubmed.ncbi.nlm.nih.gov/?term=%28%2
 Multi-line search strategy for Ovid MEDLINE
 :::
 
+## systematic literature searching {#sec-syslitsearch}
+
+Conducting a **systematic literature search** (also called **systematic 
+search**) means to search multiple databases for references to relevant 
+articles and studies in a structured, planned and iterative manner. 
+A systematic search is well-documented, transparent and (to a certain degree) 
+reproducible. 
+
+::: {.callout-tip title="Information specialists and librarians"}
+Systematic searches are best conducted or at least accompanied by information 
+specialists or librarians. For more on this topic, see @Spencer2018, 
+@Metzendorf2016, @Foster2015, @Koffel2015, @Rethlefsen2015, @Schellinger2021, 
+@Meert2016.
+:::
+
+The purpose of a systematic literature search is to find relevant literature in 
+the desired degree of completeness. For a systematic review the search should 
+be very [sensitive](#sec-sensitivity) as to find all the relevant evidence. 
+In contrast, the literature search as part of a rapid review or narrative 
+review may still be done systematically, but can be designed in a more [precise](#sec-precision) 
+manner, since in those cases it may be acceptable to miss some relevant 
+articles. (See @#sec-class-metrics about sensitivity and precision).
+
+There are various guidelines which can be followed to conduct systematic 
+searches, such as the *Cochrane Handbook* (@cochranehandbook6.3) or the 
+*JBI Manual* (@JBIManual2020). Depending on the desired type of review 
+(e.g. systematic, scoping, narrative, ..., see @sec-review and 
+@Munn2018, @Munn2018 or @Pearson2015)
+
+::: {.callout-note title="important steps of a systematic search"}
+1. definition of a **research question**
+2. selection of **databases**
+3. compilation of **search terms**
+4. setup of an **initial search**
+5. iterative **refinement** of the search strategy
+6. **peer review** of the search strategy
+7. **translation** to other databases
+8. **final search** and export of results
+9. **documentation** of the search
+:::
+
+Various methods are applied in the design of search strategies. Keywords and 
+index terms are connected using *operators*. The search queries are structured 
+by *nesting*. The precision and sensitivity of the search is adjusted using 
+*truncation*, by the choice of *search fields* or the use of *term explosion*.  
+
+A systematic search is best peer-reviewed by colleagues (e.g. by information 
+specialists, other researchers, or fellow students), following the PRESS 
+guideline by @McGowan2016.  
+
+Ideally, the systematic search is documented according the PRISMA-S extension 
+by @Rethlefsen2021.  
+
+
+## term explosion {#sec-termexplosion}
+Index terms in databases are usually hierarchically organized, starting with 
+very broad terms in the top categories to very specific terms further down the 
+branches of the hierarchy. 
+
+When searching using an index term, it is often possible to include all 
+subordinate index terms in the search. This simultaneous search option is called 
+*term explosion*.
+
+:::{.callout-warning title="Warning"}
+Keep in mind that depending on the search interface or database, the term 
+explosion might be active by default, as it is the case in [PubMed](https://pubmed.ncbi.nlm.nih.gov/help/#mh).
+This can be avoided by using the field codes `[mh:noexp]` or `[majr:noexp]` 
+instead of `[mh]` or `[majr]`.
+:::
+
+::: {.callout-tip title="Examples"}
+- The PubMed search query `Psychotherapy[MH]` automatically retrieves records 
+featuring the MeSH term `psychotherapy` as well as `aromatherapy`, 
+`behaviour therapy`, `crisis intervention`, `hypnosis`, or `logotherapy`, 
+because in PubMed the term explosion is active by default. However, 
+the query `Psychotherapy[MH:NoExp]` retrieves only records indexed with 
+`psychotherapy`.  
+
+- In Ovid MEDLINE, the search for `psychotherapy/` looks only for references 
+indexed with `psychotherapy`, whereas the query `exp psychotherapy/` searches 
+the exploded term, i.e. it uses the subordinate index terms such as 
+`aromatherapy`, `crisis intervention`, etc. in the search, too.
+:::

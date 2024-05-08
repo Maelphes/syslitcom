@@ -146,7 +146,7 @@ A high-precision search tries to retrieve as few non-relevant records as
 possible, usually missing out on relevant records.
 
 
-### sensitivity
+### sensitivity {#sec-sensitivity}
 
 **Sensitivity**, also called **true positive rate (TPR)**, **recall** or 
 **hit rate**, is a performance metric for the retrieval of informaton, similar 
