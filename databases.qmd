@@ -67,12 +67,35 @@ the databases [MEDLINE](https://www.nlm.nih.gov/medline/),
 All records in PubMed possess a unique identifier, the PubMed ID (PMID),
 see also @sec-pmid-pmcid.
 
-Roughly 84 percent of the records in PubMed are [indexed](https://pubmed.ncbi.nlm.nih.gov/?term=medline%5Bsb%5D) using [Medical Subject Headings (MeSH)](https://www.ncbi.nlm.nih.gov/mesh/).
+Roughly 84 percent of the records in PubMed are 
+[indexed](https://pubmed.ncbi.nlm.nih.gov/?term=medline%5Bsb%5D) 
+using [Medical Subject Headings (MeSH)](https://www.ncbi.nlm.nih.gov/mesh/).
 
 ## PubMed Central {#sec-pmc}
-[**PubMed Central (PMC)**](https://www.ncbi.nlm.nih.gov/pmc/) is a free full-text database of the [NLM](https://www.nlm.nih.gov/). It features Open Access articles from biomedicine and life sciences. 
+[**PubMed Central (PMC)**](https://www.ncbi.nlm.nih.gov/pmc/) is a free 
+full-text database of the [NLM](https://www.nlm.nih.gov/). It features 
+Open Access articles from biomedicine and life sciences. 
 
 PMC can be searched directly or as part of the PubMed database.
 
 PMC records possess the PubMed Central ID (PMCID) as a digital identifier, see
 @sec-pmid-pmcid.
+
+
+##  Embase {#sec-embase}
+[**Embase**](https://www.embase.com) (acronym for **E**xcerpta **M**edica Data**base**) 
+is a subscription-based bibliographic database, produced by Elsevier. In the 
+year 2024 it contains over 32 million references to biomedical and 
+pharmacological articles and conference abstracs.
+
+
+## Entrez {#sec-entrez}
+[**Entrez**](https://www.ncbi.nlm.nih.gov/search/) ist a cross-database search 
+system maintained by the National Center for Biotechnology Information (NCBI). 
+It comprises 39 databases, such as [PubMed](https://pubmed.ncbi.nlm.nih.gov/), 
+[MeSH](https://www.ncbi.nlm.nih.gov/mesh/), the 
+[NCBI-Bookshelf](https://www.ncbi.nlm.nih.gov/books/) and 
+[PubMed Central](https://www.ncbi.nlm.nih.gov/pmc/). 
+
+Entrez can be accessed using the [NCBI website](https://www.ncbi.nlm.nih.gov/search/) 
+or using the [Entrez Programming Utitilites (E-utilities)](https://www.ncbi.nlm.nih.gov/books/NBK25501/).

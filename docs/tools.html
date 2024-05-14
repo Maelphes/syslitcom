@@ -6,8 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Marc von Gernler">
-<meta name="dcterms.date" content="2024-04-24">
 <meta name="description" content="A compendium for systematic literature searching">
 
 <title>SysLit Compendium - 3&nbsp; Tools</title>
@@ -190,11 +188,16 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sec-finer" id="toc-sec-finer" class="nav-link active" data-scroll-target="#sec-finer"><span class="header-section-number">3.1</span> FINER</a></li>
-  <li><a href="#sec-pico" id="toc-sec-pico" class="nav-link" data-scroll-target="#sec-pico"><span class="header-section-number">3.2</span> PICO</a></li>
-  <li><a href="#sec-press" id="toc-sec-press" class="nav-link" data-scroll-target="#sec-press"><span class="header-section-number">3.3</span> PRESS</a></li>
-  <li><a href="#sec-prisma" id="toc-sec-prisma" class="nav-link" data-scroll-target="#sec-prisma"><span class="header-section-number">3.4</span> PRISMA</a></li>
-  <li><a href="#sec-refmanagement" id="toc-sec-refmanagement" class="nav-link" data-scroll-target="#sec-refmanagement"><span class="header-section-number">3.5</span> Reference Management software</a></li>
+  <li><a href="#sec-e-utilities" id="toc-sec-e-utilities" class="nav-link active" data-scroll-target="#sec-e-utilities"><span class="header-section-number">3.1</span> Entrez Programming Utilities</a>
+  <ul class="collapse">
+  <li><a href="#e-utilities-via-url" id="toc-e-utilities-via-url" class="nav-link" data-scroll-target="#e-utilities-via-url"><span class="header-section-number">3.1.1</span> E-utilities via URL</a></li>
+  <li><a href="#entrez-direct" id="toc-entrez-direct" class="nav-link" data-scroll-target="#entrez-direct"><span class="header-section-number">3.1.2</span> Entrez Direct</a></li>
+  </ul></li>
+  <li><a href="#sec-finer" id="toc-sec-finer" class="nav-link" data-scroll-target="#sec-finer"><span class="header-section-number">3.2</span> FINER</a></li>
+  <li><a href="#sec-pico" id="toc-sec-pico" class="nav-link" data-scroll-target="#sec-pico"><span class="header-section-number">3.3</span> PICO</a></li>
+  <li><a href="#sec-press" id="toc-sec-press" class="nav-link" data-scroll-target="#sec-press"><span class="header-section-number">3.4</span> PRESS</a></li>
+  <li><a href="#sec-prisma" id="toc-sec-prisma" class="nav-link" data-scroll-target="#sec-prisma"><span class="header-section-number">3.5</span> PRISMA</a></li>
+  <li><a href="#sec-refmanagement" id="toc-sec-refmanagement" class="nav-link" data-scroll-target="#sec-refmanagement"><span class="header-section-number">3.6</span> Reference Management software</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://www.github.com/Maelphes/syslitcom/edit/gh-pages/tools.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/blob/gh-pages/tools.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -210,19 +213,7 @@ div.csl-indent {
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Marc von Gernler </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">April 24, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -232,8 +223,62 @@ div.csl-indent {
 </header>
 
 
-<section id="sec-finer" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="sec-finer"><span class="header-section-number">3.1</span> FINER</h2>
+<section id="sec-e-utilities" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-e-utilities"><span class="header-section-number">3.1</span> Entrez Programming Utilities</h2>
+<p>The <strong>Entrez Programming Utilities</strong> (E-utilities) are a set of nine programs which provide an <a href="https://en.wikipedia.org/wiki/API">API</a> to the <a href="databases.html#sec-entrez">Entrez</a> database system of the NCBI. Comprehensive information about the E-utilifies is available in the official <a href="https://www.ncbi.nlm.nih.gov/books/NBK25501/">E-utilities Help</a>.</p>
+<section id="e-utilities-via-url" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="e-utilities-via-url"><span class="header-section-number">3.1.1</span> E-utilities via URL</h3>
+<p>These programs are server-based and can be deployed using different URLs. These URLs to query Entrez are composed of the base URL <code>https://eutils.ncbi.nlm.nih.gov/entrez/eutils/</code> to which a string with the desired utility and the query is attached, for instance <a href="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&amp;term=BMJ%5Bjournal%5D+AND+hernia+AND+2010%5Bpdat%5D"><code>esearch.fcgi?db=pubmed&amp;term=BMJ[journal]+AND+hernia+AND+2010[pdat]</code></a></p>
+<p>The results for these queries are usually returned as XML-structured data.</p>
+</section>
+<section id="entrez-direct" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="entrez-direct"><span class="header-section-number">3.1.2</span> Entrez Direct</h3>
+<p>The E-utilities are also available directly on a <a href="https://en.wikipedia.org/wiki/Unix_shell">Unix shell</a> under Linux or macOS by using the package <a href="https://www.ncbi.nlm.nih.gov/books/NBK179288/"><strong>Entrez Direct</strong></a> (EDirect).</p>
+<p>One of the main advantages of EDirect are the <a href="https://www.freecodecamp.org/news/the-linux-commands-handbook/">commands</a> that are available on the shell, for example <code>grep</code>, <code>sort</code>, <code>uniq</code> or <code>wc</code>, which allow the results to be processed directly. Also shell scripts can be used to automate the processing.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example: Retrieve similar articles">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example: Retrieve similar articles
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The command</p>
+<pre><code>elink -db pubmed -id 25554246,29463298 -related -cmd neighbor | 
+xtract -pattern LinkSetDb -element Id</code></pre>
+<p>will return all <a href="technicalterms.html#sec-pmid-pmcid">PMIDs</a> of publications which PubMed identifies as <a href="https://pubmed.ncbi.nlm.nih.gov/help/#similar-articles"><em>Similar Articles</em></a> for the PMIDs <a href="https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed&amp;from_uid=25554246">25554246</a> and <a href="https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed&amp;from_uid=29463298">29463298</a>.</p>
+<p>On PubMed the Similar Articles search can be carried out for only one PMID at a time, whereas using the E-utilities it is possible to search with many PMIDs in a single query.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Unix Shell on Windows">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Unix Shell on Windows
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>There is a quick and easy way to get access to Linux and its shell even when one is running a modern Windows PC: The Windows Subsystem for Linux (WSL) provides an environment to install Linux from within Windows (10 or later).</p>
+<p>For more on this, see</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows/wsl/install">How to install Linux on Windows with WSL</a><br>
+</li>
+<li><a href="https://librarycarpentry.org/lc-shell/">Library Carpentry: The Unix Shell</a><br>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="sec-finer" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sec-finer"><span class="header-section-number">3.2</span> FINER</h2>
 <p>FINER is an acronym for the five criteria <strong>feasible</strong>, <strong>interesting</strong>, <strong>novel</strong>, <strong>ethical</strong> and <strong>relevant</strong> which can be used as guidance when formulating a good clinical research question. See <a href="#tbl-finer" class="quarto-xref">Table&nbsp;<span>3.1</span></a>. (<span class="citation" data-cites="Cummings2013">Cummings, Browner, and Hulley (<a href="references.html#ref-Cummings2013" role="doc-biblioref">2013</a>)</span>)</p>
 <div id="tbl-finer" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -277,24 +322,24 @@ Table&nbsp;3.1
 </figure>
 </div>
 </section>
-<section id="sec-pico" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="sec-pico"><span class="header-section-number">3.2</span> PICO</h2>
+<section id="sec-pico" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="sec-pico"><span class="header-section-number">3.3</span> PICO</h2>
 <p>PICO is a mnemonic for the concepts <em>Population</em>, <em>Intervention</em>, <em>Comparison</em> and <em>Outcome</em>. Concepts like these are used for defining research questions as well as eligibility criteria for the studies relevant for answering the question.</p>
 <p>There are other concepts and mnemonics for different kinds of research questions, such as SPIDER, ECLIPSE, PIRD or PICOS. (<span class="citation" data-cites="Munn2018a">Munn et al. (<a href="references.html#ref-Munn2018a" role="doc-biblioref">2018</a>)</span>, <span class="citation" data-cites="Methley2014">Methley et al. (<a href="references.html#ref-Methley2014" role="doc-biblioref">2014</a>)</span>, <span class="citation" data-cites="Eriksen2018">Eriksen and Frandsen (<a href="references.html#ref-Eriksen2018" role="doc-biblioref">2018</a>)</span>)</p>
 </section>
-<section id="sec-press" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="sec-press"><span class="header-section-number">3.3</span> PRESS</h2>
+<section id="sec-press" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="sec-press"><span class="header-section-number">3.4</span> PRESS</h2>
 <p><strong>Peer Review of Electronic Search Strategies (PRESS)</strong> by <span class="citation" data-cites="McGowan2016">McGowan et al. (<a href="references.html#ref-McGowan2016" role="doc-biblioref">2016</a>)</span> is an evidence-based guideline for the peer review of search strategies. It is mainly focused on systematic review projects, health technology assesments (HTAs) and other kinds of reviews. A main tool for PRESS is a checklist which guides the reader through the process of peer review.</p>
 </section>
-<section id="sec-prisma" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="sec-prisma"><span class="header-section-number">3.4</span> PRISMA</h2>
+<section id="sec-prisma" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="sec-prisma"><span class="header-section-number">3.5</span> PRISMA</h2>
 <p><strong>Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)</strong> by <span class="citation" data-cites="Page2021a">Page, McKenzie, et al. (<a href="references.html#ref-Page2021a" role="doc-biblioref">2021</a>)</span> is a set of minimum requirements for the reporting and documentation of systematic reviews. The goal of PRISMA is to set standards for reporting and in doing so increase the overall quality of systematic reviews. A detailed explanatory paper was published by <span class="citation" data-cites="Page2021b">Page, Moher, et al. (<a href="references.html#ref-Page2021b" role="doc-biblioref">2021</a>)</span>.</p>
 <p>PRISMA also provides tools such as a checklist and a flowchart, which can be used for creating the recommended tables and figures for publication. (<span class="citation" data-cites="rethlefsen_page_2021">M. Rethlefsen and Page (<a href="references.html#ref-rethlefsen_page_2021" role="doc-biblioref">2021</a>)</span>)</p>
 <p>There are additional extensions of PRISMA for various purposes, such as PRISMA-S for the documentation of systematic literature searches (<span class="citation" data-cites="Rethlefsen2021">M. L. Rethlefsen et al. (<a href="references.html#ref-Rethlefsen2021" role="doc-biblioref">2021</a>)</span>) or PRISMA-ScR for scoping reviews (<span class="citation" data-cites="Tricco2018">Tricco et al. (<a href="references.html#ref-Tricco2018" role="doc-biblioref">2018</a>)</span>).</p>
 <p>See also <a href="https://prisma-statement.org" class="uri">https://prisma-statement.org</a>.</p>
 </section>
-<section id="sec-refmanagement" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="sec-refmanagement"><span class="header-section-number">3.5</span> Reference Management software</h2>
+<section id="sec-refmanagement" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="sec-refmanagement"><span class="header-section-number">3.6</span> Reference Management software</h2>
 <p>Bibliographic records and similar sets of data such as clinical study metadata can be stored and managed using <strong>reference management programs</strong> (also called citation management software).</p>
 <p>These programs are usually able to perform tasks with the records, such as</p>
 <ul>
@@ -305,7 +350,7 @@ Table&nbsp;3.1
 <li>output of citations in various styles</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled" title="Examples of reference managers">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -314,7 +359,7 @@ Examples of reference managers
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li><a href="https://www.citavi.com">Citavi</a></li>

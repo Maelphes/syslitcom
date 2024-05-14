@@ -1,10 +1,6 @@
 ---
-author: "Marc von Gernler"
-date: "4/24/2024"
 format: html
 code-fold: false
-
-bibliography: glossar.bib
 link-citations: true
 link-bibliography: true
 
@@ -13,6 +9,59 @@ filters:
 ---
 
 # Tools {#sec-tools}
+
+## Entrez Programming Utilities {#sec-e-utilities}
+
+The **Entrez Programming Utilities** (E-utilities) are a set of nine 
+programs which provide an [API](https://en.wikipedia.org/wiki/API) to the 
+[Entrez](#sec-entrez) database system of the NCBI. Comprehensive information 
+about the E-utilifies is available in the official 
+[E-utilities Help](https://www.ncbi.nlm.nih.gov/books/NBK25501/).
+
+### E-utilities via URL
+These programs are server-based and can be deployed using different URLs.
+These URLs to query Entrez are composed of the base URL `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/`
+to which a string with the desired utility and the query is attached, for instance 
+[`esearch.fcgi?db=pubmed&term=BMJ[journal]+AND+hernia+AND+2010[pdat]`](https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=BMJ[journal]+AND+hernia+AND+2010[pdat])
+
+The results for these queries are usually returned as XML-structured data.
+
+### Entrez Direct
+
+The E-utilities are also available directly on a [Unix shell](https://en.wikipedia.org/wiki/Unix_shell) under Linux or macOS by using the package [**Entrez Direct**](https://www.ncbi.nlm.nih.gov/books/NBK179288/) (EDirect). 
+
+One of the main advantages of EDirect are the [commands](https://www.freecodecamp.org/news/the-linux-commands-handbook/) that are available on the shell, for example `grep`, `sort`, `uniq` or `wc`, 
+which allow the results to be processed directly. Also shell scripts can be used
+to automate the processing.
+
+:::{.callout-tip title="Example: Retrieve similar articles"}
+The command 
+
+```
+elink -db pubmed -id 25554246,29463298 -related -cmd neighbor | 
+xtract -pattern LinkSetDb -element Id
+```
+
+will return all [PMIDs](#sec-pmid-pmcid) of publications which PubMed identifies
+as [*Similar Articles*](https://pubmed.ncbi.nlm.nih.gov/help/#similar-articles) 
+for the PMIDs [25554246](https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed&from_uid=25554246) 
+and  [29463298](https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed&from_uid=29463298).
+
+On PubMed the Similar Articles search can be carried out for only one PMID at a
+time, whereas using the E-utilities it is possible to search with many PMIDs in
+a single query.
+:::
+
+:::{.callout-tip title="Unix Shell on Windows" collapse=true}
+There is a quick and easy way to get access to Linux and its shell even when
+one is running a modern Windows PC: The Windows Subsystem for Linux (WSL) 
+provides an environment to install Linux from within Windows (10 or later).
+
+For more on this, see
+
+- [How to install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install)  
+- [Library Carpentry: The Unix Shell](https://librarycarpentry.org/lc-shell/)  
+:::
 
 ## FINER {#sec-finer}
 FINER is an acronym for the five criteria **feasible**, **interesting**, **novel**, **ethical** and **relevant** which can be used as guidance when formulating a good clinical research question. See @tbl-finer. (@Cummings2013)

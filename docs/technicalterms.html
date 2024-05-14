@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -233,8 +267,10 @@ window.Quarto = {
   <li><a href="#sec-precision" id="toc-sec-precision" class="nav-link" data-scroll-target="#sec-precision"><span class="header-section-number">2.6.2</span> precision</a></li>
   <li><a href="#sec-sensitivity" id="toc-sec-sensitivity" class="nav-link" data-scroll-target="#sec-sensitivity"><span class="header-section-number">2.6.3</span> sensitivity</a></li>
   </ul></li>
-  <li><a href="#sec-pmid-pmcid" id="toc-sec-pmid-pmcid" class="nav-link" data-scroll-target="#sec-pmid-pmcid"><span class="header-section-number">2.7</span> PMID and PMCID</a></li>
-  <li><a href="#sec-syntax" id="toc-sec-syntax" class="nav-link" data-scroll-target="#sec-syntax"><span class="header-section-number">2.8</span> Syntax</a></li>
+  <li><a href="#sec-eligibilitycriteria" id="toc-sec-eligibilitycriteria" class="nav-link" data-scroll-target="#sec-eligibilitycriteria"><span class="header-section-number">2.7</span> eligibility criteria</a></li>
+  <li><a href="#sec-orphanline" id="toc-sec-orphanline" class="nav-link" data-scroll-target="#sec-orphanline"><span class="header-section-number">2.8</span> orphan line</a></li>
+  <li><a href="#sec-pmid-pmcid" id="toc-sec-pmid-pmcid" class="nav-link" data-scroll-target="#sec-pmid-pmcid"><span class="header-section-number">2.9</span> PMID and PMCID</a></li>
+  <li><a href="#sec-syntax" id="toc-sec-syntax" class="nav-link" data-scroll-target="#sec-syntax"><span class="header-section-number">2.10</span> Syntax</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://www.github.com/Maelphes/syslitcom/edit/gh-pages/technicalterms.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/blob/gh-pages/technicalterms.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -384,8 +420,60 @@ Table&nbsp;2.1: Truth table
 \]</span> The idea of a sensitive search is to retrieve as many relevant records as possible, which results in retrieving more non-relevant records in the process.</p>
 </section>
 </section>
-<section id="sec-pmid-pmcid" class="level2" data-number="2.7">
-<h2 data-number="2.7" class="anchored" data-anchor-id="sec-pmid-pmcid"><span class="header-section-number">2.7</span> PMID and PMCID</h2>
+<section id="sec-eligibilitycriteria" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="sec-eligibilitycriteria"><span class="header-section-number">2.7</span> eligibility criteria</h2>
+<p>A very important step at the beginning of any review project is the definition of certain <strong>eligibility criteria</strong> on the basis of the research question. There are two types of criteria:</p>
+<p><strong>Inclusion criteria</strong> must be met by studies in order for them to be included in the review. In contrast, if a study meets one or more of the <strong>exclusion criteria</strong>, it will be excluded from the review. See also <span class="citation" data-cites="McKenzie2022">McKenzie et al. (<a href="references.html#ref-McKenzie2022" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="Gough2017">Gough, Oliver, and Thomas (<a href="references.html#ref-Gough2017" role="doc-biblioref">2017</a>)</span>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example: systematic review about chronic non-cancer pain">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example: systematic review about chronic non-cancer pain
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Inclusion criteria:
+<ul>
+<li>adults (18 years or older)</li>
+<li>patients with chronic non-cancer pain</li>
+<li>randomized controlled trials</li>
+</ul></li>
+<li>Exclusion criteria:
+<ul>
+<li>acute pain, post-surgical pain</li>
+<li>chronic cancer pain</li>
+<li>pregnancy</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="sec-orphanline" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="sec-orphanline"><span class="header-section-number">2.8</span> orphan line</h2>
+<p>All parts of a <a href="methods.html#sec-searchstrategy">search strategy</a> are supposed to contribute to the overall result of the database search. In case a search query within a search strategy is not connected (using operators) to the rest of the search strategy, it is called an <strong>orphan line</strong>.</p>
+<div id="tbl-orphanline" class="quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-orphanline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.2: Line 5 is an orphan line.
+</figcaption>
+<div aria-describedby="tbl-orphanline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="sourceCode anchored" id="tbl-orphanline"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="tbl-orphanline-1"><a href="#tbl-orphanline-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   hypertension<span class="op">/</span></span>
+<span id="tbl-orphanline-2"><a href="#tbl-orphanline-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>   (hypertension <span class="kw">or</span> high blood pressure).ti,ab.</span>
+<span id="tbl-orphanline-3"><a href="#tbl-orphanline-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>   <span class="op">*</span>patient attitude<span class="op">/</span></span>
+<span id="tbl-orphanline-4"><a href="#tbl-orphanline-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   <span class="op">*</span>patient satisfaction<span class="op">/</span></span>
+<span id="tbl-orphanline-5"><a href="#tbl-orphanline-5" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span>   (choice\$ <span class="kw">or</span> empower\$).ti.</span>
+<span id="tbl-orphanline-6"><a href="#tbl-orphanline-6" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span>   <span class="dv">1</span> <span class="kw">or</span> <span class="dv">2</span></span>
+<span id="tbl-orphanline-7"><a href="#tbl-orphanline-7" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span>   <span class="dv">3</span> <span class="kw">or</span> <span class="dv">4</span></span>
+<span id="tbl-orphanline-8"><a href="#tbl-orphanline-8" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span>   <span class="dv">6</span> <span class="kw">and</span> <span class="dv">7</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</figure>
+</div>
+</section>
+<section id="sec-pmid-pmcid" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="sec-pmid-pmcid"><span class="header-section-number">2.9</span> PMID and PMCID</h2>
 <p>The PubMed ID (PMID) and the PubMed Central ID (PMCID) are unique identifiers assigned to the records within the databases <a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a> and <a href="https://www.ncbi.nlm.nih.gov/pmc/">PubMed Central</a>. They are similar to the digital object identifier (DOI).</p>
 <p>PMIDs are unique integer values, e.g.&nbsp;<a href="https://pubmed.ncbi.nlm.nih.gov/32256971/">32256971</a>, PMCIDs are composed of the prefix <strong>PMC</strong> followed by a series of numbers, e.g.&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7106990/">PMC7106990</a>.</p>
 <p>PubMed records can easily be found simply by entering their <a href="https://pubmed.ncbi.nlm.nih.gov/?term=31541534+28475312+21995656+33223580+29327483+35602613+29905334+37465961+35472729+37983749">PMIDs as search terms</a> into the PubMed search.</p>
@@ -403,14 +491,14 @@ Conversion tool
 </div>
 </div>
 </section>
-<section id="sec-syntax" class="level2" data-number="2.8">
-<h2 data-number="2.8" class="anchored" data-anchor-id="sec-syntax"><span class="header-section-number">2.8</span> Syntax</h2>
+<section id="sec-syntax" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="sec-syntax"><span class="header-section-number">2.10</span> Syntax</h2>
 <p>Similar to programming, the <strong>syntax</strong> is the set of rules that applies for setting up search queries and building search strategies in databases. It defines the operators, field codes and special characters (such as wildcard symbols, parentheses, slashes, quotation marks, etc.) that are available within a particular search interface.</p>
 <p>As a consequence, search strategies cannot be used freely in every database. They have to be translated due to different syntax and due to different index terms. (See <span class="citation" data-cites="Clark2020">Clark et al. (<a href="references.html#ref-Clark2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="Glanville2019">Glanville et al. (<a href="references.html#ref-Glanville2019" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="Wanner2019">Wanner and Baumann (<a href="references.html#ref-Wanner2019" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="Damarell2013">Damarell, Tieman, and Sladek (<a href="references.html#ref-Damarell2013" role="doc-biblioref">2013</a>)</span>).</p>
 <div id="tbl-syntax" class="hover quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-syntax-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2.2: Examples for syntax in different search interfaces
+Table&nbsp;2.3: Examples for syntax in different search interfaces
 </figcaption>
 <div aria-describedby="tbl-syntax-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-hover table">
@@ -484,6 +572,9 @@ Haynes, R. Brian, and Nancy L. Wilczynski. 2004. <span>“<span class="nocase">O
 </div>
 <div id="ref-Lefebvre2017" class="csl-entry" role="listitem">
 Lefebvre, Carol, Julie Glanville, Sophie Beale, Charles Boachie, Steven Duffy, Cynthia Fraser, Jenny Harbour, Rachael McCool, and Lynne Smith. 2017. <span>“Assessing the Performance of Methodological Search Filters to Improve the Efficiency of Evidence Information Retrieval: Five Literature Reviews and a Qualitative Study.”</span> <em>Health Technol Assess</em> 21 (69): 1–148. <a href="https://doi.org/10.3310/hta21690">https://doi.org/10.3310/hta21690</a>.
+</div>
+<div id="ref-McKenzie2022" class="csl-entry" role="listitem">
+McKenzie, J. E., S. E. Brennan, R. E. Ryan, H. J. Thomson, R. V. Johnston, and J. Thomas. 2022. <span>“Chapter 3: Defining the Criteria for Including Studies and How They Will Be Grouped for the Synthesis.”</span> In <em>Cochrane Handbook for Systematic Reviews of Interventions</em>, edited by J. P. T. Higgins, J. Thomas, J. Chandler, M. Cumpston, T. Li, M. J. Page, and V. A. Welch. Cochrane.
 </div>
 <div id="ref-Moher2003" class="csl-entry" role="listitem">
 Moher, D., B. Pham, M. L. Lawson, and T. P. Klassen. 2003. <span>“<span class="nocase">The inclusion of reports of randomised trials published in languages other than English in systematic reviews.</span>”</span> <em>Health Technol Assess</em> 7: 1–90. <a href="https://doi.org/10.3310/hta7410">https://doi.org/10.3310/hta7410</a>.

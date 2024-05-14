@@ -1,6 +1,5 @@
 ---
 format: html
-bibliography: glossar.bib
 link-citations: true
 link-bibliography: true
 filters:
@@ -161,6 +160,48 @@ $$
 The idea of a sensitive search is to retrieve as many relevant records as 
 possible, which results in retrieving more non-relevant records in the process.
 
+
+## eligibility criteria {#sec-eligibilitycriteria}
+A very important step at the beginning of any review project is the definition
+of certain **eligibility criteria** on the basis of the research question. 
+There are two types of criteria: 
+
+**Inclusion criteria** must be met by studies in order for
+them to be included in the review. In contrast, if a study meets one or more 
+of the **exclusion criteria**, it will be excluded from the review.
+See also @McKenzie2022, @Gough2017.
+
+::: {.callout-tip title="Example: systematic review about chronic non-cancer pain"}
+- Inclusion criteria:
+  - adults (18 years or older)
+  - patients with chronic non-cancer pain
+  - randomized controlled trials
+- Exclusion criteria: 
+  - acute pain, post-surgical pain 
+  - chronic cancer pain
+  - pregnancy
+:::
+
+## orphan line {#sec-orphanline}
+
+All parts of a [search strategy](#sec-searchstrategy) are supposed to contribute 
+to the overall result of the database search. In case a search query within a
+search strategy is not connected (using operators) to the rest of the search 
+strategy, it is called an **orphan line**.
+
+::: {#tbl-orphanline}
+```python
+1	hypertension/
+2	(hypertension or high blood pressure).ti,ab.
+3	*patient attitude/
+4	*patient satisfaction/
+5	(choice\$ or empower\$).ti.
+6	1 or 2
+7	3 or 4
+8	6 and 7
+```
+Line 5 is an orphan line.
+:::
 
 
 ## PMID and PMCID {#sec-pmid-pmcid}
