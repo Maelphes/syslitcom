@@ -237,9 +237,10 @@ div.csl-indent {
   <li><a href="#sec-nesting" id="toc-sec-nesting" class="nav-link" data-scroll-target="#sec-nesting"><span class="header-section-number">4.10</span> nesting</a></li>
   <li><a href="#sec-phrases" id="toc-sec-phrases" class="nav-link" data-scroll-target="#sec-phrases"><span class="header-section-number">4.11</span> phrases</a></li>
   <li><a href="#sec-searchstrategy" id="toc-sec-searchstrategy" class="nav-link" data-scroll-target="#sec-searchstrategy"><span class="header-section-number">4.12</span> search strategy</a></li>
-  <li><a href="#sec-syslitsearch" id="toc-sec-syslitsearch" class="nav-link" data-scroll-target="#sec-syslitsearch"><span class="header-section-number">4.13</span> systematic literature searching</a></li>
-  <li><a href="#sec-termexplosion" id="toc-sec-termexplosion" class="nav-link" data-scroll-target="#sec-termexplosion"><span class="header-section-number">4.14</span> term explosion</a></li>
-  <li><a href="#sec-truncation" id="toc-sec-truncation" class="nav-link" data-scroll-target="#sec-truncation"><span class="header-section-number">4.15</span> truncation</a></li>
+  <li><a href="#sec-subheading" id="toc-sec-subheading" class="nav-link" data-scroll-target="#sec-subheading"><span class="header-section-number">4.13</span> subheading</a></li>
+  <li><a href="#sec-syslitsearch" id="toc-sec-syslitsearch" class="nav-link" data-scroll-target="#sec-syslitsearch"><span class="header-section-number">4.14</span> systematic literature searching</a></li>
+  <li><a href="#sec-termexplosion" id="toc-sec-termexplosion" class="nav-link" data-scroll-target="#sec-termexplosion"><span class="header-section-number">4.15</span> term explosion</a></li>
+  <li><a href="#sec-truncation" id="toc-sec-truncation" class="nav-link" data-scroll-target="#sec-truncation"><span class="header-section-number">4.16</span> truncation</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://www.github.com/Maelphes/syslitcom/edit/gh-pages/methods.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/blob/gh-pages/methods.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -693,8 +694,28 @@ Table&nbsp;4.4: Multi-line search strategy for Ovid MEDLINE
 </figure>
 </div>
 </section>
-<section id="sec-syslitsearch" class="level2" data-number="4.13">
-<h2 data-number="4.13" class="anchored" data-anchor-id="sec-syslitsearch"><span class="header-section-number">4.13</span> systematic literature searching</h2>
+<section id="sec-subheading" class="level2" data-number="4.13">
+<h2 data-number="4.13" class="anchored" data-anchor-id="sec-subheading"><span class="header-section-number">4.13</span> subheading</h2>
+<p>Publications in <a href="technicalterms.html#sec-bibdb">bibliographic databases</a> are often indexed using index terms. In cases where the index term does not sufficiently describe the content of the article, so-called <strong>subheadings</strong> or <strong>qualifiers</strong> can be applied to the index term to specify certain aspects.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The PubMed search query <code>Respiratory Tract Infections/drug therapy[MeSH]</code> (or short <code>Respiratory Tract Infections/dt[mh]</code>) retrieves references focusing on the drug therapy of respiratory tract infections.</p>
+</div>
+</div>
+<p>Typical subheadings are ´adverse effects´´, ´complications´, ´diagnosis´, ´drug therapy´, ´economics´, ´epidemiology´, ´history´, ´methods´, ´pathology´, ´pharmacology´, ´psychology´, ´standards´, ´therapeutic use´, ´toxicology´.</p>
+<p>Sometimes it may be required to retrieve all publications featuring a certain subheading regardless of the index terms, for instance when one is interested in reports of adverse effects. In order to do that the subheading can be searched alone as a so-called <strong>floating subheading</strong>, for example <code>adverse effects[sh]</code> in PubMed or <code>ae.fs</code> in Ovid MEDLINE.</p>
+<p>For more information about subheadings in PubMed see <a href="https://pubmed.gov/help/#mesh-subheadings" class="uri">https://pubmed.gov/help/#mesh-subheadings</a> or <a href="https://nlm.nih.gov/mesh/qualifiers_scopenotes.html" class="uri">https://nlm.nih.gov/mesh/qualifiers_scopenotes.html</a>.</p>
+</section>
+<section id="sec-syslitsearch" class="level2" data-number="4.14">
+<h2 data-number="4.14" class="anchored" data-anchor-id="sec-syslitsearch"><span class="header-section-number">4.14</span> systematic literature searching</h2>
 <p>Conducting a <strong>systematic literature search</strong> (also called <strong>systematic search</strong>) means to search multiple databases for references to relevant articles and studies in a structured, planned and iterative manner. A systematic search is well-documented, transparent and (to a certain degree) reproducible.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Information specialists and librarians">
 <div class="callout-header d-flex align-content-center">
@@ -738,8 +759,8 @@ important steps of a systematic search
 <p>A systematic search is best peer-reviewed by colleagues (e.g.&nbsp;by information specialists, other researchers, or fellow students), following the PRESS guideline by <span class="citation" data-cites="McGowan2016">McGowan et al. (<a href="references.html#ref-McGowan2016" role="doc-biblioref">2016</a>)</span>.</p>
 <p>Ideally, the systematic search is documented according the PRISMA-S extension by <span class="citation" data-cites="Rethlefsen2021">Rethlefsen et al. (<a href="references.html#ref-Rethlefsen2021" role="doc-biblioref">2021</a>)</span>.</p>
 </section>
-<section id="sec-termexplosion" class="level2" data-number="4.14">
-<h2 data-number="4.14" class="anchored" data-anchor-id="sec-termexplosion"><span class="header-section-number">4.14</span> term explosion</h2>
+<section id="sec-termexplosion" class="level2" data-number="4.15">
+<h2 data-number="4.15" class="anchored" data-anchor-id="sec-termexplosion"><span class="header-section-number">4.15</span> term explosion</h2>
 <p>Index terms in databases are usually hierarchically organized, starting with very broad terms in the top categories to very specific terms further down the branches of the hierarchy.</p>
 <p>When searching using an index term, it is often possible to include all subordinate index terms in the search. This simultaneous search option is called <em>term explosion</em>.</p>
 <div class="callout callout-style-default callout-warning callout-titled" title="Warning">
@@ -772,11 +793,11 @@ Examples
 </div>
 </div>
 </section>
-<section id="sec-truncation" class="level2" data-number="4.15">
-<h2 data-number="4.15" class="anchored" data-anchor-id="sec-truncation"><span class="header-section-number">4.15</span> truncation</h2>
+<section id="sec-truncation" class="level2" data-number="4.16">
+<h2 data-number="4.16" class="anchored" data-anchor-id="sec-truncation"><span class="header-section-number">4.16</span> truncation</h2>
 <p>In general, <em>to truncate</em> means to reduce something down to its trunk, to shorten something, to cut something off.</p>
 <p>In literature searching <strong>truncation</strong> is a technique that allows to search several variations of a term at once by searching with a reduced (truncated) version of the search term. A term is truncated by replacing one or more characters with a so-called <em>wildcard character</em>, such as <code>*</code>, <code>$</code>, <code>?</code>, <code>#</code>.</p>
-<p>The most common form of truncation is the unlimited truncation (usually using the asterisk <code>*</code> or the dollar sign <code>$</code>) at the end of the search term. In some databases it is possible to limit the truncation to a fixed number of characters or to replace just one character.</p>
+<p>The most common form of truncation is the unlimited truncation (usually using the asterisk <code>*</code> or the dollar sign <code>$</code>) at the end of the search term. In some databases it is possible to limit the truncation to a fixed number of characters or to replace just one character. The kinds of truncation that are available depend on the <a href="technicalterms.html#sec-syntax">syntax</a> of the database or search interface.</p>
 <div id="tbl-truncations" class="hover quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-truncations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
@@ -820,7 +841,6 @@ Table&nbsp;4.5: Truncation examples in Ovid
 </div>
 </figure>
 </div>
-<p>The kinds of truncation that are available depend on the <a href="technicalterms.html#sec-syntax">syntax</a> of the database or search interface. Not all kinds of truncation are generally supported.</p>
 <p>Usually only free text terms are truncated. While it might be possible to truncate index terms, it is not very practical; truncated index terms are rarely used meaningfully, for instance in valiated <a href="#sec-filters">search filters</a>, such as the search term <code>diagnostic*[MeSH:noexp]</code> in the <a href="https://hiruweb.mcmaster.ca/hkr/hedges/medline/#diagnosis_embase">diagnosis filter</a> by <span class="citation" data-cites="Kastner2009">Kastner et al. (<a href="references.html#ref-Kastner2009" role="doc-biblioref">2009</a>)</span>.</p>
 
 

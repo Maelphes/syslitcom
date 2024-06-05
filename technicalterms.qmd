@@ -258,6 +258,37 @@ See also @McKenzie2022, @Gough2017.
   - pregnancy
 :::
 
+## full-text {#sec-fulltext}
+The complete texts of publications (e.g. articles, books, chapters, reports, ...)
+are called **full-texts**. 
+
+Most of the available databases for literature searching are bibliographic 
+databases, which means they do not contain the full-text, but bibliographic 
+references to the publications, in most cases including a link to the publisher, 
+where the full-text can be obtained.
+
+Open Access publications can be accessed freely, whereas non-open access 
+publications usually require a paid subscription or access fee. Alternatively, 
+they can be ordered using the 
+[document delivery service](https://www.ub.unibe.ch/services/borrowing_and_ordering) 
+of a university library.
+
+:::{.callout-tip title="full-text retrieval tools"}
+There are tools that can help to identify the shortest path to the full-text:
+
+- [Lean Library](https://leanlibrary.com/download/)
+- [LibKey Nomad](https://thirdiron.com/downloadnomad/)
+- [Unpaywall](https://unpaywall.org/)
+- [Open Access Button](https://openaccessbutton.org/)
+
+Also [reference management programs](#sec-refmanagement) often provide ways to 
+retrieve available full-texts for the managed references. Sometimes this 
+automated retrieval fails due to incompatibility or security measures of the 
+publishers, even when the full-text would be otherwise accessible (e.g. [EndNote](https://support.clarivate.com/Endnote/s/article/EndNote-Optimizing-Find-Full-Text-results-with-X2-and-later?language=en_US)).
+:::
+
+
+
 ## orphan line {#sec-orphanline}
 
 All parts of a [search strategy](#sec-searchstrategy) are supposed to contribute 
@@ -271,7 +302,7 @@ strategy, it is called an **orphan line**.
 2	(hypertension or high blood pressure).ti,ab.
 3	*patient attitude/
 4	*patient satisfaction/
-5	(choice\$ or empower\$).ti.
+5	(choice$ or empower$).ti.
 6	1 or 2
 7	3 or 4
 8	6 and 7
