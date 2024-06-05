@@ -93,6 +93,22 @@ However, this so-called language of publication bias can have a significant
 impact on the quality of the review. (@Gough2017, @Morrison2012, @Moher2003)
 
 
+## bibliographic database {#sec-bibdb}
+
+**Bibliographic databases** comprise references to publications, such as articles in 
+peer-reviewed journals, reports, patents, book chapters or conference proceedings. 
+
+As opposed to full text databases, bibliographic databases only provide 
+bibliographic information or metadata. Bibliographic records typically include 
+title, abstract, author(s), publication year, journal name, and the DOI or 
+other persistent identifiers.
+
+References in bibliographic databases are often indexed with subject headings
+to facilitate the retrieval of relevant records, for instance during a 
+systematic literature search.
+
+
+
 ## classification metrics {#sec-class-metrics}
 
 In information retrieval the performance of a systematic search, a search
@@ -161,6 +177,28 @@ The idea of a sensitive search is to retrieve as many relevant records as
 possible, which results in retrieving more non-relevant records in the process.
 
 
+## data field {#sec-datafield}
+A data field (also called *field* or *column*) is a set of values of a 
+particular data type within a database. For instance the data fields for the
+author or the title contain text strings whereas the fields for the issue, 
+volume or [PubMed ID](#sec-pmid-pmcid) contain numerical values. 
+
+Data fields possess designations in the form of [field codes or search field tags](#sec-fieldcode) 
+such as `UID`, `AU`, `TI` and `AB` for the fields of unique identifier, author, 
+title and [abstract](#sec-abstract). 
+
+::: {#tbl-datafields}
+|    UID   |             AU            |                   TI                   |
+|:--------:|:-------------------------:|:--------------------------------------:|
+|  7616995 | J. P. Kassirer, M. Angell | Redundant publication: a reminder      |
+| 16040884 |       A. K. Akobeng       | Principles of evidence based medicine  |
+| 22071866 |   T. Young,S.  Hopewell   | Methods for obtaining unpublished data |
+: Data fields {.striped}
+:::
+
+It always depends on the [syntax](#sec-syntax) of the database or search
+interface which fields can be searched and by what code they are searchable.
+
 ## eligibility criteria {#sec-eligibilitycriteria}
 A very important step at the beginning of any review project is the definition
 of certain **eligibility criteria** on the basis of the research question. 
@@ -222,7 +260,7 @@ PMID, PMCID and DOI into one another. This tool only works for records which are
 both part of PubMed and PubMed Central.
 :::
 
-## Syntax {#sec-syntax}
+## syntax {#sec-syntax}
 Similar to programming, the **syntax** is the set of rules that applies 
 for setting up search queries and building search strategies in databases. 
 It defines the operators, field codes and special characters (such as wildcard 

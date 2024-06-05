@@ -85,6 +85,39 @@ references is called **co-citation tracking**, see @fig-cociting and @fig-cocite
 ![co-citation tracking using the cited references which the core paper has in common with other papers](./fig/co-cited.svg){#fig-cocited width=80%}
 
 
+## critical appraisal {#sec-criticalappraisal}
+One of the main steps in evidence-based medicine is the critical appraisal of 
+evidence. Critical appraisal checklists help to assess the methodological 
+quality of a studies and to determine the extent to which a study has excluded 
+or minimized the possibility of bias in its design, conduct and analysis.
+
+:::{.callout-note title="Sources for critical appraisal checklists" collapse="true"}
+- [JBI](https://jbi.global/critical-appraisal-tools)
+- [Centre for Evidence-Based Medicine (CEBM)](https://www.cebm.ox.ac.uk/resources/ebm-tools/critical-appraisal-tools)
+- [Critical Appraisal Skills Programme (CASP)](https://casp-uk.net/casp-tools-checklists)
+- [Scottish Intercollegiate Guidelines Network (SIGN)](https://sign.ac.uk/what-we-do/methodology/checklists)
+- [JAMAevidence](https://jamaevidence.mhmedical.com/learntools.aspx)
+:::
+
+See also: @Twells2021, @Buccheri2017, @FineoutOverholt2010b, 
+@FineoutOverholt2010a, @FineoutOverholt2010
+
+
+## deduplication {#sec-deduplication}
+Whenever multiple databases are searched it is unavoidable that various 
+references are retrieved more than once due to the overlapping of contents. 
+The removal of duplicate records from a dataset is called deduplication. 
+
+An unwelcome practice, which makes deduplication (and concomitantly any
+scientific work) more difficult, is repetitive, duplicate or redundant 
+publishing (@Ding2020, @Johnson2006, @Kassirer1995).
+
+Deduplication can be carried out manually using reference management software
+or in an automated way using review tools. The methods and tools for 
+deduplication differ in their mode of operation and the quality of results 
+(@Janka2024, @McKeown2021, @Bramer2016).
+
+
 ## filters {#sec-filters}
 
 Filters (also search filters, filter strategies or hedges) are [search strategies](#sec-searchstrategy)
@@ -131,7 +164,7 @@ overall search in line 12. (see also @sec-searchstrategy).
 :::
 
 ## field code {#sec-fieldcode}
-The data fields of databases possess short designations called **field codes**, 
+The [data fields](#sec-datafield) of databases possess short designations called **field codes**, 
 field tags or field labels, which allow to search the fields separately as part 
 of a search query or [search strategy](#sec-searchstrategy). Depending on the
 [syntax](#sec-syntax) of the database or search interface different field codes
