@@ -98,4 +98,4 @@ It comprises 39 databases, such as [PubMed](https://pubmed.ncbi.nlm.nih.gov/),
 [PubMed Central](https://www.ncbi.nlm.nih.gov/pmc/). 
 
 Entrez can be accessed using the [NCBI website](https://www.ncbi.nlm.nih.gov/search/) 
-or using the [Entrez Programming Utitilites (E-utilities)](https://www.ncbi.nlm.nih.gov/books/NBK25501/).
+or using the [Entrez Programming Utitilites (E-utilities)](#sec-e-utilities).

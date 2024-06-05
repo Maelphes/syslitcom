@@ -3,7 +3,6 @@ format: html
 code-fold: false
 link-citations: true
 link-bibliography: true
-
 filters:
   - parse-latex
 ---

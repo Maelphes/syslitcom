@@ -269,10 +269,13 @@ window.Quarto = {
   <li><a href="#sec-sensitivity" id="toc-sec-sensitivity" class="nav-link" data-scroll-target="#sec-sensitivity"><span class="header-section-number">2.7.3</span> sensitivity</a></li>
   </ul></li>
   <li><a href="#sec-datafield" id="toc-sec-datafield" class="nav-link" data-scroll-target="#sec-datafield"><span class="header-section-number">2.8</span> data field</a></li>
-  <li><a href="#sec-eligibilitycriteria" id="toc-sec-eligibilitycriteria" class="nav-link" data-scroll-target="#sec-eligibilitycriteria"><span class="header-section-number">2.9</span> eligibility criteria</a></li>
-  <li><a href="#sec-orphanline" id="toc-sec-orphanline" class="nav-link" data-scroll-target="#sec-orphanline"><span class="header-section-number">2.10</span> orphan line</a></li>
-  <li><a href="#sec-pmid-pmcid" id="toc-sec-pmid-pmcid" class="nav-link" data-scroll-target="#sec-pmid-pmcid"><span class="header-section-number">2.11</span> PMID and PMCID</a></li>
-  <li><a href="#sec-syntax" id="toc-sec-syntax" class="nav-link" data-scroll-target="#sec-syntax"><span class="header-section-number">2.12</span> syntax</a></li>
+  <li><a href="#sec-dataset" id="toc-sec-dataset" class="nav-link" data-scroll-target="#sec-dataset"><span class="header-section-number">2.9</span> dataset</a></li>
+  <li><a href="#sec-doi" id="toc-sec-doi" class="nav-link" data-scroll-target="#sec-doi"><span class="header-section-number">2.10</span> digital object identifier</a></li>
+  <li><a href="#sec-eligibilitycriteria" id="toc-sec-eligibilitycriteria" class="nav-link" data-scroll-target="#sec-eligibilitycriteria"><span class="header-section-number">2.11</span> eligibility criteria</a></li>
+  <li><a href="#sec-orphanline" id="toc-sec-orphanline" class="nav-link" data-scroll-target="#sec-orphanline"><span class="header-section-number">2.12</span> orphan line</a></li>
+  <li><a href="#sec-pmid-pmcid" id="toc-sec-pmid-pmcid" class="nav-link" data-scroll-target="#sec-pmid-pmcid"><span class="header-section-number">2.13</span> PMID and PMCID</a></li>
+  <li><a href="#sec-syntax" id="toc-sec-syntax" class="nav-link" data-scroll-target="#sec-syntax"><span class="header-section-number">2.14</span> syntax</a></li>
+  <li><a href="#sec-thesaurus" id="toc-sec-thesaurus" class="nav-link" data-scroll-target="#sec-thesaurus"><span class="header-section-number">2.15</span> thesaurus</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://www.github.com/Maelphes/syslitcom/edit/gh-pages/technicalterms.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/blob/gh-pages/technicalterms.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -316,7 +319,7 @@ Examples
 </div>
 <div class="callout-body-container callout-body">
 <ol type="1">
-<li><code>apothecary</code> might refer to the occuopation of pharmacist or the community pharmacy as a location or institution.</li>
+<li><code>apothecary</code> might refer to the occupation of pharmacist or the community pharmacy as a location or institution.</li>
 <li>The term <code>pharmacy</code> may refer to the pharmaceutical sciences, the manufacture of drugs or the pharmacy as a retail shop.</li>
 <li>In anatomy, a <code>styloid process</code> is a pointed outgrowth from a bone. However, there are serveral of these in the human body, for instance in the temporal bone, the radius bone, the ulna bone or the metacarpal bones.</li>
 </ol>
@@ -435,7 +438,7 @@ Table&nbsp;2.1: Truth table
 <div id="tbl-datafields" class="striped quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-datafields-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;2.2: Data fields
+Table&nbsp;2.2: Data fields UID, AU, TI shown for three records
 </figcaption>
 <div aria-describedby="tbl-datafields-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-striped caption-top table">
@@ -474,8 +477,34 @@ Table&nbsp;2.2: Data fields
 </div>
 <p>It always depends on the <a href="#sec-syntax">syntax</a> of the database or search interface which fields can be searched and by what code they are searchable.</p>
 </section>
-<section id="sec-eligibilitycriteria" class="level2" data-number="2.9">
-<h2 data-number="2.9" class="anchored" data-anchor-id="sec-eligibilitycriteria"><span class="header-section-number">2.9</span> eligibility criteria</h2>
+<section id="sec-dataset" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="sec-dataset"><span class="header-section-number">2.9</span> dataset</h2>
+<p><strong>Datasets</strong> or <strong>records</strong> of a database are collections of data. In a tabular database they correspond to the rows of the table, as shown in <a href="#tbl-datafields" class="quarto-xref">Table&nbsp;<span>2.2</span></a>. A record in such a database consists of values for the given columns or <a href="#sec-datafield">data fields</a> of the table.</p>
+<p>Records of bibliographic databases are called references. These contain the metadata referring to a publication, such as title, <a href="#sec-abstract">abstract</a>, authors, journal name or publication date.</p>
+<p>Datasets within <a href="{#sec-ctr}">clinical trials registries</a> contain metadata for clinical trials, such as registration number, study type, research institution, study status, etc.</p>
+<p>Records within fulltext databases also feature a fulltext document, as opposed to bibliographic databases.</p>
+</section>
+<section id="sec-doi" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="sec-doi"><span class="header-section-number">2.10</span> digital object identifier</h2>
+<p>A digital object identifier (<strong>DOI</strong>) is a persistent identifier issued by the <a href="https://www.doi.org/">DOI foundation</a>. It is used to uniquely identify publications.</p>
+<p>DOIs take the form of character strings which consist of a prefix and a suffix, separated by a slash <code>/</code>. The prefix identifies the registrant of the DOI (usually the publisher of an article) and takes the form <code>10.xxxx</code>, where <code>xxxx</code> is a number greater than or equal to 1000. After the prefix and the slash follows the suffix, which is chosen by the registrant for the particular digital object.</p>
+<p>DOIs can be resolved using the website of the <a href="https://www.doi.org">International DOI Foundation</a> or the <a href="https://hdl.handle.net">Handle.Net Registry</a>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>doi:10.1000/182</code> can be resolved via <a href="https://doi.org/10.1000/182" class="uri">https://doi.org/10.1000/182</a> or <a href="https://hdl.handle.net/10.1000/182" class="uri">https://hdl.handle.net/10.1000/182</a> and leads to the <a href="https://www.doi.org/the-identifier/resources/handbook/">DOI handbook</a>.</p>
+</div>
+</div>
+</section>
+<section id="sec-eligibilitycriteria" class="level2" data-number="2.11">
+<h2 data-number="2.11" class="anchored" data-anchor-id="sec-eligibilitycriteria"><span class="header-section-number">2.11</span> eligibility criteria</h2>
 <p>A very important step at the beginning of any review project is the definition of certain <strong>eligibility criteria</strong> on the basis of the research question. There are two types of criteria:</p>
 <p><strong>Inclusion criteria</strong> must be met by studies in order for them to be included in the review. In contrast, if a study meets one or more of the <strong>exclusion criteria</strong>, it will be excluded from the review. See also <span class="citation" data-cites="McKenzie2022">McKenzie et al. (<a href="references.html#ref-McKenzie2022" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="Gough2017">Gough, Oliver, and Thomas (<a href="references.html#ref-Gough2017" role="doc-biblioref">2017</a>)</span>.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Example: systematic review about chronic non-cancer pain">
@@ -505,8 +534,8 @@ Example: systematic review about chronic non-cancer pain
 </div>
 </div>
 </section>
-<section id="sec-orphanline" class="level2" data-number="2.10">
-<h2 data-number="2.10" class="anchored" data-anchor-id="sec-orphanline"><span class="header-section-number">2.10</span> orphan line</h2>
+<section id="sec-orphanline" class="level2" data-number="2.12">
+<h2 data-number="2.12" class="anchored" data-anchor-id="sec-orphanline"><span class="header-section-number">2.12</span> orphan line</h2>
 <p>All parts of a <a href="methods.html#sec-searchstrategy">search strategy</a> are supposed to contribute to the overall result of the database search. In case a search query within a search strategy is not connected (using operators) to the rest of the search strategy, it is called an <strong>orphan line</strong>.</p>
 <div id="tbl-orphanline" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -526,8 +555,8 @@ Table&nbsp;2.3: Line 5 is an orphan line.
 </figure>
 </div>
 </section>
-<section id="sec-pmid-pmcid" class="level2" data-number="2.11">
-<h2 data-number="2.11" class="anchored" data-anchor-id="sec-pmid-pmcid"><span class="header-section-number">2.11</span> PMID and PMCID</h2>
+<section id="sec-pmid-pmcid" class="level2" data-number="2.13">
+<h2 data-number="2.13" class="anchored" data-anchor-id="sec-pmid-pmcid"><span class="header-section-number">2.13</span> PMID and PMCID</h2>
 <p>The PubMed ID (PMID) and the PubMed Central ID (PMCID) are unique identifiers assigned to the records within the databases <a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a> and <a href="https://www.ncbi.nlm.nih.gov/pmc/">PubMed Central</a>. They are similar to the digital object identifier (DOI).</p>
 <p>PMIDs are unique integer values, e.g.&nbsp;<a href="https://pubmed.ncbi.nlm.nih.gov/32256971/">32256971</a>, PMCIDs are composed of the prefix <strong>PMC</strong> followed by a series of numbers, e.g.&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7106990/">PMC7106990</a>.</p>
 <p>PubMed records can easily be found simply by entering their <a href="https://pubmed.ncbi.nlm.nih.gov/?term=31541534+28475312+21995656+33223580+29327483+35602613+29905334+37465961+35472729+37983749">PMIDs as search terms</a> into the PubMed search.</p>
@@ -545,8 +574,8 @@ Conversion tool
 </div>
 </div>
 </section>
-<section id="sec-syntax" class="level2" data-number="2.12">
-<h2 data-number="2.12" class="anchored" data-anchor-id="sec-syntax"><span class="header-section-number">2.12</span> syntax</h2>
+<section id="sec-syntax" class="level2" data-number="2.14">
+<h2 data-number="2.14" class="anchored" data-anchor-id="sec-syntax"><span class="header-section-number">2.14</span> syntax</h2>
 <p>Similar to programming, the <strong>syntax</strong> is the set of rules that applies for setting up search queries and building search strategies in databases. It defines the operators, field codes and special characters (such as wildcard symbols, parentheses, slashes, quotation marks, etc.) that are available within a particular search interface.</p>
 <p>As a consequence, search strategies cannot be used freely in every database. They have to be translated due to different syntax and due to different index terms. (See <span class="citation" data-cites="Clark2020">Clark et al. (<a href="references.html#ref-Clark2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="Glanville2019">Glanville et al. (<a href="references.html#ref-Glanville2019" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="Wanner2019">Wanner and Baumann (<a href="references.html#ref-Wanner2019" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="Damarell2013">Damarell, Tieman, and Sladek (<a href="references.html#ref-Damarell2013" role="doc-biblioref">2013</a>)</span>).</p>
 <div id="tbl-syntax" class="hover quarto-float anchored">
@@ -594,6 +623,75 @@ Table&nbsp;2.4: Examples for syntax in different search interfaces
 </div>
 </figure>
 </div>
+</section>
+<section id="sec-thesaurus" class="level2" data-number="2.15">
+<h2 data-number="2.15" class="anchored" data-anchor-id="sec-thesaurus"><span class="header-section-number">2.15</span> thesaurus</h2>
+<p>A <strong>thesaurus</strong> (ancient greek: θησαυρός (<em>thesaurós</em>) ‘treasury’) is a dictionary of synonyms, which are often ordered alphabetically or hierarchically.</p>
+<p>In the context of literature searching, a thesaurus contains a database-specific <strong>controlled vocabulary</strong> of index terms.</p>
+<div id="tbl-thesauri" class="striped quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-thesauri-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.5: Commonly known databases and their thesauri
+</figcaption>
+<div aria-describedby="tbl-thesauri-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped caption-top table">
+<thead>
+<tr class="header">
+<th>Database</th>
+<th>Thesaurus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PubMed/MEDLINE</td>
+<td><a href="https://www.ncbi.nlm.nih.gov/mesh/">Medical Subject Headings (MeSH)</a></td>
+</tr>
+<tr class="even">
+<td>Embase</td>
+<td><a href="https://www.elsevier.com/products/embase/emtree">Emtree</a></td>
+</tr>
+<tr class="odd">
+<td>Cochrane Library</td>
+<td><a href="https://www.ncbi.nlm.nih.gov/mesh/">Medical Subject Headings (MeSH)</a></td>
+</tr>
+<tr class="even">
+<td>CINAHL</td>
+<td><a href="https://connect.ebsco.com/s/article/CINAHL-Subject-Headings-Frequently-Asked-Questions?language=en_US">CINAHL Subject Headings</a></td>
+</tr>
+<tr class="odd">
+<td>APA PsycInfo</td>
+<td><a href="https://www.apa.org/pubs/databases/training/thesaurus">Thesaurus of Psychological Index Terms</a></td>
+</tr>
+<tr class="even">
+<td>Global Health</td>
+<td><a href="https://www.cabi.org/cabithesaurus">CABI Thesaurus</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>These vocabularies usually list preferred terms for indexing, their definitions as well as lists of synonyms for each of those index terms. The index terms are arranged hierarchically, ranging from very broad categories to very specific terms.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="MeSH hierarchy from the top of the MeSH tree to [*Pleural Cavity*](https://www.ncbi.nlm.nih.gov/mesh/68035422)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+MeSH hierarchy from the top of the MeSH tree to <a href="https://www.ncbi.nlm.nih.gov/mesh/68035422"><em>Pleural Cavity</em></a>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<pre><code>All MeSH Categories
+  Anatomy Category
+    Body Regions
+      Torso
+        Thorax
+          Thoracic Cavity
+            Pleural Cavity</code></pre>
+</div>
+</div>
+<p>The controlled vocabularies are regularly updated, new index terms are introduced or hierarchies rearranged. (See <a href="https://www.nlm.nih.gov/mesh/whatsnew.html">What’s New in MeSH</a> for example).</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">

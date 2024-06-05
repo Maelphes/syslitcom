@@ -164,12 +164,13 @@ overall search in line 12. (see also @sec-searchstrategy).
 :::
 
 ## field code {#sec-fieldcode}
-The [data fields](#sec-datafield) of databases possess short designations called **field codes**, 
-field tags or field labels, which allow to search the fields separately as part 
-of a search query or [search strategy](#sec-searchstrategy). Depending on the
-[syntax](#sec-syntax) of the database or search interface different field codes
-are available for searching. If no field code is used in a search query, the 
-search term is usually searched in all fields or a preset variety of fields. 
+The [data fields](#sec-datafield) of databases possess short designations called
+**field codes**, field tags or field labels, which allow to search the fields 
+separately as part of a search query or [search strategy](#sec-searchstrategy).
+Depending on the [syntax](#sec-syntax) of the database or search interface 
+different field codes are available for searching. If no field code is used in
+a search query, the search term is usually searched in all fields or a preset 
+variety of fields. 
 
 ::: {.callout-tip title="Example"}
 In PubMed the query `hypnosis[TIAB]` will basically search for records with 
@@ -451,3 +452,38 @@ indexed with `psychotherapy`, whereas the query `exp psychotherapy/` searches
 the exploded term, i.e. it uses the subordinate index terms such as 
 `aromatherapy`, `crisis intervention`, etc. in the search, too.
 :::
+
+## truncation {#sec-truncation}
+In general, *to truncate* means to reduce something down to its trunk, to 
+shorten something, to cut something off.
+
+In literature searching **truncation** is a technique that allows to search 
+several variations of a term at once by searching with a reduced (truncated) 
+version of the search term. A term is truncated by replacing one or more 
+characters with a so-called *wildcard character*, such as `*`, `$`, `?`, `#`.
+
+The most common form of truncation is the unlimited truncation (usually using 
+the asterisk `*` or the dollar sign `$`) at the end of the search term. 
+In some databases it is possible to limit the truncation to a fixed number of 
+characters or to replace just one character.
+
+::: {#tbl-truncations}
+| query       | covered search terms                               |
+|-------------|----------------------------------------------------|
+| discolo**\$**   | discolo**r**, discolo**rs**, discolo**red**, discolo**uring**, discolo**rations**, ...|
+| discolo**\$3**  | discolo**r**, discolo**rs**, discolo**red** |
+| colo**\$**r     | color, colo**u**r, colo**rimete**r, colo**nize**r, colo**articula**r, ... |
+| colo**?**r      | color, colo**u**r                                    |
+| wom**#**n       | wom**a**n, wom**e**n, wom**o**n, wom**x**n, wom**y**n|
+: Truncation examples in Ovid {.hover}
+:::
+
+The kinds of truncation that are available depend on the [syntax](#sec-syntax) 
+of the database or search interface. Not all kinds of truncation are generally 
+supported.
+
+Usually only free text terms are truncated. While it might be possible 
+to truncate index terms, it is not very practical; truncated index terms are 
+rarely used meaningfully, for instance in valiated [search filters](#sec-filters), such as the search term `diagnostic*[MeSH:noexp]` in the 
+[diagnosis filter](https://hiruweb.mcmaster.ca/hkr/hedges/medline/#diagnosis_embase) 
+by @Kastner2009.

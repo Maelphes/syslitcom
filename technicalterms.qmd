@@ -26,7 +26,7 @@ is an option to render such terms more specific by using phrases or proximity
 operators.
 
 ::: {.callout-tip title="Examples"}
-1. `apothecary` might refer to the occuopation of pharmacist or the community 
+1. `apothecary` might refer to the occupation of pharmacist or the community 
 pharmacy as a location or institution. 
 2. The term `pharmacy` may refer to the pharmaceutical sciences, the manufacture
 of drugs or the pharmacy as a retail shop.
@@ -193,11 +193,49 @@ title and [abstract](#sec-abstract).
 |  7616995 | J. P. Kassirer, M. Angell | Redundant publication: a reminder      |
 | 16040884 |       A. K. Akobeng       | Principles of evidence based medicine  |
 | 22071866 |   T. Young,S.  Hopewell   | Methods for obtaining unpublished data |
-: Data fields {.striped}
+: Data fields UID, AU, TI shown for three records {.striped}
 :::
 
 It always depends on the [syntax](#sec-syntax) of the database or search
 interface which fields can be searched and by what code they are searchable.
+
+## dataset {#sec-dataset}
+
+**Datasets** or **records** of a database are collections of data. In a tabular 
+database they correspond to the rows of the table, as shown in @tbl-datafields.
+A record in such a database consists of values for the given columns or
+[data fields](#sec-datafield) of the table.
+
+Records of bibliographic databases are called references. These contain the 
+metadata referring to a publication, such as title, [abstract](#sec-abstract), 
+authors, journal name or publication date.
+
+Datasets within [clinical trials registries]({#sec-ctr}) contain metadata for 
+clinical trials, such as registration number, study type, research institution, 
+study status, etc.
+
+Records within fulltext databases also feature a fulltext document, as opposed 
+to bibliographic databases.
+
+
+## digital object identifier {#sec-doi}
+A digital object identifier (**DOI**) is a persistent identifier issued by the 
+[DOI foundation](https://www.doi.org/). It is used to uniquely identify publications. 
+
+DOIs take the form of character strings which consist of a prefix and a suffix, 
+separated by a slash `/`. The prefix identifies the registrant of the DOI
+(usually the publisher of an article) and takes the form `10.xxxx`, where `xxxx` 
+is a number greater than or equal to 1000. After the prefix and the slash follows 
+the suffix, which is chosen by the registrant for the particular digital object. 
+
+DOIs can be resolved using the website of the
+[International DOI Foundation](https://www.doi.org) or the 
+[Handle.Net Registry](https://hdl.handle.net).
+
+::: {.callout-tip title="Example"}
+`doi:10.1000/182` can be resolved via <https://doi.org/10.1000/182> or 
+<https://hdl.handle.net/10.1000/182> and leads to the [DOI handbook](https://www.doi.org/the-identifier/resources/handbook/).
+:::
 
 ## eligibility criteria {#sec-eligibilitycriteria}
 A very important step at the beginning of any review project is the definition
@@ -283,3 +321,43 @@ index terms. (See @Clark2020, @Glanville2019, @Wanner2019, @Damarell2013).
 |EBSCO*host*| `(TI "ocular hypertension") OR (AB "ocular hypertension")`  |
 : Examples for syntax in different search interfaces {.hover}
 :::
+
+## thesaurus {#sec-thesaurus}
+A **thesaurus** (ancient greek: θησαυρός (*thesaurós*) 'treasury') is a 
+dictionary of synonyms, which are often ordered alphabetically or hierarchically. 
+
+In the context of literature searching, a thesaurus contains a database-specific
+**controlled vocabulary** of index terms. 
+
+::: {#tbl-thesauri}
+| Database         | Thesaurus                              |
+|------------------|----------------------------------------|
+| PubMed/MEDLINE   | [Medical Subject Headings (MeSH)](https://www.ncbi.nlm.nih.gov/mesh/)|
+| Embase           | [Emtree](https://www.elsevier.com/products/embase/emtree)|
+| Cochrane Library | [Medical Subject Headings (MeSH)](https://www.ncbi.nlm.nih.gov/mesh/)|
+| CINAHL           | [CINAHL Subject Headings](https://connect.ebsco.com/s/article/CINAHL-Subject-Headings-Frequently-Asked-Questions?language=en_US) |
+| APA PsycInfo     | [Thesaurus of Psychological Index Terms](https://www.apa.org/pubs/databases/training/thesaurus) |
+| Global Health    | [CABI Thesaurus](https://www.cabi.org/cabithesaurus)  |
+: Commonly known databases and their thesauri {.striped}
+:::
+
+These vocabularies usually list preferred terms for indexing, their definitions 
+as well as lists of synonyms for each of those index terms. The index terms are 
+arranged hierarchically, ranging from very broad categories to very specific 
+terms.
+
+::: {.callout-tip title="MeSH hierarchy from the top of the MeSH tree to [*Pleural Cavity*](https://www.ncbi.nlm.nih.gov/mesh/68035422)"}
+```
+All MeSH Categories
+  Anatomy Category
+    Body Regions
+      Torso
+        Thorax
+          Thoracic Cavity
+            Pleural Cavity
+```
+:::
+
+The controlled vocabularies are regularly updated, new index terms are 
+introduced or hierarchies rearranged. (See 
+[What's New in MeSH](https://www.nlm.nih.gov/mesh/whatsnew.html) for example).
