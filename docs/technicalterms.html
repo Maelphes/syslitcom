@@ -273,11 +273,12 @@ window.Quarto = {
   <li><a href="#sec-doi" id="toc-sec-doi" class="nav-link" data-scroll-target="#sec-doi"><span class="header-section-number">2.10</span> digital object identifier</a></li>
   <li><a href="#sec-eligibilitycriteria" id="toc-sec-eligibilitycriteria" class="nav-link" data-scroll-target="#sec-eligibilitycriteria"><span class="header-section-number">2.11</span> eligibility criteria</a></li>
   <li><a href="#sec-fulltext" id="toc-sec-fulltext" class="nav-link" data-scroll-target="#sec-fulltext"><span class="header-section-number">2.12</span> full-text</a></li>
-  <li><a href="#sec-orphanline" id="toc-sec-orphanline" class="nav-link" data-scroll-target="#sec-orphanline"><span class="header-section-number">2.13</span> orphan line</a></li>
-  <li><a href="#sec-pmid-pmcid" id="toc-sec-pmid-pmcid" class="nav-link" data-scroll-target="#sec-pmid-pmcid"><span class="header-section-number">2.14</span> PMID and PMCID</a></li>
-  <li><a href="#sec-syntax" id="toc-sec-syntax" class="nav-link" data-scroll-target="#sec-syntax"><span class="header-section-number">2.15</span> syntax</a></li>
-  <li><a href="#sec-thesaurus" id="toc-sec-thesaurus" class="nav-link" data-scroll-target="#sec-thesaurus"><span class="header-section-number">2.16</span> thesaurus</a></li>
-  <li><a href="#sec-wildcard" id="toc-sec-wildcard" class="nav-link" data-scroll-target="#sec-wildcard"><span class="header-section-number">2.17</span> wildcard</a></li>
+  <li><a href="#sec-indexing" id="toc-sec-indexing" class="nav-link" data-scroll-target="#sec-indexing"><span class="header-section-number">2.13</span> indexing</a></li>
+  <li><a href="#sec-orphanline" id="toc-sec-orphanline" class="nav-link" data-scroll-target="#sec-orphanline"><span class="header-section-number">2.14</span> orphan line</a></li>
+  <li><a href="#sec-pmid-pmcid" id="toc-sec-pmid-pmcid" class="nav-link" data-scroll-target="#sec-pmid-pmcid"><span class="header-section-number">2.15</span> PMID and PMCID</a></li>
+  <li><a href="#sec-syntax" id="toc-sec-syntax" class="nav-link" data-scroll-target="#sec-syntax"><span class="header-section-number">2.16</span> syntax</a></li>
+  <li><a href="#sec-thesaurus" id="toc-sec-thesaurus" class="nav-link" data-scroll-target="#sec-thesaurus"><span class="header-section-number">2.17</span> thesaurus</a></li>
+  <li><a href="#sec-wildcard" id="toc-sec-wildcard" class="nav-link" data-scroll-target="#sec-wildcard"><span class="header-section-number">2.18</span> wildcard</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://www.github.com/Maelphes/syslitcom/edit/gh-pages/technicalterms.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/blob/gh-pages/technicalterms.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -335,7 +336,7 @@ Examples
 </section>
 <section id="sec-authorkeywords" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="sec-authorkeywords"><span class="header-section-number">2.4</span> author keyword</h2>
-<p>Publishers often require the authors of a publication to provide keywords describing the content of the publication. These keywords don’t necessarily correspond to controlled vocabulary (i.e.&nbsp;index terms, which are assigned to the records by the database) and should not be confused with them. (<span class="citation" data-cites="Neveol2010">Névéol, Doğan, and Lu (<a href="references.html#ref-Neveol2010" role="doc-biblioref">2010</a>)</span>)</p>
+<p>Publishers often require the authors of a publication to provide keywords describing the content of the publication. These keywords don’t necessarily correspond to <a href="#sec-thesaurus">controlled vocabulary</a> (i.e.&nbsp;index terms, which are assigned to the records by the database) and should not be confused with them. (<span class="citation" data-cites="Neveol2010">Névéol, Doğan, and Lu (<a href="references.html#ref-Neveol2010" role="doc-biblioref">2010</a>)</span>)</p>
 <p>Author keywords are often used as part of the free text search.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Examples">
 <div class="callout-header d-flex align-content-center">
@@ -562,8 +563,12 @@ full-text retrieval tools
 </div>
 </div>
 </section>
-<section id="sec-orphanline" class="level2" data-number="2.13">
-<h2 data-number="2.13" class="anchored" data-anchor-id="sec-orphanline"><span class="header-section-number">2.13</span> orphan line</h2>
+<section id="sec-indexing" class="level2" data-number="2.13">
+<h2 data-number="2.13" class="anchored" data-anchor-id="sec-indexing"><span class="header-section-number">2.13</span> indexing</h2>
+<p>Indexing is the process in which <a href="methods.html#sec-indexterms">index terms</a> are assigned to <a href="#sec-dataset">records</a>. This is done by the database provider in order to indicate what the referenced document is about, independent of its explicit title or abstract. In other words, an indexed record can be retrieved systematically based on its contextual meaning and implicit contents, rather than by searching verbatim expressions in the text.</p>
+</section>
+<section id="sec-orphanline" class="level2" data-number="2.14">
+<h2 data-number="2.14" class="anchored" data-anchor-id="sec-orphanline"><span class="header-section-number">2.14</span> orphan line</h2>
 <p>All parts of a <a href="methods.html#sec-searchstrategy">search strategy</a> are supposed to contribute to the overall result of the database search. In case a search query within a search strategy is not connected (using operators) to the rest of the search strategy, it is called an <strong>orphan line</strong>.</p>
 <div id="tbl-orphanline" class="quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -583,8 +588,8 @@ Table&nbsp;2.3: Line 5 is an orphan line.
 </figure>
 </div>
 </section>
-<section id="sec-pmid-pmcid" class="level2" data-number="2.14">
-<h2 data-number="2.14" class="anchored" data-anchor-id="sec-pmid-pmcid"><span class="header-section-number">2.14</span> PMID and PMCID</h2>
+<section id="sec-pmid-pmcid" class="level2" data-number="2.15">
+<h2 data-number="2.15" class="anchored" data-anchor-id="sec-pmid-pmcid"><span class="header-section-number">2.15</span> PMID and PMCID</h2>
 <p>The PubMed ID (PMID) and the PubMed Central ID (PMCID) are unique identifiers assigned to the records within the databases <a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a> and <a href="https://www.ncbi.nlm.nih.gov/pmc/">PubMed Central</a>. They are similar to the digital object identifier (DOI).</p>
 <p>PMIDs are unique integer values, e.g.&nbsp;<a href="https://pubmed.ncbi.nlm.nih.gov/32256971/">32256971</a>, PMCIDs are composed of the prefix <strong>PMC</strong> followed by a series of numbers, e.g.&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7106990/">PMC7106990</a>.</p>
 <p>PubMed records can easily be found simply by entering their <a href="https://pubmed.ncbi.nlm.nih.gov/?term=31541534+28475312+21995656+33223580+29327483+35602613+29905334+37465961+35472729+37983749">PMIDs as search terms</a> into the PubMed search.</p>
@@ -602,8 +607,8 @@ Conversion tool
 </div>
 </div>
 </section>
-<section id="sec-syntax" class="level2" data-number="2.15">
-<h2 data-number="2.15" class="anchored" data-anchor-id="sec-syntax"><span class="header-section-number">2.15</span> syntax</h2>
+<section id="sec-syntax" class="level2" data-number="2.16">
+<h2 data-number="2.16" class="anchored" data-anchor-id="sec-syntax"><span class="header-section-number">2.16</span> syntax</h2>
 <p>Similar to programming, the <strong>syntax</strong> is the set of rules that applies for setting up search queries and building search strategies in databases. It defines the operators, field codes and special characters (such as <a href="#sec-wildcard">wildcard symbols</a>, <a href="methods.html#sec-nesting">parentheses</a>, slashes, <a href="methods.html#sec-phrases">quotation marks</a>, etc.) that are available within a particular search interface.</p>
 <p>As a consequence, search strategies cannot be used freely in every database. They have to be translated due to different syntax and due to different index terms. (See <span class="citation" data-cites="Clark2020">Clark et al. (<a href="references.html#ref-Clark2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="Glanville2019">Glanville et al. (<a href="references.html#ref-Glanville2019" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="Wanner2019">Wanner and Baumann (<a href="references.html#ref-Wanner2019" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="Damarell2013">Damarell, Tieman, and Sladek (<a href="references.html#ref-Damarell2013" role="doc-biblioref">2013</a>)</span>).</p>
 <div id="tbl-syntax" class="hover quarto-float anchored">
@@ -652,8 +657,8 @@ Table&nbsp;2.4: Examples for syntax in different search interfaces
 </figure>
 </div>
 </section>
-<section id="sec-thesaurus" class="level2" data-number="2.16">
-<h2 data-number="2.16" class="anchored" data-anchor-id="sec-thesaurus"><span class="header-section-number">2.16</span> thesaurus</h2>
+<section id="sec-thesaurus" class="level2" data-number="2.17">
+<h2 data-number="2.17" class="anchored" data-anchor-id="sec-thesaurus"><span class="header-section-number">2.17</span> thesaurus</h2>
 <p>A <strong>thesaurus</strong> (ancient greek: θησαυρός (<em>thesaurós</em>) ‘treasury’) is a dictionary of synonyms, which are often ordered alphabetically or hierarchically.</p>
 <p>In the context of literature searching, a thesaurus contains a database-specific <strong>controlled vocabulary</strong> of index terms.</p>
 <div id="tbl-thesauri" class="striped quarto-float anchored">
@@ -721,8 +726,8 @@ MeSH hierarchy from the top of the MeSH tree to <a href="https://www.ncbi.nlm.ni
 </div>
 <p>The controlled vocabularies are regularly updated, new index terms are introduced or hierarchies rearranged. (See <a href="https://www.nlm.nih.gov/mesh/whatsnew.html">What’s New in MeSH</a> for example).</p>
 </section>
-<section id="sec-wildcard" class="level2" data-number="2.17">
-<h2 data-number="2.17" class="anchored" data-anchor-id="sec-wildcard"><span class="header-section-number">2.17</span> wildcard</h2>
+<section id="sec-wildcard" class="level2" data-number="2.18">
+<h2 data-number="2.18" class="anchored" data-anchor-id="sec-wildcard"><span class="header-section-number">2.18</span> wildcard</h2>
 <p>Wildcards are special characters used for <a href="methods.html#sec-truncation">truncation</a>. The usage and meaning of the available wildcards for this purpose depends on the syntax of the database or search interface.</p>
 <div id="tbl-wildcards" class="striped quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">

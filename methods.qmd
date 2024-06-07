@@ -183,9 +183,9 @@ See also [PubMed Search field tags](https://pubmed.gov/help/#search-tags) and
 [Ovid Medline Fields](https://ospguides.ovid.com/OSPguides/medline.htm#search).
 
 
-## focus 
-**Focus topics** (also called **major topics**) are weighted index terms. If a 
-particular topic is at the heart of a publication, index terms for that topic 
+## focus topic {#sec-focustopic}
+**Focus topics** (also called **major topics**) are weighted [index terms](#sec-indexterms). 
+If a particular topic is at the heart of a publication, index terms for that topic 
 will be assigned as a so-called focus topic. This is often displayed in the
 databases by writing an [asterisk](https://en.wikipedia.org/wiki/Asterisk) 
 before or after the index term.
@@ -215,6 +215,30 @@ would find both of them.
 `Hypoxia / etiology` was added as a regular MeSH term as it is not the main 
 focus of the article.
 :::
+
+## index terms {#sec-indexterms}
+
+**Index terms**, also called **subject headings** (or sometimes *descriptor*) 
+are expressions defined for the purpose of [indexing](#sec-indexing). 
+They represent content-related concepts and are organized as a 
+ [controlled vocabulary](#sec-thesaurus). By adding index terms 
+to a record it becomes retrievable based on its contents. 
+
+Using index terms in a search is an essential part of a
+[systematic literature search](#sec-syslitsearch). The index term search can be
+focused by employing [subheadings](#sec-subheading) or searching the terms as 
+[focus topics](#sec-focustopic).
+
+Index terms should not be confused with free text terms or 
+[author keywords](#sec-authorkeywords). 
+
+:::{.callout-tip title="Example"}
+The [MeSH term](#sec-thesaurus) for the concept of *heart attack* or 
+*cardiovascular stroke* is [`Myocardial infarction`](https://www.ncbi.nlm.nih.gov/mesh/68009203)
+The [Emtree term](#sec-thesaurus) (index term in [Embase](#sec-embase)) 
+for the same concept is `heart infarction`.
+:::
+
 
 ## frequency operators {#sec-frequencyops}
 Records in which a relevant expression occurs multiple times might be more 

@@ -48,8 +48,9 @@ independently in online repositories.
 ## author keyword {#sec-authorkeywords}
 Publishers often require the authors of a publication to provide keywords 
 describing the content of the publication. These keywords don't necessarily 
-correspond to controlled vocabulary (i.e. index terms, which are assigned to the 
-records by the database) and should not be confused with them. (@Neveol2010)
+correspond to [controlled vocabulary](#sec-thesaurus) (i.e. index terms, 
+which are assigned to the records by the database) and should not be confused 
+with them. (@Neveol2010)
 
 Author keywords are often used as part of the free text search.
 
@@ -287,6 +288,15 @@ automated retrieval fails due to incompatibility or security measures of the
 publishers, even when the full-text would be otherwise accessible (e.g. [EndNote](https://support.clarivate.com/Endnote/s/article/EndNote-Optimizing-Find-Full-Text-results-with-X2-and-later?language=en_US)).
 :::
 
+
+## indexing {#sec-indexing}
+
+Indexing is the process in which [index terms](#sec-indexterms) are assigned to 
+[records](#sec-dataset). This is done by the database provider in order to 
+indicate what the referenced document is about, independent of its explicit 
+title or abstract. In other words, an indexed record can be retrieved 
+systematically based on its contextual meaning and implicit contents, rather 
+than by searching verbatim expressions in the text.
 
 
 ## orphan line {#sec-orphanline}

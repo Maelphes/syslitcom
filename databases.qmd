@@ -65,7 +65,7 @@ the databases [MEDLINE](https://www.nlm.nih.gov/medline/),
 [Bookshelf](https://www.ncbi.nlm.nih.gov/books/). 
 
 All records in PubMed possess a unique identifier, the 
-[PubMed ID](@sec-pmid-pmcid).
+[PubMed ID](#sec-pmid-pmcid).
 
 Roughly 84 percent of the records in PubMed are 
 [indexed](https://pubmed.ncbi.nlm.nih.gov/?term=medline%5Bsb%5D) 
@@ -78,7 +78,7 @@ Open Access articles from biomedicine and life sciences.
 
 PMC can be searched directly or as part of the PubMed database.
 
-PMC records possess the [PubMed Central ID](@sec-pmid-pmcid) as a digital identifier.
+PMC records possess the [PubMed Central ID](#sec-pmid-pmcid) as a digital identifier.
 
 
 ##  Embase {#sec-embase}
