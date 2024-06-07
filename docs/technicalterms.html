@@ -277,6 +277,7 @@ window.Quarto = {
   <li><a href="#sec-pmid-pmcid" id="toc-sec-pmid-pmcid" class="nav-link" data-scroll-target="#sec-pmid-pmcid"><span class="header-section-number">2.14</span> PMID and PMCID</a></li>
   <li><a href="#sec-syntax" id="toc-sec-syntax" class="nav-link" data-scroll-target="#sec-syntax"><span class="header-section-number">2.15</span> syntax</a></li>
   <li><a href="#sec-thesaurus" id="toc-sec-thesaurus" class="nav-link" data-scroll-target="#sec-thesaurus"><span class="header-section-number">2.16</span> thesaurus</a></li>
+  <li><a href="#sec-wildcard" id="toc-sec-wildcard" class="nav-link" data-scroll-target="#sec-wildcard"><span class="header-section-number">2.17</span> wildcard</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://www.github.com/Maelphes/syslitcom/edit/gh-pages/technicalterms.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/blob/gh-pages/technicalterms.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -346,7 +347,7 @@ Examples
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Within PubMed the field codes <code>[OT]</code> or <code>[Other Term]</code> can be used for searching the author keywords. This field is automatically searched when <code>[TIAB]</code>(or <code>[Title/Abstract]</code>) or <code>[TW]</code> (or <code>[Text Word]</code>) are used.</p>
+<p>Within PubMed the <a href="#sec-datafield">data field</a> <code>[Other Term]</code>) can be searched for author keywords. This field is automatically searched when <code>[Title/Abstract]</code> or <code>[Text Word]</code> are used. (See <a href="https://pubmed.ncbi.nlm.nih.gov/help/?otool=ichsublib#ot">PubMed Search Field Tags</a>).</p>
 <p>In Ovid MEDLINE the corresponding field codes <code>.kw</code> or <code>.kf</code> can be used for searching the author keywords.</p>
 </div>
 </div>
@@ -603,7 +604,7 @@ Conversion tool
 </section>
 <section id="sec-syntax" class="level2" data-number="2.15">
 <h2 data-number="2.15" class="anchored" data-anchor-id="sec-syntax"><span class="header-section-number">2.15</span> syntax</h2>
-<p>Similar to programming, the <strong>syntax</strong> is the set of rules that applies for setting up search queries and building search strategies in databases. It defines the operators, field codes and special characters (such as wildcard symbols, parentheses, slashes, quotation marks, etc.) that are available within a particular search interface.</p>
+<p>Similar to programming, the <strong>syntax</strong> is the set of rules that applies for setting up search queries and building search strategies in databases. It defines the operators, field codes and special characters (such as <a href="#sec-wildcard">wildcard symbols</a>, <a href="methods.html#sec-nesting">parentheses</a>, slashes, <a href="methods.html#sec-phrases">quotation marks</a>, etc.) that are available within a particular search interface.</p>
 <p>As a consequence, search strategies cannot be used freely in every database. They have to be translated due to different syntax and due to different index terms. (See <span class="citation" data-cites="Clark2020">Clark et al. (<a href="references.html#ref-Clark2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="Glanville2019">Glanville et al. (<a href="references.html#ref-Glanville2019" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="Wanner2019">Wanner and Baumann (<a href="references.html#ref-Wanner2019" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="Damarell2013">Damarell, Tieman, and Sladek (<a href="references.html#ref-Damarell2013" role="doc-biblioref">2013</a>)</span>).</p>
 <div id="tbl-syntax" class="hover quarto-float anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -719,6 +720,45 @@ MeSH hierarchy from the top of the MeSH tree to <a href="https://www.ncbi.nlm.ni
 </div>
 </div>
 <p>The controlled vocabularies are regularly updated, new index terms are introduced or hierarchies rearranged. (See <a href="https://www.nlm.nih.gov/mesh/whatsnew.html">What’s New in MeSH</a> for example).</p>
+</section>
+<section id="sec-wildcard" class="level2" data-number="2.17">
+<h2 data-number="2.17" class="anchored" data-anchor-id="sec-wildcard"><span class="header-section-number">2.17</span> wildcard</h2>
+<p>Wildcards are special characters used for <a href="methods.html#sec-truncation">truncation</a>. The usage and meaning of the available wildcards for this purpose depends on the syntax of the database or search interface.</p>
+<div id="tbl-wildcards" class="striped quarto-float anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-wildcards-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.6: commonly used wildcard symbols
+</figcaption>
+<div aria-describedby="tbl-wildcards-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">character</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>*</code></td>
+<td>asterisk</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>$</code></td>
+<td>dollar sign</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>?</code></td>
+<td>question mark</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>#</code></td>
+<td>hash sign, pound sign</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">

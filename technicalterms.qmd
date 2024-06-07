@@ -54,9 +54,9 @@ records by the database) and should not be confused with them. (@Neveol2010)
 Author keywords are often used as part of the free text search.
 
 ::: {.callout-tip title="Examples"}
-Within PubMed the field codes `[OT]` or `[Other Term]` can be used for searching
-the author keywords. This field is automatically searched when `[TIAB] `(or 
-`[Title/Abstract]`) or `[TW]` (or `[Text Word]`) are used.
+Within PubMed the [data field](#sec-datafield) `[Other Term]`) 
+can be searched for author keywords. This field is automatically searched 
+when `[Title/Abstract]` or `[Text Word]` are used. (See [PubMed Search Field Tags](https://pubmed.ncbi.nlm.nih.gov/help/?otool=ichsublib#ot)).
 
 In Ovid MEDLINE the corresponding field codes `.kw` or `.kf` can be used for 
 searching the author keywords.
@@ -332,8 +332,9 @@ both part of PubMed and PubMed Central.
 ## syntax {#sec-syntax}
 Similar to programming, the **syntax** is the set of rules that applies 
 for setting up search queries and building search strategies in databases. 
-It defines the operators, field codes and special characters (such as wildcard 
-symbols, parentheses, slashes, quotation marks, etc.) that are available 
+It defines the operators, field codes and special characters (such as 
+[wildcard symbols](#sec-wildcard), [parentheses](#sec-nesting), slashes, 
+[quotation marks](#sec-phrases), etc.) that are available 
 within a particular search interface.
 
 As a consequence, search strategies cannot be used freely in every database. 
@@ -392,3 +393,19 @@ All MeSH Categories
 The controlled vocabularies are regularly updated, new index terms are 
 introduced or hierarchies rearranged. (See 
 [What's New in MeSH](https://www.nlm.nih.gov/mesh/whatsnew.html) for example).
+
+## wildcard {#sec-wildcard}
+
+Wildcards are special characters used for [truncation](#sec-truncation). 
+The usage and meaning of the available wildcards for this purpose depends on 
+the syntax of the database or search interface.
+
+::: {#tbl-wildcards}
+| character | name                  |
+|:---------:|-----------------------|
+| `*`       | asterisk              |
+| `$`       | dollar sign           |
+| `?`       | question mark         |
+| `#`       | hash sign, pound sign |
+: commonly used wildcard symbols {.striped}
+:::

@@ -165,8 +165,9 @@ overall search in line 12. (see also @sec-searchstrategy).
 
 ## field code {#sec-fieldcode}
 The [data fields](#sec-datafield) of databases possess short designations called
-**field codes**, field tags or field labels, which allow to search the fields 
+**field codes**, **field tags** or field labels, which allow to search the fields 
 separately as part of a search query or [search strategy](#sec-searchstrategy).
+
 Depending on the [syntax](#sec-syntax) of the database or search interface 
 different field codes are available for searching. If no field code is used in
 a search query, the search term is usually searched in all fields or a preset 
@@ -178,7 +179,9 @@ In PubMed the query `hypnosis[TIAB]` will basically search for records with
 as `hypnosis.ti,ab.`
 :::
 
-See also <https://pubmed.gov/help/#search-tags> and <https://ospguides.ovid.com/OSPguides/medline.htm#search>.
+See also [PubMed Search field tags](https://pubmed.gov/help/#search-tags) and 
+[Ovid Medline Fields](https://ospguides.ovid.com/OSPguides/medline.htm#search).
+
 
 ## focus 
 **Focus topics** (also called **major topics**) are weighted index terms. If a 
@@ -188,9 +191,9 @@ databases by writing an [asterisk](https://en.wikipedia.org/wiki/Asterisk)
 before or after the index term.
 
 ::: {.callout-warning title="Risk of confusion"}
-The asterisk `*` appears also as a wildcard character for truncation. The two 
-look the same, but have different meanings and uses. Don't let them confound 
-you.
+The asterisk `*` appears also as a [wildcard character](#sec-wildcard) for 
+[truncation](#sec-truncation). The two look the same, but have different 
+meanings and uses. Don't let them confound you.
 :::
 
 By labeling an index term this way, its significance for the publication is 
@@ -421,8 +424,8 @@ articles. (See @#sec-class-metrics about sensitivity and precision).
 
 There are various guidelines which can be followed to conduct systematic 
 searches, such as the *Cochrane Handbook* (@cochranehandbook6.3) or the 
-*JBI Manual* (@JBIManual2020). Depending on the desired type of review 
-(e.g. systematic, scoping, narrative, ..., see @sec-review and 
+*JBI Manual* (@JBIManual2020). Depending on the desired [type of review](#sec-review) 
+(e.g. systematic, scoping, narrative, ..., see 
 @Munn2018, @Munn2018 or @Pearson2015)
 
 ::: {.callout-note title="important steps of a systematic search"}
@@ -487,7 +490,8 @@ shorten something, to cut something off.
 In literature searching **truncation** is a technique that allows to search 
 several variations of a term at once by searching with a reduced (truncated) 
 version of the search term. A term is truncated by replacing one or more 
-characters with a so-called *wildcard character*, such as `*`, `$`, `?`, `#`.
+characters with a so-called [*wildcard character*](#sec-wildcard), 
+such as `*`, `$`, `?`, `#`.
 
 The most common form of truncation is the unlimited truncation (usually using 
 the asterisk `*` or the dollar sign `$`) at the end of the search term. 
