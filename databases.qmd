@@ -38,9 +38,10 @@ A [comprehensive list of resources](https://sites.google.com/a/york.ac.uk/yhectr
 The [**Cochrane Library**](https://www.cochranelibrary.com) is the collection of 
 Cochrane's databases, most importantly the Cochrane Database of Systematic 
 Reviews (CDSR) and the Cochrane Central Register of Controlled Trials (CENTRAL),
-which contain different types evidence to inform healthcare decision-making. 
-Switzerland has complete access to the Cochrane Library due to a national 
-license. 
+which contain different types evidence to inform healthcare decision-making.
+
+Switzerland has complete access to the Cochrane Library due to [a national 
+license (currently until 2024)](https://www.samw.ch/en/Projects/Overview-of-projects/Cochrane-Library.html). 
 
 ### Cochrane Database of Systematic Reviews (CDSR) {#sec-cdsr}
 

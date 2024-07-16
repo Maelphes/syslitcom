@@ -55,34 +55,68 @@ multiplication and addition. See @tbl-booleanproperties. (@ORegan2012)
 :::
 
 
-## citation analysis {#sec-citationanalysis}
+## citation searching {#sec-citationanalysis}
 
 Relevant references can be retrieved by analyzing citation relationships between
-known relevant articles (*core papers*) and cited or citing references. This 
-technique is called **citation analysis** or **citation tracking** (@Hirt2021, 
-@Belter2016, @Hinde2015.
+known relevant articles, called *seed papers* (also known as *core papers*) and 
+cited or citing references. This technique is called **citation searching**, 
+**citation analysis** or **citation tracking** (@Hirt2021, @Belter2016, 
+@Hinde2015).
 
-Citation analysis can be advisable at the very beginning of a systematic 
+::: {.callout-tip title="The TARCiS Statement"}
+The [**TARCiS Statement**](https://tarcis.unibas.ch/) by @Hirt2024
+provides guidance on **t**erminology, **a**pplications, and the **r**eporting 
+of **ci**tation **s**earching in the context of 
+[systematic searching](#sec-syslitsearching).
+:::
+
+Citation searching can be advisable at the very beginning of a systematic 
 literature search in order to find additional core papers and to identify 
 additional search terms. After finishing the final search it can be used to 
 find additional relevant studies that were not retrieved by systematic searching
 using search strategies.
 
-There are different approaches to tracking citations: First, in the **backward 
-citation tracking** method the lists of references cited in the core papers are 
-screened for relevant articles. Second, the analysis of publications citing the 
-core paper as reference is called **forward citation tracking**. 
+Some research questions are hard to search by a conventional 
+Boolean approach, for instance due to very ambiguous search terms or very
+recent research topics for which no index terms and no established terminology 
+exists, yet. In these cases a citation search can be more useful than a Boolean 
+search as it relies solely on the citation relationships between known and yet 
+unknown publications.
+
+There are different approaches to searching citations: First, in the 
+**backward citation searching** method the lists of references cited in the 
+seed papers are screened for relevant articles. Second, the analysis of 
+publications citing the seed paper as a reference is called 
+**forward citation searching**. 
 See @fig-citing-cited. 
 
-![backward and forward citation tracking](./fig/citing-cited.svg){#fig-citing-cited width=80%}
+![backward and forward citation searching](./fig/citing-cited.svg){#fig-citing-cited width=80%}
 
 
 Third, the identification of relevant literature by counting co-cited or co-citing 
-references is called **co-citation tracking**, see @fig-cociting and @fig-cocited.
+references which connect the seed paper with other papers is called 
+**co-citation searching**. In theory, the relevance of these other papers should
+increase with an increasing number of connecting publications.
 
-![co-citation tracking using the citing articles which the core paper has in common with other papers](./fig/co-citing.svg){#fig-cociting width=80%}
+### co-cited citation searching
 
-![co-citation tracking using the cited references which the core paper has in common with other papers](./fig/co-cited.svg){#fig-cocited width=80%}
+A seed paper (SP) is connected to other relevant publications (ORP) if both the 
+SP and the ORP are cited by the same paper. In this case the SP and the ORP are
+**co-cited** by a number of publications. See @fig-cocited.
+
+
+![co-cited citation searching retrieves publications which share citations with the core paper](./fig/co-citing.svg){#fig-cocited width=80%}
+
+
+### co-citing citation searching
+
+A similar relationship exists between the SP and ORP if they both 
+share a number of mutual references. In this case they are **co-citing** a set 
+of common literature. See @fig-cociting.
+
+![co-citing citation searching retrieves publications which share references with the core paper](./fig/co-cited.svg){#fig-cociting width=80%}
+
+
 
 
 ## critical appraisal {#sec-criticalappraisal}
@@ -216,6 +250,21 @@ would find both of them.
 focus of the article.
 :::
 
+
+
+## frequency operators {#sec-frequencyops}
+Records in which a relevant expression occurs multiple times might be more 
+relevant than records with fewer instances of the same expression. Therefore 
+some search interfaces allow the use of a so-called frequency operator, which 
+only retrieves records only if the search term occurs at least the specified 
+number of times in the searched data field. 
+
+::: {.callout-tip title="Example"}
+Example from Ovid: The query `"pharmacy".ab/freq=5` will retrieve articles, in 
+which the term `pharmacy` occurs at least five times within the abstract.
+:::
+
+
 ## index terms {#sec-indexterms}
 
 **Index terms**, also called **subject headings** (or sometimes *descriptor*) 
@@ -239,18 +288,6 @@ The [Emtree term](#sec-thesaurus) (index term in [Embase](#sec-embase))
 for the same concept is `heart infarction`.
 :::
 
-
-## frequency operators {#sec-frequencyops}
-Records in which a relevant expression occurs multiple times might be more 
-relevant than records with fewer instances of the same expression. Therefore 
-some search interfaces allow the use of a so-called frequency operator, which 
-only retrieves records only if the search term occurs at least the specified 
-number of times in the searched data field. 
-
-::: {.callout-tip title="Example"}
-Example from Ovid: The query `"pharmacy".ab/freq=5` will retrieve articles, in 
-which the term `pharmacy` occurs at least five times within the abstract.
-:::
 
 
 ## limits {#sec-limits}

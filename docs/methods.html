@@ -226,14 +226,18 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#properties" id="toc-properties" class="nav-link" data-scroll-target="#properties">Properties</a></li>
   </ul></li>
-  <li><a href="#sec-citationanalysis" id="toc-sec-citationanalysis" class="nav-link" data-scroll-target="#sec-citationanalysis"><span class="header-section-number">4.2</span> citation analysis</a></li>
+  <li><a href="#sec-citationanalysis" id="toc-sec-citationanalysis" class="nav-link" data-scroll-target="#sec-citationanalysis"><span class="header-section-number">4.2</span> citation searching</a>
+  <ul class="collapse">
+  <li><a href="#co-cited-citation-searching" id="toc-co-cited-citation-searching" class="nav-link" data-scroll-target="#co-cited-citation-searching"><span class="header-section-number">4.2.1</span> co-cited citation searching</a></li>
+  <li><a href="#co-citing-citation-searching" id="toc-co-citing-citation-searching" class="nav-link" data-scroll-target="#co-citing-citation-searching"><span class="header-section-number">4.2.2</span> co-citing citation searching</a></li>
+  </ul></li>
   <li><a href="#sec-criticalappraisal" id="toc-sec-criticalappraisal" class="nav-link" data-scroll-target="#sec-criticalappraisal"><span class="header-section-number">4.3</span> critical appraisal</a></li>
   <li><a href="#sec-deduplication" id="toc-sec-deduplication" class="nav-link" data-scroll-target="#sec-deduplication"><span class="header-section-number">4.4</span> deduplication</a></li>
   <li><a href="#sec-filters" id="toc-sec-filters" class="nav-link" data-scroll-target="#sec-filters"><span class="header-section-number">4.5</span> filters</a></li>
   <li><a href="#sec-fieldcode" id="toc-sec-fieldcode" class="nav-link" data-scroll-target="#sec-fieldcode"><span class="header-section-number">4.6</span> field code</a></li>
   <li><a href="#sec-focustopic" id="toc-sec-focustopic" class="nav-link" data-scroll-target="#sec-focustopic"><span class="header-section-number">4.7</span> focus topic</a></li>
-  <li><a href="#sec-indexterms" id="toc-sec-indexterms" class="nav-link" data-scroll-target="#sec-indexterms"><span class="header-section-number">4.8</span> index terms</a></li>
-  <li><a href="#sec-frequencyops" id="toc-sec-frequencyops" class="nav-link" data-scroll-target="#sec-frequencyops"><span class="header-section-number">4.9</span> frequency operators</a></li>
+  <li><a href="#sec-frequencyops" id="toc-sec-frequencyops" class="nav-link" data-scroll-target="#sec-frequencyops"><span class="header-section-number">4.8</span> frequency operators</a></li>
+  <li><a href="#sec-indexterms" id="toc-sec-indexterms" class="nav-link" data-scroll-target="#sec-indexterms"><span class="header-section-number">4.9</span> index terms</a></li>
   <li><a href="#sec-limits" id="toc-sec-limits" class="nav-link" data-scroll-target="#sec-limits"><span class="header-section-number">4.10</span> limits</a></li>
   <li><a href="#sec-nesting" id="toc-sec-nesting" class="nav-link" data-scroll-target="#sec-nesting"><span class="header-section-number">4.11</span> nesting</a></li>
   <li><a href="#sec-phrases" id="toc-sec-phrases" class="nav-link" data-scroll-target="#sec-phrases"><span class="header-section-number">4.12</span> phrases</a></li>
@@ -347,47 +351,69 @@ Table&nbsp;4.1
 </section>
 </section>
 <section id="sec-citationanalysis" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="sec-citationanalysis"><span class="header-section-number">4.2</span> citation analysis</h2>
-<p>Relevant references can be retrieved by analyzing citation relationships between known relevant articles (<em>core papers</em>) and cited or citing references. This technique is called <strong>citation analysis</strong> or <strong>citation tracking</strong> (<span class="citation" data-cites="Hirt2021">Hirt et al. (<a href="references.html#ref-Hirt2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Belter2016">Belter (<a href="references.html#ref-Belter2016" role="doc-biblioref">2016</a>)</span>, <span class="citation" data-cites="Hinde2015">Hinde and Spackman (<a href="references.html#ref-Hinde2015" role="doc-biblioref">2015</a>)</span>.</p>
-<p>Citation analysis can be advisable at the very beginning of a systematic literature search in order to find additional core papers and to identify additional search terms. After finishing the final search it can be used to find additional relevant studies that were not retrieved by systematic searching using search strategies.</p>
-<p>There are different approaches to tracking citations: First, in the <strong>backward citation tracking</strong> method the lists of references cited in the core papers are screened for relevant articles. Second, the analysis of publications citing the core paper as reference is called <strong>forward citation tracking</strong>. See <a href="#fig-citing-cited" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>.</p>
+<h2 data-number="4.2" class="anchored" data-anchor-id="sec-citationanalysis"><span class="header-section-number">4.2</span> citation searching</h2>
+<p>Relevant references can be retrieved by analyzing citation relationships between known relevant articles, called <em>seed papers</em> (also known as <em>core papers</em>) and cited or citing references. This technique is called <strong>citation searching</strong>, <strong>citation analysis</strong> or <strong>citation tracking</strong> (<span class="citation" data-cites="Hirt2021">Hirt et al. (<a href="references.html#ref-Hirt2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Belter2016">Belter (<a href="references.html#ref-Belter2016" role="doc-biblioref">2016</a>)</span>, <span class="citation" data-cites="Hinde2015">Hinde and Spackman (<a href="references.html#ref-Hinde2015" role="doc-biblioref">2015</a>)</span>).</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="The TARCiS Statement">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The TARCiS Statement
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <a href="https://tarcis.unibas.ch/"><strong>TARCiS Statement</strong></a> by <span class="citation" data-cites="Hirt2024">Hirt et al. (<a href="references.html#ref-Hirt2024" role="doc-biblioref">2024</a>)</span> provides guidance on <strong>t</strong>erminology, <strong>a</strong>pplications, and the <strong>r</strong>eporting of <strong>ci</strong>tation <strong>s</strong>earching in the context of <a href="#sec-syslitsearching">systematic searching</a>.</p>
+</div>
+</div>
+<p>Citation searching can be advisable at the very beginning of a systematic literature search in order to find additional core papers and to identify additional search terms. After finishing the final search it can be used to find additional relevant studies that were not retrieved by systematic searching using search strategies.</p>
+<p>Some research questions are hard to search by a conventional Boolean approach, for instance due to very ambiguous search terms or very recent research topics for which no index terms and no established terminology exists, yet. In these cases a citation search can be more useful than a Boolean search as it relies solely on the citation relationships between known and yet unknown publications.</p>
+<p>There are different approaches to searching citations: First, in the <strong>backward citation searching</strong> method the lists of references cited in the seed papers are screened for relevant articles. Second, the analysis of publications citing the seed paper as a reference is called <strong>forward citation searching</strong>. See <a href="#fig-citing-cited" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>.</p>
 <div id="fig-citing-cited" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-citing-cited-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="./fig/citing-cited.svg" class="img-fluid figure-img" style="width:80.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-citing-cited-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.2: backward and forward citation tracking
+Figure&nbsp;4.2: backward and forward citation searching
 </figcaption>
 </figure>
 </div>
-<p>Third, the identification of relevant literature by counting co-cited or co-citing references is called <strong>co-citation tracking</strong>, see <a href="#fig-cociting" class="quarto-xref">Figure&nbsp;<span>4.3</span></a> and <a href="#fig-cocited" class="quarto-xref">Figure&nbsp;<span>4.4</span></a>.</p>
-<div id="fig-cociting" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-cociting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="./fig/co-citing.svg" class="img-fluid figure-img" style="width:80.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cociting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.3: co-citation tracking using the citing articles which the core paper has in common with other papers
-</figcaption>
-</figure>
-</div>
+<p>Third, the identification of relevant literature by counting co-cited or co-citing references which connect the seed paper with other papers is called <strong>co-citation searching</strong>. In theory, the relevance of these other papers should increase with an increasing number of connecting publications.</p>
+<section id="co-cited-citation-searching" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="co-cited-citation-searching"><span class="header-section-number">4.2.1</span> co-cited citation searching</h3>
+<p>A seed paper (SP) is connected to other relevant publications (ORP) if both the SP and the ORP are cited by the same paper. In this case the SP and the ORP are <strong>co-cited</strong> by a number of publications. See <a href="#fig-cocited" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>.</p>
 <div id="fig-cocited" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-cocited-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="./fig/co-cited.svg" class="img-fluid figure-img" style="width:80.0%">
+<img src="./fig/co-citing.svg" class="img-fluid figure-img" style="width:80.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cocited-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;4.4: co-citation tracking using the cited references which the core paper has in common with other papers
+Figure&nbsp;4.3: co-cited citation searching retrieves publications which share citations with the core paper
 </figcaption>
 </figure>
 </div>
+</section>
+<section id="co-citing-citation-searching" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="co-citing-citation-searching"><span class="header-section-number">4.2.2</span> co-citing citation searching</h3>
+<p>A similar relationship exists between the SP and ORP if they both share a number of mutual references. In this case they are <strong>co-citing</strong> a set of common literature. See <a href="#fig-cociting" class="quarto-xref">Figure&nbsp;<span>4.4</span></a>.</p>
+<div id="fig-cociting" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cociting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./fig/co-cited.svg" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cociting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.4: co-citing citation searching retrieves publications which share references with the core paper
+</figcaption>
+</figure>
+</div>
+</section>
 </section>
 <section id="sec-criticalappraisal" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="sec-criticalappraisal"><span class="header-section-number">4.3</span> critical appraisal</h2>
 <p>One of the main steps in evidence-based medicine is the critical appraisal of evidence. Critical appraisal checklists help to assess the methodological quality of a studies and to determine the extent to which a study has excluded or minimized the possibility of bias in its design, conduct and analysis.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Sources for critical appraisal checklists">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -396,7 +422,7 @@ Sources for critical appraisal checklists
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li><a href="https://jbi.global/critical-appraisal-tools">JBI</a></li>
@@ -444,7 +470,7 @@ Table&nbsp;4.2
 </figure>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Sources of filter strategies">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -453,7 +479,7 @@ Sources of filter strategies
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li><a href="https://sites.google.com/a/york.ac.uk/issg-search-filters-resource">ISSG Search Filter Resource</a></li>
@@ -521,8 +547,25 @@ Example
 </div>
 </div>
 </section>
-<section id="sec-indexterms" class="level2" data-number="4.8">
-<h2 data-number="4.8" class="anchored" data-anchor-id="sec-indexterms"><span class="header-section-number">4.8</span> index terms</h2>
+<section id="sec-frequencyops" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="sec-frequencyops"><span class="header-section-number">4.8</span> frequency operators</h2>
+<p>Records in which a relevant expression occurs multiple times might be more relevant than records with fewer instances of the same expression. Therefore some search interfaces allow the use of a so-called frequency operator, which only retrieves records only if the search term occurs at least the specified number of times in the searched data field.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Example from Ovid: The query <code>"pharmacy".ab/freq=5</code> will retrieve articles, in which the term <code>pharmacy</code> occurs at least five times within the abstract.</p>
+</div>
+</div>
+</section>
+<section id="sec-indexterms" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="sec-indexterms"><span class="header-section-number">4.9</span> index terms</h2>
 <p><strong>Index terms</strong>, also called <strong>subject headings</strong> (or sometimes <em>descriptor</em>) are expressions defined for the purpose of <a href="technicalterms.html#sec-indexing">indexing</a>. They represent content-related concepts and are organized as a <a href="technicalterms.html#sec-thesaurus">controlled vocabulary</a>. By adding index terms to a record it becomes retrievable based on its contents.</p>
 <p>Using index terms in a search is an essential part of a <a href="#sec-syslitsearch">systematic literature search</a>. The index term search can be focused by employing <a href="#sec-subheading">subheadings</a> or searching the terms as <a href="#sec-focustopic">focus topics</a>.</p>
 <p>Index terms should not be confused with free text terms or <a href="technicalterms.html#sec-authorkeywords">author keywords</a>.</p>
@@ -537,23 +580,6 @@ Example
 </div>
 <div class="callout-body-container callout-body">
 <p>The <a href="technicalterms.html#sec-thesaurus">MeSH term</a> for the concept of <em>heart attack</em> or <em>cardiovascular stroke</em> is <a href="https://www.ncbi.nlm.nih.gov/mesh/68009203"><code>Myocardial infarction</code></a> The <a href="technicalterms.html#sec-thesaurus">Emtree term</a> (index term in <a href="databases.html#sec-embase">Embase</a>) for the same concept is <code>heart infarction</code>.</p>
-</div>
-</div>
-</section>
-<section id="sec-frequencyops" class="level2" data-number="4.9">
-<h2 data-number="4.9" class="anchored" data-anchor-id="sec-frequencyops"><span class="header-section-number">4.9</span> frequency operators</h2>
-<p>Records in which a relevant expression occurs multiple times might be more relevant than records with fewer instances of the same expression. Therefore some search interfaces allow the use of a so-called frequency operator, which only retrieves records only if the search term occurs at least the specified number of times in the searched data field.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Example">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Example
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Example from Ovid: The query <code>"pharmacy".ab/freq=5</code> will retrieve articles, in which the term <code>pharmacy</code> occurs at least five times within the abstract.</p>
 </div>
 </div>
 </section>
@@ -916,6 +942,9 @@ Hinde, Sebastian, and Eldon Spackman. 2015. <span>“<span class="nocase">Bidire
 </div>
 <div id="ref-Hirt2021" class="csl-entry" role="listitem">
 Hirt, Julian, Thomas Nordhausen, Christian Appenzeller-Herzog, and Hannah Ewald. 2021. <span>“<span class="nocase">Using citation tracking for systematic literature searching –&nbsp;study protocol for a scoping review of methodological studies and a Delphi study</span>.”</span> <em>F1000Res</em> 9 (September): 1386. <a href="https://doi.org/10.12688/f1000research.27337.3">https://doi.org/10.12688/f1000research.27337.3</a>.
+</div>
+<div id="ref-Hirt2024" class="csl-entry" role="listitem">
+Hirt, Julian, Thomas Nordhausen, Thomas Fuerst, Hannah Ewald, and Christian Appenzeller-Herzog. 2024. <span>“<span class="nocase">Guidance on terminology, application, and reporting of citation searching: the TARCiS statement</span>.”</span> <em>BMJ</em> 385 (e078384). <a href="https://doi.org/10.1136/bmj-2023-078384">https://doi.org/10.1136/bmj-2023-078384</a>.
 </div>
 <div id="ref-Janka2024" class="csl-entry" role="listitem">
 Janka, Heidrun, and Maria-Inti Metzendorf. 2024. <span>“High Precision but Variable Recall – Comparing the Performance of Five Deduplication Tools.”</span> <em>JEAHIL</em> 20 (1): 12–17. <a href="https://doi.org/10.32384/jeahil20607">https://doi.org/10.32384/jeahil20607</a>.
