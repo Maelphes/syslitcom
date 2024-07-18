@@ -120,8 +120,8 @@ of common literature. See @fig-cociting.
 
 
 ## critical appraisal {#sec-criticalappraisal}
-One of the main steps in evidence-based medicine is the critical appraisal of 
-evidence. Critical appraisal checklists help to assess the methodological 
+One of the main steps in evidence-based medicine is the **critical appraisal**
+of evidence. Critical appraisal checklists help to assess the methodological 
 quality of a studies and to determine the extent to which a study has excluded 
 or minimized the possibility of bias in its design, conduct and analysis.
 
@@ -140,22 +140,22 @@ See also: @Twells2021, @Buccheri2017, @FineoutOverholt2010b,
 ## deduplication {#sec-deduplication}
 Whenever multiple databases are searched it is unavoidable that various 
 references are retrieved more than once due to the overlapping of contents. 
-The removal of duplicate records from a dataset is called deduplication. 
-
-An unwelcome practice, which makes deduplication (and concomitantly any
-scientific work) more difficult, is repetitive, duplicate or redundant 
-publishing (@Ding2020, @Johnson2006, @Kassirer1995).
+The removal of duplicate records from a dataset is called **deduplication**. 
 
 Deduplication can be carried out manually using reference management software
 or in an automated way using review tools. The methods and tools for 
 deduplication differ in their mode of operation and the quality of results 
 (@Janka2024, @McKeown2021, @Bramer2016).
 
+An unwelcome practice, which makes deduplication (and concomitantly any
+scientific work) more difficult, is repetitive, duplicate or redundant 
+publishing (@Ding2020, @Johnson2006, @Kassirer1995).
 
 ## filters {#sec-filters}
 
-Filters (also search filters, filter strategies or hedges) are [search strategies](#sec-searchstrategy)
-designed to retrieve records for a specific concept of the research question.
+**Filters** (also *search filters*, *filter strategies* or *hedges*) are 
+[search strategies](#sec-searchstrategy) designed to retrieve records for a 
+specific concept of the research question.
 
 There are filters for specific patient groups or diseases, outcomes, study types
 (for instance to retrieve only randomized controlled trials (RCTs), or filters 
@@ -168,7 +168,8 @@ precision by experts. (@Haynes2004, @Glanville2008)
 Filter strategies can be implemented in a search strategy just like any concept 
 of the research question. @tbl-filterstrategy illustrates a search strategy with
 a short qualitative research filter in lines 8 to 11, which is added to the 
-overall search in line 12. (see also @sec-searchstrategy).
+overall search in line 12.
+
 
 ::: {#tbl-filterstrategy}
 ```python
@@ -292,7 +293,7 @@ for the same concept is `heart infarction`.
 
 ## limits {#sec-limits}
 There are various means to restrict the results of a search. One of them are 
-so-called limits which are filter options provided by the search interface,
+so-called **limits** which are filter options provided by the search interface,
 which allow the search results to be limited to characteristics such as 
 publication type, language or year of publication.
 
@@ -401,8 +402,7 @@ Options to counter this problem:
 ## search strategy {#sec-searchstrategy}
 A **search strategy** is a coherent set of search queries designed to retrieve 
 references for a particular topic. A search strategy is dependent on the 
-[syntax](#sec-syntax) and index terms of the searched database. As a 
-consequence, the search strategy needs to be translated for the use in other 
+[syntax](#sec-syntax) and [index terms](#sec-indexterm) of the searched database. As a consequence, the search strategy needs to be translated for the use in other 
 databases.
 
 Search strategies are supposed to be consistent with the predefined eligibility 
@@ -435,7 +435,7 @@ Multi-line search strategy for Ovid MEDLINE
 
 ## subheading {#sec-subheading}
 Publications in [bibliographic databases](#sec-bibdb) are often indexed using
-index terms. In cases where the index term does not sufficiently describe the 
+[index terms](#sec-indexterm). In cases where the index term does not sufficiently describe the 
 content of the article, so-called **subheadings** or **qualifiers** can be 
 applied to the index term to specify certain aspects.
 
