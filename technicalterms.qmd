@@ -246,7 +246,7 @@ There are two types of criteria:
 **Inclusion criteria** must be met by studies in order for
 them to be included in the review. In contrast, if a study meets one or more 
 of the **exclusion criteria**, it will be excluded from the review.
-See also @McKenzie2022, @Gough2017.
+See also @McKenzie2023, @Gough2017.
 
 ::: {.callout-tip title="Example: systematic review about chronic non-cancer pain"}
 - Inclusion criteria:

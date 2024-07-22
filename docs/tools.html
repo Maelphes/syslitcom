@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.5.54">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="A compendium for systematic literature searching">
 
-<title>SysLit Compendium - 3&nbsp; Tools</title>
+<title>3&nbsp; Tools – SysLit Compendium</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -113,13 +113,13 @@ div.csl-indent {
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./tools.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tools</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -198,6 +198,7 @@ div.csl-indent {
   <li><a href="#sec-press" id="toc-sec-press" class="nav-link" data-scroll-target="#sec-press"><span class="header-section-number">3.4</span> PRESS</a></li>
   <li><a href="#sec-prisma" id="toc-sec-prisma" class="nav-link" data-scroll-target="#sec-prisma"><span class="header-section-number">3.5</span> PRISMA</a></li>
   <li><a href="#sec-refmanagement" id="toc-sec-refmanagement" class="nav-link" data-scroll-target="#sec-refmanagement"><span class="header-section-number">3.6</span> Reference Management software</a></li>
+  <li><a href="#sec-tarcis" id="toc-sec-tarcis" class="nav-link" data-scroll-target="#sec-tarcis"><span class="header-section-number">3.7</span> TARCiS</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://www.github.com/Maelphes/syslitcom/edit/gh-pages/tools.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/blob/gh-pages/tools.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -249,6 +250,16 @@ Example: Retrieve similar articles
 <pre><code>elink -db pubmed -id 25554246,29463298 -related -cmd neighbor | 
 xtract -pattern LinkSetDb -element Id</code></pre>
 <p>will return all <a href="technicalterms.html#sec-pmid-pmcid">PMIDs</a> of publications which PubMed identifies as <a href="https://pubmed.ncbi.nlm.nih.gov/help/#similar-articles"><em>Similar Articles</em></a> for the PMIDs <a href="https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed&amp;from_uid=25554246">25554246</a> and <a href="https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed&amp;from_uid=29463298">29463298</a>.</p>
+<div id="fig-edirect" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-edirect-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./fig/edirect.gif" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-edirect-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: Similar Articles via Entrez Direct
+</figcaption>
+</figure>
+</div>
 <p>On PubMed the Similar Articles search can be carried out for only one PMID at a time, whereas using the E-utilities it is possible to search with many PMIDs in a single query.</p>
 </div>
 </div>
@@ -280,7 +291,7 @@ Unix Shell on Windows
 <section id="sec-finer" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="sec-finer"><span class="header-section-number">3.2</span> FINER</h2>
 <p>FINER is an acronym for the five criteria <strong>feasible</strong>, <strong>interesting</strong>, <strong>novel</strong>, <strong>ethical</strong> and <strong>relevant</strong> which can be used as guidance when formulating a good clinical research question. See <a href="#tbl-finer" class="quarto-xref">Table&nbsp;<span>3.1</span></a>. (<span class="citation" data-cites="Cummings2013">Cummings, Browner, and Hulley (<a href="references.html#ref-Cummings2013" role="doc-biblioref">2013</a>)</span>)</p>
-<div id="tbl-finer" class="quarto-float anchored">
+<div id="tbl-finer" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-finer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;3.1
@@ -372,6 +383,10 @@ Examples of reference managers
 </div>
 </div>
 <p>For comparisons of reference management software see also <a href="https://mediatum.ub.tum.de/1320978" class="uri">https://mediatum.ub.tum.de/1320978</a> and <a href="https://en.wikipedia.org/wiki/Comparison_of_reference_management_software" class="uri">https://en.wikipedia.org/wiki/Comparison_of_reference_management_software</a>.</p>
+</section>
+<section id="sec-tarcis" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="sec-tarcis"><span class="header-section-number">3.7</span> TARCiS</h2>
+<p>The <a href="https://tarcis.unibas.ch/"><strong>TARCiS Statement</strong></a> by <span class="citation" data-cites="Hirt2024">Hirt et al. (<a href="references.html#ref-Hirt2024" role="doc-biblioref">2024</a>)</span> provides guidance on <strong>T</strong>erminology, <strong>A</strong>pplications, and the <strong>R</strong>eporting of <strong>Ci</strong>tation <strong>S</strong>earching in the context of <a href="#sec-syslitsearching">systematic searching</a>. It offers recommendations as well as a checklist for the most imporant items required to report in a review. Please refer to the section on <a href="methods.html#sec-citationsearching">citation searching</a> for more information about the techniques.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
@@ -380,6 +395,9 @@ Cummings, Steven R., Warren S. Browner, and Stephen B. Hulley. 2013. <span>“<s
 </div>
 <div id="ref-Eriksen2018" class="csl-entry" role="listitem">
 Eriksen, Mette Brandt, and Tove Faber Frandsen. 2018. <span>“<span class="nocase">The impact of patient, intervention, comparison, outcome (PICO) as a search strategy tool on literature search quality: a systematic review</span>.”</span> <em>J Med Libr Assoc</em> 106 (4): 420–31. <a href="https://doi.org/10.5195/jmla.2018.345">https://doi.org/10.5195/jmla.2018.345</a>.
+</div>
+<div id="ref-Hirt2024" class="csl-entry" role="listitem">
+Hirt, Julian, Thomas Nordhausen, Thomas Fuerst, Hannah Ewald, and Christian Appenzeller-Herzog. 2024. <span>“<span class="nocase">Guidance on terminology, application, and reporting of citation searching: the TARCiS statement</span>.”</span> <em>BMJ</em> 385 (e078384). <a href="https://doi.org/10.1136/bmj-2023-078384">https://doi.org/10.1136/bmj-2023-078384</a>.
 </div>
 <div id="ref-McGowan2016" class="csl-entry" role="listitem">
 McGowan, Jessie, Margaret Sampson, Douglas M. Salzwedel, Elise Cogo, Vicki Foerster, and Carol Lefebvre. 2016. <span>“<span class="nocase">PRESS Peer Review of Electronic Search Strategies: 2015 Guideline&nbsp;Statement</span>.”</span> <em>J Clin Epidemiol</em> 75: 40–46. <a href="https://doi.org/10.1016/j.jclinepi.2016.01.021">https://doi.org/10.1016/j.jclinepi.2016.01.021</a>.
@@ -444,18 +462,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -487,7 +494,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -495,7 +524,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

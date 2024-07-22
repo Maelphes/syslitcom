@@ -46,10 +46,14 @@ as [*Similar Articles*](https://pubmed.ncbi.nlm.nih.gov/help/#similar-articles)
 for the PMIDs [25554246](https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed&from_uid=25554246) 
 and  [29463298](https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed&from_uid=29463298).
 
+
+![Similar Articles via Entrez Direct](./fig/edirect.gif){#fig-edirect}
+
 On PubMed the Similar Articles search can be carried out for only one PMID at a
 time, whereas using the E-utilities it is possible to search with many PMIDs in
 a single query.
 :::
+
 
 :::{.callout-tip title="Unix Shell on Windows" collapse=true}
 There is a quick and easy way to get access to Linux and its shell even when
@@ -140,4 +144,14 @@ These programs are usually able to perform tasks with the records, such as
 - [Mendeley](https://www.mendeley.com)
 - [Zotero](https://www.zotero.org)
 :::
+
 For comparisons of reference management software see also <https://mediatum.ub.tum.de/1320978> and <https://en.wikipedia.org/wiki/Comparison_of_reference_management_software>.
+
+## TARCiS {#sec-tarcis}
+The [**TARCiS Statement**](https://tarcis.unibas.ch/) by @Hirt2024
+provides guidance on **T**erminology, **A**pplications, and the **R**eporting 
+of **Ci**tation **S**earching in the context of 
+[systematic searching](#sec-syslitsearching). It offers recommendations as well
+as a checklist for the most imporant items required to report in a review.
+Please refer to the section on [citation searching](#sec-citationsearching) for 
+more information about the techniques.

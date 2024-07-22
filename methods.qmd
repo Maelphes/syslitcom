@@ -55,20 +55,16 @@ multiplication and addition. See @tbl-booleanproperties. (@ORegan2012)
 :::
 
 
-## citation searching {#sec-citationanalysis}
+## citation searching {#sec-citationsearching}
 
 Relevant references can be retrieved by analyzing citation relationships between
 known relevant articles, called *seed papers* (also known as *core papers*) and 
 cited or citing references. This technique is called **citation searching**, 
-**citation analysis** or **citation tracking** (@Hirt2021, @Belter2016, 
+**citation analysis** or **citation tracking** (@Hirt2024, @Belter2016, 
 @Hinde2015).
 
-::: {.callout-tip title="The TARCiS Statement"}
-The [**TARCiS Statement**](https://tarcis.unibas.ch/) by @Hirt2024
-provides guidance on **t**erminology, **a**pplications, and the **r**eporting 
-of **ci**tation **s**earching in the context of 
-[systematic searching](#sec-syslitsearching).
-:::
+The [TARCiS Statement](#sec-tarcis) provides a guideline for citation searching.
+(@Hirt2024)
 
 Citation searching can be advisable at the very beginning of a systematic 
 literature search in order to find additional core papers and to identify 
