@@ -58,7 +58,7 @@ multiplication and addition. See @tbl-booleanproperties. (@ORegan2012)
 ## citation searching {#sec-citationsearching}
 
 Relevant references can be retrieved by analyzing citation relationships between
-known relevant articles, called *seed papers* (also known as *core papers*) and 
+known relevant articles, called [*seed papers*](#sec-seedpaper) (also known as *core papers*) and 
 cited or citing references. This technique is called **citation searching**, 
 **citation analysis** or **citation tracking** (@Hirt2024, @Belter2016, 
 @Hinde2015).
@@ -281,6 +281,7 @@ Index terms should not be confused with free text terms or
 :::{.callout-tip title="Example"}
 The [MeSH term](#sec-thesaurus) for the concept of *heart attack* or 
 *cardiovascular stroke* is [`Myocardial infarction`](https://www.ncbi.nlm.nih.gov/mesh/68009203)
+
 The [Emtree term](#sec-thesaurus) (index term in [Embase](#sec-embase)) 
 for the same concept is `heart infarction`.
 :::

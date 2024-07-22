@@ -124,6 +124,32 @@ PRISMA-S for the documentation of systematic literature searches
 See also <https://prisma-statement.org>.
 
 
+## PubReMiner {#sec-pubreminer}
+
+The [**PubMed PubReMiner**](https://hgserver2.amc.nl/cgi-bin/miner/miner2.cgi) 
+is an online tool that enables the user to extract information from the results 
+of a [PubMed](#sec-pubmed) query.
+
+Upon entering search terms (in valid [PubMed syntax](#sec-syntax)), PubReMiner 
+summarizes the results of the query by creating tables with the following 
+information:
+
+- year of publication
+- abbreviated journal name
+- author
+- free text terms
+- MeSH terms
+- substances
+- publication type
+- country
+
+The tool can be used to extract data from a set of [seed papers](#sec-seedpaper)
+simply by entering their PMIDs as a search query.
+
+The PubReMiner is maintained by [Jan Koster](https://orcid.org/0000-0002-0890-7585) 
+from the Amsterdam University Medical Centers (Amsterdam UMC).
+
+
 ## Reference Management software {#sec-refmanagement}
 Bibliographic records and similar sets of data such as clinical study metadata 
 can be stored and managed using **reference management programs** (also called 
@@ -147,6 +173,39 @@ These programs are usually able to perform tasks with the records, such as
 
 For comparisons of reference management software see also <https://mediatum.ub.tum.de/1320978> and <https://en.wikipedia.org/wiki/Comparison_of_reference_management_software>.
 
+## searchbuildR
+[**searchbuildR**](https://github.com/IQWiG/searchbuildR) is a tool written 
+in [R](https://www.r-project.org/). Its purpose is to support 
+the development of [search strategies](#sec-searchstrategy) by identifing search 
+terms from a set of [seed papers](#sec-seedpaper).(@Kapp2024)
+
+searchbuildR takes a set of references (e.g. as a RIS file) as input and 
+identifies terms, which are overrepresented within this set compared with a 
+large corpus of PubMed references.
+
+:::{.callout-tip title="Installing and Running searchbuildR"}
+searchbuildR is an R package, which can be installed from GitHub and run locally as a Shiny App in R:
+
+```{r}
+#| eval: false # Do not evaluate this chunk
+#| echo: true # Do show this chunk in the final rendered document
+#| output: false # Do not show the output / results of this chunk in the rendered document
+
+# install and load the "remotes" package which is required to install remotely from github
+install.packages("remotes")
+library(remotes)
+
+# install and load the searchbuildR package
+remotes::install_github("https://github.com/IQWiG/searchbuildR")
+library(searchbuildR)
+
+# run the shiny app
+run_app()
+```
+:::
+
+searchbuildR is developed and maintained by [IQWiG](https://www.iqwig.de/en/presse/press-releases/press-releases-detailpage_121282.html).
+
 ## TARCiS {#sec-tarcis}
 The [**TARCiS Statement**](https://tarcis.unibas.ch/) by @Hirt2024
 provides guidance on **T**erminology, **A**pplications, and the **R**eporting 
@@ -155,3 +214,39 @@ of **Ci**tation **S**earching in the context of
 as a checklist for the most imporant items required to report in a review.
 Please refer to the section on [citation searching](#sec-citationsearching) for 
 more information about the techniques.
+
+## Yale MeSH Analyzer {#sec-yalemeshanalyzer}
+The [**Yale MeSH Analyzer**](https://mesh.med.yale.edu/) is an online tool for 
+analyzing the bibliographic information of up to 20 
+[PubMed](#sec-pubmed) records at once. It can be used to identify relevant 
+search terms from the a set of [seed papers](#sec-seedpapers).
+
+In principle, upon entering [PMIDs](#sec-pmid-pmcid) into the tool, it creates 
+a summary table containing [MeSH terms](#sec-indexterms) and 
+[author keywords](#sec-authorkeywords) for each publication
+(see @tbl-yalemeshanalyzer).
+
+::: {#tbl-yalemeshanalyzer}
+| PMID            | 38644158                                                                                                                                                      | 30916023                                                                                                                                   | 38093118                                                                                                                                                                |
+|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Title**           | Ventilatory efficiency as a prognostic factor for postoperative...                                                                                            | Ventilatory inefficiency adversely affects outcomes and longer-...                                                                         | A retrospective analysis of the association of effort-independe...                                                                                                      |
+| **Author (Year)**   | Vetsch T (2024)                                                                                                                                               | Wilson RJT (2019)                                                                                                                          | Franssen RFW (2023)                                                                                                                                                     |
+| **MeSH Headings**  |                                                                                                                                                               | Aged <br>  Aged, 80 and over                                                                                                                     | Aged                                                                                                                                                                    |
+|                 |                                                                                                                                                               | Carbon Dioxide / me <br>  Colorectal Neoplasms / pp <br> Colorectal Neoplasms / su*                                                                   | Colorectal Surgery*                                                                                                                                                     |
+|                 | Elective Surgical Procedures* / ae <br> Exercise Test / mt                                                                                                    | Exercise Test / mt* <br>  Exercise Tolerance                                                                                               | Exercise Test                                                                                                                                                           |
+|                 |                                                                                                                                                               | Female                                                                                                                                     | Female                                                                                                                                                                  |
+|                 | Humans                                                                                                                                                        | Humans                                                                                                                                     | Heart Failure* <br> Humans                                                                                                                                                   |
+|                 |                                                                                                                                                               | Lung / pp*                                                                                                                                 |                                                                                                                                                                         |
+|                 |                                                                                                                                                               | Male                                                                                                                                       | Male                                                                                                                                                                    |
+|                 |                                                                                                                                                               | Oxygen Consumption / ph                                                                                                                    | Oxygen Consumption                                                                                                                                                      |
+|                 | Postoperative Complications* / ep <br>  Prognosis                                                                                                                   | Postoperative Complications / di <br> Postoperative Complications / ep* <br> Postoperative Complications / pp <br> Pulmonary Ventilation / ph*            | Postoperative Complications / ep <br> Prognosis                                                                                                                              |
+|                 |                                                                                                                                                               | Retrospective Studies <br> Risk Factors                                                                                                         | Retrospective Studies                                                                                                                                                   |
+|                 |                                                                                                                                                               | Survival Analysis                                                                                                                          |                                                                                                                                                                         |
+|                 |                                                                                                                                                               | United Kingdom / ep                                                                                                                        |                                                                                                                                                                         |
+| **Author Keywords** | VE/VCO(2) <br> exercise testing <br> major surgery <br> postoperative complications <br> postoperative mortality <br> prediction models <br> preoperative assessment <br> ventilatory efficiency | cardiopulmonary exercise testing <br> colorectal surgery <br>  mortality <br> perioperative risk factors <br>  pre-operative evaluation <br> ventilatory inefficiency | Abdominal surgery <br> Anaerobic threshold <br> Cardiopulmonary exercise testing <br> Oxygen uptake efficiency slope <br> Peak oxygen uptake <br> Preoperative care <br> Preoperative risk assessment |
+: Example of a table created by the Yale MeSH Analyzer {.hover}
+:::
+
+The Yale MeSH Analyzer is maintained by the 
+[Cushing/Whitney Medical Library](https://library.medicine.yale.edu/) at 
+Yale University.

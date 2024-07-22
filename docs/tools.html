@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -197,8 +231,11 @@ div.csl-indent {
   <li><a href="#sec-pico" id="toc-sec-pico" class="nav-link" data-scroll-target="#sec-pico"><span class="header-section-number">3.3</span> PICO</a></li>
   <li><a href="#sec-press" id="toc-sec-press" class="nav-link" data-scroll-target="#sec-press"><span class="header-section-number">3.4</span> PRESS</a></li>
   <li><a href="#sec-prisma" id="toc-sec-prisma" class="nav-link" data-scroll-target="#sec-prisma"><span class="header-section-number">3.5</span> PRISMA</a></li>
-  <li><a href="#sec-refmanagement" id="toc-sec-refmanagement" class="nav-link" data-scroll-target="#sec-refmanagement"><span class="header-section-number">3.6</span> Reference Management software</a></li>
-  <li><a href="#sec-tarcis" id="toc-sec-tarcis" class="nav-link" data-scroll-target="#sec-tarcis"><span class="header-section-number">3.7</span> TARCiS</a></li>
+  <li><a href="#sec-pubreminer" id="toc-sec-pubreminer" class="nav-link" data-scroll-target="#sec-pubreminer"><span class="header-section-number">3.6</span> PubReMiner</a></li>
+  <li><a href="#sec-refmanagement" id="toc-sec-refmanagement" class="nav-link" data-scroll-target="#sec-refmanagement"><span class="header-section-number">3.7</span> Reference Management software</a></li>
+  <li><a href="#searchbuildr" id="toc-searchbuildr" class="nav-link" data-scroll-target="#searchbuildr"><span class="header-section-number">3.8</span> searchbuildR</a></li>
+  <li><a href="#sec-tarcis" id="toc-sec-tarcis" class="nav-link" data-scroll-target="#sec-tarcis"><span class="header-section-number">3.9</span> TARCiS</a></li>
+  <li><a href="#sec-yalemeshanalyzer" id="toc-sec-yalemeshanalyzer" class="nav-link" data-scroll-target="#sec-yalemeshanalyzer"><span class="header-section-number">3.10</span> Yale MeSH Analyzer</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://www.github.com/Maelphes/syslitcom/edit/gh-pages/tools.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/blob/gh-pages/tools.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -349,8 +386,25 @@ Table&nbsp;3.1
 <p>There are additional extensions of PRISMA for various purposes, such as PRISMA-S for the documentation of systematic literature searches (<span class="citation" data-cites="Rethlefsen2021">M. L. Rethlefsen et al. (<a href="references.html#ref-Rethlefsen2021" role="doc-biblioref">2021</a>)</span>) or PRISMA-ScR for scoping reviews (<span class="citation" data-cites="Tricco2018">Tricco et al. (<a href="references.html#ref-Tricco2018" role="doc-biblioref">2018</a>)</span>).</p>
 <p>See also <a href="https://prisma-statement.org" class="uri">https://prisma-statement.org</a>.</p>
 </section>
-<section id="sec-refmanagement" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="sec-refmanagement"><span class="header-section-number">3.6</span> Reference Management software</h2>
+<section id="sec-pubreminer" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="sec-pubreminer"><span class="header-section-number">3.6</span> PubReMiner</h2>
+<p>The <a href="https://hgserver2.amc.nl/cgi-bin/miner/miner2.cgi"><strong>PubMed PubReMiner</strong></a> is an online tool that enables the user to extract information from the results of a <a href="databases.html#sec-pubmed">PubMed</a> query.</p>
+<p>Upon entering search terms (in valid <a href="technicalterms.html#sec-syntax">PubMed syntax</a>), PubReMiner summarizes the results of the query by creating tables with the following information:</p>
+<ul>
+<li>year of publication</li>
+<li>abbreviated journal name</li>
+<li>author</li>
+<li>free text terms</li>
+<li>MeSH terms</li>
+<li>substances</li>
+<li>publication type</li>
+<li>country</li>
+</ul>
+<p>The tool can be used to extract data from a set of <a href="technicalterms.html#sec-seedpaper">seed papers</a> simply by entering their PMIDs as a search query.</p>
+<p>The PubReMiner is maintained by <a href="https://orcid.org/0000-0002-0890-7585">Jan Koster</a> from the Amsterdam University Medical Centers (Amsterdam UMC).</p>
+</section>
+<section id="sec-refmanagement" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="sec-refmanagement"><span class="header-section-number">3.7</span> Reference Management software</h2>
 <p>Bibliographic records and similar sets of data such as clinical study metadata can be stored and managed using <strong>reference management programs</strong> (also called citation management software).</p>
 <p>These programs are usually able to perform tasks with the records, such as</p>
 <ul>
@@ -384,9 +438,163 @@ Examples of reference managers
 </div>
 <p>For comparisons of reference management software see also <a href="https://mediatum.ub.tum.de/1320978" class="uri">https://mediatum.ub.tum.de/1320978</a> and <a href="https://en.wikipedia.org/wiki/Comparison_of_reference_management_software" class="uri">https://en.wikipedia.org/wiki/Comparison_of_reference_management_software</a>.</p>
 </section>
-<section id="sec-tarcis" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="sec-tarcis"><span class="header-section-number">3.7</span> TARCiS</h2>
+<section id="searchbuildr" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="searchbuildr"><span class="header-section-number">3.8</span> searchbuildR</h2>
+<p><a href="https://github.com/IQWiG/searchbuildR"><strong>searchbuildR</strong></a> is a tool written in <a href="https://www.r-project.org/">R</a>. Its purpose is to support the development of <a href="methods.html#sec-searchstrategy">search strategies</a> by identifing search terms from a set of <a href="technicalterms.html#sec-seedpaper">seed papers</a>.(<span class="citation" data-cites="Kapp2024">Kapp et al. (<a href="references.html#ref-Kapp2024" role="doc-biblioref">2024</a>)</span>)</p>
+<p>searchbuildR takes a set of references (e.g.&nbsp;as a RIS file) as input and identifies terms, which are overrepresented within this set compared with a large corpus of PubMed references.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Installing and Running searchbuildR">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Installing and Running searchbuildR
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>searchbuildR is an R package, which can be installed from GitHub and run locally as a Shiny App in R:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install and load the "remotes" package which is required to install remotely from github</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(remotes)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># install and load the searchbuildR package</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"https://github.com/IQWiG/searchbuildR"</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(searchbuildR)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># run the shiny app</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">run_app</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+<p>searchbuildR is developed and maintained by <a href="https://www.iqwig.de/en/presse/press-releases/press-releases-detailpage_121282.html">IQWiG</a>.</p>
+</section>
+<section id="sec-tarcis" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="sec-tarcis"><span class="header-section-number">3.9</span> TARCiS</h2>
 <p>The <a href="https://tarcis.unibas.ch/"><strong>TARCiS Statement</strong></a> by <span class="citation" data-cites="Hirt2024">Hirt et al. (<a href="references.html#ref-Hirt2024" role="doc-biblioref">2024</a>)</span> provides guidance on <strong>T</strong>erminology, <strong>A</strong>pplications, and the <strong>R</strong>eporting of <strong>Ci</strong>tation <strong>S</strong>earching in the context of <a href="#sec-syslitsearching">systematic searching</a>. It offers recommendations as well as a checklist for the most imporant items required to report in a review. Please refer to the section on <a href="methods.html#sec-citationsearching">citation searching</a> for more information about the techniques.</p>
+</section>
+<section id="sec-yalemeshanalyzer" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="sec-yalemeshanalyzer"><span class="header-section-number">3.10</span> Yale MeSH Analyzer</h2>
+<p>The <a href="https://mesh.med.yale.edu/"><strong>Yale MeSH Analyzer</strong></a> is an online tool for analyzing the bibliographic information of up to 20 <a href="databases.html#sec-pubmed">PubMed</a> records at once. It can be used to identify relevant search terms from the a set of <a href="#sec-seedpapers">seed papers</a>.</p>
+<p>In principle, upon entering <a href="technicalterms.html#sec-pmid-pmcid">PMIDs</a> into the tool, it creates a summary table containing <a href="methods.html#sec-indexterms">MeSH terms</a> and <a href="technicalterms.html#sec-authorkeywords">author keywords</a> for each publication (see <a href="#tbl-yalemeshanalyzer" class="quarto-xref">Table&nbsp;<span>3.2</span></a>).</p>
+<div id="tbl-yalemeshanalyzer" class="hover quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-yalemeshanalyzer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.2: Example of a table created by the Yale MeSH Analyzer
+</figcaption>
+<div aria-describedby="tbl-yalemeshanalyzer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-hover caption-top table">
+<colgroup>
+<col style="width: 3%">
+<col style="width: 32%">
+<col style="width: 28%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>PMID</th>
+<th>38644158</th>
+<th>30916023</th>
+<th>38093118</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Title</strong></td>
+<td>Ventilatory efficiency as a prognostic factor for postoperative…</td>
+<td>Ventilatory inefficiency adversely affects outcomes and longer-…</td>
+<td>A retrospective analysis of the association of effort-independe…</td>
+</tr>
+<tr class="even">
+<td><strong>Author (Year)</strong></td>
+<td>Vetsch T (2024)</td>
+<td>Wilson RJT (2019)</td>
+<td>Franssen RFW (2023)</td>
+</tr>
+<tr class="odd">
+<td><strong>MeSH Headings</strong></td>
+<td></td>
+<td>Aged <br> Aged, 80 and over</td>
+<td>Aged</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Carbon Dioxide / me <br> Colorectal Neoplasms / pp <br> Colorectal Neoplasms / su*</td>
+<td>Colorectal Surgery*</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Elective Surgical Procedures* / ae <br> Exercise Test / mt</td>
+<td>Exercise Test / mt* <br> Exercise Tolerance</td>
+<td>Exercise Test</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Female</td>
+<td>Female</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Humans</td>
+<td>Humans</td>
+<td>Heart Failure* <br> Humans</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Lung / pp*</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Male</td>
+<td>Male</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Oxygen Consumption / ph</td>
+<td>Oxygen Consumption</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Postoperative Complications* / ep <br> Prognosis</td>
+<td>Postoperative Complications / di <br> Postoperative Complications / ep* <br> Postoperative Complications / pp <br> Pulmonary Ventilation / ph*</td>
+<td>Postoperative Complications / ep <br> Prognosis</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>Retrospective Studies <br> Risk Factors</td>
+<td>Retrospective Studies</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Survival Analysis</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td>United Kingdom / ep</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><strong>Author Keywords</strong></td>
+<td>VE/VCO(2) <br> exercise testing <br> major surgery <br> postoperative complications <br> postoperative mortality <br> prediction models <br> preoperative assessment <br> ventilatory efficiency</td>
+<td>cardiopulmonary exercise testing <br> colorectal surgery <br> mortality <br> perioperative risk factors <br> pre-operative evaluation <br> ventilatory inefficiency</td>
+<td>Abdominal surgery <br> Anaerobic threshold <br> Cardiopulmonary exercise testing <br> Oxygen uptake efficiency slope <br> Peak oxygen uptake <br> Preoperative care <br> Preoperative risk assessment</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>The Yale MeSH Analyzer is maintained by the <a href="https://library.medicine.yale.edu/">Cushing/Whitney Medical Library</a> at Yale University.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
@@ -398,6 +606,9 @@ Eriksen, Mette Brandt, and Tove Faber Frandsen. 2018. <span>“<span class="noca
 </div>
 <div id="ref-Hirt2024" class="csl-entry" role="listitem">
 Hirt, Julian, Thomas Nordhausen, Thomas Fuerst, Hannah Ewald, and Christian Appenzeller-Herzog. 2024. <span>“<span class="nocase">Guidance on terminology, application, and reporting of citation searching: the TARCiS statement</span>.”</span> <em>BMJ</em> 385 (e078384). <a href="https://doi.org/10.1136/bmj-2023-078384">https://doi.org/10.1136/bmj-2023-078384</a>.
+</div>
+<div id="ref-Kapp2024" class="csl-entry" role="listitem">
+Kapp, Claudia, Naomi Fujita-Rohwerder, Jona Lilienthal, Wiebke Sieben, Siw Waffenschmidt, and Elke Hausner. 2024. <span>“<span class="nocase">The searchbuildR shiny app: A new implementation of the objective approach for search strategy development in systematic reviews</span>.”</span> <em>Cochrane Evidence Synthesis and Methods</em> 2 (6): e12078. <a href="https://doi.org/10.1002/cesm.12078">https://doi.org/10.1002/cesm.12078</a>.
 </div>
 <div id="ref-McGowan2016" class="csl-entry" role="listitem">
 McGowan, Jessie, Margaret Sampson, Douglas M. Salzwedel, Elise Cogo, Vicki Foerster, and Carol Lefebvre. 2016. <span>“<span class="nocase">PRESS Peer Review of Electronic Search Strategies: 2015 Guideline&nbsp;Statement</span>.”</span> <em>J Clin Epidemiol</em> 75: 40–46. <a href="https://doi.org/10.1016/j.jclinepi.2016.01.021">https://doi.org/10.1016/j.jclinepi.2016.01.021</a>.

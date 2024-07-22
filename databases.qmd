@@ -40,7 +40,8 @@ Cochrane's databases, most importantly the Cochrane Database of Systematic
 Reviews (CDSR) and the Cochrane Central Register of Controlled Trials (CENTRAL),
 which contain different types evidence to inform healthcare decision-making.
 
-The Cochrane Library is not freely available. Switzerland has complete access to the Cochrane Library due to [a national license (currently until 2024)](https://www.samw.ch/en/Projects/Overview-of-projects/Cochrane-Library.html). 
+The Cochrane Library is not entirely freely available. Switzerland has complete 
+access to the Cochrane Library due to [a national license (currently until 2024)](https://www.samw.ch/en/Projects/Overview-of-projects/Cochrane-Library.html). 
 
 ### Cochrane Database of Systematic Reviews (CDSR) {#sec-cdsr}
 
