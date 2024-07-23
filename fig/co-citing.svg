@@ -5,8 +5,8 @@
    viewBox="0 0 205.68146 161.40589"
    version="1.1"
    id="svg1073"
-   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
-   sodipodi:docname="citing.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="co-citing.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -3037,27 +3037,33 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.57340475"
-     inkscape:cx="942.61514"
-     inkscape:cy="237.17976"
+     inkscape:cx="307.8105"
+     inkscape:cy="208.40427"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="true"
      inkscape:window-width="1920"
-     inkscape:window-height="1027"
-     inkscape:window-x="-8"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:pagecheckerboard="0">
+     inkscape:pagecheckerboard="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
     <inkscape:grid
        type="xygrid"
        id="grid850"
        originx="310.8426"
-       originy="-1.0008446e-06" />
+       originy="-1.0008446e-06"
+       spacingy="1"
+       spacingx="1"
+       units="mm"
+       visible="true" />
   </sodipodi:namedview>
   <metadata
      id="metadata1070">
@@ -6100,7 +6106,8 @@
        id="path2366"
        inkscape:path-effect="#path-effect2370"
        inkscape:original-d="m -222.10938,110.2762 c -14.11136,12.34793 -28.22247,24.69515 -42.33333,37.04166"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       transform="translate(-2.2839376)" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.529;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4397);marker-end:url(#marker4427)"
        d="m 295.8892,123.22915 c -13.74718,5.44262 -27.49435,10.88525 -30.19662,16.52839 -2.70228,5.64314 5.64031,11.48643 -0.42364,16.32855 -6.06396,4.84211 -26.53462,8.68337 -47.00524,12.52463"
@@ -6197,7 +6204,7 @@
          id="tspan2995">3</tspan></text>
     <g
        id="g9856"
-       transform="translate(-287.92136,-8.0636897)">
+       transform="translate(-290.2053,-8.0636897)">
       <g
          id="g6630">
         <g
@@ -6358,15 +6365,15 @@
         </g>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Alegreya;-inkscape-font-specification:Alegreya;stroke-width:0.264583"
-           x="131.0132"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:'Corbel Bold';stroke-width:0.264583"
+           x="125.19238"
            y="201.23256"
            id="text2947"><tspan
              sodipodi:role="line"
-             x="131.0132"
+             x="125.19238"
              y="201.23256"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Alegreya;-inkscape-font-specification:Alegreya;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-             id="tspan2945">related paper</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:Corbel;-inkscape-font-specification:'Corbel Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+             id="tspan2945">other relevant paper</tspan></text>
       </g>
       <g
          id="g6593">
@@ -6521,15 +6528,15 @@
         </g>
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Alegreya;-inkscape-font-specification:Alegreya;stroke-width:0.264583"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:'Corbel Bold';stroke-width:0.264583"
            x="1.1120763"
            y="201.23256"
            id="text2943"><tspan
              sodipodi:role="line"
              x="1.1120763"
              y="201.23256"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Alegreya;-inkscape-font-specification:Alegreya;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-             id="tspan2941">core paper</tspan></text>
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:Corbel;-inkscape-font-specification:'Corbel Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+             id="tspan2941">seed paper</tspan></text>
       </g>
     </g>
     <text
@@ -6545,7 +6552,7 @@
          id="tspan2999">4</tspan></text>
     <g
        id="g8265"
-       transform="translate(-286.32863,-8.9466737)">
+       transform="translate(-288.61257,-8.9466737)">
       <g
          id="g2150"
          transform="matrix(0.6984623,0,0,0.6984623,32.298243,86.472323)"
@@ -7525,26 +7532,26 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Alegreya;-inkscape-font-specification:Alegreya;stroke-width:0.264583"
-       x="-226.03912"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:'Corbel Bold';stroke-width:0.264583"
+       x="-228.32306"
        y="56.228455"
        id="text8275"><tspan
          sodipodi:role="line"
-         x="-226.03912"
+         x="-228.32306"
          y="56.228455"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Alegreya;-inkscape-font-specification:Alegreya;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:Corbel;-inkscape-font-specification:'Corbel Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
          id="tspan8273">co-citing papers</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Alegreya;-inkscape-font-specification:Alegreya;stroke-width:0.264583"
-       x="-279.28403"
-       y="-70.272087"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:Corbel;stroke-width:0.264583"
+       x="-280.97708"
+       y="-71.805054"
        id="text10073"
        transform="rotate(-42.159358)"><tspan
          sodipodi:role="line"
-         x="-279.28403"
-         y="-70.272087"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Alegreya;-inkscape-font-specification:Alegreya;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="-280.97708"
+         y="-71.805054"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Corbel;-inkscape-font-specification:Corbel;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
          id="tspan10071">citing</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.529;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker3893);marker-end:url(#marker3923)"
@@ -7552,20 +7559,21 @@
        id="path11142"
        inkscape:path-effect="#path-effect11146"
        inkscape:original-d="m -174.48439,112.92204 c 9.7018,11.46571 19.40319,22.93098 29.10417,34.39582"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       transform="translate(-2.2839376)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Alegreya;-inkscape-font-specification:Alegreya;stroke-width:0.264583"
-       x="-1.3068883"
-       y="203.45422"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:Corbel;stroke-width:0.264583"
+       x="-2.7131808"
+       y="205.25386"
        id="text11150"
        transform="rotate(51.994903)"
        inkscape:transform-center-x="1.1535627"
        inkscape:transform-center-y="0.46142509"><tspan
          sodipodi:role="line"
-         x="-1.3068883"
-         y="203.45422"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Alegreya;-inkscape-font-specification:Alegreya;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         x="-2.7131808"
+         y="205.25386"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Corbel;-inkscape-font-specification:Corbel;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
          id="tspan11148">citing</tspan></text>
   </g>
 </svg>

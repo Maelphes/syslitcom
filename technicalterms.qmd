@@ -185,16 +185,16 @@ author or the title contain text strings whereas the fields for the issue,
 volume or [PubMed ID](#sec-pmid-pmcid) contain numerical values. 
 
 Data fields possess designations in the form of [field codes or search field tags](#sec-fieldcode) 
-such as `UID`, `AU`, `TI` and `AB` for the fields of unique identifier, author, 
+such as `PMID`, `AU`, `TI` and `AB` for the fields of unique identifier, author, 
 title and [abstract](#sec-abstract). 
 
 ::: {#tbl-datafields}
-|    UID   |             AU            |                   TI                   |
+|    PMID  |             AU            |                   TI                   |
 |:--------:|:-------------------------:|:--------------------------------------:|
 |  7616995 | J. P. Kassirer, M. Angell | Redundant publication: a reminder      |
 | 16040884 |       A. K. Akobeng       | Principles of evidence based medicine  |
-| 22071866 |   T. Young,S.  Hopewell   | Methods for obtaining unpublished data |
-: Data fields UID, AU, TI shown for three records {.striped}
+| 22071866 |   T. Young, S. Hopewell  | Methods for obtaining unpublished data |
+: Data fields PMID, AU, TI shown for three records {.striped}
 :::
 
 It always depends on the [syntax](#sec-syntax) of the database or search
@@ -337,6 +337,34 @@ The [National Library of Medicine](https://www.nlm.nih.gov) provides a
 [tool](https://www.ncbi.nlm.nih.gov/pmc/tools/idconv/) for the conversion of the
 PMID, PMCID and DOI into one another. This tool only works for records which are
 both part of PubMed and PubMed Central.
+:::
+
+## retractions {#sec-retractions}
+
+The review of manuscripts by fellow scientists (aka peer review) as part of the 
+publication process is supposed to protect the scientific community from frauds, 
+detect errors or false conclusions and in doing so uphold a certain level of 
+quality. This, however, is not always enough.
+
+In cases where serious errors or even scientific misconduct are detected 
+only after an article is published, it may get **retracted**. The **retraction** 
+can be initiated by the authors themselves, their affiliated institutions or the
+journal editors. On the publisher's website and within bibliographic databases, 
+such an article usually gets flagged as being retracted and a 
+**retraction notice** is published, which explains the cause for 
+the retraction.
+
+:::{.callout-note title="Retraction notice vs. retracted publication"}
+In bibliographic databases, such as [PubMed](#sec-pubmed), [retracted 
+publications](https://pubmed.ncbi.nlm.nih.gov/?term=%22retracted+publication%22%5BPublication+Type%5D)
+and the [retraction notices](https://pubmed.ncbi.nlm.nih.gov/?term=%22retraction+of+publication%22%5BPublication+Type%5D) 
+are separate records, which can be searched individually.
+:::
+
+:::{.callout-tip title="Retraction Watch"}
+The blog [Retraction Watch](https://retractionwatch.com), run by the non-profit 
+organization Center for Scientific Integrity, keeps an eye on current
+retractions and reports on developments in this area.
 :::
 
 ## seed paper {#sec-seedpaper}

@@ -18,6 +18,42 @@
      id="defs1067">
     <inkscape:path-effect
        effect="bspline"
+       id="path-effect6"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect4"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
        id="path-effect11146"
        is_visible="true"
        lpeversion="1"
@@ -3024,9 +3060,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.20272919"
-     inkscape:cx="702.90814"
-     inkscape:cy="816.35998"
+     inkscape:zoom="0.81091676"
+     inkscape:cx="331.10673"
+     inkscape:cy="327.40722"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -3103,7 +3139,8 @@
        id="path2450"
        inkscape:path-effect="#path-effect2452"
        inkscape:original-d="m -528.82538,128.92322 c 6.15599,-16.39505 12.31168,-32.790322 18.46711,-49.185817"
-       sodipodi:nodetypes="cc" />
+       sodipodi:nodetypes="cc"
+       transform="translate(2.1166667,-0.52916667)" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.529;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker6129);marker-end:url(#marker6231)"
        d="m -528.82538,128.92322 c 6.02078,11.70529 12.04166,23.4108 18.06266,35.11653"
@@ -3113,7 +3150,7 @@
        sodipodi:nodetypes="cc" />
     <g
        id="g13471"
-       transform="matrix(0.6984623,0,0,0.6984623,-614.50581,90.437629)"
+       transform="matrix(0.6984623,0,0,0.6984623,-613.44747,90.437629)"
        style="stroke-width:1.43172">
       <path
          style="fill:none;stroke:#000000;stroke-width:0.378808;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -3424,13 +3461,6 @@
          x="47.625"
          y="-3.96875" />
     </g>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.529;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4407);marker-end:url(#marker4437)"
-       d="m -380.65871,176.54822 c -15.07202,8.15117 -30.14316,16.30186 -49.65176,18.48047 -19.50861,2.17861 -43.45335,-1.61541 -67.39787,-5.4094"
-       id="path4387"
-       inkscape:path-effect="#path-effect4389"
-       inkscape:original-d="m -380.65871,176.54822 c -15.07185,8.15149 -30.14299,16.30218 -45.21538,24.45314 -23.94502,-3.79384 -47.88976,-7.58787 -71.83425,-11.38207"
-       sodipodi:nodetypes="ccc" />
     <g
        id="g13692"
        transform="matrix(0.6984623,0,0,0.6984623,-469.41602,168.29861)"
@@ -4074,13 +4104,6 @@
          x="2.6458335"
          y="-2.6458333" />
     </g>
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.529;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4417);marker-end:url(#marker4447)"
-       d="m -380.65871,134.21489 c -12.29618,-2.48218 -24.58897,-4.96367 -27.32814,-9.31338 -2.73917,-4.3497 4.07744,-10.56667 2.86815,-14.53026 -1.20928,-3.9636 -10.44525,-5.67356 -19.68084,-7.38345"
-       id="path4383"
-       inkscape:path-effect="#path-effect4385"
-       inkscape:original-d="m -380.65871,134.21489 c -12.29622,-2.48198 -24.58901,-4.96346 -36.88439,-7.44569 6.81733,-6.21712 13.63394,-12.43408 20.45067,-18.65166 -9.23559,-1.70968 -18.47156,-3.41964 -27.70711,-5.12974"
-       sodipodi:nodetypes="cccc" />
     <g
        id="g3784"
        transform="translate(-538.06825)">
@@ -4237,13 +4260,6 @@
        inkscape:path-effect="#path-effect14690"
        inkscape:original-d="m -380.46661,59.926833 c -15.31428,9.378702 -30.62842,18.756892 -45.94246,28.134591"
        sodipodi:nodetypes="cc" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.529;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker4397);marker-end:url(#marker4427)"
-       d="m -380.65871,134.21489 c -13.74718,5.44262 -27.49435,10.88525 -30.19662,16.52839 -2.70228,5.64314 5.64031,11.48643 -0.42364,16.32855 -6.06396,4.84211 -26.53462,8.68338 -47.00523,12.52463"
-       id="path4391"
-       inkscape:path-effect="#path-effect4393"
-       inkscape:original-d="m -380.65871,134.21489 c -13.74705,5.44294 -27.49423,10.88556 -41.24184,16.32799 8.34291,5.84359 16.6855,11.68688 25.02779,17.52989 -20.47011,3.84147 -40.94077,7.68274 -61.41144,11.52369"
-       sodipodi:nodetypes="cccc" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.529;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker3913);marker-end:url(#marker3943)"
        d="m -380.65871,60.131552 c -15.61163,22.852862 -31.22302,45.705368 -46.83416,68.557508"
@@ -4739,31 +4755,31 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Alegreya;-inkscape-font-specification:Alegreya;stroke-width:0.264583"
-       x="-543.3479"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:'Corbel Bold';stroke-width:0.264583;text-anchor:middle;text-align:center"
+       x="-533.71643"
        y="149.82281"
        id="text5073"><tspan
          sodipodi:role="line"
          id="tspan5071"
-         x="-543.3479"
+         x="-542.28955"
          y="149.82281"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Alegreya;-inkscape-font-specification:Alegreya;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583">core</tspan><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:Corbel;-inkscape-font-specification:'Corbel Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583;text-anchor:middle;text-align:center">seed</tspan><tspan
          sodipodi:role="line"
-         x="-543.3479"
+         x="-542.28955"
          y="158.64226"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Alegreya;-inkscape-font-specification:Alegreya;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:Corbel;-inkscape-font-specification:'Corbel Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583;text-anchor:middle;text-align:center"
          id="tspan2289">paper</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Alegreya;-inkscape-font-specification:Alegreya;stroke-width:0.264583"
-       x="-407.05505"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:'Corbel Bold';stroke-width:0.264583"
+       x="-424.02145"
        y="201.23256"
        id="text5077"><tspan
          sodipodi:role="line"
-         x="-407.05505"
+         x="-424.02145"
          y="201.23256"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Alegreya;-inkscape-font-specification:Alegreya;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
-         id="tspan5473">related papers</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:Corbel;-inkscape-font-specification:'Corbel Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         id="tspan5473">other relevant papers</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.529;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#InfiniteLineStart);marker-end:url(#marker5107)"
        d="m -356.2445,197.0389 c 0,-26.70263 0,-53.4053 0,-79.16285 0,-25.757559 0,-50.569004 0,-75.381"
@@ -4773,26 +4789,26 @@
        sodipodi:nodetypes="ccc" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:125%;font-family:Alegreya;-inkscape-font-specification:Alegreya;text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:0.529;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:125%;font-family:Corbel;-inkscape-font-specification:'Corbel Bold';text-decoration:none;text-decoration-line:none;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-rule:evenodd;stroke:none;stroke-width:0.529;stroke-miterlimit:4;stroke-dasharray:none;stop-color:#000000"
        x="-136.58124"
-       y="-340.79706"
+       y="-342.38458"
        id="text5453"
        transform="rotate(-90)"><tspan
          sodipodi:role="line"
          id="tspan5451"
          x="-136.58124"
-         y="-340.79706"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Alegreya;-inkscape-font-specification:Alegreya;stroke-width:0.529">co-citations</tspan></text>
+         y="-342.38458"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Corbel;-inkscape-font-specification:'Corbel Bold';stroke-width:0.529">co-citations</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Alegreya;-inkscape-font-specification:Alegreya;stroke-width:0.264583"
-       x="-477.427"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:'Corbel Bold';stroke-width:0.264583"
+       x="-495.04596"
        y="201.23256"
        id="text5479"><tspan
          sodipodi:role="line"
-         x="-477.427"
+         x="-495.04596"
          y="201.23256"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Alegreya;-inkscape-font-specification:Alegreya;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05556px;font-family:Corbel;-inkscape-font-specification:'Corbel Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
          id="tspan5477">co-cited papers</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -4820,47 +4836,69 @@
        inkscape:original-d="m -358.9629,57.485719 c 1.76416,2.7e-4 3.52805,2.7e-4 5.29167,0" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Alegreya;-inkscape-font-specification:Alegreya;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:Corbel;stroke-width:0.264583"
        x="-353.17239"
        y="180.59811"
        id="text1975"><tspan
          sodipodi:role="line"
          x="-353.17239"
          y="180.59811"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Alegreya;-inkscape-font-specification:Alegreya;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Corbel;-inkscape-font-specification:Corbel;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
          id="tspan1973">1</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Alegreya;-inkscape-font-specification:Alegreya;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:Corbel;stroke-width:0.264583"
        x="-353.17239"
        y="140.91061"
        id="text1983"><tspan
          sodipodi:role="line"
          x="-353.17239"
          y="140.91061"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Alegreya;-inkscape-font-specification:Alegreya;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Corbel;-inkscape-font-specification:Corbel;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
          id="tspan1981">2</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Alegreya;-inkscape-font-specification:Alegreya;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:Corbel;stroke-width:0.264583"
        x="-353.17239"
        y="99.900192"
        id="text1987"><tspan
          sodipodi:role="line"
          x="-353.17239"
          y="99.900192"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Alegreya;-inkscape-font-specification:Alegreya;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Corbel;-inkscape-font-specification:Corbel;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
          id="tspan1985">3</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Alegreya;-inkscape-font-specification:Alegreya;stroke-width:0.264583"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;line-height:1.25;font-family:Corbel;-inkscape-font-specification:Corbel;stroke-width:0.264583"
        x="-353.17239"
        y="58.889774"
        id="text1991"><tspan
          sodipodi:role="line"
          x="-353.17239"
          y="58.889774"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Alegreya;-inkscape-font-specification:Alegreya;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.05556px;font-family:Corbel;-inkscape-font-specification:Corbel;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.264583"
          id="tspan1989">4</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker3913);marker-end:url(#marker3943)"
+       d="m -368.58647,71.55124 c -36.05863,1.427015 -72.1167,2.854007 -108.1742,4.280977"
+       id="path1"
+       inkscape:path-effect="#path-effect2"
+       inkscape:original-d="m -368.58647,71.55124 c -36.05863,1.427015 -72.1167,2.854007 -108.1742,4.280977"
+       sodipodi:nodetypes="cc"
+       transform="translate(-21.860546,115.82827)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker3913);marker-end:url(#marker3943)"
+       d="m -391.42584,145.61608 c -22.68108,9.80158 -45.3618,19.60301 -68.04216,29.40429"
+       id="path2"
+       inkscape:path-effect="#path-effect4"
+       inkscape:original-d="m -391.42584,145.61608 c -22.68108,9.80158 -45.3618,19.60301 -68.04216,29.40429"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.529;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#marker3913);marker-end:url(#marker3943)"
+       d="m -391.30246,137.13288 c -11.73738,0.12189 -23.47457,0.24378 -35.21158,0.36566"
+       id="path4"
+       inkscape:path-effect="#path-effect6"
+       inkscape:original-d="m -391.30246,137.13288 c -11.73738,0.12189 -23.47457,0.24378 -35.21158,0.36566"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>

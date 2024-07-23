@@ -101,7 +101,7 @@ SP and the ORP are cited by the same paper. In this case the SP and the ORP are
 **co-cited** by a number of publications. See @fig-cocited.
 
 
-![co-cited citation searching retrieves publications which share citations with the core paper](./fig/co-citing.svg){#fig-cocited width=80%}
+![co-cited citation searching retrieves publications which share citations with the seed paper](./fig/co-citing.svg){#fig-cocited width=80%}
 
 
 ### co-citing citation searching
@@ -110,7 +110,7 @@ A similar relationship exists between the SP and ORP if they both
 share a number of mutual references. In this case they are **co-citing** a set 
 of common literature. See @fig-cociting.
 
-![co-citing citation searching retrieves publications which share references with the core paper](./fig/co-cited.svg){#fig-cociting width=80%}
+![co-citing citation searching retrieves publications which share references with the seed paper](./fig/co-cited.svg){#fig-cociting width=80%}
 
 
 
