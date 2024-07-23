@@ -262,6 +262,34 @@ which the term `pharmacy` occurs at least five times within the abstract.
 :::
 
 
+## grey literature {#sec-greyliterature}
+**Grey literature** (also *gray literature*) is so-called *non-conventional* or 
+*informal literature* which "cannot readily be obtained through normal 
+bookselling channels", for example conference proceedings, reports, specifications,
+supplementary publications, technical notes, theses, translations.(@Wood1982, @Auger2017)
+
+According to @Paez2017 the search for grey literature can be an important 
+resource for [systematic literature searching](#sec-syslitsearch).
+
+:::{.callout-tip title="Sources for grey literature searching" collapse="true"}
+| URL                                                                  | Description                                           |
+|----------------------------------------------------------------------|-------------------------------------------------------|
+| <https://www.proquest.com/>                                          | Dissertations and theses (global)                     |
+| <http://search.ndltd.org/>                                           | Dissertations and theses (global)                     |
+| <https://search.worldcat.org/>                                       | Dissertations and theses (global)                     |
+| <https://www.dart-europe.org/>                                       | Dissertations and theses (EU)                         |
+| <https://www.base-search.net/>                                       | *Bielefeld Academic Search Engine*                    |
+| <https://www.science.gov/>                                           | Research results from U.S. federal agencies           |
+| <https://ntrl.ntis.gov/NTRL/>                                        | *National Technical Reports Library* (US)             |
+| <https://mednar.com/mednar/desktop/en/search.html>                   | free deep web search engine for medical topics        |
+| <https://wonder.cdc.gov/>                                            | *Wide-ranging Online Data for Epidemiologic Research* |
+| <https://www.ahrq.gov/>                                              | *Agency for Healthcare Research and Quality*          |
+| <https://v2.sherpa.ac.uk/opendoar/>                                  | *Directory Of Academic Repositories*                  |
+| <https://www.greynet.org/>                                           | *Grey Literature Network Service*                     |
+| [doi:10.17026/dans-xtf-47w5](https://doi.org/10.17026/dans-xtf-47w5) | Archive of OpenGrey.eu                                |
+: {.striped}
+:::
+
 ## index terms {#sec-indexterms}
 
 **Index terms**, also called **subject headings** (or sometimes *descriptor*) 

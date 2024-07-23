@@ -27,7 +27,6 @@ information. (See also @Glanville2014, @Knelangen2018).
 | UK    | [ISRCTN](https://www.isrctn.com/)                  |
 | US    | [ClinialTrials.gov](https://clinicaltrials.gov)              |
 | WHO   | [International Clinical Trials Registry Platform (ICTRP)](https://trialsearch.who.int)             |
-
 : {.striped .hover}
 :::
 
