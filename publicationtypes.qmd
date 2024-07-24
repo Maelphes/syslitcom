@@ -3,6 +3,17 @@
 
 ## Reviews {#sec-review}
 
+There are several types of reviews which differ in scope, purpose, target 
+audience and amount of work involved. Among the most prominent types are:
+
+- Narrative / traditional review
+- Scoping review
+- Systematic review
+- Rapid review
+- Umbrella review
+
+@fig-decisiontree shows a decision tree to help find the right kind of review.
+
 ![What Type of Review is Right for you? - adopted from @cornell2021](./fig/decisiontree.svg){#fig-decisiontree width=80%}
 
 
