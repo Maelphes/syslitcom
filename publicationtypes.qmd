@@ -4,7 +4,8 @@
 ## Reviews {#sec-review}
 
 There are several types of reviews which differ in scope, purpose, target 
-audience and amount of work involved. Among the most prominent types are:
+audience and amount of work involved.(@Sutton2019,@Munn2018a,@Munn2018) 
+Among them the most prominent types are:
 
 - Narrative / traditional review
 - Scoping review
