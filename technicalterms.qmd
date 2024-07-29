@@ -259,6 +259,44 @@ See also @McKenzie2023, @Gough2017.
   - pregnancy
 :::
 
+## FAIR {#sec-fair}
+
+**FAIR** is an acronym for the four principles **F**indability, 
+**A**ccessibility, **I**nteroperability and **R**eusability, which serve as a 
+guideline for the management of scientific or scholarly data. 
+A consortium of scientists and organizations defined these **FAIR principles** 
+in order to advance the machine-actionability of data. (@Wilkinson2016)
+
+Data that meet with these principles are called **FAIR Data**.
+
+::: {.callout-note title="The FAIR Principles"}
+|         |                                                                                                                                                                                                                                                         |
+|:------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Findability**      | Data should be provided with sufficient metadata, such as title, authors, summary, and information about the origin of the data. Moreover, a globally unique and persistent identifier, such as a digital object identifier (DOI), should be assigned to the data. |
+| **Accessibility**    | Data and their metadata should be made long-term accessible through standardized communication protocols, such as https.                                                                                                                                           |
+| **Interoperability** | Controlled vocabulary (thesauri) such as Medical Subject Headings (MeSH) or formats for metadata such as XML, which can be read by both humans and machines, allow for the creation of interoperable metadata and links between datasets.                          |
+| **Reusability**      | Reusability depends on the quality of the metadata, a proper description of the provenance of the research data and its citability (for instance by using DOIs) under clearly stated license conditions.                                                           |
+:Short description, adapted from [PUBLISSO](https://www.publisso.de/en/research-data-management/fair-principles/) {.striped}
+:::
+
+
+
+:::{.callout-tip title="Recommended links"}
+1. The [GO FAIR Initiative](https://www.go-fair.org/) provides additional 
+information and a platform for anyone interested in applying the FAIR principles.
+
+2. [DataCite](https://datacite.org/) is an international non-profit organization
+which strives to facilitate access to research data on the internet, to increase 
+the acceptance of research data as citable contributions to the research 
+records and to support data archiving for the purposes of reutilization and 
+verification.
+
+3. A [factsheet about the FAIR Principles](https://libereurope.eu/liber-fair-data-2/), 
+published by the Association of European Research Libraries 
+[LIBER](https://libereurope.eu/), highlights the role of the libraries in their 
+implementation.
+:::
+
 ## full-text {#sec-fulltext}
 The complete texts of publications (e.g. articles, books, chapters, reports, ...)
 are called **full-texts**. 
