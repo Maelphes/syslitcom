@@ -506,13 +506,13 @@ be very [sensitive](#sec-sensitivity) as to find all the relevant evidence.
 In contrast, the literature search as part of a rapid review or narrative 
 review may still be done systematically, but can be designed in a more [precise](#sec-precision) 
 manner, since in those cases it may be acceptable to miss some relevant 
-articles. (See @#sec-class-metrics about sensitivity and precision).
+articles. (See @sec-class-metrics about sensitivity and precision).
 
 There are various guidelines which can be followed to conduct systematic 
 searches, such as the *Cochrane Handbook* (@cochranehandbook6.3) or the 
 *JBI Manual* (@JBIManual2020). Depending on the desired [type of review](#sec-review) 
 (e.g. systematic, scoping, narrative, ..., see 
-@Munn2018, @Munn2018 or @Pearson2015)
+@Munn2018, @Munn2018a or @Pearson2015)
 
 ::: {.callout-note title="important steps of a systematic search"}
 1. definition of a **research question**

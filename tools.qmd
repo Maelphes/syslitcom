@@ -3,8 +3,6 @@ format: html
 code-fold: false
 link-citations: true
 link-bibliography: true
-filters:
-  - parse-latex
 ---
 
 # Tools {#sec-tools}
@@ -71,21 +69,14 @@ FINER is an acronym for the five criteria **feasible**, **interesting**, **novel
 
 
 ::: {#tbl-finer}
-```{=latex}
-\begin{table*}[!ht]
-  \begin{tabular}{l p{7.8cm}}
-    \toprule
-    \textbf{Criterion} & \textbf{Meaning}\\
-    \midrule
-feasible & The research question should not exceed the available resources, i.e.\ participants, expertise, time and money). \\
-interesting & The research question should in itself be interesting, not only to the researcher, but also to a broader public. \\
-novel & The gain of knowledge and new information should be at the heart of the question. Research usually does not only reiterate already established data unless it is designed as a confirmatory study. \\
-ethical & Proper research has to be ethical and must not bear unacceptable risks for its participants. \\
-relevant & The expected impact of the research on scientific knowledge and clinical processes can be a good measurement parameter for the relevance. \\
-		\bottomrule
-  \end{tabular}
-\end{table*}
-```
+|                 |                                                                                                                                                                                                    |   |   |   |
+|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
+| **feasible**    | The research question should not exceed the available resources, i.e. participants, expertise, time and money).                                                                                    |   |   |   |
+| **interesting** | The research question should in itself be interesting, not only to the researcher, but also to a broader public.                                                                                   |   |   |   |
+| **novel**       | The gain of knowledge and new information should be at the heart of the question. Research usually does not only reiterate already established data unless it is designed as a confirmatory study. |   |   |   |
+| **ethical**     | Proper research has to be ethical and must not bear unacceptable risks for its participants.                                                                                                       |   |   |   |
+| **relevant**    | The expected impact of the research on scientific knowledge and clinical processes can be a good measurement parameter for the relevance.                                                          |   |   |   |
+: The FINER criteria {.striped}
 :::
 
 ## PICO {#sec-pico}

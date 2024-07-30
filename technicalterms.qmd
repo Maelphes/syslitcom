@@ -408,7 +408,8 @@ retractions and reports on developments in this area.
 ## seed paper {#sec-seedpaper}
 A [systematic literature search](#sec-syslitsearch) often begins with a quick 
 scoping search for a handful of publications that provide an answer to the 
-research question. These publications are called **seed paper** or **core paper**.
+research question. These publications are called **seed paper**, **key paper**
+or **core paper**.
 
 :::{.callout-tip title="Purposes of seed papers"}
 Apart from making oneself familiar with the topic by reading them, 
@@ -419,7 +420,29 @@ these seed papers can be put to use in:
 3. Testing [search strategies](#sec-searchstrategy).
 :::
 
+:::{.callout-caution title="Personal note"}
+From the own experience of the author of this compendium, one can further divide
+seed papers into two categories:
 
+1. Publications which answer the research question and which can be
+used as a template for similar literature which should be picked up by a 
+[systematic search](#sec-syslitsearch), because they might be included in the 
+review.
+2. Publications which do not fully cover all the aspects of the question, but 
+provide background information or search terms for at least one of the main 
+concepts. These do not qualify as included studies for the review project.
+An example are review articles which are similar (but not identical) to what 
+the researchers have in mind for the present project.
+
+Often, researchers are not aware of this distinction and its implications for
+the systematic literature search.
+
+Ideally, the systematic search should retrieve all of the type 1 seed papers, 
+whereas type 2 papers may or may not be found by the search. Type 2 paper are 
+useful for preparation, citation searching (e.g. for relevant studies 
+of previous systematic reviews) or to learn important search terms from previous
+search strategies.
+:::
 
 ## syntax {#sec-syntax}
 Similar to programming, the **syntax** is the set of rules that applies 
