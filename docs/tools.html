@@ -284,8 +284,7 @@ Example: Retrieve similar articles
 </div>
 <div class="callout-body-container callout-body">
 <p>The command</p>
-<pre><code>elink -db pubmed -id 25554246,29463298 -related -cmd neighbor | 
-xtract -pattern LinkSetDb -element Id</code></pre>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">elink</span> <span class="at">-db</span> pubmed <span class="at">-id</span> 25554246,29463298 <span class="at">-related</span> <span class="at">-cmd</span> neighbor <span class="kw">|</span> <span class="ex">xtract</span> <span class="at">-pattern</span> LinkSetDb <span class="at">-element</span> Id</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>will return all <a href="technicalterms.html#sec-pmid-pmcid">PMIDs</a> of publications which PubMed identifies as <a href="https://pubmed.ncbi.nlm.nih.gov/help/#similar-articles"><em>Similar Articles</em></a> for the PMIDs <a href="https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed&amp;from_uid=25554246">25554246</a> and <a href="https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed&amp;from_uid=29463298">29463298</a>.</p>
 <div id="fig-edirect" class="quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-float-fig figure">

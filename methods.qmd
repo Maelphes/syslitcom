@@ -441,9 +441,9 @@ or search interface to another:
 2. **Different [index terms](#sec-indexterms)**.
     In contrast to the syntax, which is fairly similar for most of the 
     databases, the translation of index terms can be very difficult. 
-    Some databases do not index records, such as the [Web of Science Core Collection](https://support.clarivate.com/ScientificandAcademicResearch/s/article/Web-of-Science-Core-Collection-No-controlled-vocabulary-or-thesaurus-in-assigning-subject-terms?language=en_US),
-    others do, but don't possess a controlled vocabulary of their 
-    own, such as [Scopus](https://service.elsevier.com/app/answers/detail/a_id/21730/).
+    Some databases do not index records, such as the [Web of Science Core Collection](https://support.clarivate.com/ScientificandAcademicResearch/s/article/Web-of-Science-Core-Collection-No-controlled-vocabulary-or-thesaurus-in-assigning-subject-terms?language=en_US). 
+    Others do assign index terms, but don't possess a controlled vocabulary of 
+    their own, such as [Scopus](https://service.elsevier.com/app/answers/detail/a_id/21730/).
     Some thesauri are more detailed than others or the hierarchy is structured
     in a different way, so that a 1:1 translation could bear unexpected results.
 :::

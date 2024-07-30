@@ -35,9 +35,8 @@ to automate the processing.
 :::{.callout-tip title="Example: Retrieve similar articles"}
 The command 
 
-```
-elink -db pubmed -id 25554246,29463298 -related -cmd neighbor | 
-xtract -pattern LinkSetDb -element Id
+```bash
+elink -db pubmed -id 25554246,29463298 -related -cmd neighbor | xtract -pattern LinkSetDb -element Id
 ```
 
 will return all [PMIDs](#sec-pmid-pmcid) of publications which PubMed identifies

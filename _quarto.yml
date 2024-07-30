@@ -34,8 +34,8 @@ format:
     theme: united
     link-external-newwindow: true
     linkcolor: "#5080AA"
+    highlight-style: github
   pdf:
     documentclass: scrreprt
-
 
 
