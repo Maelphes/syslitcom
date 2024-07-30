@@ -17,8 +17,9 @@ about the E-utilifies is available in the official
 
 ### E-utilities via URL
 These programs are server-based and can be deployed using different URLs.
-These URLs to query Entrez are composed of the base URL `https://eutils.ncbi.nlm.nih.gov/entrez/eutils/`
-to which a string with the desired utility and the query is attached, for instance 
+These URLs to query Entrez are composed of the base URL 
+`https://eutils.ncbi.nlm.nih.gov/entrez/eutils/` to which a string with the 
+desired utility and the query is attached, for instance 
 [`esearch.fcgi?db=pubmed&term=BMJ[journal]+AND+hernia+AND+2010[pdat]`](https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=BMJ[journal]+AND+hernia+AND+2010[pdat])
 
 The results for these queries are usually returned as XML-structured data.
