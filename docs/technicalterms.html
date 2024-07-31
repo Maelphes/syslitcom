@@ -2,13 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.555">
+<meta name="generator" content="quarto-1.5.55">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="description" content="A compendium for systematic literature searching">
 
-<title>SysLit Compendium - 2&nbsp; Technical terms</title>
+<title>2&nbsp; Technical terms – SysLit Compendium</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,7 +34,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -123,7 +123,7 @@ div.csl-indent {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -176,13 +176,13 @@ window.Quarto = {
     </nav>
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
         <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./technicalterms.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Technical terms</span></a></li></ol></nav>
-        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
@@ -384,7 +384,7 @@ Examples
 <p>In information retrieval the performance of a systematic search, a search strategy or a search filter is described by certain metrics for binary classification tasks, such as <strong>accuracy</strong>, <strong>precision</strong>, <strong>sensitivity</strong> and <strong>specificity</strong>.</p>
 <p>A classifier (the search) makes a prediction about the condition of a record (by retrieving or not retrieving the record). The classification (the search result) is evaluated by comparing the prediction with the actual condition (the relevance of the records).</p>
 <p>In other words: The literature search is supposed to retrieve mostly relevant references and ignore non-relevant ones. A retrieved relevant record equals a true positive (<em>tp</em>), whereas a retrieved non-relevant record equals a false positive (<em>fp</em>). See <a href="#tbl-truth" class="quarto-xref">Table&nbsp;<span>2.1</span></a> for reference.</p>
-<div id="tbl-truth" class="striped quarto-float anchored">
+<div id="tbl-truth" class="striped quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-truth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;2.1: Truth table
@@ -441,7 +441,7 @@ Table&nbsp;2.1: Truth table
 <h2 data-number="2.8" class="anchored" data-anchor-id="sec-datafield"><span class="header-section-number">2.8</span> data field</h2>
 <p>A data field (also called <em>field</em> or <em>column</em>) is a set of values of a particular data type within a database. For instance the data fields for the author or the title contain text strings whereas the fields for the issue, volume or <a href="#sec-pmid-pmcid">PubMed ID</a> contain numerical values.</p>
 <p>Data fields possess designations in the form of <a href="methods.html#sec-fieldcode">field codes or search field tags</a> such as <code>PMID</code>, <code>AU</code>, <code>TI</code> and <code>AB</code> for the fields of unique identifier, author, title and <a href="#sec-abstract">abstract</a>.</p>
-<div id="tbl-datafields" class="striped quarto-float anchored">
+<div id="tbl-datafields" class="striped quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-datafields-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;2.2: Data fields PMID, AU, TI shown for three records
@@ -628,7 +628,7 @@ full-text retrieval tools
 <section id="sec-orphanline" class="level2" data-number="2.15">
 <h2 data-number="2.15" class="anchored" data-anchor-id="sec-orphanline"><span class="header-section-number">2.15</span> orphan line</h2>
 <p>All parts of a <a href="methods.html#sec-searchstrategy">search strategy</a> are supposed to contribute to the overall result of the database search. In case a search query within a search strategy is not connected (using operators) to the rest of the search strategy, it is called an <strong>orphan line</strong>.</p>
-<div id="tbl-orphanline" class="quarto-float anchored">
+<div id="tbl-orphanline" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-orphanline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;2.3: Line 5 is an orphan line.
@@ -741,7 +741,7 @@ Personal note
 <h2 data-number="2.19" class="anchored" data-anchor-id="sec-syntax"><span class="header-section-number">2.19</span> syntax</h2>
 <p>Similar to programming, the <strong>syntax</strong> is the set of rules that applies for setting up search queries and building search strategies in databases. It defines the operators, field codes and special characters (such as <a href="#sec-wildcard">wildcard symbols</a>, <a href="methods.html#sec-nesting">parentheses</a>, slashes, <a href="methods.html#sec-phrases">quotation marks</a>, etc.) that are available within a particular search interface.</p>
 <p>As a consequence, search strategies cannot be used freely in every database. They have to be translated due to different syntax and due to different index terms. (See <span class="citation" data-cites="Clark2020">Clark et al. (<a href="references.html#ref-Clark2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="Glanville2019">Glanville et al. (<a href="references.html#ref-Glanville2019" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="Wanner2019">Wanner and Baumann (<a href="references.html#ref-Wanner2019" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="Damarell2013">Damarell, Tieman, and Sladek (<a href="references.html#ref-Damarell2013" role="doc-biblioref">2013</a>)</span>).</p>
-<div id="tbl-syntax" class="hover quarto-float anchored">
+<div id="tbl-syntax" class="hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-syntax-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;2.4: Examples for syntax in different search interfaces
@@ -791,7 +791,7 @@ Table&nbsp;2.4: Examples for syntax in different search interfaces
 <h2 data-number="2.20" class="anchored" data-anchor-id="sec-thesaurus"><span class="header-section-number">2.20</span> thesaurus</h2>
 <p>A <strong>thesaurus</strong> (ancient greek: θησαυρός (<em>thesaurós</em>) ‘treasury’) is a dictionary of synonyms, which are often ordered alphabetically or hierarchically.</p>
 <p>In the context of literature searching, a thesaurus contains a database-specific <strong>controlled vocabulary</strong> of index terms.</p>
-<div id="tbl-thesauri" class="striped quarto-float anchored">
+<div id="tbl-thesauri" class="striped quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-thesauri-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;2.5: Commonly known databases and their thesauri
@@ -859,7 +859,7 @@ MeSH hierarchy from the top of the MeSH tree to <a href="https://www.ncbi.nlm.ni
 <section id="sec-wildcard" class="level2" data-number="2.21">
 <h2 data-number="2.21" class="anchored" data-anchor-id="sec-wildcard"><span class="header-section-number">2.21</span> wildcard</h2>
 <p>Wildcards are special characters used for <a href="methods.html#sec-truncation">truncation</a>. The usage and meaning of the available wildcards for this purpose depends on the syntax of the database or search interface.</p>
-<div id="tbl-wildcards" class="striped quarto-float anchored">
+<div id="tbl-wildcards" class="striped quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-wildcards-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;2.6: commonly used wildcard symbols
@@ -990,18 +990,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -1033,7 +1022,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -1041,7 +1052,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

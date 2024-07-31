@@ -271,8 +271,7 @@ should be reported in the documentation.
 
 **Nesting** refers to the use of parentheses `( )` to group search terms within 
 a query. The purpose of nesting a search query is to define the order in which 
-the search terms and operators processed. The properties of the operators in 
-combination with parentheses are displayed in @tbl-booleanproperties.
+the search terms and operators processed. 
 
 Without nesting the order in which the elements of a search query are processed 
 depends on the rules of the respective search interface. This means that the 
