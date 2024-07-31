@@ -1,52 +1,5 @@
 # Methods {#sec-methods}
 
-## Boolean operators {#sec-boolean}
-
-Databases usually allow a search to be structured using the three basic 
-operations of Boolean algebra, which are expressed with the 
-**Boolean operators** `AND` (conjunction), `OR` (disjunction) and `NOT` 
-(negation). The `AND` operator creates an intersection of sets, `OR` creates a 
-union of sets and `NOT` excludes sets (see @fig-boolean).
-
-![Boolean Operators](./fig/boole.svg){#fig-boolean width=80%}
-
-::: {.callout-tip title="Examples"}
-- The query `"heart attack" AND diabetes AND obesity` retrieves only records 
-featuring all three terms. 
-- The query `"cardiac arrest" OR asystole` retrieves records containing at 
-least one of the two terms. 
-- The query `animals NOT humans` removes all records mentioning humans from the
-set `animals`. 
-:::
-
-::: {.callout-important title="Caution"}
-Using the `NOT` operator can be dangerous, as it excludes records regardless of
-any relevant search terms they might contain. The above example excludes also
-records with animals if they mention humans.
-:::
-
-### Properties {.unnumbered}
-
-The Boolean operators `AND` and `OR` possess similar properties as the 
-multiplication and addition. See @tbl-booleanproperties. (@ORegan2012)
-
-::: {#tbl-booleanproperties}
-```python
- (a OR b) = (b OR a)                        # <1>
- (a AND b) = (b AND a)                      # <1>
- ----
- (a OR b) OR c = a OR (b OR c)              # <2>
- (a AND b) AND c = a AND (b AND c)          # <2>
- ----
- a AND (b OR c) = (a AND b) OR (a AND c)    # <3>
- a OR (b AND c) = (a OR b) AND (a OR c)     # <3>
- ```
-1. commutative property
-2. associative property
-3. distributive property
-:::
-
-
 ## citation searching {#sec-citationsearching}
 
 Relevant references can be retrieved by analyzing citation relationships between
@@ -240,20 +193,6 @@ focus of the article.
 :::
 
 
-
-## frequency operators {#sec-frequencyops}
-Records in which a relevant expression occurs multiple times might be more 
-relevant than records with fewer instances of the same expression. Therefore 
-some search interfaces allow the use of a so-called frequency operator, which 
-only retrieves records only if the search term occurs at least the specified 
-number of times in the searched data field. 
-
-::: {.callout-tip title="Example"}
-Example from Ovid: The query `"pharmacy".ab/freq=5` will retrieve articles, in 
-which the term `pharmacy` occurs at least five times within the abstract.
-:::
-
-
 ## grey literature {#sec-greyliterature}
 **Grey literature** (also *gray literature*) is so-called *non-conventional* or 
 *informal literature* which "cannot readily be obtained through normal 
@@ -356,6 +295,100 @@ On the other hand the following nested queries are identical:
 
 2. Web of Science executes the search in an [order of precedence](https://webofscience.help.clarivate.com/en-us/Content/search-operators.html#Search) of the operators.
 :::
+
+## operators {#sec-operators}
+
+### Boolean operators {#sec-boolean}
+
+Databases usually allow a search to be structured using the three basic 
+operations of Boolean algebra, which are expressed with the 
+**Boolean operators** `AND` (conjunction), `OR` (disjunction) and `NOT` 
+(negation). The `AND` operator creates an intersection of sets, `OR` creates a 
+union of sets and `NOT` excludes sets (see @fig-boolean).
+
+![Boolean Operators](./fig/boole.svg){#fig-boolean width=80%}
+
+::: {.callout-tip title="Examples"}
+- The query `"heart attack" AND diabetes AND obesity` retrieves only records 
+featuring all three terms. 
+- The query `"cardiac arrest" OR asystole` retrieves records containing at 
+least one of the two terms. 
+- The query `animals NOT humans` removes all records mentioning humans from the
+set `animals`. 
+:::
+
+::: {.callout-important title="Caution"}
+Using the `NOT` operator can be dangerous, as it excludes records regardless of
+any relevant search terms they might contain. The above example excludes also
+records with animals if they mention humans.
+:::
+
+The Boolean operators `AND` and `OR` possess similar properties as the 
+multiplication and addition. (@ORegan2012)
+
+::: {.callout-info title="Properties of the Boolean Operators"}
+```python
+ (a OR b) = (b OR a)                        # <1>
+ (a AND b) = (b AND a)                      # <1>
+ ----
+ (a OR b) OR c = a OR (b OR c)              # <2>
+ (a AND b) AND c = a AND (b AND c)          # <2>
+ ----
+ a AND (b OR c) = (a AND b) OR (a AND c)    # <3>
+ a OR (b AND c) = (a OR b) AND (a OR c)     # <3>
+ ```
+1. commutative property
+2. associative property
+3. distributive property
+:::
+
+### frequency operators {#sec-frequencyops}
+Records in which a relevant expression occurs multiple times might be more 
+relevant than records with fewer instances of the same expression. Therefore 
+some search interfaces allow the use of a so-called frequency operator, which 
+only retrieves records only if the search term occurs at least the specified 
+number of times in the searched data field. 
+
+::: {.callout-tip title="Example"}
+Example from Ovid: The query `"pharmacy".ab/freq=5` will retrieve articles, in 
+which the term `pharmacy` occurs at least five times within the abstract.
+:::
+
+
+### proximity operators {#sec-proximityops}
+Many databases allow to search for terms depending on the word distance between
+each other. The so-called **proximity searching** search uses a 
+**proximity operator** in which the allowed distance of the two expressions is 
+defined by a number *N*, for example **adj*N*** or **NEAR/*N***.
+
+::: {.callout-tip title="Examples"}
+|                  |                                 |
+|------------------|---------------------------------|
+| **PubMed**           | `"heart transplant"[TI:~2]`     |
+| **Ovid**             | `(heart adj3 transplant*).ti`   |
+| **Cochrane Library** | `(heart NEAR/3 transplant*):ti` |
+| **Embase.com**       | `(heart NEAR/3 transplant*):ti` |
+| **EBSCO*host***      | `(TI heart N2 transplant*)`     |
+| **Web of Science**   | `TI=(heart NEAR/2 transplant*)` |
+| **Scopus**           | `TITLE(heart W/2 transplant*)`  |
+: Examples of proximity searching for different resources {.striped}
+:::
+
+:::{.callout-warning title="Please note"}
+- The number *N* sometimes defines the amount of words in between te 
+expressions, sometimes it marks the position of the second expression. That is 
+why *N* is not always the same for every database or interface. 
+
+- In the case of PubMed, truncation is not possible at the same time as 
+proximity searching. In this case, various expressions are necessary to account
+for *transplant* as well as *transplantation* or *transplanting*.
+
+- Carefully consider the distance between the expressions. A distance of two 
+words between the search terms (as shown above) is often reasonable, as it covers 
+frequent expressions such as "transplantation *of the* heart". However, 
+sometimes it is necessary to include more adjectives in between.
+:::
+
 
 ## phrases {#sec-phrases}
 

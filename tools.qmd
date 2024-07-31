@@ -55,7 +55,7 @@ a single query.
 
 :::{.callout-tip title="Unix Shell on Windows" collapse=true}
 There is a quick and easy way to get access to Linux and its shell even when
-one is running a modern Windows PC: The Windows Subsystem for Linux (WSL) 
+one is running a (modern) Windows PC: The Windows Subsystem for Linux (WSL) 
 provides an environment to install Linux from within Windows (10 or later).
 
 For more on this, see
