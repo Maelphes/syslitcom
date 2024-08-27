@@ -26,8 +26,9 @@ is an option to render such terms more specific by using phrases or proximity
 operators.
 
 ::: {.callout-tip title="Examples"}
-1. `apothecary` might refer to the occupation of pharmacist or the community 
-pharmacy as a location or institution. 
+1. The acronym `CVD` is a very common abbreviation for *cardiovascular disease*. 
+However, it can also mean *cerebrovascular disease*, *chronic venous disease*, 
+*color vision deficiency* or *chemical vapour deposition*.
 2. The term `pharmacy` may refer to the pharmaceutical sciences, the manufacture
 of drugs or the pharmacy as a retail shop.
 3. In anatomy, a `styloid process` is a pointed outgrowth from a bone. However, 
