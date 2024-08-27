@@ -223,7 +223,8 @@ resource for [systematic literature searching](#sec-syslitsearch).
 
 ## index terms {#sec-indexterms}
 
-**Index terms**, also called **subject headings** (or sometimes *descriptor*) 
+**Index terms**, also called **subject headings** (or sometimes *descriptor*, 
+DE: *Schlagwörter*) 
 are expressions defined for the purpose of [indexing](#sec-indexing). 
 They represent content-related concepts and are organized as a 
  [controlled vocabulary](#sec-thesaurus). By adding index terms 
@@ -234,8 +235,8 @@ Using index terms in a search is an essential part of a
 focused by employing [subheadings](#sec-subheading) or searching the terms as 
 [focus topics](#sec-focustopic).
 
-Index terms should not be confused with free text terms or 
-[author keywords](#sec-authorkeywords). 
+Index terms should not be confused with free text terms (DE: *Stichwörter*) 
+or [author keywords](#sec-authorkeywords). 
 
 :::{.callout-tip title="Example"}
 The [MeSH term](#sec-thesaurus) for the concept of *heart attack* or 

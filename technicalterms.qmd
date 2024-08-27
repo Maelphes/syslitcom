@@ -53,7 +53,7 @@ correspond to [controlled vocabulary](#sec-thesaurus) (i.e. index terms,
 which are assigned to the records by the database) and should not be confused 
 with them. (@Neveol2010)
 
-Author keywords are often used as part of the free text search.
+Author keywords are often used as part of the free text search. (DE: *Stichwortsuche*)
 
 ::: {.callout-tip title="Examples"}
 Within PubMed the [data field](#sec-datafield) `[Other Term]`) 

@@ -25,6 +25,10 @@ your search for evidence.
 Chapter @sec-methods describes various techniques of building and conducting 
 a systematic search.
 
+Since the author is a native German speaker, important German expressions are 
+sometimes provided in parentheses, preceded by "DE:", for the benefit of the 
+German-speaking audience.
+
 This website is created and maintained by Marc von Gernler (Medical Library, 
 University Library of Bern, University of Bern). The "compendium" was originally 
 written in German as a glossary for lectures and as a mnemonic for the author. 
