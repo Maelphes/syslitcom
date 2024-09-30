@@ -31,7 +31,7 @@ publications citing the seed paper as a reference is called
 **forward citation searching**. 
 See @fig-citing-cited. 
 
-![backward and forward citation searching](./fig/citing-cited.svg){#fig-citing-cited width=80%}
+![backward and forward citation searching](./fig/citing-cited.svg){#fig-citing-cited width=80% fig-alt="Vector drawing showing a timeline with papers above it, illustration their relative time of publication. Arrows point from the most recent publications, which are called 'citing references', to the seed paper in the center, indicating these papers to be citing the seed paper. The citation searching technique based on this relationship is called 'forward citation searching. Similarly, arrows from the seed paper to even older publications, which are called 'cited references', indicate the relationship of the seed paper with the references it cites. The corresponding technique is called 'backwards citation searching'."}
 
 
 Third, the identification of relevant literature by counting co-cited or co-citing 
