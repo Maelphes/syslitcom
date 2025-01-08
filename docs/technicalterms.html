@@ -1,0 +1,1400 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.55">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="A compendium for systematic literature searching">
+
+<title>2&nbsp; Technical terms – SysLit Compendium</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./tools.html" rel="next">
+<link href="./databases.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="././fig/logo_small.svg" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">SysLit Compendium</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools tools-end">
+    <a href="https://www.github.com/Maelphes/syslitcom" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./technicalterms.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Technical terms</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./databases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Databases</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./technicalterms.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Technical terms</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tools</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Methods</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publicationtypes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Publication Types</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-abstract" id="toc-sec-abstract" class="nav-link active" data-scroll-target="#sec-abstract"><span class="header-section-number">2.1</span> abstract</a></li>
+  <li><a href="#sec-ambiguity" id="toc-sec-ambiguity" class="nav-link" data-scroll-target="#sec-ambiguity"><span class="header-section-number">2.2</span> ambiguity</a></li>
+  <li><a href="#sec-appendix" id="toc-sec-appendix" class="nav-link" data-scroll-target="#sec-appendix"><span class="header-section-number">2.3</span> appendix</a></li>
+  <li><a href="#sec-authorkeywords" id="toc-sec-authorkeywords" class="nav-link" data-scroll-target="#sec-authorkeywords"><span class="header-section-number">2.4</span> author keyword</a></li>
+  <li><a href="#sec-bias" id="toc-sec-bias" class="nav-link" data-scroll-target="#sec-bias"><span class="header-section-number">2.5</span> bias</a>
+  <ul class="collapse">
+  <li><a href="#selection-bias" id="toc-selection-bias" class="nav-link" data-scroll-target="#selection-bias"><span class="header-section-number">2.5.1</span> selection bias</a></li>
+  <li><a href="#publication-bias" id="toc-publication-bias" class="nav-link" data-scroll-target="#publication-bias"><span class="header-section-number">2.5.2</span> publication bias</a></li>
+  <li><a href="#language-of-publication-bias" id="toc-language-of-publication-bias" class="nav-link" data-scroll-target="#language-of-publication-bias"><span class="header-section-number">2.5.3</span> language of publication bias</a></li>
+  </ul></li>
+  <li><a href="#sec-bibdb" id="toc-sec-bibdb" class="nav-link" data-scroll-target="#sec-bibdb"><span class="header-section-number">2.6</span> bibliographic database</a></li>
+  <li><a href="#sec-class-metrics" id="toc-sec-class-metrics" class="nav-link" data-scroll-target="#sec-class-metrics"><span class="header-section-number">2.7</span> classification metrics</a>
+  <ul class="collapse">
+  <li><a href="#sec-accuracy" id="toc-sec-accuracy" class="nav-link" data-scroll-target="#sec-accuracy"><span class="header-section-number">2.7.1</span> accuracy</a></li>
+  <li><a href="#sec-precision" id="toc-sec-precision" class="nav-link" data-scroll-target="#sec-precision"><span class="header-section-number">2.7.2</span> precision</a></li>
+  <li><a href="#sec-sensitivity" id="toc-sec-sensitivity" class="nav-link" data-scroll-target="#sec-sensitivity"><span class="header-section-number">2.7.3</span> sensitivity</a></li>
+  </ul></li>
+  <li><a href="#sec-datafield" id="toc-sec-datafield" class="nav-link" data-scroll-target="#sec-datafield"><span class="header-section-number">2.8</span> data field</a></li>
+  <li><a href="#sec-dataset" id="toc-sec-dataset" class="nav-link" data-scroll-target="#sec-dataset"><span class="header-section-number">2.9</span> dataset</a></li>
+  <li><a href="#sec-doi" id="toc-sec-doi" class="nav-link" data-scroll-target="#sec-doi"><span class="header-section-number">2.10</span> digital object identifier</a></li>
+  <li><a href="#sec-eligibilitycriteria" id="toc-sec-eligibilitycriteria" class="nav-link" data-scroll-target="#sec-eligibilitycriteria"><span class="header-section-number">2.11</span> eligibility criteria</a></li>
+  <li><a href="#sec-fair" id="toc-sec-fair" class="nav-link" data-scroll-target="#sec-fair"><span class="header-section-number">2.12</span> FAIR</a></li>
+  <li><a href="#sec-fulltext" id="toc-sec-fulltext" class="nav-link" data-scroll-target="#sec-fulltext"><span class="header-section-number">2.13</span> full-text</a></li>
+  <li><a href="#sec-indexing" id="toc-sec-indexing" class="nav-link" data-scroll-target="#sec-indexing"><span class="header-section-number">2.14</span> indexing</a></li>
+  <li><a href="#sec-orphanline" id="toc-sec-orphanline" class="nav-link" data-scroll-target="#sec-orphanline"><span class="header-section-number">2.15</span> orphan line</a></li>
+  <li><a href="#sec-pmid-pmcid" id="toc-sec-pmid-pmcid" class="nav-link" data-scroll-target="#sec-pmid-pmcid"><span class="header-section-number">2.16</span> PMID and PMCID</a></li>
+  <li><a href="#sec-retractions" id="toc-sec-retractions" class="nav-link" data-scroll-target="#sec-retractions"><span class="header-section-number">2.17</span> retractions</a></li>
+  <li><a href="#sec-seedpaper" id="toc-sec-seedpaper" class="nav-link" data-scroll-target="#sec-seedpaper"><span class="header-section-number">2.18</span> seed paper</a></li>
+  <li><a href="#sec-syntax" id="toc-sec-syntax" class="nav-link" data-scroll-target="#sec-syntax"><span class="header-section-number">2.19</span> syntax</a></li>
+  <li><a href="#sec-thesaurus" id="toc-sec-thesaurus" class="nav-link" data-scroll-target="#sec-thesaurus"><span class="header-section-number">2.20</span> thesaurus</a></li>
+  <li><a href="#sec-wildcard" id="toc-sec-wildcard" class="nav-link" data-scroll-target="#sec-wildcard"><span class="header-section-number">2.21</span> wildcard</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://www.github.com/Maelphes/syslitcom/edit/gh-pages/technicalterms.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/blob/gh-pages/technicalterms.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-technicalterms" class="quarto-section-identifier"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Technical terms</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="sec-abstract" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="sec-abstract"><span class="header-section-number">2.1</span> abstract</h2>
+<p>An abstract is the short summary at the beginning of scientific publications, e.g.&nbsp;journal articles, theses or conference papers. The abstract is among the most important parts of a publication as it is usually the only part of the text which is freely available and can be retrieved from bibliographic databases. Title and abstract are the key elements of a textword search. (<span class="citation" data-cites="Cals2013">Cals and Kotz (<a href="references.html#ref-Cals2013" role="doc-biblioref">2013</a>)</span>, <span class="citation" data-cites="Pitkin1998">Pitkin and Branagan (<a href="references.html#ref-Pitkin1998" role="doc-biblioref">1998</a>)</span>)</p>
+</section>
+<section id="sec-ambiguity" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="sec-ambiguity"><span class="header-section-number">2.2</span> ambiguity</h2>
+<p>A term or statement which has more than one possible meaning or definition is ambiguous. Ambiguity proves to be an obstacle in creating search strategies, because any free text search with ambiguous terms will inevitably retrieve records for all meanings of the term regardless of the context. In this case, it is an option to render such terms more specific by using phrases or proximity operators.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Examples">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Examples
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>The acronym <code>CVD</code> is a very common abbreviation for <em>cardiovascular disease</em>. However, it can also mean <em>cerebrovascular disease</em>, <em>chronic venous disease</em>, <em>color vision deficiency</em> or <em>chemical vapour deposition</em>.</li>
+<li>The term <code>pharmacy</code> may refer to the pharmaceutical sciences, the manufacture of drugs or the pharmacy as a retail shop.</li>
+<li>In anatomy, a <code>styloid process</code> is a pointed outgrowth from a bone. However, there are serveral of these in the human body, for instance in the temporal bone, the radius bone, the ulna bone or the metacarpal bones.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="sec-appendix" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="sec-appendix"><span class="header-section-number">2.3</span> appendix</h2>
+<p>An appendix provides additional content to a publication and is often called <em>supplementary material</em> or <em>supplementary information</em>. Usually any content which goes beyond the constraints of the publication is provided there. Examples are the full search strategies of systematic literature searches, detailed descriptions of methods or measurements.</p>
+<p>It is also possible to publish such supplementary information or research data independently in online repositories.</p>
+</section>
+<section id="sec-authorkeywords" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="sec-authorkeywords"><span class="header-section-number">2.4</span> author keyword</h2>
+<p>Publishers often require the authors of a publication to provide keywords describing the content of the publication. These keywords don’t necessarily correspond to <a href="#sec-thesaurus">controlled vocabulary</a> (i.e.&nbsp;index terms, which are assigned to the records by the database) and should not be confused with them. (<span class="citation" data-cites="Neveol2010">Névéol, Doğan, and Lu (<a href="references.html#ref-Neveol2010" role="doc-biblioref">2010</a>)</span>)</p>
+<p>Author keywords are often used as part of the free text search. (DE: <em>Stichwortsuche</em>)</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Examples">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Examples
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Within PubMed the <a href="#sec-datafield">data field</a> <code>[Other Term]</code>) can be searched for author keywords. This field is automatically searched when <code>[Title/Abstract]</code> or <code>[Text Word]</code> are used. (See <a href="https://pubmed.ncbi.nlm.nih.gov/help/?otool=ichsublib#ot">PubMed Search Field Tags</a>).</p>
+<p>In Ovid MEDLINE the corresponding field codes <code>.kw</code> or <code>.kf</code> can be used for searching the author keywords.</p>
+</div>
+</div>
+</section>
+<section id="sec-bias" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="sec-bias"><span class="header-section-number">2.5</span> bias</h2>
+<p>Bias is a systematic deviation between results and facts that may lead to under- or over-estimation of intervention effects. As a result bias might lead to conclusions which do not accurately represent the truth. There are various types and sources for bias, as well as methods to avoid some forms of bias, such as randomization or blinding of participants in clinical trials.</p>
+<p>Systematic literature searching is a means to reduce bias. Systematic reviews strive to minimise these deviations by assessing the risk of bias in results of included studies. (<span class="citation" data-cites="Braun2021">Braun et al. (<a href="references.html#ref-Braun2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Boutron2022">Boutron et al. (<a href="references.html#ref-Boutron2022" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="Gough2017">Gough, Oliver, and Thomas (<a href="references.html#ref-Gough2017" role="doc-biblioref">2017</a>)</span>)</p>
+<section id="selection-bias" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="selection-bias"><span class="header-section-number">2.5.1</span> selection bias</h3>
+<p>Systematic differences between comparison groups lead to a deviation from the true effect of an intervention. This so-called selection bias can be prevented by measures such as the sufficient randomization and concealment of allocation of trial participants to different study arms.(<span class="citation" data-cites="Gough2017">Gough, Oliver, and Thomas (<a href="references.html#ref-Gough2017" role="doc-biblioref">2017</a>)</span>, <span class="citation" data-cites="OdgaardJensen2011">Odgaard‐Jensen et al. (<a href="references.html#ref-OdgaardJensen2011" role="doc-biblioref">2011</a>)</span>)</p>
+</section>
+<section id="publication-bias" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="publication-bias"><span class="header-section-number">2.5.2</span> publication bias</h3>
+<p>Results perceived as “positive” are more likely to be published than those results which are perceived as “negative”, which gives the positive results more weight. (<span class="citation" data-cites="Gough2017">Gough, Oliver, and Thomas (<a href="references.html#ref-Gough2017" role="doc-biblioref">2017</a>)</span>)</p>
+</section>
+<section id="language-of-publication-bias" class="level3" data-number="2.5.3">
+<h3 data-number="2.5.3" class="anchored" data-anchor-id="language-of-publication-bias"><span class="header-section-number">2.5.3</span> language of publication bias</h3>
+<p>In systematic literature searches it is often tempting to restrict the search to languages which are easily understood by the screeners and researchers. Not only will this practive keep the number of records at a more manageable level, it also makes the translation of foreign publications unnecessary. However, this so-called language of publication bias can have a significant impact on the quality of the review. (<span class="citation" data-cites="Gough2017">Gough, Oliver, and Thomas (<a href="references.html#ref-Gough2017" role="doc-biblioref">2017</a>)</span>, <span class="citation" data-cites="Morrison2012">Morrison et al. (<a href="references.html#ref-Morrison2012" role="doc-biblioref">2012</a>)</span>, <span class="citation" data-cites="Moher2003">Moher et al. (<a href="references.html#ref-Moher2003" role="doc-biblioref">2003</a>)</span>)</p>
+</section>
+</section>
+<section id="sec-bibdb" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="sec-bibdb"><span class="header-section-number">2.6</span> bibliographic database</h2>
+<p><strong>Bibliographic databases</strong> comprise references to publications, such as articles in peer-reviewed journals, reports, patents, book chapters or conference proceedings.</p>
+<p>As opposed to full text databases, bibliographic databases only provide bibliographic information or metadata. Bibliographic records typically include title, abstract, author(s), publication year, journal name, and the DOI or other persistent identifiers.</p>
+<p>References in bibliographic databases are often indexed with subject headings to facilitate the retrieval of relevant records, for instance during a systematic literature search.</p>
+</section>
+<section id="sec-class-metrics" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="sec-class-metrics"><span class="header-section-number">2.7</span> classification metrics</h2>
+<p>In information retrieval the performance of a systematic search, a search strategy or a search filter is described by certain metrics for binary classification tasks, such as <strong>accuracy</strong>, <strong>precision</strong>, <strong>sensitivity</strong> and <strong>specificity</strong>.</p>
+<p>A classifier (the search) makes a prediction about the condition of a record (by retrieving or not retrieving the record). The classification (the search result) is evaluated by comparing the prediction with the actual condition (the relevance of the records).</p>
+<p>In other words: The literature search is supposed to retrieve mostly relevant references and ignore non-relevant ones. A retrieved relevant record equals a true positive (<em>tp</em>), whereas a retrieved non-relevant record equals a false positive (<em>fp</em>). See <a href="#tbl-truth" class="quarto-xref">Table&nbsp;<span>2.1</span></a> for reference.</p>
+<div id="tbl-truth" class="striped quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-truth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.1: Truth table
+</figcaption>
+<div aria-describedby="tbl-truth-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;"><strong>record</strong></th>
+<th style="text-align: center;">relevant</th>
+<th style="text-align: center;">irrelevant</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">retrieved</td>
+<td style="text-align: center;"><em>tp</em></td>
+<td style="text-align: center;"><em>fp</em></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">not retrieved</td>
+<td style="text-align: center;"><em>fn</em></td>
+<td style="text-align: center;"><em>tn</em></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<section id="sec-accuracy" class="level3" data-number="2.7.1">
+<h3 data-number="2.7.1" class="anchored" data-anchor-id="sec-accuracy"><span class="header-section-number">2.7.1</span> accuracy</h3>
+<p><strong>Accuracy</strong>, also called <strong>fraction correct (FC)</strong>, is a statistical measure of how well a binary classifier correctly (“true”) identifies a condition (“positive or negative”). It is defined as the ratio of all true classifications (true positives and true negatives) to the total number of classifications. (<span class="citation" data-cites="Haynes2004">Haynes and Wilczynski (<a href="references.html#ref-Haynes2004" role="doc-biblioref">2004</a>)</span>, <span class="citation" data-cites="Lefebvre2017">Lefebvre et al. (<a href="references.html#ref-Lefebvre2017" role="doc-biblioref">2017</a>)</span>, <span class="citation" data-cites="Fawcett2006">Fawcett (<a href="references.html#ref-Fawcett2006" role="doc-biblioref">2006</a>)</span>)</p>
+<p>It can be calculated according to the following equation: <span class="math display">\[
+\text{accuracy} = \tfrac{tp + tn}{tp + fp + fn + tn}
+\]</span></p>
+</section>
+<section id="sec-precision" class="level3" data-number="2.7.2">
+<h3 data-number="2.7.2" class="anchored" data-anchor-id="sec-precision"><span class="header-section-number">2.7.2</span> precision</h3>
+<p><strong>Precision</strong>, also called <strong>positive predictive value (PPV)</strong>, is a performance metric for the retrieval of information. It is the fraction of all relevant records among all retrieved records, which can be written as:</p>
+<p><span class="math display">\[
+\text{precision} = \tfrac{tp}{tp + fp}
+\]</span></p>
+<p>A high-precision search tries to retrieve as few non-relevant records as possible, usually missing out on relevant records.</p>
+</section>
+<section id="sec-sensitivity" class="level3" data-number="2.7.3">
+<h3 data-number="2.7.3" class="anchored" data-anchor-id="sec-sensitivity"><span class="header-section-number">2.7.3</span> sensitivity</h3>
+<p><strong>Sensitivity</strong>, also called <strong>true positive rate (TPR)</strong>, <strong>recall</strong> or <strong>hit rate</strong>, is a performance metric for the retrieval of informaton, similar to the <em>precision</em>. It equals the probability with which relevant records are correctly identified. (See <span class="citation" data-cites="Haynes2004">Haynes and Wilczynski (<a href="references.html#ref-Haynes2004" role="doc-biblioref">2004</a>)</span>, <span class="citation" data-cites="Lefebvre2017">Lefebvre et al. (<a href="references.html#ref-Lefebvre2017" role="doc-biblioref">2017</a>)</span>).</p>
+<p>It is the ratio of all relevant retrieved records and the total of all relevant records: <span class="math display">\[
+\text{sensitivity} = \tfrac{tp}{tp + fn}
+\]</span> The idea of a sensitive search is to retrieve as many relevant records as possible, which results in retrieving more non-relevant records in the process.</p>
+</section>
+</section>
+<section id="sec-datafield" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="sec-datafield"><span class="header-section-number">2.8</span> data field</h2>
+<p>A data field (also called <em>field</em> or <em>column</em>) is a set of values of a particular data type within a database. For instance the data fields for the author or the title contain text strings whereas the fields for the issue, volume or <a href="#sec-pmid-pmcid">PubMed ID</a> contain numerical values.</p>
+<p>Data fields possess designations in the form of <a href="methods.html#sec-fieldcode">field codes or search field tags</a> such as <code>PMID</code>, <code>AU</code>, <code>TI</code> and <code>AB</code> for the fields of unique identifier, author, title and <a href="#sec-abstract">abstract</a>.</p>
+<div id="tbl-datafields" class="striped quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-datafields-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.2: Data fields PMID, AU, TI shown for three records
+</figcaption>
+<div aria-describedby="tbl-datafields-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 35%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">PMID</th>
+<th style="text-align: center;">AU</th>
+<th style="text-align: center;">TI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">7616995</td>
+<td style="text-align: center;">J. P. Kassirer, M. Angell</td>
+<td style="text-align: center;">Redundant publication: a reminder</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">16040884</td>
+<td style="text-align: center;">A. K. Akobeng</td>
+<td style="text-align: center;">Principles of evidence based medicine</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">22071866</td>
+<td style="text-align: center;">T. Young, S. Hopewell</td>
+<td style="text-align: center;">Methods for obtaining unpublished data</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>It always depends on the <a href="#sec-syntax">syntax</a> of the database or search interface which fields can be searched and by what code they are searchable.</p>
+</section>
+<section id="sec-dataset" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="sec-dataset"><span class="header-section-number">2.9</span> dataset</h2>
+<p><strong>Datasets</strong> or <strong>records</strong> of a database are collections of data. In a tabular database they correspond to the rows of the table, as shown in <a href="#tbl-datafields" class="quarto-xref">Table&nbsp;<span>2.2</span></a>. A record in such a database consists of values for the given columns or <a href="#sec-datafield">data fields</a> of the table.</p>
+<p>Records of bibliographic databases are called references. These contain the metadata referring to a publication, such as title, <a href="#sec-abstract">abstract</a>, authors, journal name or publication date.</p>
+<p>Datasets within <a href="{#sec-ctr}">clinical trials registries</a> contain metadata for clinical trials, such as registration number, study type, research institution, study status, etc.</p>
+<p>Records within fulltext databases also feature a fulltext document, as opposed to bibliographic databases.</p>
+</section>
+<section id="sec-doi" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="sec-doi"><span class="header-section-number">2.10</span> digital object identifier</h2>
+<p>A digital object identifier (<strong>DOI</strong>) is a persistent identifier issued by the <a href="https://www.doi.org/">DOI foundation</a>. It is used to uniquely identify publications.</p>
+<p>DOIs take the form of character strings which consist of a prefix and a suffix, separated by a slash <code>/</code>. The prefix identifies the registrant of the DOI (usually the publisher of an article) and takes the form <code>10.xxxx</code>, where <code>xxxx</code> is a number greater than or equal to 1000. After the prefix and the slash follows the suffix, which is chosen by the registrant for the particular digital object.</p>
+<p>DOIs can be resolved using the website of the <a href="https://www.doi.org">International DOI Foundation</a> or the <a href="https://hdl.handle.net">Handle.Net Registry</a>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>doi:10.1000/182</code> can be resolved via <a href="https://doi.org/10.1000/182" class="uri">https://doi.org/10.1000/182</a> or <a href="https://hdl.handle.net/10.1000/182" class="uri">https://hdl.handle.net/10.1000/182</a> and leads to the <a href="https://www.doi.org/the-identifier/resources/handbook/">DOI handbook</a>.</p>
+</div>
+</div>
+</section>
+<section id="sec-eligibilitycriteria" class="level2" data-number="2.11">
+<h2 data-number="2.11" class="anchored" data-anchor-id="sec-eligibilitycriteria"><span class="header-section-number">2.11</span> eligibility criteria</h2>
+<p>A very important step at the beginning of any review project is the definition of certain <strong>eligibility criteria</strong> on the basis of the research question. There are two types of criteria:</p>
+<p><strong>Inclusion criteria</strong> must be met by studies in order for them to be included in the review. In contrast, if a study meets one or more of the <strong>exclusion criteria</strong>, it will be excluded from the review. See also <span class="citation" data-cites="McKenzie2023">McKenzie et al. (<a href="references.html#ref-McKenzie2023" role="doc-biblioref">2023</a>)</span>, <span class="citation" data-cites="Gough2017">Gough, Oliver, and Thomas (<a href="references.html#ref-Gough2017" role="doc-biblioref">2017</a>)</span>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example: systematic review about chronic non-cancer pain">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example: systematic review about chronic non-cancer pain
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>Inclusion criteria:
+<ul>
+<li>adults (18 years or older)</li>
+<li>patients with chronic non-cancer pain</li>
+<li>randomized controlled trials</li>
+</ul></li>
+<li>Exclusion criteria:
+<ul>
+<li>acute pain, post-surgical pain</li>
+<li>chronic cancer pain</li>
+<li>pregnancy</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="sec-fair" class="level2" data-number="2.12">
+<h2 data-number="2.12" class="anchored" data-anchor-id="sec-fair"><span class="header-section-number">2.12</span> FAIR</h2>
+<p><strong>FAIR</strong> is an acronym for the four principles <strong>F</strong>indability, <strong>A</strong>ccessibility, <strong>I</strong>nteroperability and <strong>R</strong>eusability, which serve as a guideline for the management of scientific or scholarly data. A consortium of scientists and organizations defined these <strong>FAIR principles</strong> in order to advance the machine-actionability of data. (<span class="citation" data-cites="Wilkinson2016">Wilkinson et al. (<a href="references.html#ref-Wilkinson2016" role="doc-biblioref">2016</a>)</span>)</p>
+<p>Data that meet with these principles are called <strong>FAIR Data</strong>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="The FAIR Principles">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+The FAIR Principles
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<table class="table-striped caption-top table">
+<caption>Short description, adapted from <a href="https://www.publisso.de/en/research-data-management/fair-principles/">PUBLISSO</a></caption>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Findability</strong></td>
+<td style="text-align: left;">Data should be provided with sufficient metadata, such as title, authors, summary, and information about the origin of the data. Moreover, a globally unique and persistent identifier, such as a digital object identifier (DOI), should be assigned to the data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Accessibility</strong></td>
+<td style="text-align: left;">Data and their metadata should be made long-term accessible through standardized communication protocols, such as https.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Interoperability</strong></td>
+<td style="text-align: left;">Controlled vocabulary (thesauri) such as Medical Subject Headings (MeSH) or formats for metadata such as XML, which can be read by both humans and machines, allow for the creation of interoperable metadata and links between datasets.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Reusability</strong></td>
+<td style="text-align: left;">Reusability depends on the quality of the metadata, a proper description of the provenance of the research data and its citability (for instance by using DOIs) under clearly stated license conditions.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Recommended links">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Recommended links
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>The <a href="https://www.go-fair.org/">GO FAIR Initiative</a> provides additional information and a platform for anyone interested in applying the FAIR principles.</p></li>
+<li><p><a href="https://datacite.org/">DataCite</a> is an international non-profit organization which strives to facilitate access to research data on the internet, to increase the acceptance of research data as citable contributions to the research records and to support data archiving for the purposes of reutilization and verification.</p></li>
+<li><p>A <a href="https://libereurope.eu/liber-fair-data-2/">factsheet about the FAIR Principles</a>, published by the Association of European Research Libraries <a href="https://libereurope.eu/">LIBER</a>, highlights the role of the libraries in their implementation.</p></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="sec-fulltext" class="level2" data-number="2.13">
+<h2 data-number="2.13" class="anchored" data-anchor-id="sec-fulltext"><span class="header-section-number">2.13</span> full-text</h2>
+<p>The complete texts of publications (e.g.&nbsp;articles, books, chapters, reports, …) are called <strong>full-texts</strong>.</p>
+<p>Most of the available databases for literature searching are bibliographic databases, which means they do not contain the full-text, but bibliographic references to the publications, in most cases including a link to the publisher, where the full-text can be obtained.</p>
+<p>Open Access publications can be accessed freely, whereas non-open access publications usually require a paid subscription or access fee. Alternatively, they can be ordered using the <a href="https://www.ub.unibe.ch/services/borrowing_and_ordering">document delivery service</a> of a university library.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="full-text retrieval tools">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+full-text retrieval tools
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There are tools that can help to identify the shortest path to the full-text:</p>
+<ul>
+<li><a href="https://leanlibrary.com/download/">Lean Library</a></li>
+<li><a href="https://thirdiron.com/downloadnomad/">LibKey Nomad</a></li>
+<li><a href="https://unpaywall.org/">Unpaywall</a></li>
+<li><a href="https://openaccessbutton.org/">Open Access Button</a></li>
+</ul>
+<p>Also <a href="tools.html#sec-refmanagement">reference management programs</a> often provide ways to retrieve available full-texts for the managed references. Sometimes this automated retrieval fails due to incompatibility or security measures of the publishers, even when the full-text would be otherwise accessible (e.g.&nbsp;<a href="https://support.clarivate.com/Endnote/s/article/EndNote-Optimizing-Find-Full-Text-results-with-X2-and-later?language=en_US">EndNote</a>).</p>
+</div>
+</div>
+</section>
+<section id="sec-indexing" class="level2" data-number="2.14">
+<h2 data-number="2.14" class="anchored" data-anchor-id="sec-indexing"><span class="header-section-number">2.14</span> indexing</h2>
+<p>Indexing is the process in which <a href="methods.html#sec-indexterms">index terms</a> are assigned to <a href="#sec-dataset">records</a>. This is done by the database provider in order to indicate what the referenced document is about, independent of its explicit title or abstract. In other words, an indexed record can be retrieved systematically based on its contextual meaning and implicit contents, rather than by searching verbatim expressions in the text.</p>
+</section>
+<section id="sec-orphanline" class="level2" data-number="2.15">
+<h2 data-number="2.15" class="anchored" data-anchor-id="sec-orphanline"><span class="header-section-number">2.15</span> orphan line</h2>
+<p>All parts of a <a href="methods.html#sec-searchstrategy">search strategy</a> are supposed to contribute to the overall result of the database search. In case a search query within a search strategy is not connected (using operators) to the rest of the search strategy, it is called an <strong>orphan line</strong>.</p>
+<div id="tbl-orphanline" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-orphanline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.3: Line 5 is an orphan line.
+</figcaption>
+<div aria-describedby="tbl-orphanline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="sourceCode anchored" id="tbl-orphanline"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="tbl-orphanline-1"><a href="#tbl-orphanline-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   hypertension<span class="op">/</span></span>
+<span id="tbl-orphanline-2"><a href="#tbl-orphanline-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>   (hypertension <span class="kw">or</span> high blood pressure).ti,ab.</span>
+<span id="tbl-orphanline-3"><a href="#tbl-orphanline-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>   <span class="op">*</span>patient attitude<span class="op">/</span></span>
+<span id="tbl-orphanline-4"><a href="#tbl-orphanline-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   <span class="op">*</span>patient satisfaction<span class="op">/</span></span>
+<span id="tbl-orphanline-5"><a href="#tbl-orphanline-5" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span>   (choice$ <span class="kw">or</span> empower$).ti.</span>
+<span id="tbl-orphanline-6"><a href="#tbl-orphanline-6" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span>   <span class="dv">1</span> <span class="kw">or</span> <span class="dv">2</span></span>
+<span id="tbl-orphanline-7"><a href="#tbl-orphanline-7" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span>   <span class="dv">3</span> <span class="kw">or</span> <span class="dv">4</span></span>
+<span id="tbl-orphanline-8"><a href="#tbl-orphanline-8" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span>   <span class="dv">6</span> <span class="kw">and</span> <span class="dv">7</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</figure>
+</div>
+</section>
+<section id="sec-pmid-pmcid" class="level2" data-number="2.16">
+<h2 data-number="2.16" class="anchored" data-anchor-id="sec-pmid-pmcid"><span class="header-section-number">2.16</span> PMID and PMCID</h2>
+<p>The PubMed ID (PMID) and the PubMed Central ID (PMCID) are unique identifiers assigned to the records within the databases <a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a> and <a href="https://www.ncbi.nlm.nih.gov/pmc/">PubMed Central</a>. They are similar to the digital object identifier (DOI).</p>
+<p>PMIDs are unique integer values, e.g.&nbsp;<a href="https://pubmed.ncbi.nlm.nih.gov/32256971/">32256971</a>, PMCIDs are composed of the prefix <strong>PMC</strong> followed by a series of numbers, e.g.&nbsp;<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7106990/">PMC7106990</a>.</p>
+<p>PubMed records can easily be found simply by entering their <a href="https://pubmed.ncbi.nlm.nih.gov/?term=31541534+28475312+21995656+33223580+29327483+35602613+29905334+37465961+35472729+37983749">PMIDs as search terms</a> into the PubMed search.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Conversion tool">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Conversion tool
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <a href="https://www.nlm.nih.gov">National Library of Medicine</a> provides a <a href="https://www.ncbi.nlm.nih.gov/pmc/tools/idconv/">tool</a> for the conversion of the PMID, PMCID and DOI into one another. This tool only works for records which are both part of PubMed and PubMed Central.</p>
+</div>
+</div>
+</section>
+<section id="sec-retractions" class="level2" data-number="2.17">
+<h2 data-number="2.17" class="anchored" data-anchor-id="sec-retractions"><span class="header-section-number">2.17</span> retractions</h2>
+<p>The review of manuscripts by fellow scientists (aka peer review) as part of the publication process is supposed to protect the scientific community from frauds, detect errors or false conclusions and in doing so uphold a certain level of quality. This, however, is not always enough.</p>
+<p>In cases where serious errors or even scientific misconduct are detected only after an article is published, it may get <strong>retracted</strong>. The <strong>retraction</strong> can be initiated by the authors themselves, their affiliated institutions or the journal editors. On the publisher’s website and within bibliographic databases, such an article usually gets flagged as being retracted and a <strong>retraction notice</strong> is published, which explains the cause for the retraction.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Retraction notice vs. retracted publication">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Retraction notice vs.&nbsp;retracted publication
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In bibliographic databases, such as <a href="databases.html#sec-pubmed">PubMed</a>, <a href="https://pubmed.ncbi.nlm.nih.gov/?term=%22retracted+publication%22%5BPublication+Type%5D">retracted publications</a> and the <a href="https://pubmed.ncbi.nlm.nih.gov/?term=%22retraction+of+publication%22%5BPublication+Type%5D">retraction notices</a> are separate records, which can be searched individually.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Retraction Watch">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Retraction Watch
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The blog <a href="https://retractionwatch.com">Retraction Watch</a>, run by the non-profit organization Center for Scientific Integrity, keeps an eye on current retractions and reports on developments in this area.</p>
+</div>
+</div>
+</section>
+<section id="sec-seedpaper" class="level2" data-number="2.18">
+<h2 data-number="2.18" class="anchored" data-anchor-id="sec-seedpaper"><span class="header-section-number">2.18</span> seed paper</h2>
+<p>A <a href="methods.html#sec-syslitsearch">systematic literature search</a> often begins with a quick scoping search for a handful of publications that provide an answer to the research question. These publications are called <strong>seed paper</strong>, <strong>key paper</strong> or <strong>core paper</strong>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Purposes of seed papers">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Purposes of seed papers
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Apart from making oneself familiar with the topic by reading them, these seed papers can be put to use in:</p>
+<ol type="1">
+<li>Extraction of <a href="methods.html#sec-indexterms">index terms</a> and free-text expressions.</li>
+<li><a href="methods.html#sec-citationsearching">Citation searching</a></li>
+<li>Testing <a href="methods.html#sec-searchstrategy">search strategies</a>.</li>
+</ol>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled" title="Personal note">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Personal note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>From the own experience of the author of this compendium, one can further divide seed papers into two categories:</p>
+<ol type="1">
+<li>Publications which answer the research question and which can be used as a template for similar literature which should be picked up by a <a href="methods.html#sec-syslitsearch">systematic search</a>, because they might be included in the review.</li>
+<li>Publications which do not fully cover all the aspects of the question, but provide background information or search terms for at least one of the main concepts. These do not qualify as included studies for the review project. An example are review articles which are similar (but not identical) to what the researchers have in mind for the present project.</li>
+</ol>
+<p>Often, researchers are not aware of this distinction and its implications for the systematic literature search.</p>
+<p>Ideally, the systematic search should retrieve all of the type 1 seed papers, whereas type 2 papers may or may not be found by the search. Type 2 paper are useful for preparation, citation searching (e.g.&nbsp;for relevant studies of previous systematic reviews) or to learn important search terms from previous search strategies.</p>
+</div>
+</div>
+</section>
+<section id="sec-syntax" class="level2" data-number="2.19">
+<h2 data-number="2.19" class="anchored" data-anchor-id="sec-syntax"><span class="header-section-number">2.19</span> syntax</h2>
+<p>Similar to programming, the <strong>syntax</strong> is the set of rules that applies for setting up search queries and building search strategies in databases. It defines the operators, field codes and special characters (such as <a href="#sec-wildcard">wildcard symbols</a>, <a href="methods.html#sec-nesting">parentheses</a>, slashes, <a href="methods.html#sec-phrases">quotation marks</a>, etc.) that are available within a particular search interface.</p>
+<p>As a consequence, search strategies cannot be used freely in every database. They have to be translated due to different syntax and due to different index terms. (See <span class="citation" data-cites="Clark2020">Clark et al. (<a href="references.html#ref-Clark2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="Glanville2019">Glanville et al. (<a href="references.html#ref-Glanville2019" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="Wanner2019">Wanner and Baumann (<a href="references.html#ref-Wanner2019" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="Damarell2013">Damarell, Tieman, and Sladek (<a href="references.html#ref-Damarell2013" role="doc-biblioref">2013</a>)</span>).</p>
+<div id="tbl-syntax" class="hover quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-syntax-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.4: Examples for syntax in different search interfaces
+</figcaption>
+<div aria-describedby="tbl-syntax-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-hover caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 75%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>PubMed</td>
+<td><code>"ocular hypertension"[tiab]</code></td>
+</tr>
+<tr class="even">
+<td>Embase</td>
+<td><code>'ocular hypertension':ti,ab</code></td>
+</tr>
+<tr class="odd">
+<td>Ovid</td>
+<td><code>"ocular hypertension".ti,ab.</code></td>
+</tr>
+<tr class="even">
+<td>Cochrane Library</td>
+<td><code>"ocular hypertension":ti,ab</code></td>
+</tr>
+<tr class="odd">
+<td>Scopus</td>
+<td><code>TITLE-ABS({ocular hypertension})</code></td>
+</tr>
+<tr class="even">
+<td>Web of Science</td>
+<td><code>TI=("ocular hypertension") OR AB=("ocular hypertension")</code></td>
+</tr>
+<tr class="odd">
+<td>EBSCO<em>host</em></td>
+<td><code>(TI "ocular hypertension") OR (AB "ocular hypertension")</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+</section>
+<section id="sec-thesaurus" class="level2" data-number="2.20">
+<h2 data-number="2.20" class="anchored" data-anchor-id="sec-thesaurus"><span class="header-section-number">2.20</span> thesaurus</h2>
+<p>A <strong>thesaurus</strong> (ancient greek: θησαυρός (<em>thesaurós</em>) ‘treasury’) is a dictionary of synonyms, which are often ordered alphabetically or hierarchically.</p>
+<p>In the context of literature searching, a thesaurus contains a database-specific <strong>controlled vocabulary</strong> of index terms.</p>
+<div id="tbl-thesauri" class="striped quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-thesauri-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.5: Commonly known databases and their thesauri
+</figcaption>
+<div aria-describedby="tbl-thesauri-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped caption-top table">
+<thead>
+<tr class="header">
+<th>Database</th>
+<th>Thesaurus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>PubMed/MEDLINE</td>
+<td><a href="https://www.ncbi.nlm.nih.gov/mesh/">Medical Subject Headings (MeSH)</a></td>
+</tr>
+<tr class="even">
+<td>Embase</td>
+<td><a href="https://www.elsevier.com/products/embase/emtree">Emtree</a></td>
+</tr>
+<tr class="odd">
+<td>Cochrane Library</td>
+<td><a href="https://www.ncbi.nlm.nih.gov/mesh/">Medical Subject Headings (MeSH)</a></td>
+</tr>
+<tr class="even">
+<td>CINAHL</td>
+<td><a href="https://connect.ebsco.com/s/article/CINAHL-Subject-Headings-Frequently-Asked-Questions?language=en_US">CINAHL Subject Headings</a></td>
+</tr>
+<tr class="odd">
+<td>APA PsycInfo</td>
+<td><a href="https://www.apa.org/pubs/databases/training/thesaurus">Thesaurus of Psychological Index Terms</a></td>
+</tr>
+<tr class="even">
+<td>Global Health</td>
+<td><a href="https://www.cabi.org/cabithesaurus">CABI Thesaurus</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>These vocabularies usually list preferred terms for indexing, their definitions as well as lists of synonyms for each of those index terms. The index terms are arranged hierarchically, ranging from very broad categories to very specific terms.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="MeSH hierarchy from the top of the MeSH tree to [*Pleural Cavity*](https://www.ncbi.nlm.nih.gov/mesh/68035422)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+MeSH hierarchy from the top of the MeSH tree to <a href="https://www.ncbi.nlm.nih.gov/mesh/68035422"><em>Pleural Cavity</em></a>
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<pre><code>All MeSH Categories
+  Anatomy Category
+    Body Regions
+      Torso
+        Thorax
+          Thoracic Cavity
+            Pleural Cavity</code></pre>
+</div>
+</div>
+<p>The controlled vocabularies are regularly updated, new index terms are introduced or hierarchies rearranged. (See <a href="https://www.nlm.nih.gov/mesh/whatsnew.html">What’s New in MeSH</a> for example).</p>
+</section>
+<section id="sec-wildcard" class="level2" data-number="2.21">
+<h2 data-number="2.21" class="anchored" data-anchor-id="sec-wildcard"><span class="header-section-number">2.21</span> wildcard</h2>
+<p>Wildcards are special characters used for <a href="methods.html#sec-truncation">truncation</a>. The usage and meaning of the available wildcards for this purpose depends on the syntax of the database or search interface.</p>
+<div id="tbl-wildcards" class="striped quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-wildcards-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2.6: commonly used wildcard symbols
+</figcaption>
+<div aria-describedby="tbl-wildcards-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">character</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><code>*</code></td>
+<td>asterisk</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>$</code></td>
+<td>dollar sign</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>?</code></td>
+<td>question mark</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>#</code></td>
+<td>hash sign, pound sign</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Boutron2022" class="csl-entry" role="listitem">
+Boutron, I., M. J. Page, J. P. T. Higgins, D. G. Altman, A. Lundh, and A. Hróbjartsson. 2022. <span>“Chapter 7: Considering Bias and Conflicts of Interest Among the Included Studies.”</span> In <em>Cochrane Handbook for Systematic Reviews of Interventions</em>, edited by J. P. T. Higgins, J. Thomas, J. Chandler, M. Cumpston, T. Li, M. J. Page, and V. A. Welch. Cochrane.
+</div>
+<div id="ref-Braun2021" class="csl-entry" role="listitem">
+Braun, Cordula, Christine Schmucker, Monika Nothacker, Kai Nitschke, Corinna Schaefer, Claudia Bollig, Cathleen Muche-Borowski, Ina B. Kopp, and Jörg Meerpohl. 2021. <span>“<span class="nocase">Manual Bewertung des Biasrisikos in Interventionsstudien</span>.”</span> Albert-Ludwigs-Universit<span>ä</span>t Freiburg. <a href="https://doi.org/10.6094/UNIFR/194900">https://doi.org/10.6094/UNIFR/194900</a>.
+</div>
+<div id="ref-Cals2013" class="csl-entry" role="listitem">
+Cals, Jochen W. L., and Daniel Kotz. 2013. <span>“<span class="nocase">Effective writing and publishing scientific papers, part II: title and abstract</span>.”</span> <em>J Clin Epidemiol</em> 66 (6): 585. <a href="https://doi.org/10.1016/j.jclinepi.2013.01.005">https://doi.org/10.1016/j.jclinepi.2013.01.005</a>.
+</div>
+<div id="ref-Clark2020" class="csl-entry" role="listitem">
+Clark, Justin Michael, Sharon Sanders, Matthew Carter, David Honeyman, Gina Cleo, Yvonne Auld, Debbie Booth, et al. 2020. <span>“<span class="nocase">Improving the translation of search strategies using the Polyglot Search Translator: a randomized controlled trial</span>.”</span> <em>J Med Libr Assoc</em> 108 (2): 195–207. <a href="https://doi.org/10.5195/jmla.2020.834">https://doi.org/10.5195/jmla.2020.834</a>.
+</div>
+<div id="ref-Damarell2013" class="csl-entry" role="listitem">
+Damarell, Raechel A., Jennifer J. Tieman, and Ruth M. Sladek. 2013. <span>“<span class="nocase">OvidSP Medline-to-PubMed search filter translation: a methodology for extending search filter range to include PubMed’s unique content</span>.”</span> <em>BMC Med Res Methodol</em> 13 (1): 86. <a href="https://doi.org/10.1186/1471-2288-13-86">https://doi.org/10.1186/1471-2288-13-86</a>.
+</div>
+<div id="ref-Fawcett2006" class="csl-entry" role="listitem">
+Fawcett, Tom. 2006. <span>“An Introduction to <span>ROC</span> Analysis.”</span> <em>Pattern Recognit Lett</em> 27 (8): 861–74. <a href="https://doi.org/10.1016/j.patrec.2005.10.010">https://doi.org/10.1016/j.patrec.2005.10.010</a>.
+</div>
+<div id="ref-Glanville2019" class="csl-entry" role="listitem">
+Glanville, Julie, Ruth Foxlee, Susi Wisniewski, Anna Noel-Storr, Mary Edwards, and Gordon Dooley. 2019. <span>“<span class="nocase">Translating the Cochrane EMBASE RCT filter from the Ovid interface to Embase.com: a case study</span>.”</span> <em>Health Info Libr J</em> 36 (3): 264–77. <a href="https://doi.org/10.1111/hir.12269">https://doi.org/10.1111/hir.12269</a>.
+</div>
+<div id="ref-Gough2017" class="csl-entry" role="listitem">
+Gough, David, Sandy Oliver, and James Thomas. 2017. <em><span class="nocase">An Introduction to Systematic Reviews</span></em>. Second. London: SAGE Publications.
+</div>
+<div id="ref-Haynes2004" class="csl-entry" role="listitem">
+Haynes, R. Brian, and Nancy L. Wilczynski. 2004. <span>“<span class="nocase">Optimal search strategies for retrieving scientifically strong studies of diagnosis from Medline: analytical survey</span>.”</span> <em>BMJ</em> 328 (7447): 1040. <a href="https://doi.org/10.1136/bmj.38068.557998.EE">https://doi.org/10.1136/bmj.38068.557998.EE</a>.
+</div>
+<div id="ref-Lefebvre2017" class="csl-entry" role="listitem">
+Lefebvre, Carol, Julie Glanville, Sophie Beale, Charles Boachie, Steven Duffy, Cynthia Fraser, Jenny Harbour, Rachael McCool, and Lynne Smith. 2017. <span>“Assessing the Performance of Methodological Search Filters to Improve the Efficiency of Evidence Information Retrieval: Five Literature Reviews and a Qualitative Study.”</span> <em>Health Technol Assess</em> 21 (69): 1–148. <a href="https://doi.org/10.3310/hta21690">https://doi.org/10.3310/hta21690</a>.
+</div>
+<div id="ref-McKenzie2023" class="csl-entry" role="listitem">
+McKenzie, J. E., S. E. Brennan, R. E. Ryan, H. J. Thomson, R. V. Johnston, and J. Thomas. 2023. <span>“Chapter 3: Defining the Criteria for Including Studies and How They Will Be Grouped for the Synthesis.”</span> In <em>Cochrane Handbook for Systematic Reviews of Interventions</em>, edited by J. P. T. Higgins, J. Thomas, J. Chandler, M. Cumpston, T. Li, M. J. Page, and V. A. Welch, 6.4 ed. Cochrane.
+</div>
+<div id="ref-Moher2003" class="csl-entry" role="listitem">
+Moher, D., B. Pham, M. L. Lawson, and T. P. Klassen. 2003. <span>“<span class="nocase">The inclusion of reports of randomised trials published in languages other than English in systematic reviews.</span>”</span> <em>Health Technol Assess</em> 7: 1–90. <a href="https://doi.org/10.3310/hta7410">https://doi.org/10.3310/hta7410</a>.
+</div>
+<div id="ref-Morrison2012" class="csl-entry" role="listitem">
+Morrison, Andra, Julie Polisena, Don Husereau, Kristen Moulton, Michelle Clark, Michelle Fiander, Monika Mierzwinski-Urban, et al. 2012. <span>“<span class="nocase">The effect of English-language restriction on systematic review-based meta-analyses: a systematic review of empirical studies</span>.”</span> <em>Int J Technol Assess Health Care</em> 28 (2): 138–44. <a href="https://doi.org/10.1017/S0266462312000086">https://doi.org/10.1017/S0266462312000086</a>.
+</div>
+<div id="ref-Neveol2010" class="csl-entry" role="listitem">
+Névéol, Aurélie, Rezarta Islamaj Doğan, and Zhiyong Lu. 2010. <span>“<span class="nocase">Author Keywords in Biomedical Journal Articles</span>.”</span> <em>AMIA Annu Symp Proc</em> 2010 (November): 537–41. <a href="https://pubmed.ncbi.nlm.nih.gov/21347036/">https://pubmed.ncbi.nlm.nih.gov/21347036/</a>.
+</div>
+<div id="ref-OdgaardJensen2011" class="csl-entry" role="listitem">
+Odgaard‐Jensen, Jan, Gunn E. Vist, Antje Timmer, R. Kunz, Elie A. Akl, Holger Schünemann, Matthias Briel, Alain J. Nordmann, Silvia Pregno, and Andrew D. Oxman. 2011. <span>“Randomisation to Protect Against Selection Bias in Healthcare Trials.”</span> <em>Cochrane Database Syst Rev</em>   (4). <a href="https://doi.org/10.1002/14651858.MR000012.pub3">https://doi.org/10.1002/14651858.MR000012.pub3</a>.
+</div>
+<div id="ref-Pitkin1998" class="csl-entry" role="listitem">
+Pitkin, Roy M., and Mary Ann Branagan. 1998. <span>“<span class="nocase">Can the Accuracy of Abstracts Be Improved by Providing Specific Instructions? A Randomized Controlled Trial</span>.”</span> <em>JAMA</em> 280 (3): 267–69. <a href="https://doi.org/10.1001/jama.280.3.267">https://doi.org/10.1001/jama.280.3.267</a>.
+</div>
+<div id="ref-Wanner2019" class="csl-entry" role="listitem">
+Wanner, Amanda, and Niki Baumann. 2019. <span>“<span class="nocase">Design and implementation of a tool for conversion of search strategies between PubMed and Ovid MEDLINE</span>.”</span> <em>Res Syn Meth</em> 10 (2): 154–60. <a href="https://doi.org/10.1002/jrsm.1314">https://doi.org/10.1002/jrsm.1314</a>.
+</div>
+<div id="ref-Wilkinson2016" class="csl-entry" role="listitem">
+Wilkinson, Mark D., Michel Dumontier, I. Jsbrand Jan Aalbersberg, Gabrielle Appleton, Myles Axton, Arie Baak, Niklas Blomberg, et al. 2016. <span>“<span class="nocase">The FAIR Guiding Principles for scientific data management and stewardship.</span>”</span> <em>Scientific Data</em> 3 (March): 160018. <a href="https://doi.org/10.1038/sdata.2016.18">https://doi.org/10.1038/sdata.2016.18</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./databases.html" class="pagination-link" aria-label="Databases">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Databases</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./tools.html" class="pagination-link" aria-label="Tools">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tools</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://www.github.com/Maelphes/syslitcom/edit/gh-pages/technicalterms.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/blob/gh-pages/technicalterms.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>

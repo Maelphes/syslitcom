@@ -30,7 +30,7 @@ information. (See also @Glanville2014, @Knelangen2018).
 : {.striped .hover}
 :::
 
-A [comprehensive list of resources](https://sites.google.com/a/york.ac.uk/yhectrialsregisters) is maintained by Julie Glanville and Carol Lefebvre.
+A [comprehensive list of resources](https://sites.google.com/a/york.ac.uk/yhectrialsregisters) with detailed information about the registers and how to search them is maintained by [Julie Glanville](https://www.linkedin.com/in/julie-glanville-552ba619/) and [Carol Lefebvre](https://www.linkedin.com/in/carol-lefebvre-4981371a/).
 
 ## Cochrane Library {#sec-cochranelibrary}
 

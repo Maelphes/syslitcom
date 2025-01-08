@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.55">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="A compendium for systematic literature searching">
+
+<title>4&nbsp; Methods – SysLit Compendium</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./publicationtypes.html" rel="next">
+<link href="./tools.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="././fig/logo_small.svg" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">SysLit Compendium</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools tools-end">
+    <a href="https://www.github.com/Maelphes/syslitcom" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./methods.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Methods</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./databases.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Databases</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./technicalterms.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Technical terms</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./tools.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tools</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./methods.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Methods</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./publicationtypes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Publication Types</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#sec-citationsearching" id="toc-sec-citationsearching" class="nav-link active" data-scroll-target="#sec-citationsearching"><span class="header-section-number">4.1</span> citation searching</a>
+  <ul class="collapse">
+  <li><a href="#co-cited-citation-searching" id="toc-co-cited-citation-searching" class="nav-link" data-scroll-target="#co-cited-citation-searching"><span class="header-section-number">4.1.1</span> co-cited citation searching</a></li>
+  <li><a href="#co-citing-citation-searching" id="toc-co-citing-citation-searching" class="nav-link" data-scroll-target="#co-citing-citation-searching"><span class="header-section-number">4.1.2</span> co-citing citation searching</a></li>
+  </ul></li>
+  <li><a href="#sec-criticalappraisal" id="toc-sec-criticalappraisal" class="nav-link" data-scroll-target="#sec-criticalappraisal"><span class="header-section-number">4.2</span> critical appraisal</a></li>
+  <li><a href="#sec-deduplication" id="toc-sec-deduplication" class="nav-link" data-scroll-target="#sec-deduplication"><span class="header-section-number">4.3</span> deduplication</a></li>
+  <li><a href="#sec-filters" id="toc-sec-filters" class="nav-link" data-scroll-target="#sec-filters"><span class="header-section-number">4.4</span> filters</a></li>
+  <li><a href="#sec-fieldcode" id="toc-sec-fieldcode" class="nav-link" data-scroll-target="#sec-fieldcode"><span class="header-section-number">4.5</span> field code</a></li>
+  <li><a href="#sec-focustopic" id="toc-sec-focustopic" class="nav-link" data-scroll-target="#sec-focustopic"><span class="header-section-number">4.6</span> focus topic</a></li>
+  <li><a href="#sec-greyliterature" id="toc-sec-greyliterature" class="nav-link" data-scroll-target="#sec-greyliterature"><span class="header-section-number">4.7</span> grey literature</a></li>
+  <li><a href="#sec-indexterms" id="toc-sec-indexterms" class="nav-link" data-scroll-target="#sec-indexterms"><span class="header-section-number">4.8</span> index terms</a></li>
+  <li><a href="#sec-limits" id="toc-sec-limits" class="nav-link" data-scroll-target="#sec-limits"><span class="header-section-number">4.9</span> limits</a></li>
+  <li><a href="#sec-nesting" id="toc-sec-nesting" class="nav-link" data-scroll-target="#sec-nesting"><span class="header-section-number">4.10</span> nesting</a></li>
+  <li><a href="#sec-operators" id="toc-sec-operators" class="nav-link" data-scroll-target="#sec-operators"><span class="header-section-number">4.11</span> operators</a>
+  <ul class="collapse">
+  <li><a href="#sec-boolean" id="toc-sec-boolean" class="nav-link" data-scroll-target="#sec-boolean"><span class="header-section-number">4.11.1</span> Boolean operators</a></li>
+  <li><a href="#sec-frequencyops" id="toc-sec-frequencyops" class="nav-link" data-scroll-target="#sec-frequencyops"><span class="header-section-number">4.11.2</span> frequency operators</a></li>
+  <li><a href="#sec-proximityops" id="toc-sec-proximityops" class="nav-link" data-scroll-target="#sec-proximityops"><span class="header-section-number">4.11.3</span> proximity operators</a></li>
+  </ul></li>
+  <li><a href="#sec-phrases" id="toc-sec-phrases" class="nav-link" data-scroll-target="#sec-phrases"><span class="header-section-number">4.12</span> phrases</a></li>
+  <li><a href="#sec-searchstrategy" id="toc-sec-searchstrategy" class="nav-link" data-scroll-target="#sec-searchstrategy"><span class="header-section-number">4.13</span> search strategy</a></li>
+  <li><a href="#sec-subheading" id="toc-sec-subheading" class="nav-link" data-scroll-target="#sec-subheading"><span class="header-section-number">4.14</span> subheading</a></li>
+  <li><a href="#sec-syslitsearch" id="toc-sec-syslitsearch" class="nav-link" data-scroll-target="#sec-syslitsearch"><span class="header-section-number">4.15</span> systematic literature searching</a></li>
+  <li><a href="#sec-termexplosion" id="toc-sec-termexplosion" class="nav-link" data-scroll-target="#sec-termexplosion"><span class="header-section-number">4.16</span> term explosion</a></li>
+  <li><a href="#sec-truncation" id="toc-sec-truncation" class="nav-link" data-scroll-target="#sec-truncation"><span class="header-section-number">4.17</span> truncation</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://www.github.com/Maelphes/syslitcom/edit/gh-pages/methods.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/blob/gh-pages/methods.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="sec-methods" class="quarto-section-identifier"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Methods</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="sec-citationsearching" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="sec-citationsearching"><span class="header-section-number">4.1</span> citation searching</h2>
+<p>Relevant references can be retrieved by analyzing citation relationships between known relevant articles, called <a href="technicalterms.html#sec-seedpaper"><em>seed papers</em></a> (also known as <em>core papers</em>) and cited or citing references. This technique is called <strong>citation searching</strong>, <strong>citation analysis</strong> or <strong>citation tracking</strong> (<span class="citation" data-cites="Hirt2024">Hirt et al. (<a href="references.html#ref-Hirt2024" role="doc-biblioref">2024</a>)</span>, <span class="citation" data-cites="Belter2016">Belter (<a href="references.html#ref-Belter2016" role="doc-biblioref">2016</a>)</span>, <span class="citation" data-cites="Hinde2015">Hinde and Spackman (<a href="references.html#ref-Hinde2015" role="doc-biblioref">2015</a>)</span>).</p>
+<p>The <a href="tools.html#sec-tarcis">TARCiS Statement</a> provides a guideline for citation searching. (<span class="citation" data-cites="Hirt2024">Hirt et al. (<a href="references.html#ref-Hirt2024" role="doc-biblioref">2024</a>)</span>)</p>
+<p>Citation searching can be advisable at the very beginning of a systematic literature search in order to find additional core papers and to identify additional search terms. After finishing the final search it can be used to find additional relevant studies that were not retrieved by systematic searching using search strategies.</p>
+<p>Some research questions are hard to search by a conventional Boolean approach, for instance due to very ambiguous search terms or very recent research topics for which no index terms and no established terminology exists, yet. In these cases a citation search can be more useful than a Boolean search as it relies solely on the citation relationships between known and yet unknown publications.</p>
+<p>There are different approaches to searching citations: First, in the <strong>backward citation searching</strong> method the lists of references cited in the seed papers are screened for relevant articles. Second, the analysis of publications citing the seed paper as a reference is called <strong>forward citation searching</strong>. See <a href="#fig-citing-cited" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>.</p>
+<div id="fig-citing-cited" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Vector drawing showing a timeline with papers above it, illustration their relative time of publication. Arrows point from the most recent publications, which are called 'citing references', to the seed paper in the center, indicating these papers to be citing the seed paper. The citation searching technique based on this relationship is called 'forward citation searching. Similarly, arrows from the seed paper to even older publications, which are called 'cited references', indicate the relationship of the seed paper with the references it cites. The corresponding technique is called 'backwards citation searching'.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-citing-cited-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./fig/citing-cited.svg" class="img-fluid figure-img" style="width:80.0%" alt="Vector drawing showing a timeline with papers above it, illustration their relative time of publication. Arrows point from the most recent publications, which are called 'citing references', to the seed paper in the center, indicating these papers to be citing the seed paper. The citation searching technique based on this relationship is called 'forward citation searching. Similarly, arrows from the seed paper to even older publications, which are called 'cited references', indicate the relationship of the seed paper with the references it cites. The corresponding technique is called 'backwards citation searching'.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-citing-cited-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.1: backward and forward citation searching
+</figcaption>
+</figure>
+</div>
+<p>Third, the identification of relevant literature by counting co-cited or co-citing references which connect the seed paper with other papers is called <strong>co-citation searching</strong>. In theory, the relevance of these other papers should increase with an increasing number of connecting publications.</p>
+<section id="co-cited-citation-searching" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="co-cited-citation-searching"><span class="header-section-number">4.1.1</span> co-cited citation searching</h3>
+<p>A seed paper (SP) is connected to other relevant publications (ORP) if both the SP and the ORP are cited by the same paper. In this case the SP and the ORP are <strong>co-cited</strong> by a number of publications. See <a href="#fig-cocited" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>.</p>
+<div id="fig-cocited" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cocited-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./fig/co-citing.svg" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cocited-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.2: co-cited citation searching retrieves publications which share citations with the seed paper
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="co-citing-citation-searching" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="co-citing-citation-searching"><span class="header-section-number">4.1.2</span> co-citing citation searching</h3>
+<p>A similar relationship exists between the SP and ORP if they both share a number of mutual references. In this case they are <strong>co-citing</strong> a set of common literature. See <a href="#fig-cociting" class="quarto-xref">Figure&nbsp;<span>4.3</span></a>.</p>
+<div id="fig-cociting" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cociting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./fig/co-cited.svg" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cociting-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.3: co-citing citation searching retrieves publications which share references with the seed paper
+</figcaption>
+</figure>
+</div>
+</section>
+</section>
+<section id="sec-criticalappraisal" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="sec-criticalappraisal"><span class="header-section-number">4.2</span> critical appraisal</h2>
+<p>One of the main steps in evidence-based medicine is the <strong>critical appraisal</strong> of evidence. Critical appraisal checklists help to assess the methodological quality of a studies and to determine the extent to which a study has excluded or minimized the possibility of bias in its design, conduct and analysis.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Sources for critical appraisal checklists">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Sources for critical appraisal checklists
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="https://jbi.global/critical-appraisal-tools">JBI</a></li>
+<li><a href="https://www.cebm.ox.ac.uk/resources/ebm-tools/critical-appraisal-tools">Centre for Evidence-Based Medicine (CEBM)</a></li>
+<li><a href="https://casp-uk.net/casp-tools-checklists">Critical Appraisal Skills Programme (CASP)</a></li>
+<li><a href="https://sign.ac.uk/what-we-do/methodology/checklists">Scottish Intercollegiate Guidelines Network (SIGN)</a></li>
+<li><a href="https://jamaevidence.mhmedical.com/learntools.aspx">JAMAevidence</a></li>
+</ul>
+</div>
+</div>
+</div>
+<p>See also: <span class="citation" data-cites="Twells2021">Twells (<a href="references.html#ref-Twells2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Buccheri2017">Buccheri and Sharifi (<a href="references.html#ref-Buccheri2017" role="doc-biblioref">2017</a>)</span>, <span class="citation" data-cites="FineoutOverholt2010b">Fineout-Overholt et al. (<a href="references.html#ref-FineoutOverholt2010b" role="doc-biblioref">2010a</a>)</span>, <span class="citation" data-cites="FineoutOverholt2010a">Fineout-Overholt et al. (<a href="references.html#ref-FineoutOverholt2010a" role="doc-biblioref">2010b</a>)</span>, <span class="citation" data-cites="FineoutOverholt2010">Fineout-Overholt et al. (<a href="references.html#ref-FineoutOverholt2010" role="doc-biblioref">2010c</a>)</span></p>
+</section>
+<section id="sec-deduplication" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="sec-deduplication"><span class="header-section-number">4.3</span> deduplication</h2>
+<p>Whenever multiple databases are searched it is unavoidable that various references are retrieved more than once due to the overlapping of contents. The removal of duplicate records from a dataset is called <strong>deduplication</strong>.</p>
+<p>Deduplication can be carried out manually using reference management software or in an automated way using review tools. The methods and tools for deduplication differ in their mode of operation and the quality of results (<span class="citation" data-cites="Janka2024">Janka and Metzendorf (<a href="references.html#ref-Janka2024" role="doc-biblioref">2024</a>)</span>, <span class="citation" data-cites="McKeown2021">McKeown and Mir (<a href="references.html#ref-McKeown2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Bramer2016">Bramer et al. (<a href="references.html#ref-Bramer2016" role="doc-biblioref">2016</a>)</span>).</p>
+<p>An unwelcome practice, which makes deduplication (and concomitantly any scientific work) more difficult, is repetitive, duplicate or redundant publishing (<span class="citation" data-cites="Ding2020">Ding et al. (<a href="references.html#ref-Ding2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="Johnson2006">Johnson (<a href="references.html#ref-Johnson2006" role="doc-biblioref">2006</a>)</span>, <span class="citation" data-cites="Kassirer1995">Kassirer and Angell (<a href="references.html#ref-Kassirer1995" role="doc-biblioref">1995</a>)</span>).</p>
+</section>
+<section id="sec-filters" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="sec-filters"><span class="header-section-number">4.4</span> filters</h2>
+<p><strong>Filters</strong> (also <em>search filters</em>, <em>filter strategies</em> or <em>hedges</em>) are <a href="#sec-searchstrategy">search strategies</a> designed to retrieve records for a specific concept of the research question.</p>
+<p>There are filters for specific patient groups or diseases, outcomes, study types (for instance to retrieve only randomized controlled trials (RCTs), or filters for other aspects of the research question, e.g.&nbsp;adverse effects, diagnostic accuracy or patient values. (<span class="citation" data-cites="Waffenschmidt2020">Waffenschmidt et al. (<a href="references.html#ref-Waffenschmidt2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="SalvadorOlivan2021">Salvador-Oliván, Marco-Cuenca, and Arquero-Avilés (<a href="references.html#ref-SalvadorOlivan2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Lee2012">Lee et al. (<a href="references.html#ref-Lee2012" role="doc-biblioref">2012</a>)</span>, <span class="citation" data-cites="Golder2006a">Golder et al. (<a href="references.html#ref-Golder2006a" role="doc-biblioref">2006</a>)</span>)</p>
+<p>Validated filters are developed, tested and optimized for sensitivity and precision by experts. (<span class="citation" data-cites="Haynes2004">Haynes and Wilczynski (<a href="references.html#ref-Haynes2004" role="doc-biblioref">2004</a>)</span>, <span class="citation" data-cites="Glanville2008">Glanville et al. (<a href="references.html#ref-Glanville2008" role="doc-biblioref">2008</a>)</span>)</p>
+<p>Filter strategies can be implemented in a search strategy just like any concept of the research question. <a href="#tbl-filterstrategy" class="quarto-xref">Table&nbsp;<span>4.1</span></a> illustrates a search strategy with a short qualitative research filter in lines 8 to 11, which is added to the overall search in line 12.</p>
+<div id="tbl-filterstrategy" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-filterstrategy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.1
+</figcaption>
+<div aria-describedby="tbl-filterstrategy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="sourceCode anchored" id="tbl-filterstrategy"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="tbl-filterstrategy-1"><a href="#tbl-filterstrategy-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   hypertension<span class="op">/</span></span>
+<span id="tbl-filterstrategy-2"><a href="#tbl-filterstrategy-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>   (hypertension <span class="kw">or</span> high blood pressure).ti,ab.</span>
+<span id="tbl-filterstrategy-3"><a href="#tbl-filterstrategy-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>   <span class="dv">1</span> <span class="kw">or</span> <span class="dv">2</span></span>
+<span id="tbl-filterstrategy-4"><a href="#tbl-filterstrategy-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   exp patient attitude<span class="op">/</span></span>
+<span id="tbl-filterstrategy-5"><a href="#tbl-filterstrategy-5" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span>   <span class="op">*</span>patient satisfaction<span class="op">/</span></span>
+<span id="tbl-filterstrategy-6"><a href="#tbl-filterstrategy-6" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span>   (choice$ <span class="kw">or</span> empower$).ti.</span>
+<span id="tbl-filterstrategy-7"><a href="#tbl-filterstrategy-7" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span>   <span class="kw">or</span><span class="op">/</span><span class="dv">4</span><span class="op">-</span><span class="dv">6</span></span>
+<span id="tbl-filterstrategy-8"><a href="#tbl-filterstrategy-8" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span>   interview$.mp.</span>
+<span id="tbl-filterstrategy-9"><a href="#tbl-filterstrategy-9" aria-hidden="true" tabindex="-1"></a><span class="dv">9</span>   experience$.mp.</span>
+<span id="tbl-filterstrategy-10"><a href="#tbl-filterstrategy-10" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span>  qualitative.tw.</span>
+<span id="tbl-filterstrategy-11"><a href="#tbl-filterstrategy-11" aria-hidden="true" tabindex="-1"></a><span class="dv">11</span>  <span class="kw">or</span><span class="op">/</span><span class="dv">8</span><span class="op">-</span><span class="dv">10</span></span>
+<span id="tbl-filterstrategy-12"><a href="#tbl-filterstrategy-12" aria-hidden="true" tabindex="-1"></a><span class="dv">12</span>  <span class="dv">3</span> <span class="kw">and</span> <span class="dv">7</span> <span class="kw">and</span> <span class="dv">11</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Sources of filter strategies">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Sources of filter strategies
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="https://sites.google.com/a/york.ac.uk/issg-search-filters-resource">ISSG Search Filter Resource</a></li>
+<li><a href="https://searchfilters.cadth.ca/">Canadian Agency for Drugs and Technologies in Health (CADTH)</a></li>
+<li><a href="https://www.sign.ac.uk/what-we-do/methodology/search-filters">SIGN Health Improvement Scotland</a></li>
+<li><a href="https://hiru.mcmaster.ca/hiru/HIRU_Hedges_MEDLINE_Strategies.aspx">McMaster University</a></li>
+<li><a href="https://work.cochrane.org/pubmed">Cochrane</a></li>
+<li><a href="https://tools.ovid.com/ovidtools/expertsearches.html">Ovid (Wolters Kluwer)</a></li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/help/#clinical-queries-filters">PubMed Clinical Queries</a></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="sec-fieldcode" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="sec-fieldcode"><span class="header-section-number">4.5</span> field code</h2>
+<p>The <a href="technicalterms.html#sec-datafield">data fields</a> of databases possess short designations called <strong>field codes</strong>, <strong>field tags</strong> or field labels, which allow to search the fields separately as part of a search query or <a href="#sec-searchstrategy">search strategy</a>.</p>
+<p>Depending on the <a href="technicalterms.html#sec-syntax">syntax</a> of the database or search interface different field codes are available for searching. If no field code is used in a search query, the search term is usually searched in all fields or a preset variety of fields.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In PubMed the query <code>hypnosis[TIAB]</code> will basically search for records with “hypnosis” in the title or abstract. In Ovid the same search would be written as <code>hypnosis.ti,ab.</code></p>
+</div>
+</div>
+<p>See also <a href="https://pubmed.gov/help/#search-tags">PubMed Search field tags</a> and <a href="https://ospguides.ovid.com/OSPguides/medline.htm#search">Ovid Medline Fields</a>.</p>
+</section>
+<section id="sec-focustopic" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="sec-focustopic"><span class="header-section-number">4.6</span> focus topic</h2>
+<p><strong>Focus topics</strong> (also called <strong>major topics</strong>) are weighted <a href="#sec-indexterms">index terms</a>. If a particular topic is at the heart of a publication, index terms for that topic will be assigned as a so-called focus topic. This is often displayed in the databases by writing an <a href="https://en.wikipedia.org/wiki/Asterisk">asterisk</a> before or after the index term.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Risk of confusion">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Risk of confusion
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The asterisk <code>*</code> appears also as a <a href="technicalterms.html#sec-wildcard">wildcard character</a> for <a href="#sec-truncation">truncation</a>. The two look the same, but have different meanings and uses. Don’t let them confound you.</p>
+</div>
+</div>
+<p>By labeling an index term this way, its significance for the publication is visualized. Moreover, searching for the focus topic instead of the index term allows for a search to be focused only on the most important papers for a particular topic.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>A systematic review on hypertension will most likely feature the focus topic <code>*hypertension</code>, whereas an artikle about vascular diseases might be indexed with <code>hypertension</code> as a normal subject heading. Searching for <code>hypertension[majr]</code> in PubMed or <code>*hypertension/</code> in Ovid would yield only the first of those two articles. A search for <code>hypertension[mh]</code> <code>hypertension/</code> would find both of them.</p></li>
+<li><p>The article <a href="https://pubmed.ncbi.nlm.nih.gov/38030551/">Apnoeic oxygenation during paediatric tracheal intubation</a> by <span class="citation" data-cites="Fuchs2024">Fuchs et al. (<a href="references.html#ref-Fuchs2024" role="doc-biblioref">2024</a>)</span> is indexed with <code>Intubation, Intratracheal* / adverse effects</code> and <code>Intubation, Intratracheal* / methods</code> as major topics, whereas <code>Hypoxia / etiology</code> was added as a regular MeSH term as it is not the main focus of the article.</p></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="sec-greyliterature" class="level2" data-number="4.7">
+<h2 data-number="4.7" class="anchored" data-anchor-id="sec-greyliterature"><span class="header-section-number">4.7</span> grey literature</h2>
+<p><strong>Grey literature</strong> (also <em>gray literature</em>) is so-called <em>non-conventional</em> or <em>informal literature</em> which “cannot readily be obtained through normal bookselling channels”, for example conference proceedings, reports, specifications, supplementary publications, technical notes, theses, translations.(<span class="citation" data-cites="Wood1982">Wood (<a href="references.html#ref-Wood1982" role="doc-biblioref">1982</a>)</span>, <span class="citation" data-cites="Auger2017">Auger (<a href="references.html#ref-Auger2017" role="doc-biblioref">2017</a>)</span>)</p>
+<p>According to <span class="citation" data-cites="Paez2017">Paez (<a href="references.html#ref-Paez2017" role="doc-biblioref">2017</a>)</span> the search for grey literature can be an important resource for <a href="#sec-syslitsearch">systematic literature searching</a>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Sources for grey literature searching">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Sources for grey literature searching
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<table class="table-striped caption-top table">
+<thead>
+<tr class="header">
+<th>URL</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://www.proquest.com/" class="uri">https://www.proquest.com/</a></td>
+<td>Dissertations and theses (global)</td>
+</tr>
+<tr class="even">
+<td><a href="http://search.ndltd.org/" class="uri">http://search.ndltd.org/</a></td>
+<td>Dissertations and theses (global)</td>
+</tr>
+<tr class="odd">
+<td><a href="https://search.worldcat.org/" class="uri">https://search.worldcat.org/</a></td>
+<td>Dissertations and theses (global)</td>
+</tr>
+<tr class="even">
+<td><a href="https://www.dart-europe.org/" class="uri">https://www.dart-europe.org/</a></td>
+<td>Dissertations and theses (EU)</td>
+</tr>
+<tr class="odd">
+<td><a href="https://www.base-search.net/" class="uri">https://www.base-search.net/</a></td>
+<td><em>Bielefeld Academic Search Engine</em></td>
+</tr>
+<tr class="even">
+<td><a href="https://www.science.gov/" class="uri">https://www.science.gov/</a></td>
+<td>Research results from U.S. federal agencies</td>
+</tr>
+<tr class="odd">
+<td><a href="https://ntrl.ntis.gov/NTRL/" class="uri">https://ntrl.ntis.gov/NTRL/</a></td>
+<td><em>National Technical Reports Library</em> (US)</td>
+</tr>
+<tr class="even">
+<td><a href="https://mednar.com/mednar/desktop/en/search.html" class="uri">https://mednar.com/mednar/desktop/en/search.html</a></td>
+<td>free deep web search engine for medical topics</td>
+</tr>
+<tr class="odd">
+<td><a href="https://wonder.cdc.gov/" class="uri">https://wonder.cdc.gov/</a></td>
+<td><em>Wide-ranging Online Data for Epidemiologic Research</em></td>
+</tr>
+<tr class="even">
+<td><a href="https://www.ahrq.gov/" class="uri">https://www.ahrq.gov/</a></td>
+<td><em>Agency for Healthcare Research and Quality</em></td>
+</tr>
+<tr class="odd">
+<td><a href="https://v2.sherpa.ac.uk/opendoar/" class="uri">https://v2.sherpa.ac.uk/opendoar/</a></td>
+<td><em>Directory Of Academic Repositories</em></td>
+</tr>
+<tr class="even">
+<td><a href="https://www.greynet.org/" class="uri">https://www.greynet.org/</a></td>
+<td><em>Grey Literature Network Service</em></td>
+</tr>
+<tr class="odd">
+<td><a href="https://doi.org/10.17026/dans-xtf-47w5">doi:10.17026/dans-xtf-47w5</a></td>
+<td>Archive of OpenGrey.eu</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="sec-indexterms" class="level2" data-number="4.8">
+<h2 data-number="4.8" class="anchored" data-anchor-id="sec-indexterms"><span class="header-section-number">4.8</span> index terms</h2>
+<p><strong>Index terms</strong>, also called <strong>subject headings</strong> (or sometimes <em>descriptor</em>, DE: <em>Schlagwörter</em>) are expressions defined for the purpose of <a href="technicalterms.html#sec-indexing">indexing</a>. They represent content-related concepts and are organized as a <a href="technicalterms.html#sec-thesaurus">controlled vocabulary</a>. By adding index terms to a record it becomes retrievable based on its contents.</p>
+<p>Using index terms in a search is an essential part of a <a href="#sec-syslitsearch">systematic literature search</a>. The index term search can be focused by employing <a href="#sec-subheading">subheadings</a> or searching the terms as <a href="#sec-focustopic">focus topics</a>.</p>
+<p>Index terms should not be confused with free text terms (DE: <em>Stichwörter</em>) or <a href="technicalterms.html#sec-authorkeywords">author keywords</a>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <a href="technicalterms.html#sec-thesaurus">MeSH term</a> for the concept of <em>heart attack</em> or <em>cardiovascular stroke</em> is <a href="https://www.ncbi.nlm.nih.gov/mesh/68009203"><code>Myocardial infarction</code></a></p>
+<p>The <a href="technicalterms.html#sec-thesaurus">Emtree term</a> (index term in <a href="databases.html#sec-embase">Embase</a>) for the same concept is <code>heart infarction</code>.</p>
+</div>
+</div>
+</section>
+<section id="sec-limits" class="level2" data-number="4.9">
+<h2 data-number="4.9" class="anchored" data-anchor-id="sec-limits"><span class="header-section-number">4.9</span> limits</h2>
+<p>There are various means to restrict the results of a search. One of them are so-called <strong>limits</strong> which are filter options provided by the search interface, which allow the search results to be limited to characteristics such as publication type, language or year of publication.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>Database limits are not to be mistaken for validated filter strategies. Limits are usually based on certain data fields, whereas validated search filters are more complex search strategies. See also <a href="#sec-filters" class="quarto-xref"><span>Section 4.4</span></a>.</p></li>
+<li><p>Database limits based on index terms may lead to the unintended exclusion of non-indexed records.</p></li>
+<li><p>The usage of database limits is not always evident from the search history. If it is not possible to display applied limits in the search history, its use should be reported in the documentation.</p></li>
+</ol>
+</div>
+</div>
+</section>
+<section id="sec-nesting" class="level2" data-number="4.10">
+<h2 data-number="4.10" class="anchored" data-anchor-id="sec-nesting"><span class="header-section-number">4.10</span> nesting</h2>
+<p><strong>Nesting</strong> refers to the use of parentheses <code>( )</code> to group search terms within a query. The purpose of nesting a search query is to define the order in which the search terms and operators processed.</p>
+<p>Without nesting the order in which the elements of a search query are processed depends on the rules of the respective search interface. This means that the same query might produce very different results in the individual databases.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Examples">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Examples
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>Within PubMed all searches are processed <a href="https://pubmed.ncbi.nlm.nih.gov/help/#combining-with-boolean-operators">in a left-to-right sequence</a>.</li>
+</ol>
+<p>Thus the following PubMed queries yield completely different results:</p>
+<ul>
+<li><code>exercise[MH] AND infection[MH] OR heart[MH]</code></li>
+<li><code>exercise[MH] AND heart[MH] OR infection[MH]</code></li>
+<li><code>heart[MH] OR infection[MH] AND exercise[MH]</code></li>
+</ul>
+<p>On the other hand the following nested queries are identical:</p>
+<ul>
+<li><code>exercise[MH] AND (infection[MH] OR heart[MH])</code></li>
+<li><code>exercise[MH] AND (heart[MH] OR infection[MH])</code></li>
+<li><code>(heart[MH] OR infection[MH]) AND exercise[MH]</code></li>
+</ul>
+<ol start="2" type="1">
+<li>Web of Science executes the search in an <a href="https://webofscience.help.clarivate.com/en-us/Content/search-operators.html#Search">order of precedence</a> of the operators.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="sec-operators" class="level2" data-number="4.11">
+<h2 data-number="4.11" class="anchored" data-anchor-id="sec-operators"><span class="header-section-number">4.11</span> operators</h2>
+<section id="sec-boolean" class="level3" data-number="4.11.1">
+<h3 data-number="4.11.1" class="anchored" data-anchor-id="sec-boolean"><span class="header-section-number">4.11.1</span> Boolean operators</h3>
+<p>Databases usually allow a search to be structured using the three basic operations of Boolean algebra, which are expressed with the <strong>Boolean operators</strong> <code>AND</code> (conjunction), <code>OR</code> (disjunction) and <code>NOT</code> (negation). The <code>AND</code> operator creates an intersection of sets, <code>OR</code> creates a union of sets and <code>NOT</code> excludes sets (see <a href="#fig-boolean" class="quarto-xref">Figure&nbsp;<span>4.4</span></a>).</p>
+<div id="fig-boolean" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-boolean-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./fig/boole.svg" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-boolean-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.4: Boolean Operators
+</figcaption>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Examples">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Examples
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>The query <code>"heart attack" AND diabetes AND obesity</code> retrieves only records featuring all three terms.</li>
+<li>The query <code>"cardiac arrest" OR asystole</code> retrieves records containing at least one of the two terms.</li>
+<li>The query <code>animals NOT humans</code> removes all records mentioning humans from the set <code>animals</code>.</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Caution">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Using the <code>NOT</code> operator can be dangerous, as it excludes records regardless of any relevant search terms they might contain. The above example excludes also records with animals if they mention humans.</p>
+</div>
+</div>
+<p>The Boolean operators <code>AND</code> and <code>OR</code> possess similar properties as the multiplication and addition. (<span class="citation" data-cites="ORegan2012">O’Regan (<a href="references.html#ref-ORegan2012" role="doc-biblioref">2012</a>)</span>)</p>
+<div class="callout-info" title="Properties of the Boolean Operators">
+<div class="sourceCode" id="annotated-cell-2"><pre class="sourceCode python code-annotation-code code-with-copy code-annotated"><code class="sourceCode python"><a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-2-1" class="code-annotation-target"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a> (a OR b) <span class="op">=</span> (b OR a)</span>
+<span id="annotated-cell-2-2"><a href="#annotated-cell-2-2" aria-hidden="true" tabindex="-1"></a> (a AND b) <span class="op">=</span> (b AND a)</span>
+<span id="annotated-cell-2-3"><a href="#annotated-cell-2-3" aria-hidden="true" tabindex="-1"></a> <span class="op">----</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-2-4" class="code-annotation-target"><a href="#annotated-cell-2-4" aria-hidden="true" tabindex="-1"></a> (a OR b) OR c <span class="op">=</span> a OR (b OR c)</span>
+<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5" aria-hidden="true" tabindex="-1"></a> (a AND b) AND c <span class="op">=</span> a AND (b AND c)</span>
+<span id="annotated-cell-2-6"><a href="#annotated-cell-2-6" aria-hidden="true" tabindex="-1"></a> <span class="op">----</span></span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="3" onclick="event.preventDefault();">3</a><span id="annotated-cell-2-7" class="code-annotation-target"><a href="#annotated-cell-2-7" aria-hidden="true" tabindex="-1"></a> a AND (b OR c) <span class="op">=</span> (a AND b) OR (a AND c)</span>
+<span id="annotated-cell-2-8"><a href="#annotated-cell-2-8" aria-hidden="true" tabindex="-1"></a> a OR (b AND c) <span class="op">=</span> (a OR b) AND (a OR c)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<dl class="code-annotation-container-grid">
+<dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
+<dd>
+<span data-code-cell="annotated-cell-2" data-code-lines="1,2" data-code-annotation="1">commutative property</span>
+</dd>
+<dt data-target-cell="annotated-cell-2" data-target-annotation="2">2</dt>
+<dd>
+<span data-code-cell="annotated-cell-2" data-code-lines="4,5" data-code-annotation="2">associative property</span>
+</dd>
+<dt data-target-cell="annotated-cell-2" data-target-annotation="3">3</dt>
+<dd>
+<span data-code-cell="annotated-cell-2" data-code-lines="7,8" data-code-annotation="3">distributive property</span>
+</dd>
+</dl>
+</div>
+</section>
+<section id="sec-frequencyops" class="level3" data-number="4.11.2">
+<h3 data-number="4.11.2" class="anchored" data-anchor-id="sec-frequencyops"><span class="header-section-number">4.11.2</span> frequency operators</h3>
+<p>Records in which a relevant expression occurs multiple times might be more relevant than records with fewer instances of the same expression. Therefore some search interfaces allow the use of a so-called frequency operator, which only retrieves records only if the search term occurs at least the specified number of times in the searched data field.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Example from Ovid: The query <code>"pharmacy".ab/freq=5</code> will retrieve articles, in which the term <code>pharmacy</code> occurs at least five times within the abstract.</p>
+</div>
+</div>
+</section>
+<section id="sec-proximityops" class="level3" data-number="4.11.3">
+<h3 data-number="4.11.3" class="anchored" data-anchor-id="sec-proximityops"><span class="header-section-number">4.11.3</span> proximity operators</h3>
+<p>Many databases allow to search for terms depending on the word distance between each other. The so-called <strong>proximity searching</strong> search uses a <strong>proximity operator</strong> in which the allowed distance of the two expressions is defined by a number <em>N</em>, for example <strong>adj<em>N</em></strong> or <strong>NEAR/<em>N</em></strong>.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Examples">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Examples
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<table class="table-striped caption-top table">
+<caption>Examples of proximity searching for different resources</caption>
+<tbody>
+<tr class="odd">
+<td><strong>PubMed</strong></td>
+<td><code>"heart transplant"[TI:~2]</code></td>
+</tr>
+<tr class="even">
+<td><strong>Ovid</strong></td>
+<td><code>(heart adj3 transplant*).ti</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Cochrane Library</strong></td>
+<td><code>(heart NEAR/3 transplant*):ti</code></td>
+</tr>
+<tr class="even">
+<td><strong>Embase.com</strong></td>
+<td><code>(heart NEAR/3 transplant*):ti</code></td>
+</tr>
+<tr class="odd">
+<td><strong>EBSCO<em>host</em></strong></td>
+<td><code>(TI heart N2 transplant*)</code></td>
+</tr>
+<tr class="even">
+<td><strong>Web of Science</strong></td>
+<td><code>TI=(heart NEAR/2 transplant*)</code></td>
+</tr>
+<tr class="odd">
+<td><strong>Scopus</strong></td>
+<td><code>TITLE(heart W/2 transplant*)</code></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Please note">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Please note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>The number <em>N</em> sometimes defines the amount of words in between te expressions, sometimes it marks the position of the second expression. That is why <em>N</em> is not always the same for every database or interface.</p></li>
+<li><p>In the case of PubMed, truncation is not possible at the same time as proximity searching. In this case, various expressions are necessary to account for <em>transplant</em> as well as <em>transplantation</em> or <em>transplanting</em>.</p></li>
+<li><p>Carefully consider the distance between the expressions. A distance of two words between the search terms (as shown above) is often reasonable, as it covers frequent expressions such as “transplantation <em>of the</em> heart”. However, sometimes it is necessary to include more adjectives in between.</p></li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section id="sec-phrases" class="level2" data-number="4.12">
+<h2 data-number="4.12" class="anchored" data-anchor-id="sec-phrases"><span class="header-section-number">4.12</span> phrases</h2>
+<p>Most databases can be searched for verbatim expressions, called <em>phrases</em> or <em>literal strings</em>, by putting search terms in quotation marks <code>" "</code>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Effects">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Effects
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The use of phrases usually terminates any automatically applied techniques, such as <em>lemmatization</em>, <em>stemming</em> or <em>automated term mapping</em> (ATM) for those expressions. In this way, the use of phrases usually reduces the amount of search results as it makes the search more precise and less sensitive.</p>
+<p>Example:</p>
+<p>Due to automated term mapping the PubMed query <code>heart arrest</code> will be translated to<br>
+<code>"heart arrest"[MeSH Terms] OR "heart"[All Fields] AND "arrest"[All Fields] OR "heart arrest"[All Fields]</code></p>
+<p>However, the query <code>"heart arrest"</code> translates to <code>"heart arrest"[All Fields]</code>, because <a href="https://pubmed.ncbi.nlm.nih.gov/help/#searching-for-a-phrase">phrases are not automatically mapped in PubMed</a>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Phrases and Truncation">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Phrases and Truncation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>In some cases the simultaneous use of phrases and truncation is not supported by the search interface.</p>
+<p>Searching for <code>"hearing aid*"</code> in the Cochrane Library will prompt an error message suggesting the use of the <code>NEXT</code> operator to work around the problem. In other words, the search query should be <code>hearing NEXT aid*</code> instead.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Required quotation marks">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Required quotation marks
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Phrases are absolutely necessary when the search string contains a special character or anything the search interface would interpret as an operator or syntax. Examples for Ovid:</p>
+<ul>
+<li><code>"go/no-go".ti,ab.</code> – Without the quotation marks the forward slash <code>/</code> would be understood as command to search the expression <code>go</code> as an index term.</li>
+<li><code>"Sensitivity and Specificity"/</code> – <code>and</code> is also an operator and must be escaped using the quotation marks.</li>
+<li><code>"5".ip</code> – This search retrieves all records with the number 5 in the Issue/Part field. Without the quotation marks, the query would search for the <em>contents of line 5</em> in the field <code>.ip</code>. (That procedure is called <em>postqualification</em> of search sets).</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled" title="Straight quotes vs. curly quotes">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Straight quotes vs.&nbsp;curly quotes
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There are several types of <a href="https://en.wikipedia.org/wiki/Quotation_mark">quotation marks</a>. Search interfaces often only understand so-called <em>straight quotes</em> <code>" "</code> (the ones that have been used in typewriters). Modern word processors often change straight quotes automatically into the <a href="https://practicaltypography.com/straight-and-curly-quotes.html">typographically correct</a> <em>curly quotes</em> <code>“ ”</code> (the way they are printed in books), which can cause a syntax error, if they are copied into a search query. This is a <a href="https://wkhealth.force.com/ovidsupport/s/article/How-can-I-copy-and-paste-my-search-strategy-from-Word-to-Ovid">known issue in Ovid</a>.</p>
+<p>Options to counter this problem:</p>
+<ol type="1">
+<li>Deactivation of the responsible autocorrection feature of the word processor.</li>
+<li>Using a simpler <a href="https://en.wikipedia.org/wiki/Text_editor">plain text editor</a>.</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="sec-searchstrategy" class="level2" data-number="4.13">
+<h2 data-number="4.13" class="anchored" data-anchor-id="sec-searchstrategy"><span class="header-section-number">4.13</span> search strategy</h2>
+<p>A <strong>search strategy</strong> is a coherent set of search queries designed to retrieve references for a particular topic. A search strategy is dependent on the <a href="technicalterms.html#sec-syntax">syntax</a> and <a href="#sec-indexterm">index terms</a> of the searched database. As a consequence, the search strategy needs to be translated for the use in other databases.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Translation of search strategies">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Translation of search strategies
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>There are two main challenges in translating search strategies from one database or search interface to another:</p>
+<ol type="1">
+<li><p><strong>Different <a href="#sec-sytax">syntax</a></strong>. The differences in operators, <a href="#sec-phrases">phrases</a>, <a href="#sec-nesting">nesting</a> or <a href="#sec-fieldcode">field codes</a> can be managed either by experience, by consulting the resources’ own knowledge databases or by using tools such as the <a href="https://sr-accelerator.com/#/polyglot">Polyglot Translator</a>. In some cases, there is no objectively clear translation, for instance due to the lack of corresponding syntax. In these cases, the translation is a close approximation.</p></li>
+<li><p><strong>Different <a href="#sec-indexterms">index terms</a></strong>. In contrast to the syntax, which is fairly similar for most of the databases, the translation of index terms can be very difficult. Some databases do not index records, such as the <a href="https://support.clarivate.com/ScientificandAcademicResearch/s/article/Web-of-Science-Core-Collection-No-controlled-vocabulary-or-thesaurus-in-assigning-subject-terms?language=en_US">Web of Science Core Collection</a>. Others do assign index terms, but don’t possess a controlled vocabulary of their own, such as <a href="https://service.elsevier.com/app/answers/detail/a_id/21730/">Scopus</a>. Some thesauri are more detailed than others or the hierarchy is structured in a different way, so that a 1:1 translation could bear unexpected results.</p></li>
+</ol>
+</div>
+</div>
+<p>Search strategies are supposed to be consistent with the predefined eligibility criteria of the research project (<span class="citation" data-cites="Gough2017">Gough, Oliver, and Thomas (<a href="references.html#ref-Gough2017" role="doc-biblioref">2017</a>)</span>).</p>
+<p>Depending on the purpose and detail of the search, the extent of a search strategy might range from a simple search string to numerous lines of search terms connected by <a href="#sec-boolean">Boolean operators</a>.</p>
+<p><a href="#tbl-searchstrategy-pubmed" class="quarto-xref">Table&nbsp;<span>4.2</span></a> and <a href="#tbl-searchstrategy-ovid" class="quarto-xref">Table&nbsp;<span>4.3</span></a> show examples for both types of search strategies.</p>
+<div id="tbl-searchstrategy-pubmed" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-searchstrategy-pubmed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.2: Single-line <a href="https://pubmed.ncbi.nlm.nih.gov/?term=%28%22analgesics%22%5BMH%5D+OR+%22analgesic%2A%22%5BTIAB%5D+OR+%22analgesic%2A%22%5BPA%5D+OR+%22anodynes%22%5BTIAB%5D+OR+%22antinociceptive%2A%22%5BTIAB%5D%29+AND+%22pain+management%22%5BMAJR%5D">PubMed Search strategy</a>
+</figcaption>
+<div aria-describedby="tbl-searchstrategy-pubmed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="sourceCode anchored" id="tbl-searchstrategy-pubmed"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="tbl-searchstrategy-pubmed-1"><a href="#tbl-searchstrategy-pubmed-1" aria-hidden="true" tabindex="-1"></a>"analgesics"[MH] OR "analgesic*"[TIAB] OR "analgesic*"[PA] OR "anodynes"[TIAB] </span>
+<span id="tbl-searchstrategy-pubmed-2"><a href="#tbl-searchstrategy-pubmed-2" aria-hidden="true" tabindex="-1"></a>OR "antinociceptive*"[TIAB]) AND "pain management"[MAJR]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</figure>
+</div>
+<div id="tbl-searchstrategy-ovid" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-searchstrategy-ovid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.3: Multi-line search strategy for Ovid MEDLINE
+</figcaption>
+<div aria-describedby="tbl-searchstrategy-ovid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="sourceCode anchored" id="tbl-searchstrategy-ovid"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="tbl-searchstrategy-ovid-1"><a href="#tbl-searchstrategy-ovid-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> exp analgesics<span class="op">/</span></span>
+<span id="tbl-searchstrategy-ovid-2"><a href="#tbl-searchstrategy-ovid-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> (analge<span class="co">#ic? or anodyne? or antinoceptive?).ti,ab,kw.</span></span>
+<span id="tbl-searchstrategy-ovid-3"><a href="#tbl-searchstrategy-ovid-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="op">*</span>pain management<span class="op">/</span></span>
+<span id="tbl-searchstrategy-ovid-4"><a href="#tbl-searchstrategy-ovid-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span> (<span class="dv">1</span> <span class="kw">or</span> <span class="dv">2</span>) <span class="kw">and</span> <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</figure>
+</div>
+</section>
+<section id="sec-subheading" class="level2" data-number="4.14">
+<h2 data-number="4.14" class="anchored" data-anchor-id="sec-subheading"><span class="header-section-number">4.14</span> subheading</h2>
+<p>Publications in <a href="technicalterms.html#sec-bibdb">bibliographic databases</a> are often indexed using <a href="#sec-indexterm">index terms</a>. In cases where the index term does not sufficiently describe the content of the article, so-called <strong>subheadings</strong> or <strong>qualifiers</strong> can be applied to the index term to specify certain aspects.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The PubMed search query <code>Respiratory Tract Infections/drug therapy[MeSH]</code> (or short <code>Respiratory Tract Infections/dt[mh]</code>) retrieves references focusing on the drug therapy of respiratory tract infections.</p>
+</div>
+</div>
+<p>Typical subheadings are ´adverse effects´´, ´complications´, ´diagnosis´, ´drug therapy´, ´economics´, ´epidemiology´, ´history´, ´methods´, ´pathology´, ´pharmacology´, ´psychology´, ´standards´, ´therapeutic use´, ´toxicology´.</p>
+<p>Sometimes it may be required to retrieve all publications featuring a certain subheading regardless of the index terms, for instance when one is interested in reports of adverse effects. (<span class="citation" data-cites="Golder2006a">Golder et al. (<a href="references.html#ref-Golder2006a" role="doc-biblioref">2006</a>)</span>) In order to do that the subheading can be searched alone as a so-called <strong>floating subheading</strong>, for example <code>adverse effects[sh]</code> in PubMed or <code>ae.fs</code> in Ovid MEDLINE.</p>
+<p>For more information about subheadings in PubMed see <a href="https://pubmed.gov/help/#mesh-subheadings" class="uri">https://pubmed.gov/help/#mesh-subheadings</a> or <a href="https://nlm.nih.gov/mesh/qualifiers_scopenotes.html" class="uri">https://nlm.nih.gov/mesh/qualifiers_scopenotes.html</a>.</p>
+</section>
+<section id="sec-syslitsearch" class="level2" data-number="4.15">
+<h2 data-number="4.15" class="anchored" data-anchor-id="sec-syslitsearch"><span class="header-section-number">4.15</span> systematic literature searching</h2>
+<p>Conducting a <strong>systematic literature search</strong> (also called <strong>systematic search</strong>) means to search multiple databases for references to relevant articles and studies in a structured, planned and iterative manner. A systematic search is well-documented, transparent and (to a certain degree) reproducible.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Information specialists and librarians">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Information specialists and librarians
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Systematic searches are best conducted or at least accompanied by information specialists or librarians. For more on this topic, see <span class="citation" data-cites="Spencer2018">Spencer and Eldredge (<a href="references.html#ref-Spencer2018" role="doc-biblioref">2018</a>)</span>, <span class="citation" data-cites="Metzendorf2016">Metzendorf (<a href="references.html#ref-Metzendorf2016" role="doc-biblioref">2016</a>)</span>, <span class="citation" data-cites="Foster2015">Foster (<a href="references.html#ref-Foster2015" role="doc-biblioref">2015</a>)</span>, <span class="citation" data-cites="Koffel2015">Koffel (<a href="references.html#ref-Koffel2015" role="doc-biblioref">2015</a>)</span>, <span class="citation" data-cites="Rethlefsen2015">Rethlefsen et al. (<a href="references.html#ref-Rethlefsen2015" role="doc-biblioref">2015</a>)</span>, <span class="citation" data-cites="Schellinger2021">Schellinger et al. (<a href="references.html#ref-Schellinger2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Meert2016">Meert, Torabi, and Costella (<a href="references.html#ref-Meert2016" role="doc-biblioref">2016</a>)</span>.</p>
+</div>
+</div>
+<p>The purpose of a systematic literature search is to find relevant literature in the desired degree of completeness. For a systematic review the search should be very <a href="technicalterms.html#sec-sensitivity">sensitive</a> as to find all the relevant evidence. In contrast, the literature search as part of a rapid review or narrative review may still be done systematically, but can be designed in a more <a href="technicalterms.html#sec-precision">precise</a> manner, since in those cases it may be acceptable to miss some relevant articles. (See <a href="technicalterms.html#sec-class-metrics" class="quarto-xref"><span>Section 2.7</span></a> about sensitivity and precision).</p>
+<p>There are various guidelines which can be followed to conduct systematic searches, such as the <em>Cochrane Handbook</em> (<span class="citation" data-cites="cochranehandbook6.3">Higgins et al. (<a href="references.html#ref-cochranehandbook6.3" role="doc-biblioref">2022</a>)</span>) or the <em>JBI Manual</em> (<span class="citation" data-cites="JBIManual2020">Aromataris and Munn (<a href="references.html#ref-JBIManual2020" role="doc-biblioref">2020</a>)</span>). Depending on the desired <a href="publicationtypes.html#sec-review">type of review</a> (e.g.&nbsp;systematic, scoping, narrative, …, see <span class="citation" data-cites="Munn2018">Munn, Peters, et al. (<a href="references.html#ref-Munn2018" role="doc-biblioref">2018</a>)</span>, <span class="citation" data-cites="Munn2018a">Munn, Stern, et al. (<a href="references.html#ref-Munn2018a" role="doc-biblioref">2018</a>)</span> or <span class="citation" data-cites="Pearson2015">Pearson et al. (<a href="references.html#ref-Pearson2015" role="doc-biblioref">2015</a>)</span>)</p>
+<div class="callout callout-style-default callout-note callout-titled" title="important steps of a systematic search">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+important steps of a systematic search
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li>definition of a <strong>research question</strong></li>
+<li>selection of <strong>databases</strong></li>
+<li>compilation of <strong>search terms</strong></li>
+<li>setup of an <strong>initial search</strong></li>
+<li>iterative <strong>refinement</strong> of the search strategy</li>
+<li><strong>peer review</strong> of the search strategy</li>
+<li><strong>translation</strong> to other databases</li>
+<li><strong>final search</strong> and export of results</li>
+<li><strong>documentation</strong> of the search</li>
+</ol>
+</div>
+</div>
+<p>Various methods are applied in the design of search strategies. Keywords and index terms are connected using <em>operators</em>. The search queries are structured by <em>nesting</em>. The precision and sensitivity of the search is adjusted using <em>truncation</em>, by the choice of <em>search fields</em> or the use of <em>term explosion</em>.</p>
+<p>A systematic search is best peer-reviewed by colleagues (e.g.&nbsp;by information specialists, other researchers, or fellow students), following the PRESS guideline by <span class="citation" data-cites="McGowan2016">McGowan et al. (<a href="references.html#ref-McGowan2016" role="doc-biblioref">2016</a>)</span>.</p>
+<p>Ideally, the systematic search is documented according the PRISMA-S extension by <span class="citation" data-cites="Rethlefsen2021">Rethlefsen et al. (<a href="references.html#ref-Rethlefsen2021" role="doc-biblioref">2021</a>)</span>.</p>
+</section>
+<section id="sec-termexplosion" class="level2" data-number="4.16">
+<h2 data-number="4.16" class="anchored" data-anchor-id="sec-termexplosion"><span class="header-section-number">4.16</span> term explosion</h2>
+<p>Index terms in databases are usually hierarchically organized, starting with very broad terms in the top categories to very specific terms further down the branches of the hierarchy.</p>
+<p>When searching using an index term, it is often possible to include all subordinate index terms in the search. This simultaneous search option is called <em>term explosion</em>.</p>
+<div class="callout callout-style-default callout-warning callout-titled" title="Warning">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Keep in mind that depending on the search interface or database, the term explosion might be active by default, as it is the case in <a href="https://pubmed.ncbi.nlm.nih.gov/help/#mh">PubMed</a>. This can be avoided by using the field codes <code>[mh:noexp]</code> or <code>[majr:noexp]</code> instead of <code>[mh]</code> or <code>[majr]</code>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Examples">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Examples
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p>The PubMed search query <code>Psychotherapy[MH]</code> automatically retrieves records featuring the MeSH term <code>psychotherapy</code> as well as <code>aromatherapy</code>, <code>behaviour therapy</code>, <code>crisis intervention</code>, <code>hypnosis</code>, or <code>logotherapy</code>, because in PubMed the term explosion is active by default. However, the query <code>Psychotherapy[MH:NoExp]</code> retrieves only records indexed with <code>psychotherapy</code>.</p></li>
+<li><p>In Ovid MEDLINE, the search for <code>psychotherapy/</code> looks only for references indexed with <code>psychotherapy</code>, whereas the query <code>exp psychotherapy/</code> searches the exploded term, i.e.&nbsp;it uses the subordinate index terms such as <code>aromatherapy</code>, <code>crisis intervention</code>, etc. in the search, too.</p></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="sec-truncation" class="level2" data-number="4.17">
+<h2 data-number="4.17" class="anchored" data-anchor-id="sec-truncation"><span class="header-section-number">4.17</span> truncation</h2>
+<p>In general, <em>to truncate</em> means to reduce something down to its trunk, to shorten something, to cut something off.</p>
+<p>In literature searching <strong>truncation</strong> is a technique that allows to search several variations of a term at once by searching with a reduced (truncated) version of the search term. A term is truncated by replacing one or more characters with a so-called <a href="technicalterms.html#sec-wildcard"><em>wildcard character</em></a>, such as <code>*</code>, <code>$</code>, <code>?</code>, <code>#</code>.</p>
+<p>The most common form of truncation is the unlimited truncation (usually using the asterisk <code>*</code> or the dollar sign <code>$</code>) at the end of the search term. In some databases it is possible to limit the truncation to a fixed number of characters or to replace just one character. The kinds of truncation that are available depend on the <a href="technicalterms.html#sec-syntax">syntax</a> of the database or search interface.</p>
+<div id="tbl-truncations" class="hover quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-truncations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.4: Truncation examples in Ovid
+</figcaption>
+<div aria-describedby="tbl-truncations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-hover caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 80%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>query</th>
+<th>covered search terms</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>discolo<strong>$</strong></td>
+<td>discolo<strong>r</strong>, discolo<strong>rs</strong>, discolo<strong>red</strong>, discolo<strong>uring</strong>, discolo<strong>rations</strong>, …</td>
+</tr>
+<tr class="even">
+<td>discolo<strong>$3</strong></td>
+<td>discolo<strong>r</strong>, discolo<strong>rs</strong>, discolo<strong>red</strong></td>
+</tr>
+<tr class="odd">
+<td>colo<strong>$</strong>r</td>
+<td>color, colo<strong>u</strong>r, colo<strong>rimete</strong>r, colo<strong>nize</strong>r, colo<strong>articula</strong>r, …</td>
+</tr>
+<tr class="even">
+<td>colo<strong>?</strong>r</td>
+<td>color, colo<strong>u</strong>r</td>
+</tr>
+<tr class="odd">
+<td>wom<strong>#</strong>n</td>
+<td>wom<strong>a</strong>n, wom<strong>e</strong>n, wom<strong>o</strong>n, wom<strong>x</strong>n, wom<strong>y</strong>n</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>Usually only free text terms are truncated. While it might be possible to truncate index terms, it is not very practical; truncated index terms are rarely used meaningfully, for instance in valiated <a href="#sec-filters">search filters</a>, such as the search term <code>diagnostic*[MeSH:noexp]</code> in the <a href="https://hiruweb.mcmaster.ca/hkr/hedges/medline/#diagnosis_embase">diagnosis filter</a> by <span class="citation" data-cites="Kastner2009">Kastner et al. (<a href="references.html#ref-Kastner2009" role="doc-biblioref">2009</a>)</span>.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-JBIManual2020" class="csl-entry" role="listitem">
+Aromataris, E., and Z. Munn, eds. 2020. <em><span class="nocase">JBI Manual for Evidence Synthesis</span></em>. Book. JBI. <a href="https://doi.org/10.46658/JBIMES-20-01">https://doi.org/10.46658/JBIMES-20-01</a>.
+</div>
+<div id="ref-Auger2017" class="csl-entry" role="listitem">
+Auger, Peter. 2017. <em><span class="nocase">Information Sources in Grey Literature</span></em>. De Gruyter Saur. <a href="https://doi.org/10.1515/9783110977233">https://doi.org/10.1515/9783110977233</a>.
+</div>
+<div id="ref-Belter2016" class="csl-entry" role="listitem">
+Belter, Christopher W. 2016. <span>“Citation Analysis as a Literature Search Method for Systematic Reviews.”</span> <em>J Assn Inf Sci Tec</em> 67 (11): 2766–77. <a href="https://doi.org/10.1002/asi.23605">https://doi.org/10.1002/asi.23605</a>.
+</div>
+<div id="ref-Bramer2016" class="csl-entry" role="listitem">
+Bramer, Wichor, Dean Giustini, Gerdien de Jonge, Leslie Holland, and Tanja Bekhuis. 2016. <span>“<span class="nocase">De-duplication of database search results for systematic reviews in EndNote</span>.”</span> <em>J Med Libr Assoc</em> 104 (3): 240–43. <a href="https://doi.org/10.5195/jmla.2016.24">https://doi.org/10.5195/jmla.2016.24</a>.
+</div>
+<div id="ref-Buccheri2017" class="csl-entry" role="listitem">
+Buccheri, Robin K., and Claire Sharifi. 2017. <span>“<span class="nocase">Critical Appraisal Tools and Reporting Guidelines for Evidence-Based Practice</span>.”</span> <em>Worldviews Evid Based Nurs</em> 14 (6): 463–72. <a href="https://doi.org/10.1111/wvn.12258">https://doi.org/10.1111/wvn.12258</a>.
+</div>
+<div id="ref-Ding2020" class="csl-entry" role="listitem">
+Ding, Ding, Binh Nguyen, Klaus Gebel, Adrian Bauman, and Lisa Bero. 2020. <span>“<span class="nocase">Duplicate and salami publication: a prevalence study of journal policies</span>.”</span> <em>Int J Epidemiol</em> 49 (1): 281–88. <a href="https://doi.org/10.1093/ije/dyz187">https://doi.org/10.1093/ije/dyz187</a>.
+</div>
+<div id="ref-FineoutOverholt2010b" class="csl-entry" role="listitem">
+Fineout-Overholt, Ellen, Bernadette Mazurek Melnyk, Susan B. Stillwell, and Kathleen M. Williamson. 2010a. <span>“<span class="nocase">Evidence-Based Practice Step by Step: Critical Appraisal of the Evidence: Part I</span>.”</span> <em>Am J Nurs</em> 110 (7). <a href="https://doi.org/10.1097/01.NAJ.0000383935.22721.9c">https://doi.org/10.1097/01.NAJ.0000383935.22721.9c</a>.
+</div>
+<div id="ref-FineoutOverholt2010a" class="csl-entry" role="listitem">
+———. 2010b. <span>“<span class="nocase">Evidence-Based Practice, Step by Step: Critical Appraisal of the Evidence: Part II</span>.”</span> <em>Am J Nurs</em> 110 (9). <a href="https://doi.org/10.1097/01.NAJ.0000388264.49427.f9">https://doi.org/10.1097/01.NAJ.0000388264.49427.f9</a>.
+</div>
+<div id="ref-FineoutOverholt2010" class="csl-entry" role="listitem">
+———. 2010c. <span>“<span class="nocase">Evidence-Based Practice, Step by Step: Critical Appraisal of the Evidence: Part III</span>.”</span> <em>Am J Nurs</em> 110 (11). <a href="https://doi.org/10.1097/01.NAJ.0000390523.99066.b5">https://doi.org/10.1097/01.NAJ.0000390523.99066.b5</a>.
+</div>
+<div id="ref-Foster2015" class="csl-entry" role="listitem">
+Foster, Margaret J. 2015. <span>“Overview of the Role of Librarians in Systematic Reviews: From Expert Search to Project Manager.”</span> <em>JEAHIL</em> 11 (2): 3–7. <a href="https://hdl.handle.net/1969.1/169677">https://hdl.handle.net/1969.1/169677</a>.
+</div>
+<div id="ref-Fuchs2024" class="csl-entry" role="listitem">
+Fuchs, Alexander, Gabriela Koepp, Markus Huber, Jonas Aebli, Arash Afshari, Rachele Bonfiglio, Robert Greif, et al. 2024. <span>“Apnoeic Oxygenation During Paediatric Tracheal Intubation: A Systematic Review and Meta-Analysis.”</span> <em>Brit J Anaesth</em> 132 (February): 392–406. <a href="https://doi.org/10.1016/j.bja.2023.10.039">https://doi.org/10.1016/j.bja.2023.10.039</a>.
+</div>
+<div id="ref-Glanville2008" class="csl-entry" role="listitem">
+Glanville, Julie, Sue Bayliss, Andrew Booth, Yenal Dundar, Hasina Fernandes, Nigel David Fleeman, Louise Foster, et al. 2008. <span>“So Many Filters, so Little Time: The Development of a Search Filter Appraisal Checklist.”</span> <em>J Med Libr Assoc</em> 96 (18974813): 356–61. <a href="https://doi.org/10.3163/1536-5050.96.4.011">https://doi.org/10.3163/1536-5050.96.4.011</a>.
+</div>
+<div id="ref-Golder2006a" class="csl-entry" role="listitem">
+Golder, Su, Heather M. McIntosh, Steve Duffy, and Julie Glanville. 2006. <span>“<span class="nocase">Developing efficient search strategies to identify reports of adverse effects in MEDLINE and EMBASE.</span>”</span> <em>Health Info Libr J</em> 23 (March): 3–12. <a href="https://doi.org/10.1111/j.1471-1842.2006.00634.x">https://doi.org/10.1111/j.1471-1842.2006.00634.x</a>.
+</div>
+<div id="ref-Gough2017" class="csl-entry" role="listitem">
+Gough, David, Sandy Oliver, and James Thomas. 2017. <em><span class="nocase">An Introduction to Systematic Reviews</span></em>. Second. London: SAGE Publications.
+</div>
+<div id="ref-Haynes2004" class="csl-entry" role="listitem">
+Haynes, R. Brian, and Nancy L. Wilczynski. 2004. <span>“<span class="nocase">Optimal search strategies for retrieving scientifically strong studies of diagnosis from Medline: analytical survey</span>.”</span> <em>BMJ</em> 328 (7447): 1040. <a href="https://doi.org/10.1136/bmj.38068.557998.EE">https://doi.org/10.1136/bmj.38068.557998.EE</a>.
+</div>
+<div id="ref-cochranehandbook6.3" class="csl-entry" role="listitem">
+Higgins, Julian P. T., James Thomas, Jacqueline Chandler, Miranda Cumpston, Tianjing Li, Matthew J. Page, and Vivian A. Welch, eds. 2022. <em><span class="nocase">Cochrane Handbook for Systematic Reviews of Interventions</span></em>. 6.3 ed. Cochrane; Cochrane. <a href="https://training.cochrane.org/handbook">https://training.cochrane.org/handbook</a>.
+</div>
+<div id="ref-Hinde2015" class="csl-entry" role="listitem">
+Hinde, Sebastian, and Eldon Spackman. 2015. <span>“<span class="nocase">Bidirectional Citation Searching to Completion: An Exploration of Literature Searching Methods</span>.”</span> <em>PharmacoEconomics</em> 33 (1): 5–11. <a href="https://doi.org/10.1007/s40273-014-0205-3">https://doi.org/10.1007/s40273-014-0205-3</a>.
+</div>
+<div id="ref-Hirt2024" class="csl-entry" role="listitem">
+Hirt, Julian, Thomas Nordhausen, Thomas Fuerst, Hannah Ewald, and Christian Appenzeller-Herzog. 2024. <span>“<span class="nocase">Guidance on terminology, application, and reporting of citation searching: the TARCiS statement</span>.”</span> <em>BMJ</em> 385 (e078384). <a href="https://doi.org/10.1136/bmj-2023-078384">https://doi.org/10.1136/bmj-2023-078384</a>.
+</div>
+<div id="ref-Janka2024" class="csl-entry" role="listitem">
+Janka, Heidrun, and Maria-Inti Metzendorf. 2024. <span>“High Precision but Variable Recall – Comparing the Performance of Five Deduplication Tools.”</span> <em>JEAHIL</em> 20 (1): 12–17. <a href="https://doi.org/10.32384/jeahil20607">https://doi.org/10.32384/jeahil20607</a>.
+</div>
+<div id="ref-Johnson2006" class="csl-entry" role="listitem">
+Johnson, Claire. 2006. <span>“<span class="nocase">Repetitive, Duplicate, and Redundant Publications: A Review for Authors and Readers</span>.”</span> <em>J Manipulative Physiol Ther</em> 29 (7): 505–9. <a href="https://doi.org/10.1016/j.jmpt.2006.07.001">https://doi.org/10.1016/j.jmpt.2006.07.001</a>.
+</div>
+<div id="ref-Kassirer1995" class="csl-entry" role="listitem">
+Kassirer, Jerome P., and Marcia Angell. 1995. <span>“<span>Redundant Publication: A Reminder</span>.”</span> <em>N Engl J Med</em> 333 (7): 449–50. <a href="https://doi.org/10.1056/NEJM199508173330709">https://doi.org/10.1056/NEJM199508173330709</a>.
+</div>
+<div id="ref-Kastner2009" class="csl-entry" role="listitem">
+Kastner, Monika, Nancy L. Wilczynski, Ann K. McKibbon, Amit X. Garg, and R. Brian Haynes. 2009. <span>“<span class="nocase">Diagnostic test systematic reviews: Bibliographic search filters (<span>‘Clinical Queries’</span>) for diagnostic accuracy studies perform well</span>.”</span> <em>J Clin Epidemiol</em> 62 (9): 974–81. <a href="https://doi.org/10.1016/j.jclinepi.2008.11.006">https://doi.org/10.1016/j.jclinepi.2008.11.006</a>.
+</div>
+<div id="ref-Koffel2015" class="csl-entry" role="listitem">
+Koffel, Jonathan B. 2015. <span>“<span class="nocase">Use of Recommended Search Strategies in Systematic Reviews and the Impact of Librarian Involvement: A Cross-Sectional Survey of Recent Authors</span>.”</span> <em>PLOS ONE</em> 10 (5): 1–13. <a href="https://doi.org/10.1371/journal.pone.0125931">https://doi.org/10.1371/journal.pone.0125931</a>.
+</div>
+<div id="ref-Lee2012" class="csl-entry" role="listitem">
+Lee, Edwin, Maureen Dobbins, Kara DeCorby, Lyndsey McRae, Daiva Tirilis, and Heather Husson. 2012. <span>“An Optimal Search Filter for Retrieving Systematic Reviews and Meta-Analyses.”</span> <em>BMC Med Res Methodol</em> 12 (1): 51. <a href="https://doi.org/10.1186/1471-2288-12-51">https://doi.org/10.1186/1471-2288-12-51</a>.
+</div>
+<div id="ref-McGowan2016" class="csl-entry" role="listitem">
+McGowan, Jessie, Margaret Sampson, Douglas M. Salzwedel, Elise Cogo, Vicki Foerster, and Carol Lefebvre. 2016. <span>“<span class="nocase">PRESS Peer Review of Electronic Search Strategies: 2015 Guideline&nbsp;Statement</span>.”</span> <em>J Clin Epidemiol</em> 75: 40–46. <a href="https://doi.org/10.1016/j.jclinepi.2016.01.021">https://doi.org/10.1016/j.jclinepi.2016.01.021</a>.
+</div>
+<div id="ref-McKeown2021" class="csl-entry" role="listitem">
+McKeown, Sandra, and Zuhaib M. Mir. 2021. <span>“Considerations for Conducting Systematic Reviews: Evaluating the Performance of Different Methods for de-Duplicating References.”</span> <em>Syst Rev</em> 10 (1): 38. <a href="https://doi.org/10.1186/s13643-021-01583-y">https://doi.org/10.1186/s13643-021-01583-y</a>.
+</div>
+<div id="ref-Meert2016" class="csl-entry" role="listitem">
+Meert, Deborah, Nazi Torabi, and John Costella. 2016. <span>“Impact of Librarians on Reporting of the Literature Searching Component of Pediatric Systematic Reviews.”</span> <em>J Med Libr Assoc</em> 104 (October): 267–77. <a href="https://doi.org/10.3163/1536-5050.104.4.004">https://doi.org/10.3163/1536-5050.104.4.004</a>.
+</div>
+<div id="ref-Metzendorf2016" class="csl-entry" role="listitem">
+Metzendorf, Maria-Inti. 2016. <span>“<span class="nocase">Why medical information specialists should routinely form part of teams producing high quality systematic reviews - a Cochrane perspective</span>.”</span> <em>JEAHIL</em> 12 (4): 6–9. <a href="http://ojs.eahil.eu/ojs/index.php/JEAHIL/issue/view/85/12_4">http://ojs.eahil.eu/ojs/index.php/JEAHIL/issue/view/85/12_4</a>.
+</div>
+<div id="ref-Munn2018" class="csl-entry" role="listitem">
+Munn, Z., M. D. J. Peters, C. Stern, C. Tufanaru, A. McArthur, and E. Aromataris. 2018. <span>“Systematic Review or Scoping Review? Guidance for Authors When Choosing Between a Systematic or Scoping Review Approach.”</span> Journal Article. <em>BMC Med Res Methodol</em> 18 (1): 143. <a href="https://doi.org/10.1186/s12874-018-0611-x">https://doi.org/10.1186/s12874-018-0611-x</a>.
+</div>
+<div id="ref-Munn2018a" class="csl-entry" role="listitem">
+Munn, Z., C. Stern, E. Aromataris, C. Lockwood, and Z. Jordan. 2018. <span>“<span class="nocase">What kind of systematic review should I conduct? A proposed typology and guidance for systematic reviewers in the medical and health sciences</span>.”</span> Journal Article. <em>BMC Med Res Methodol</em> 18 (1): 5. <a href="https://doi.org/10.1186/s12874-017-0468-4">https://doi.org/10.1186/s12874-017-0468-4</a>.
+</div>
+<div id="ref-ORegan2012" class="csl-entry" role="listitem">
+O’Regan, Gerard. 2012. <em><span class="nocase">A Brief History of Computing</span></em>. Second. Springer, London. <a href="https://doi.org/10.1007/978-1-4471-2359-0">https://doi.org/10.1007/978-1-4471-2359-0</a>.
+</div>
+<div id="ref-Paez2017" class="csl-entry" role="listitem">
+Paez, Arsenio. 2017. <span>“Gray Literature: An Important Resource in Systematic Reviews.”</span> <em>J Evid Based Med</em> 10 (August): 233–40. <a href="https://doi.org/10.1111/jebm.12266">https://doi.org/10.1111/jebm.12266</a>.
+</div>
+<div id="ref-Pearson2015" class="csl-entry" role="listitem">
+Pearson, A., H. White, F. Bath-Hextall, S. Salmond, J. Apostolo, and P. Kirkpatrick. 2015. <span>“A Mixed-Methods Approach to Systematic Reviews.”</span> Journal Article. <em>Int J Evid Based Healthc</em> 13 (3): 121–31. <a href="https://doi.org/10.1097/XEB.0000000000000052">https://doi.org/10.1097/XEB.0000000000000052</a>.
+</div>
+<div id="ref-Rethlefsen2015" class="csl-entry" role="listitem">
+Rethlefsen, Melissa L., Ann M. Farrell, Leah C. Osterhaus Trzasko, and Tara J. Brigham. 2015. <span>“Librarian Co-Authors Correlated with Higher Quality Reported Search Strategies in General Internal Medicine Systematic Reviews.”</span> <em>J Clin Epidemiol</em> 68 (June): 617–26. <a href="https://doi.org/10.1016/j.jclinepi.2014.11.025">https://doi.org/10.1016/j.jclinepi.2014.11.025</a>.
+</div>
+<div id="ref-Rethlefsen2021" class="csl-entry" role="listitem">
+Rethlefsen, Melissa L., Shona Kirtley, Siw Waffenschmidt, Ana Patricia Ayala, David Moher, Matthew J. Page, Jonathan B. Koffel, et al. 2021. <span>“<span class="nocase">PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews</span>.”</span> <em>Syst Rev</em> 10 (1): 39. <a href="https://doi.org/10.1186/s13643-020-01542-z">https://doi.org/10.1186/s13643-020-01542-z</a>.
+</div>
+<div id="ref-SalvadorOlivan2021" class="csl-entry" role="listitem">
+Salvador-Oliván, José Antonio, Gonzalo Marco-Cuenca, and Rosario Arquero-Avilés. 2021. <span>“<span class="nocase">Development of an efficient search filter to retrieve systematic reviews from PubMed</span>.”</span> <em>J Med Libr Assoc</em> 109 (4). <a href="https://doi.org/10.5195/jmla.2021.1223">https://doi.org/10.5195/jmla.2021.1223</a>.
+</div>
+<div id="ref-Schellinger2021" class="csl-entry" role="listitem">
+Schellinger, Jana, Kerry Sewell, Jamie E. Bloss, Tristan Ebron, and Carrie Forbes. 2021. <span>“The Effect of Librarian Involvement on the Quality of Systematic Reviews in Dental Medicine.”</span> <em>PLoS One</em> 16: e0256833. <a href="https://doi.org/10.1371/journal.pone.0256833">https://doi.org/10.1371/journal.pone.0256833</a>.
+</div>
+<div id="ref-Spencer2018" class="csl-entry" role="listitem">
+Spencer, Angela J., and Jonathan D. Eldredge. 2018. <span>“Roles for Librarians in Systematic Reviews: A Scoping Review.”</span> <em>J Med Libr Assoc</em> 106 (January): 46–56. <a href="https://doi.org/10.5195/jmla.2018.82">https://doi.org/10.5195/jmla.2018.82</a>.
+</div>
+<div id="ref-Twells2021" class="csl-entry" role="listitem">
+Twells, Laurie K. 2021. <span>“<span>Evidence-Based Decision-Making 1: Critical Appraisal</span>.”</span> In <em>Clinical Epidemiology: Practice and Methods</em>, edited by Patrick S. Parfrey and Brendan J. Barrett, 389–404. New York, NY: Springer US. <a href="https://doi.org/10.1007/978-1-0716-1138-8_21">https://doi.org/10.1007/978-1-0716-1138-8_21</a>.
+</div>
+<div id="ref-Waffenschmidt2020" class="csl-entry" role="listitem">
+Waffenschmidt, Siw, Tamara Navarro-Ruan, Nick Hobson, Elke Hausner, Stefan Sauerland, and R. Brian Haynes. 2020. <span>“<span class="nocase">Development and validation of study filters for identifying controlled non-randomized studies in PubMed and Ovid MEDLINE</span>.”</span> <em>Res Syn Meth</em> 11 (5): 617–26. <a href="https://doi.org/10.1002/jrsm.1425">https://doi.org/10.1002/jrsm.1425</a>.
+</div>
+<div id="ref-Wood1982" class="csl-entry" role="listitem">
+Wood, David. 1982. <span>“<span class="nocase">Grey literature – the role of the British Library Lending Division</span>.”</span> <em>Aslib Proc</em> 34 (11): 459–65. <a href="https://doi.org/10.1108/eb050862">https://doi.org/10.1108/eb050862</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./tools.html" class="pagination-link" aria-label="Tools">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Tools</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./publicationtypes.html" class="pagination-link" aria-label="Publication Types">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Publication Types</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://www.github.com/Maelphes/syslitcom/edit/gh-pages/methods.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/blob/gh-pages/methods.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></div></div></footer></body></html>
