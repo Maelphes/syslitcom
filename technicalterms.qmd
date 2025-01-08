@@ -417,8 +417,8 @@ Apart from making oneself familiar with the topic by reading them,
 these seed papers can be put to use in:
 
 1. Extraction of [index terms](#sec-indexterms) and free-text expressions.
-2. [Citation searching](#sec-citationsearching)
-3. Testing [search strategies](#sec-searchstrategy).
+2. [Citation searching](#sec-citationsearching).
+3. Testing [search strategies](#sec-searchstrategy) (see @tbl-test-searchstrategy).
 :::
 
 :::{.callout-caution title="Personal note"}

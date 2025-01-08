@@ -889,6 +889,33 @@ Table&nbsp;4.3: Multi-line search strategy for Ovid MEDLINE
 </div>
 </figure>
 </div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Testing your search strategy">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Testing your search strategy
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can use <a href="technicalterms.html#sec-seedpaper">seed papers</a> to test whether your search strategy picks them up. In the first step you search for the seed papers using their unique identifiers such as <a href="technicalterms.html#sec-pmid-pmcid">PMID or PMCID</a> or <a href="technicalterms.html#sec-doi">DOI</a>. Second, you connect the found seed papers with the rest of your search strategy using the <a href="#sec-boolean">Boolean operator</a> <code>AND</code> as shown below in <a href="#tbl-test-searchstrategy" class="quarto-xref">Table&nbsp;<span>4.4</span></a> – if the search results for lines 4 and 5 are the same, all the seed papers were retrieved by the search strategy.</p>
+</div>
+</div>
+<div id="tbl-test-searchstrategy" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-test-searchstrategy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.4: Testing the search strategy using seed papers.
+</figcaption>
+<div aria-describedby="tbl-test-searchstrategy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="sourceCode anchored" id="tbl-test-searchstrategy"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="tbl-test-searchstrategy-1"><a href="#tbl-test-searchstrategy-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> hypertension<span class="op">/</span> <span class="kw">or</span> antihypertensive agents<span class="op">/</span></span>
+<span id="tbl-test-searchstrategy-2"><a href="#tbl-test-searchstrategy-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> deprescriptions<span class="op">/</span></span>
+<span id="tbl-test-searchstrategy-3"><a href="#tbl-test-searchstrategy-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="dv">1</span> <span class="kw">and</span> <span class="dv">2</span></span>
+<span id="tbl-test-searchstrategy-4"><a href="#tbl-test-searchstrategy-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span> (<span class="st">"39209778"</span> <span class="kw">or</span> <span class="st">"39094592"</span> <span class="kw">or</span> <span class="st">"28437544"</span> <span class="kw">or</span> <span class="st">"26591140"</span> <span class="kw">or</span> <span class="st">"29678989"</span>).ui.</span>
+<span id="tbl-test-searchstrategy-5"><a href="#tbl-test-searchstrategy-5" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span> <span class="dv">3</span> <span class="kw">and</span> <span class="dv">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</figure>
+</div>
 </section>
 <section id="sec-subheading" class="level2" data-number="4.14">
 <h2 data-number="4.14" class="anchored" data-anchor-id="sec-subheading"><span class="header-section-number">4.14</span> subheading</h2>
@@ -997,7 +1024,7 @@ Examples
 <div id="tbl-truncations" class="hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-truncations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.4: Truncation examples in Ovid
+Table&nbsp;4.5: Truncation examples in Ovid
 </figcaption>
 <div aria-describedby="tbl-truncations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-hover caption-top table">

@@ -509,6 +509,27 @@ Single-line [PubMed Search strategy](https://pubmed.ncbi.nlm.nih.gov/?term=%28%2
 Multi-line search strategy for Ovid MEDLINE
 :::
 
+::: {.callout-tip title="Testing your search strategy"}
+You can use [seed papers](#sec-seedpaper) to test whether your search strategy 
+picks them up. In the first step you search for the seed papers using their
+unique identifiers such as [PMID or PMCID](#sec-pmid-pmcid) or [DOI](#sec-doi).
+Second, you connect the found seed papers with the rest of your search strategy 
+using the [Boolean operator](#sec-boolean) `AND` as shown below in 
+@tbl-test-searchstrategy -- if the search results for lines 4 and 5 are the same, 
+all the seed papers were retrieved by the search strategy.
+:::
+
+::: {#tbl-test-searchstrategy}
+```python
+1 hypertension/ or antihypertensive agents/
+2 deprescriptions/
+3 1 and 2
+4 ("39209778" or "39094592" or "28437544" or "26591140" or "29678989").ui.
+5 3 and 4
+```
+Testing the search strategy using seed papers.
+:::
+
 ## subheading {#sec-subheading}
 Publications in [bibliographic databases](#sec-bibdb) are often indexed using
 [index terms](#sec-indexterm). In cases where the index term does not sufficiently describe the 
