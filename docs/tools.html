@@ -284,7 +284,8 @@ Example: Retrieve similar articles
 </div>
 <div class="callout-body-container callout-body">
 <p>The command</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">elink</span> <span class="at">-db</span> pubmed <span class="at">-id</span> 25554246,29463298 <span class="at">-related</span> <span class="at">-cmd</span> neighbor <span class="kw">|</span> <span class="ex">xtract</span> <span class="at">-pattern</span> LinkSetDb <span class="at">-element</span> Id</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">elink</span> <span class="at">-db</span> pubmed <span class="at">-id</span> 25554246,29463298 <span class="at">-related</span> <span class="at">-cmd</span> neighbor <span class="dt">\</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span> <span class="ex">xtract</span> <span class="at">-pattern</span> LinkSetDb <span class="at">-element</span> Id</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>will return all <a href="technicalterms.html#sec-pmid-pmcid">PMIDs</a> of publications which PubMed identifies as <a href="https://pubmed.ncbi.nlm.nih.gov/help/#similar-articles"><em>Similar Articles</em></a> for the PMIDs <a href="https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed&amp;from_uid=25554246">25554246</a> and <a href="https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed&amp;from_uid=29463298">29463298</a>.</p>
 <div id="fig-edirect" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -318,6 +319,27 @@ Unix Shell on Windows
 </li>
 <li><a href="https://librarycarpentry.org/lc-shell/">Library Carpentry: The Unix Shell</a><br>
 </li>
+</ul>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="EDirect-related resources">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+EDirect-related resources
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li><a href="https://www.ncbi.nlm.nih.gov/books/NBK179288/">NCBI Bookshelf</a> (<span class="citation" data-cites="Kans2013">Kans (<a href="references.html#ref-Kans2013" role="doc-biblioref">2013</a>)</span>)</li>
+<li><a href="https://dataguide.nlm.nih.gov/classes/edirect-for-pubmed/samplecode1.html">The Insider’s Guide to Accessing NLM Data</a></li>
+<li><a href="https://github.com/NCBI-Hackathons/EDirectCookbook">NCBI Hackathon: EDirect Cookbook</a></li>
+<li><a href="https://github.com/knh11545/cli4es">cli4es - command line tools for expert searchers</a></li>
 </ul>
 </div>
 </div>
@@ -428,7 +450,7 @@ Table&nbsp;3.1: The FINER criteria
 <li>output of citations in various styles</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled" title="Examples of reference managers">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -437,7 +459,7 @@ Examples of reference managers
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li><a href="https://www.citavi.com">Citavi</a></li>
@@ -619,6 +641,9 @@ Eriksen, Mette Brandt, and Tove Faber Frandsen. 2018. <span>“<span class="noca
 </div>
 <div id="ref-Hirt2024" class="csl-entry" role="listitem">
 Hirt, Julian, Thomas Nordhausen, Thomas Fuerst, Hannah Ewald, and Christian Appenzeller-Herzog. 2024. <span>“<span class="nocase">Guidance on terminology, application, and reporting of citation searching: the TARCiS statement</span>.”</span> <em>BMJ</em> 385 (e078384). <a href="https://doi.org/10.1136/bmj-2023-078384">https://doi.org/10.1136/bmj-2023-078384</a>.
+</div>
+<div id="ref-Kans2013" class="csl-entry" role="listitem">
+Kans, Jonathan. 2013. <span>“<span class="nocase">Entrez Direct: E-utilities on the Unix Command Line</span>.”</span> In <em><span>Entrez Programming Utilities Help [Internet]</span></em>. <span>Bethesda (MD): National Center for Biotechnology Information (US)</span>.
 </div>
 <div id="ref-Kapp2024" class="csl-entry" role="listitem">
 Kapp, Claudia, Naomi Fujita-Rohwerder, Jona Lilienthal, Wiebke Sieben, Siw Waffenschmidt, and Elke Hausner. 2024. <span>“<span class="nocase">The searchbuildR shiny app: A new implementation of the objective approach for search strategy development in systematic reviews</span>.”</span> <em>Cochrane Evidence Synthesis and Methods</em> 2 (6): e12078. <a href="https://doi.org/10.1002/cesm.12078">https://doi.org/10.1002/cesm.12078</a>.

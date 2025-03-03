@@ -36,7 +36,8 @@ to automate the processing.
 The command 
 
 ```bash
-elink -db pubmed -id 25554246,29463298 -related -cmd neighbor | xtract -pattern LinkSetDb -element Id
+elink -db pubmed -id 25554246,29463298 -related -cmd neighbor \
+| xtract -pattern LinkSetDb -element Id
 ```
 
 will return all [PMIDs](#sec-pmid-pmcid) of publications which PubMed identifies
@@ -63,6 +64,15 @@ For more on this, see
 - [How to install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install)  
 - [Library Carpentry: The Unix Shell](https://librarycarpentry.org/lc-shell/)  
 :::
+
+
+::: {.callout-tip title="EDirect-related resources" collapse="true"} 
+- [NCBI Bookshelf](https://www.ncbi.nlm.nih.gov/books/NBK179288/) (@Kans2013)
+- [The Insider's Guide to Accessing NLM Data](https://dataguide.nlm.nih.gov/classes/edirect-for-pubmed/samplecode1.html)
+- [NCBI Hackathon: EDirect Cookbook](https://github.com/NCBI-Hackathons/EDirectCookbook)
+- [cli4es - command line tools for expert searchers](https://github.com/knh11545/cli4es)
+:::
+
 
 ## FINER {#sec-finer}
 FINER is an acronym for the five criteria **feasible**, **interesting**, **novel**, **ethical** and **relevant** which can be used as guidance when formulating a good clinical research question. See @tbl-finer. (@Cummings2013)
