@@ -26,9 +26,13 @@ The results for these queries are usually returned as XML-structured data.
 
 ### Entrez Direct
 
-The E-utilities are also available directly on a [Unix shell](https://en.wikipedia.org/wiki/Unix_shell) under Linux or macOS by using the package [**Entrez Direct**](https://www.ncbi.nlm.nih.gov/books/NBK179288/) (EDirect). 
+The E-utilities are also available directly on a 
+[Unix shell](https://en.wikipedia.org/wiki/Unix_shell) under Linux or macOS by 
+using the package [**Entrez Direct**](https://www.ncbi.nlm.nih.gov/books/NBK179288/) (EDirect). 
 
-One of the main advantages of EDirect are the [commands](https://www.freecodecamp.org/news/the-linux-commands-handbook/) that are available on the shell, for example `grep`, `sort`, `uniq` or `wc`, 
+One of the main advantages of EDirect are the 
+[commands](https://www.freecodecamp.org/news/the-linux-commands-handbook/) 
+that are available on the shell, for example `grep`, `sort`, `uniq` or `wc`, 
 which allow the results to be processed directly. Also shell scripts can be used
 to automate the processing.
 
