@@ -300,7 +300,7 @@ guideline for the management of scientific or scholarly data.
 A consortium of scientists and organizations defined these **FAIR principles** 
 in order to advance the machine-actionability of data. (@Wilkinson2016)
 
-Data that meet with these principles are called **FAIR Data**.
+Data that meet these principles are called **FAIR Data**.
 
 ::: {.callout-note title="The FAIR Principles"}
 |         |                                                                                                                                                                                                                                                         |
