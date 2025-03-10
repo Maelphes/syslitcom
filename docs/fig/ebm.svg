@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="208.75172mm"
+   height="198.47635mm"
+   viewBox="0 0 208.75172 198.47635"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="ebm.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.75811588"
+     inkscape:cx="658.21072"
+     inkscape:cy="447.82072"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(69.056275,-30.162496)">
+    <g
+       id="g1">
+      <circle
+         transform="matrix(0.35520012,-0.93479028,-0.93479028,-0.35520012,0,0)"
+         cy="-104.85414"
+         cx="-59.692364"
+         id="circle9692"
+         style="fill:#333333;fill-opacity:0.5;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+         r="62.36607" />
+      <circle
+         transform="matrix(0.35520012,-0.93479028,-0.93479028,-0.35520012,0,0)"
+         style="fill:#cccccc;fill-opacity:0.495935;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+         id="circle9694"
+         cx="-142.31029"
+         cy="-92.136856"
+         r="62.36607" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6403px;line-height:125%;font-family:'Alegreya Sans';-inkscape-font-specification:'Alegreya Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.354598;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         x="14.518406"
+         y="167.30603"
+         id="text9700"
+         transform="scale(1.0000314,0.9999686)"><tspan
+           sodipodi:role="line"
+           x="14.518406"
+           y="167.30603"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6403px;font-family:'Alegreya Sans';-inkscape-font-specification:'Alegreya Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.354598;stroke-miterlimit:4;stroke-dasharray:none"
+           id="tspan9696">patient</tspan><tspan
+           sodipodi:role="line"
+           x="14.518406"
+           y="185.6064"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6403px;font-family:'Alegreya Sans';-inkscape-font-specification:'Alegreya Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.354598;stroke-miterlimit:4;stroke-dasharray:none"
+           id="tspan9698">values</tspan></text>
+      <circle
+         transform="matrix(0.35520012,-0.93479028,-0.93479028,-0.35520012,0,0)"
+         style="fill:#999999;fill-opacity:0.5;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round"
+         id="circle9702"
+         cx="-89.401711"
+         cy="-27.365253"
+         r="62.36607" />
+      <path
+         id="path9704"
+         d="m 35.6185,139.70144 c -5.4268,-4.8362 -10.0317,-10.7278 -13.6349,-17.04091 -2.6409,-5.08662 -4.8252,-10.49059 -6.0928,-16.07998 8.2951,-2.74386 16.909,-3.3612 25.6248,-2.75096 4.5106,0.48065 8.8921,1.21156 13.2137,2.59001 -0.6821,3.28132 -1.609,6.16387 -2.773,9.3067 -0.6279,1.59611 -1.3168,3.16756 -2.0651,4.71089 -3.7137,7.16106 -8.2764,13.86834 -14.2727,19.26425 z"
+         style="opacity:0.6;fill:#000000;fill-opacity:0.878431;stroke:#000000;stroke-width:1.07603;stroke-linecap:round;stroke-linejoin:round"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccccc" />
+      <text
+         id="text9708"
+         y="118.5474"
+         x="21.538702"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6403px;line-height:125%;font-family:'Alegreya Sans';-inkscape-font-specification:'Alegreya Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.626;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6403px;font-family:'Alegreya Sans';-inkscape-font-specification:'Alegreya Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;stroke:none;stroke-width:0.626;stroke-miterlimit:4;stroke-dasharray:none"
+           y="118.5474"
+           x="21.538702"
+           id="tspan9706"
+           sodipodi:role="line">EBM</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6403px;line-height:1.25;font-family:'Alegreya Sans';-inkscape-font-specification:'Alegreya Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.264583"
+         x="-47.550812"
+         y="69.204605"
+         id="text9716"
+         transform="scale(1.0000759,0.9999241)"><tspan
+           sodipodi:role="line"
+           id="tspan9710"
+           x="-47.550812"
+           y="69.204605"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6403px;font-family:'Alegreya Sans';-inkscape-font-specification:'Alegreya Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.264583">individual</tspan><tspan
+           sodipodi:role="line"
+           x="-47.550812"
+           y="87.504982"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6403px;font-family:'Alegreya Sans';-inkscape-font-specification:'Alegreya Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.264583"
+           id="tspan9712">clinical </tspan><tspan
+           sodipodi:role="line"
+           x="-47.550812"
+           y="105.80535"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6403px;font-family:'Alegreya Sans';-inkscape-font-specification:'Alegreya Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.264583"
+           id="tspan9714">expertise</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6403px;line-height:1.25;font-family:'Alegreya Sans';-inkscape-font-specification:'Alegreya Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.264583"
+         x="62.766815"
+         y="68.596489"
+         id="text9724"
+         transform="scale(1.0000759,0.9999241)"><tspan
+           sodipodi:role="line"
+           x="62.766815"
+           y="68.596489"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6403px;font-family:'Alegreya Sans';-inkscape-font-specification:'Alegreya Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.264583"
+           id="tspan9718">best</tspan><tspan
+           sodipodi:role="line"
+           x="62.766815"
+           y="86.896866"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6403px;font-family:'Alegreya Sans';-inkscape-font-specification:'Alegreya Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.264583"
+           id="tspan9720">external</tspan><tspan
+           sodipodi:role="line"
+           x="62.766815"
+           y="105.19724"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6403px;font-family:'Alegreya Sans';-inkscape-font-specification:'Alegreya Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.264583"
+           id="tspan9722">evidence</tspan></text>
+    </g>
+  </g>
+</svg>

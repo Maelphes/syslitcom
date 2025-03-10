@@ -31,7 +31,7 @@ publications citing the seed paper as a reference is called
 **forward citation searching**. 
 See @fig-citing-cited. 
 
-![backward and forward citation searching](./fig/citing-cited.svg){#fig-citing-cited width=80%}
+![backward and forward citation searching](./fig/citing-cited.svg){#fig-citing-cited width=80% fig-alt="Vector drawing showing a timeline with papers above it, illustration their relative time of publication. Arrows point from the most recent publications, which are called 'citing references', to the seed paper in the center, indicating these papers to be citing the seed paper. The citation searching technique based on this relationship is called 'forward citation searching. Similarly, arrows from the seed paper to even older publications, which are called 'cited references', indicate the relationship of the seed paper with the references it cites. The corresponding technique is called 'backwards citation searching'."}
 
 
 Third, the identification of relevant literature by counting co-cited or co-citing 
@@ -507,6 +507,27 @@ Single-line [PubMed Search strategy](https://pubmed.ncbi.nlm.nih.gov/?term=%28%2
 4 (1 or 2) and 3
 ```
 Multi-line search strategy for Ovid MEDLINE
+:::
+
+::: {.callout-tip title="Testing your search strategy"}
+You can use [seed papers](#sec-seedpaper) to test whether your search strategy 
+picks them up. In the first step you search for the seed papers using their
+unique identifiers such as [PMID or PMCID](#sec-pmid-pmcid) or [DOI](#sec-doi).
+Second, you connect the found seed papers with the rest of your search strategy 
+using the [Boolean operator](#sec-boolean) `AND` as shown below in 
+@tbl-test-searchstrategy -- if the search results for lines 4 and 5 are the same, 
+all the seed papers were retrieved by the search strategy.
+:::
+
+::: {#tbl-test-searchstrategy}
+```python
+1 hypertension/ or antihypertensive agents/
+2 deprescriptions/
+3 1 and 2
+4 ("39209778" or "39094592" or "28437544" or "26591140" or "29678989").ui.
+5 3 and 4
+```
+Testing the search strategy using seed papers.
 :::
 
 ## subheading {#sec-subheading}

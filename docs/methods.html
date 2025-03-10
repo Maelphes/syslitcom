@@ -280,10 +280,10 @@ div.csl-indent {
 <p>Citation searching can be advisable at the very beginning of a systematic literature search in order to find additional core papers and to identify additional search terms. After finishing the final search it can be used to find additional relevant studies that were not retrieved by systematic searching using search strategies.</p>
 <p>Some research questions are hard to search by a conventional Boolean approach, for instance due to very ambiguous search terms or very recent research topics for which no index terms and no established terminology exists, yet. In these cases a citation search can be more useful than a Boolean search as it relies solely on the citation relationships between known and yet unknown publications.</p>
 <p>There are different approaches to searching citations: First, in the <strong>backward citation searching</strong> method the lists of references cited in the seed papers are screened for relevant articles. Second, the analysis of publications citing the seed paper as a reference is called <strong>forward citation searching</strong>. See <a href="#fig-citing-cited" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>.</p>
-<div id="fig-citing-cited" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-citing-cited" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Vector drawing showing a timeline with papers above it, illustration their relative time of publication. Arrows point from the most recent publications, which are called 'citing references', to the seed paper in the center, indicating these papers to be citing the seed paper. The citation searching technique based on this relationship is called 'forward citation searching. Similarly, arrows from the seed paper to even older publications, which are called 'cited references', indicate the relationship of the seed paper with the references it cites. The corresponding technique is called 'backwards citation searching'.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-citing-cited-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="./fig/citing-cited.svg" class="img-fluid figure-img" style="width:80.0%">
+<img src="./fig/citing-cited.svg" class="img-fluid figure-img" style="width:80.0%" alt="Vector drawing showing a timeline with papers above it, illustration their relative time of publication. Arrows point from the most recent publications, which are called 'citing references', to the seed paper in the center, indicating these papers to be citing the seed paper. The citation searching technique based on this relationship is called 'forward citation searching. Similarly, arrows from the seed paper to even older publications, which are called 'cited references', indicate the relationship of the seed paper with the references it cites. The corresponding technique is called 'backwards citation searching'.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-citing-cited-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;4.1: backward and forward citation searching
@@ -889,6 +889,33 @@ Table&nbsp;4.3: Multi-line search strategy for Ovid MEDLINE
 </div>
 </figure>
 </div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Testing your search strategy">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Testing your search strategy
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can use <a href="technicalterms.html#sec-seedpaper">seed papers</a> to test whether your search strategy picks them up. In the first step you search for the seed papers using their unique identifiers such as <a href="technicalterms.html#sec-pmid-pmcid">PMID or PMCID</a> or <a href="technicalterms.html#sec-doi">DOI</a>. Second, you connect the found seed papers with the rest of your search strategy using the <a href="#sec-boolean">Boolean operator</a> <code>AND</code> as shown below in <a href="#tbl-test-searchstrategy" class="quarto-xref">Table&nbsp;<span>4.4</span></a> – if the search results for lines 4 and 5 are the same, all the seed papers were retrieved by the search strategy.</p>
+</div>
+</div>
+<div id="tbl-test-searchstrategy" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-test-searchstrategy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4.4: Testing the search strategy using seed papers.
+</figcaption>
+<div aria-describedby="tbl-test-searchstrategy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="sourceCode anchored" id="tbl-test-searchstrategy"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="tbl-test-searchstrategy-1"><a href="#tbl-test-searchstrategy-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> hypertension<span class="op">/</span> <span class="kw">or</span> antihypertensive agents<span class="op">/</span></span>
+<span id="tbl-test-searchstrategy-2"><a href="#tbl-test-searchstrategy-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> deprescriptions<span class="op">/</span></span>
+<span id="tbl-test-searchstrategy-3"><a href="#tbl-test-searchstrategy-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="dv">1</span> <span class="kw">and</span> <span class="dv">2</span></span>
+<span id="tbl-test-searchstrategy-4"><a href="#tbl-test-searchstrategy-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span> (<span class="st">"39209778"</span> <span class="kw">or</span> <span class="st">"39094592"</span> <span class="kw">or</span> <span class="st">"28437544"</span> <span class="kw">or</span> <span class="st">"26591140"</span> <span class="kw">or</span> <span class="st">"29678989"</span>).ui.</span>
+<span id="tbl-test-searchstrategy-5"><a href="#tbl-test-searchstrategy-5" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span> <span class="dv">3</span> <span class="kw">and</span> <span class="dv">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</figure>
+</div>
 </section>
 <section id="sec-subheading" class="level2" data-number="4.14">
 <h2 data-number="4.14" class="anchored" data-anchor-id="sec-subheading"><span class="header-section-number">4.14</span> subheading</h2>
@@ -997,7 +1024,7 @@ Examples
 <div id="tbl-truncations" class="hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-truncations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.4: Truncation examples in Ovid
+Table&nbsp;4.5: Truncation examples in Ovid
 </figcaption>
 <div aria-describedby="tbl-truncations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-hover caption-top table">
