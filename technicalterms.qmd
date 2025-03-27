@@ -518,6 +518,7 @@ In the context of literature searching, a thesaurus contains a database-specific
 | CINAHL           | [CINAHL Subject Headings](https://connect.ebsco.com/s/article/CINAHL-Subject-Headings-Frequently-Asked-Questions?language=en_US) |
 | APA PsycInfo     | [Thesaurus of Psychological Index Terms](https://www.apa.org/pubs/databases/training/thesaurus) |
 | Global Health    | [CABI Thesaurus](https://www.cabi.org/cabithesaurus)  |
+| ERIC             | [ERIC Thesaurus](https://eric.ed.gov/?ti=all) |
 : Commonly known databases and their thesauri {.striped}
 :::
 
