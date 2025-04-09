@@ -34,6 +34,10 @@ of drugs or the pharmacy as a retail shop.
 3. In anatomy, a `styloid process` is a pointed outgrowth from a bone. However, 
 there are serveral of these in the human body, for instance in the temporal
 bone, the radius bone, the ulna bone or the metacarpal bones.
+4. The search term `crab` might lead to articles about one of two very different
+kinds of arthropods: True crabs 
+([Brachyura](https://www.ncbi.nlm.nih.gov/mesh/68003386)) or crab lice 
+([Phthirus](https://www.ncbi.nlm.nih.gov/mesh/68020061)).
 :::
 
 ## appendix {#sec-appendix}
