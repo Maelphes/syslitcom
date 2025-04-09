@@ -362,16 +362,16 @@ each other. The so-called **proximity searching** search uses a
 defined by a number *N*, for example **adj*N*** or **NEAR/*N***.
 
 ::: {.callout-tip title="Examples"}
-|                  |                                 |
-|------------------|---------------------------------|
+|                      |                                 |
+|----------------------|---------------------------------|
 | **PubMed**           | `"heart transplant"[TI:~2]`     |
 | **Ovid**             | `(heart adj3 transplant*).ti`   |
 | **Cochrane Library** | `(heart NEAR/3 transplant*):ti` |
 | **Embase.com**       | `(heart NEAR/3 transplant*):ti` |
-| **EBSCO*host***      | `(TI heart N2 transplant*)`     |
+| **EBSCO*host***      | `TI (heart N2 transplant*)`     |
 | **Web of Science**   | `TI=(heart NEAR/2 transplant*)` |
 | **Scopus**           | `TITLE(heart W/2 transplant*)`  |
-: Examples of proximity searching for different resources {.striped}
+: Examples of proximity searching in different resources {.striped}
 :::
 
 :::{.callout-warning title="Please note"}
