@@ -12,6 +12,10 @@ Among them the most prominent types are:
 - Rapid review
 - Umbrella review
 
+The free online tool ['Right Review'](https://whatreviewisrightforyou.knowledgetranslation.net/) 
+is designed to provide guidance and supporting material when choosing any kind 
+of knowledge synthesis.
+
 @fig-decisiontree shows a decision tree to help find the right kind of review.
 
 ![What Type of Review is Right for you? - adopted from @cornell2021](./fig/decisiontree.svg){#fig-decisiontree width=80%}
