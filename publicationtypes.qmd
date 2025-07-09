@@ -1,5 +1,4 @@
-# Publication Types
-
+# Publication Types {#sec-publicationtypes}
 
 ## Reviews {#sec-review}
 
