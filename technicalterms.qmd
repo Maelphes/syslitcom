@@ -99,6 +99,30 @@ However, this so-called language of publication bias can have a significant
 impact on the quality of the review. (@Gough2017, @Morrison2012, @Moher2003)
 
 
+## BibTeX {#sec-bibtex}
+**BibTeX** is a bibliographic file format which is supported by most [reference management programs](#sec-refmanagement), in particular [JabRef](https://www.jabref.org/), which supports it natively, and it is often available as an export format in [bibliographic databases](#sec-bibdb) and on publisher websites. BibTeX files possess the file extension `.bib`.
+
+:::{.callout-tip title="Example: BibTeX format"}
+```
+@article{watson2020,
+  author   = {Watson, Mandy},
+  journal  = {Br J Nurs},
+  title    = {How to undertake a literature search: a step-by-step guide},
+  year     = {2020},
+  note     = {PMID: 32279549},
+  number   = {7},
+  pages    = {431--435},
+  volume   = {29},
+  abstract = {Undertaking a literature search can be a daunting prospect. Breaking the exercise down into smaller steps will make the process more manageable. This article suggests 10 steps that will help readers complete this task, from identifying key concepts to choosing databases for the search and saving the results and search strategy. It discusses each of the steps in a little more detail, with examples and suggestions on where to get help. This structured approach will help readers obtain a more focused set of results and, ultimately, save time and effort.},
+  doi      = {10.12968/bjon.2020.29.7.431},
+}
+```
+:::
+
+
+BibTeX is also the name of a software package used to typeset references in [LaTeX](https://www.latex-project.org/). The references of this compendium are also managed and processed using the BibTeX format.
+
+
 ## bibliographic database {#sec-bibdb}
 
 **Bibliographic databases** comprise references to publications, such as articles in 
@@ -416,7 +440,7 @@ both part of PubMed and PubMed Central.
 
 ## RIS {#sec-ris}
 
-RIS is a bibliographic format which is commonly used by [reference management programs](#sec-refmanagement), review tools and [bibliographic databases](#sec-bibdb).
+**RIS** is a bibliographic format which is commonly used by [reference management programs](#sec-refmanagement), review tools and [bibliographic databases](#sec-bibdb).
 It was developed by *Research Information Systems, Inc.* (which was 
 aquired by a Thomson Reuters division, which is now Clarivate).
 
@@ -424,7 +448,8 @@ A RIS-file consists of lines of plain text, one line for each data field.
 Each line begins with a field tag, which consists of either two upper-case 
 letters or an upper-case letter and a single digit, followed by two spaces, a 
 hypen and another space. After the tag the content of the field is written, 
-followed by a carriage return and line feed.
+followed by a carriage return and line feed. RIS files possess the file 
+extension `.ris`.
 
 Each reference within RIS must begin with `TY  - ` to state the type of reference, 
 and it must end with a line `ER  - `, which marks the end of the reference. 
