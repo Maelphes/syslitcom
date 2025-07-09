@@ -414,6 +414,51 @@ PMID, PMCID and DOI into one another. This tool only works for records which are
 both part of PubMed and PubMed Central.
 :::
 
+## RIS {#sec-ris}
+
+RIS is a bibliographic format which is commonly used by [reference management programs](#sec-refmanagement), review tools and [bibliographic databases](#sec-bibdb).
+It was developed by *Research Information Systems, Inc.* (which was 
+aquired by a Thomson Reuters division, which is now Clarivate).
+
+A RIS-file consists of lines of plain text, one line for each data field. 
+Each line begins with a field tag, which consists of either two upper-case 
+letters or an upper-case letter and a single digit, followed by two spaces, a 
+hypen and another space. After the tag the content of the field is written, 
+followed by a carriage return and line feed.
+
+Each reference within RIS must begin with `TY  - ` to state the type of reference, 
+and it must end with a line `ER  - `, which marks the end of the reference. 
+(See archived [RIS Format Specifications](https://web.archive.org/web/20110930172154/http://www.refman.com/support/risformat_intro.asp))
+
+:::{.callout-tip title="Example: RIS format"}
+```
+TY  - JOUR
+T1  - How to undertake a literature search: a step-by-step guide
+AU  - Watson, Mandy
+Y1  - 2020/04/09
+PY  - 2020
+DA  - 2020/04/09
+N1  - doi: 10.12968/bjon.2020.29.7.431
+DO  - 10.12968/bjon.2020.29.7.431
+T2  - British Journal of Nursing
+JF  - British Journal of Nursing
+JO  - Br J Nurs
+SP  - 431
+EP  - 435
+VL  - 29
+IS  - 7
+PB  - Mark Allen Group
+N2  - Undertaking a literature search can be a daunting prospect. Breaking the exercise down into smaller steps will make the process more manageable. This article suggests 10 steps that will help readers complete this task, from identifying key concepts to choosing databases for the search and saving the results and search strategy. It discusses each of the steps in a little more detail, with examples and suggestions on where to get help. This structured approach will help readers obtain a more focused set of results and, ultimately, save time and effort.
+AB  - Undertaking a literature search can be a daunting prospect. Breaking the exercise down into smaller steps will make the process more manageable. This article suggests 10 steps that will help readers complete this task, from identifying key concepts to choosing databases for the search and saving the results and search strategy. It discusses each of the steps in a little more detail, with examples and suggestions on where to get help. This structured approach will help readers obtain a more focused set of results and, ultimately, save time and effort.
+SN  - 0966-0461
+M3  - doi: 10.12968/bjon.2020.29.7.431
+UR  - https://doi.org/10.12968/bjon.2020.29.7.431
+Y2  - 2025/07/09
+ER  - 
+```
+:::
+
+
 ## retractions {#sec-retractions}
 
 The review of manuscripts by fellow scientists (aka peer review) as part of the 
