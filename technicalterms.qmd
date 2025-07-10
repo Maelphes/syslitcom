@@ -222,7 +222,7 @@ title and [abstract](#sec-abstract).
 |:--------:|:-------------------------:|:--------------------------------------:|
 |  7616995 | J. P. Kassirer, M. Angell | Redundant publication: a reminder      |
 | 16040884 |       A. K. Akobeng       | Principles of evidence based medicine  |
-| 22071866 |   T. Young, S. Hopewell  | Methods for obtaining unpublished data |
+| 22071866 |   T. Young, S. Hopewell   | Methods for obtaining unpublished data |
 : Data fields PMID, AU, TI shown for three records {.striped}
 :::
 
@@ -420,6 +420,23 @@ Line 5 is an orphan line.
 :::
 
 
+## plain text {#sec-plaintext}
+**plain text** (as opposed to *styled* or *rich text*) is digital text without 
+applied styling information, such as fonts, font styles, font sizes, colors, 
+images, hyperlinks. (See also the [Unicode definition](https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-2/#G642)).
+
+Plain text is normally used when formatting is not important, such as when writing code. 
+
+::: {.callout-tip title="Free plain text editors"}
+| Editor                                       	| available for                      	|
+|----------------------------------------------	|------------------------------------	|
+| [vim](https://www.vim.org/)                  	| Windows, Unix, macOS, iOS, Android 	|
+| [emacs](https://www.gnu.org/software/emacs/) 	| Windows, Linux, macOS              	|
+| [Notepad++](https://notepad-plus-plus.org/)  	| Windows                            	|
+: Free plain text editors and the platforms they are available on {.striped}
+:::
+
+
 ## PMID and PMCID {#sec-pmid-pmcid}
 The PubMed ID (PMID) and the PubMed Central ID (PMCID) are unique identifiers
 assigned to the records within the databases [PubMed](https://pubmed.ncbi.nlm.nih.gov/) 
@@ -575,6 +592,40 @@ index terms. (See @Clark2020, @Glanville2019, @Wanner2019, @Damarell2013).
 |EBSCO*host*| `(TI "ocular hypertension") OR (AB "ocular hypertension")`  |
 : Examples for syntax in different search interfaces {.hover}
 :::
+
+
+### syntax errors
+
+The more complex a [search strategy](#sec-searchstrategy) gets, the more likely 
+it is to make mistakes in the development or translation between [databases](#sec-bibdb). 
+
+::: {.callout-warning title="Common sources of error"}
+
+1. Order of searching terms
+
+In [PubMed](#sec-pubmed) and Ovid all search queries are processed from left 
+to right. In contrast, the [Cochrane Library](#sec-cochranelibrary) applies the
+[search operators](#sec-operators) in the order `NOT-AND-OR`, whereas in Scopus 
+the order is `OR-AND-NOT`. The easiest way to avoid this is the use of [nesting](#sec-nesting).
+
+2. Truncated phrases
+
+In some search interfaces the application of truncated search terms within a 
+phrase does not work (properly). For example, in the Cochrane Library the 
+phrase `"olfact* system"` yields no results and leads to an error message. 
+Instead the query needs to be written as `olfact* NEXT system`.
+
+3. Straight quotes vs. curly quotes
+
+Some search interfaces, such as Ovid, only recognize straight quotation marks 
+`" "` for the use around phrases. However, today's word processors often 
+automatically transform these  into typographically correct `„ “` or `“ ”`, 
+called *curly* or *smart quotation marks*. It is possible to deactivate certain 
+autocorrection features to avoid this behavior, otherwise it might be a good 
+idea to work with a [plain text editor](#sec-plaintext).
+:::
+
+
 
 ## thesaurus {#sec-thesaurus}
 A **thesaurus** (ancient greek: θησαυρός (*thesaurós*) 'treasury') is a 
