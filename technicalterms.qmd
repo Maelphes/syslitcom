@@ -156,12 +156,13 @@ references and ignore non-relevant ones. A retrieved relevant record equals a
 true positive (*tp*), whereas a retrieved non-relevant record equals a false 
 positive (*fp*). See @tbl-truth for reference.
 
-::: {#tbl-truth}
+::: {#tbl-truth .striped}
 |   **record**    | relevant | irrelevant |
 |:---------------:|:--------:|:----------:|
 |    retrieved    |   _tp_   |    _fp_    |
 |  not retrieved  |   _fn_   |    _tn_    |
-: Truth table {.striped}
+
+Truth table
 :::
 
 
@@ -217,13 +218,14 @@ Data fields possess designations in the form of [field codes or search field tag
 such as `PMID`, `AU`, `TI` and `AB` for the fields of unique identifier, author, 
 title and [abstract](#sec-abstract). 
 
-::: {#tbl-datafields}
+::: {#tbl-datafields .striped}
 |    PMID  |             AU            |                   TI                   |
 |:--------:|:-------------------------:|:--------------------------------------:|
 |  7616995 | J. P. Kassirer, M. Angell | Redundant publication: a reminder      |
 | 16040884 |       A. K. Akobeng       | Principles of evidence based medicine  |
 | 22071866 |   T. Young, S. Hopewell   | Methods for obtaining unpublished data |
-: Data fields PMID, AU, TI shown for three records {.striped}
+
+Data fields PMID, AU, TI shown for three records
 :::
 
 It always depends on the [syntax](#sec-syntax) of the database or search
@@ -580,7 +582,7 @@ As a consequence, search strategies cannot be used freely in every database.
 They have to be translated due to different syntax and due to different 
 index terms. (See @Clark2020, @Glanville2019, @Wanner2019, @Damarell2013).
 
-::: {#tbl-syntax}
+::: {#tbl-syntax .striped}
 |          |                              |
 |----------|------------------------------|
 |PubMed | `"ocular hypertension"[tiab]` | 
@@ -590,7 +592,8 @@ index terms. (See @Clark2020, @Glanville2019, @Wanner2019, @Damarell2013).
 |Scopus |`TITLE-ABS({ocular hypertension})`  |
 |Web of Science | `TI=("ocular hypertension") OR AB=("ocular hypertension")`  |
 |EBSCO*host*| `(TI "ocular hypertension") OR (AB "ocular hypertension")`  |
-: Examples for syntax in different search interfaces {.hover}
+
+Examples for syntax in different search interfaces
 :::
 
 
@@ -634,7 +637,7 @@ dictionary of synonyms, which are often ordered alphabetically or hierarchically
 In the context of literature searching, a thesaurus contains a database-specific
 **controlled vocabulary** of index terms. 
 
-::: {#tbl-thesauri}
+::: {#tbl-thesauri .striped}
 | Database         | Thesaurus                              |
 |------------------|----------------------------------------|
 | PubMed/MEDLINE   | [Medical Subject Headings (MeSH)](https://www.ncbi.nlm.nih.gov/mesh/)|
@@ -644,7 +647,8 @@ In the context of literature searching, a thesaurus contains a database-specific
 | APA PsycInfo     | [Thesaurus of Psychological Index Terms](https://www.apa.org/pubs/databases/training/thesaurus) |
 | Global Health    | [CABI Thesaurus](https://www.cabi.org/cabithesaurus)  |
 | ERIC             | [ERIC Thesaurus](https://eric.ed.gov/?ti=all) |
-: Commonly known databases and their thesauri {.striped}
+
+Commonly known databases and their thesauri
 :::
 
 These vocabularies usually list preferred terms for indexing, their definitions 
@@ -674,12 +678,28 @@ Wildcards are special characters used for [truncation](#sec-truncation).
 The usage and meaning of the available wildcards for this purpose depends on 
 the syntax of the database or search interface.
 
-::: {#tbl-wildcards}
+::: {#tbl-wildcards .striped}
 | character | name                  |
 |:---------:|-----------------------|
 | `*`       | asterisk              |
 | `$`       | dollar sign           |
 | `?`       | question mark         |
 | `#`       | hash sign, pound sign |
-: commonly used wildcard symbols {.striped}
+
+Commonly used wildcard symbols
+:::
+
+
+:::{#tbl-wildcards2 .striped}
+|                    | **unlimited (0--∞)**   | **mandatory (1)**     | **optional (0--1)**    |
+| :----------------- | :--------------------: | :-------------------: | :--------------------: |
+| **PubMed**         | `*`                    |                       |                        |
+| **Ovid**           | `$` or `*`             | `#`                   | `?`                    |
+| **Cochrane**       | `*`                    |                       | `?`                    |
+| **Embase**         | `*`                    | `?`                   | `$`                    |
+| **Scopus**         | `*`                    | `?`                   |                        |
+| **Web of Science** | `*`                    | `$`                   | `?`                    |
+| **EBSCO*host***    | `*`                    | `?`                   | `#`                    |
+
+Wildcard symbols and the number of characters *n* they are allowed to replace in different search interfaces
 :::
