@@ -23,7 +23,7 @@ ambiguous and can exist in very different contexts.
 
 Ambiguity is often caused by *polysemy*, i.e. the fact that one 
 expression can have more than one meaning, or by *homonymy*, in which independent 
-possess identical spelling, but bear different meanings.
+words possess identical spelling, but bear different meanings.
 
 Ambiguity proves to be an obstacle in creating search strategies, 
 because any free text search with ambiguous terms will inevitably retrieve 
@@ -696,8 +696,9 @@ of these individuals do not match. This is a well-known phenomenon in
 information retrieval. (@Furnas1987) 
 
 For instance, researchers attempt to retrieve literature using search terms 
-which seem relevant to them or are commonly used in their field, whereas authors 
-might use different (and sometimes unspecific) expressions to describe the same
+which seem relevant to them or are commonly used in their field, whereas the 
+authors (perhaps from a different special field) might use different (or 
+sometimes unspecific or uncommon) expressions to describe the same
 subject.
 
 ::: {.callout-tip title="Example"}
@@ -711,8 +712,8 @@ or
 
 > ... participants with an elevated bp.
 
-instead of explicitly using the word *hypertension* in title or abstract of the 
-publications.
+without the occurrence of the word *hypertension* in title or abstract. 
+Without additional search terms these publications are not retrieved in the search.
 
 ::: 
 
