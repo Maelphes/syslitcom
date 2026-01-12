@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -90,14 +90,15 @@ div.csl-indent {
 <link href="./technicalterms.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3a335a13ae7b847f18ad76aa049e3a4f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4666ebd988f99e28082c76482a351d50.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -136,7 +137,8 @@ div.csl-indent {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="././fig/logo_small.svg" alt="" class="navbar-logo">
+    <img src="././fig/logo_small.svg" alt="" class="navbar-logo light-content">
+    <img src="././fig/logo_small.svg" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">SysLit Compendium</span>
@@ -165,6 +167,10 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -281,13 +287,13 @@ div.csl-indent {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Example: Retrieve similar articles
+<span class="screen-reader-only">Tip</span>Example: Retrieve similar articles
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>The command</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">elink</span> <span class="at">-db</span> pubmed <span class="at">-id</span> 25554246,29463298 <span class="at">-related</span> <span class="at">-cmd</span> neighbor <span class="dt">\</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span> <span class="ex">xtract</span> <span class="at">-pattern</span> LinkSetDb <span class="at">-element</span> Id</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">elink</span> <span class="at">-db</span> pubmed <span class="at">-id</span> 25554246,29463298 <span class="at">-related</span> <span class="at">-cmd</span> neighbor <span class="dt">\</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span> <span class="ex">xtract</span> <span class="at">-pattern</span> LinkSetDb <span class="at">-element</span> Id</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>will return all <a href="technicalterms.html#sec-pmid-pmcid">PMIDs</a> of publications which PubMed identifies as <a href="https://pubmed.ncbi.nlm.nih.gov/help/#similar-articles"><em>Similar Articles</em></a> for the PMIDs <a href="https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed&amp;from_uid=25554246">25554246</a> and <a href="https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed&amp;from_uid=29463298">29463298</a>.</p>
 <div id="fig-edirect" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -303,12 +309,12 @@ Figure&nbsp;3.1: Similar Articles via Entrez Direct
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Unix Shell on Windows">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Unix Shell on Windows
+<span class="screen-reader-only">Tip</span>Unix Shell on Windows
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -326,12 +332,12 @@ Unix Shell on Windows
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="EDirect-related resources">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-EDirect-related resources
+<span class="screen-reader-only">Tip</span>EDirect-related resources
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -358,7 +364,6 @@ Table&nbsp;3.1: The FINER criteria
 </figcaption>
 <div aria-describedby="tbl-finer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-striped caption-top table">
-<caption>The FINER criteria</caption>
 <colgroup>
 <col style="width: 7%">
 <col style="width: 88%">
@@ -453,12 +458,12 @@ Table&nbsp;3.1: The FINER criteria
 <li>output of citations in various styles</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled" title="Examples of reference managers">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Examples of reference managers
+<span class="screen-reader-only">Tip</span>Examples of reference managers
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -486,13 +491,13 @@ Examples of reference managers
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Installing and Running searchbuildR
+<span class="screen-reader-only">Tip</span>Installing and Running searchbuildR
 </div>
 </div>
 <div class="callout-body-container callout-body">
 <p>searchbuildR is an R package, which can be installed from GitHub and run locally as a Shiny App in R:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install and load the "remotes" package which is required to install remotely from github</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install and load the "remotes" package which is required to install remotely from github</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(remotes)</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -501,7 +506,7 @@ Installing and Running searchbuildR
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(searchbuildR)</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># run the shiny app</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">run_app</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">run_app</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
@@ -522,7 +527,6 @@ Table&nbsp;3.2: Example of a table created by the Yale MeSH Analyzer
 </figcaption>
 <div aria-describedby="tbl-yalemeshanalyzer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-hover caption-top table">
-<caption>Example of a table created by the Yale MeSH Analyzer</caption>
 <colgroup>
 <col style="width: 3%">
 <col style="width: 32%">
@@ -731,13 +735,14 @@ Tricco, A. C., E. Lillie, W. Zarin, K. K. O’Brien, H. Colquhoun, D. Levac, D. 
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

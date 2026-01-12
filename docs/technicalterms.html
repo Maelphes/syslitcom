@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -90,14 +90,15 @@ div.csl-indent {
 <link href="./databases.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-234273d1456647dabc34a594ac50e507.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3a335a13ae7b847f18ad76aa049e3a4f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4666ebd988f99e28082c76482a351d50.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -139,7 +140,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -165,7 +166,8 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="././fig/logo_small.svg" alt="" class="navbar-logo">
+    <img src="././fig/logo_small.svg" alt="" class="navbar-logo light-content">
+    <img src="././fig/logo_small.svg" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">SysLit Compendium</span>
@@ -194,6 +196,10 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -294,7 +300,8 @@ window.Quarto = {
   <li><a href="#syntax-errors" id="toc-syntax-errors" class="nav-link" data-scroll-target="#syntax-errors"><span class="header-section-number">2.24.1</span> syntax errors</a></li>
   </ul></li>
   <li><a href="#sec-thesaurus" id="toc-sec-thesaurus" class="nav-link" data-scroll-target="#sec-thesaurus"><span class="header-section-number">2.25</span> thesaurus</a></li>
-  <li><a href="#sec-wildcard" id="toc-sec-wildcard" class="nav-link" data-scroll-target="#sec-wildcard"><span class="header-section-number">2.26</span> wildcard</a></li>
+  <li><a href="#sec-vocabularymismatch" id="toc-sec-vocabularymismatch" class="nav-link" data-scroll-target="#sec-vocabularymismatch"><span class="header-section-number">2.26</span> vocabulary mismatch</a></li>
+  <li><a href="#sec-wildcard" id="toc-sec-wildcard" class="nav-link" data-scroll-target="#sec-wildcard"><span class="header-section-number">2.27</span> wildcard</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://www.github.com/Maelphes/syslitcom/edit/gh-pages/technicalterms.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/blob/gh-pages/technicalterms.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -326,14 +333,16 @@ window.Quarto = {
 </section>
 <section id="sec-ambiguity" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="sec-ambiguity"><span class="header-section-number">2.2</span> ambiguity</h2>
-<p>A term or statement which has more than one possible meaning or definition is ambiguous. Ambiguity proves to be an obstacle in creating search strategies, because any free text search with ambiguous terms will inevitably retrieve records for all meanings of the term regardless of the context. In this case, it is an option to render such terms more specific by using phrases or proximity operators.</p>
+<p>A term or statement which has more than one possible meaning or definition is ambiguous and can exist in very different contexts.</p>
+<p>Ambiguity is often caused by <em>polysemy</em>, i.e.&nbsp;the fact that one expression can have more than one meaning, or by <em>homonymy</em>, in which independent possess identical spelling, but bear different meanings.</p>
+<p>Ambiguity proves to be an obstacle in creating search strategies, because any free text search with ambiguous terms will inevitably retrieve records for all meanings of the term regardless of the context. In this case, it is an option to render such terms more specific by using phrases or proximity operators.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Examples">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Examples
+<span class="screen-reader-only">Tip</span>Examples
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -342,6 +351,9 @@ Examples
 <li>The term <code>pharmacy</code> may refer to the pharmaceutical sciences, the manufacture of drugs or the pharmacy as a retail shop.</li>
 <li>In anatomy, a <code>styloid process</code> is a pointed outgrowth from a bone. However, there are serveral of these in the human body, for instance in the temporal bone, the radius bone, the ulna bone or the metacarpal bones.</li>
 <li>The search term <code>crab</code> might lead to articles about one of two very different kinds of arthropods: True crabs (<a href="https://www.ncbi.nlm.nih.gov/mesh/68003386">Brachyura</a>) or crab lice (<a href="https://www.ncbi.nlm.nih.gov/mesh/68020061">Phthirus</a>).</li>
+<li><code>discharge</code> could mean the releasing an inpatient from a hospital or in another context the releasing of an electric charge.</li>
+<li><code>lead</code> can be the verb <em>to lead</em>, which can mean to direct something or someone with authority, or the noun <em>lead</em>, which can mean various things, such as a heavy metal element (Pb) or the thin graphite cylinder within pencils (“pencil lead”).</li>
+<li><code>dialysis</code> is a chemical technique of separating molecules in solution. It is also the colloquial term for <em>renal dialysis</em>, a medical treatment using the aforementioned technique to filter blood and thus temporarily replace the kidney function.</li>
 </ol>
 </div>
 </div>
@@ -361,7 +373,7 @@ Examples
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Examples
+<span class="screen-reader-only">Tip</span>Examples
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -396,7 +408,7 @@ Examples
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Example: BibTeX format
+<span class="screen-reader-only">Tip</span>Example: BibTeX format
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -544,7 +556,7 @@ Table&nbsp;2.2: Data fields PMID, AU, TI shown for three records
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Example
+<span class="screen-reader-only">Tip</span>Example
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -562,7 +574,7 @@ Example
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Example: systematic review about chronic non-cancer pain
+<span class="screen-reader-only">Tip</span>Example: systematic review about chronic non-cancer pain
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -626,7 +638,7 @@ Figure&nbsp;2.2: Evidence pyramid
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-The FAIR Principles
+<span class="screen-reader-only">Note</span>The FAIR Principles
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -659,7 +671,7 @@ The FAIR Principles
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Recommended links
+<span class="screen-reader-only">Tip</span>Recommended links
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -682,7 +694,7 @@ Recommended links
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-full-text retrieval tools
+<span class="screen-reader-only">Tip</span>full-text retrieval tools
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -710,14 +722,14 @@ full-text retrieval tools
 Table&nbsp;2.3: Line 5 is an orphan line.
 </figcaption>
 <div aria-describedby="tbl-orphanline-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   hypertension<span class="op">/</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   hypertension<span class="op">/</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>   (hypertension <span class="kw">or</span> high blood pressure).ti,ab.</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>   <span class="op">*</span>patient attitude<span class="op">/</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   <span class="op">*</span>patient satisfaction<span class="op">/</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span>   (choice$ <span class="kw">or</span> empower$).ti.</span>
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span>   <span class="dv">1</span> <span class="kw">or</span> <span class="dv">2</span></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span>   <span class="dv">3</span> <span class="kw">or</span> <span class="dv">4</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span>   <span class="dv">6</span> <span class="kw">and</span> <span class="dv">7</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span>   <span class="dv">6</span> <span class="kw">and</span> <span class="dv">7</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </figure>
 </div>
@@ -732,7 +744,7 @@ Table&nbsp;2.3: Line 5 is an orphan line.
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Free plain text editors
+<span class="screen-reader-only">Tip</span>Free plain text editors
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -773,7 +785,7 @@ Free plain text editors
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Conversion tool
+<span class="screen-reader-only">Tip</span>Conversion tool
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -792,7 +804,7 @@ Conversion tool
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Example: RIS format
+<span class="screen-reader-only">Tip</span>Example: RIS format
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -832,7 +844,7 @@ ER  - </code></pre>
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Retraction notice vs.&nbsp;retracted publication
+<span class="screen-reader-only">Note</span>Retraction notice vs.&nbsp;retracted publication
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -845,7 +857,7 @@ Retraction notice vs.&nbsp;retracted publication
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Retraction Watch
+<span class="screen-reader-only">Tip</span>Retraction Watch
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -862,7 +874,7 @@ Retraction Watch
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Purposes of seed papers
+<span class="screen-reader-only">Tip</span>Purposes of seed papers
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -880,7 +892,7 @@ Purposes of seed papers
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Personal note
+<span class="screen-reader-only">Caution</span>Personal note
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -952,7 +964,7 @@ Table&nbsp;2.4: Examples for syntax in different search interfaces
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Common sources of error
+<span class="screen-reader-only">Warning</span>Common sources of error
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1030,7 +1042,7 @@ Table&nbsp;2.5: Commonly known databases and their thesauri
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-MeSH hierarchy from the top of the MeSH tree to <a href="https://www.ncbi.nlm.nih.gov/mesh/68035422"><em>Pleural Cavity</em></a>
+<span class="screen-reader-only">Tip</span>MeSH hierarchy from the top of the MeSH tree to <a href="https://www.ncbi.nlm.nih.gov/mesh/68035422"><em>Pleural Cavity</em></a>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1045,8 +1057,35 @@ MeSH hierarchy from the top of the MeSH tree to <a href="https://www.ncbi.nlm.ni
 </div>
 <p>The controlled vocabularies are regularly updated, new index terms are introduced or hierarchies rearranged. (See <a href="https://www.nlm.nih.gov/mesh/whatsnew.html">What’s New in MeSH</a> for example).</p>
 </section>
-<section id="sec-wildcard" class="level2" data-number="2.26">
-<h2 data-number="2.26" class="anchored" data-anchor-id="sec-wildcard"><span class="header-section-number">2.26</span> wildcard</h2>
+<section id="sec-vocabularymismatch" class="level2" data-number="2.26">
+<h2 data-number="2.26" class="anchored" data-anchor-id="sec-vocabularymismatch"><span class="header-section-number">2.26</span> vocabulary mismatch</h2>
+<p>Vocabulary mismatch occurs when an object or circumstance is called or described by different individuals using different expressions, which means the vocabularies of these individuals do not match. This is a well-known phenomenon in information retrieval. (<span class="citation" data-cites="Furnas1987">Furnas et al. (<a href="references.html#ref-Furnas1987" role="doc-biblioref">1987</a>)</span>)</p>
+<p>For instance, researchers attempt to retrieve literature using search terms which seem relevant to them or are commonly used in their field, whereas authors might use different (and sometimes unspecific) expressions to describe the same subject.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A research group is interested in hypertension, which is why they use the search term <code>hypertension</code> in their free text search. However, some of the studies relevant to their research question mention</p>
+<blockquote class="blockquote">
+<p>… patients with 140/90 mmHg and above.</p>
+</blockquote>
+<p>or</p>
+<blockquote class="blockquote">
+<p>… participants with an elevated bp.</p>
+</blockquote>
+<p>instead of explicitly using the word <em>hypertension</em> in title or abstract of the publications.</p>
+</div>
+</div>
+<p>In order to mitigate this problem systematic literature searches usually employ synonyms, <a href="methods.html#sec-truncation">truncation</a>, <a href="methods.html#sec-indexterms">index terms</a>, and <a href="methods.html#sec-proximityops">proximity operators</a>, or are supplemented by non-Boolean techniques, such as <a href="methods.html#sec-citationsearching">citation searching</a>.</p>
+</section>
+<section id="sec-wildcard" class="level2" data-number="2.27">
+<h2 data-number="2.27" class="anchored" data-anchor-id="sec-wildcard"><span class="header-section-number">2.27</span> wildcard</h2>
 <p>Wildcards are special characters used for <a href="methods.html#sec-truncation">truncation</a>. The usage and meaning of the available wildcards for this purpose depends on the syntax of the database or search interface.</p>
 <div id="tbl-wildcards" class="striped quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -1173,6 +1212,9 @@ Damarell, Raechel A., Jennifer J. Tieman, and Ruth M. Sladek. 2013. <span>“<sp
 <div id="ref-Fawcett2006" class="csl-entry" role="listitem">
 Fawcett, Tom. 2006. <span>“An Introduction to <span>ROC</span> Analysis.”</span> <em>Pattern Recognit Lett</em> 27 (8): 861–74. <a href="https://doi.org/10.1016/j.patrec.2005.10.010">https://doi.org/10.1016/j.patrec.2005.10.010</a>.
 </div>
+<div id="ref-Furnas1987" class="csl-entry" role="listitem">
+Furnas, G. W., T. K. Landauer, L. M. Gomez, and S. T. Dumais. 1987. <span>“<span class="nocase">The Vocabulary Problem in Human-System Communication</span>.”</span> <em>Commun ACM</em> 30 (11): 964–71. <a href="https://doi.org/10.1145/32206.32212">https://doi.org/10.1145/32206.32212</a>.
+</div>
 <div id="ref-Glanville2019" class="csl-entry" role="listitem">
 Glanville, Julie, Ruth Foxlee, Susi Wisniewski, Anna Noel-Storr, Mary Edwards, and Gordon Dooley. 2019. <span>“<span class="nocase">Translating the Cochrane EMBASE RCT filter from the Ovid interface to Embase.com: a case study</span>.”</span> <em>Health Info Libr J</em> 36 (3): 264–77. <a href="https://doi.org/10.1111/hir.12269">https://doi.org/10.1111/hir.12269</a>.
 </div>
@@ -1267,13 +1309,14 @@ Wilkinson, Mark D., Michel Dumontier, I. Jsbrand Jan Aalbersberg, Gabrielle Appl
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

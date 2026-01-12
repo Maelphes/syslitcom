@@ -19,7 +19,13 @@ databases. Title and abstract are the key elements of a textword search.
 
 ## ambiguity {#sec-ambiguity}
 A term or statement which has more than one possible meaning or definition is 
-ambiguous. Ambiguity proves to be an obstacle in creating search strategies, 
+ambiguous and can exist in very different contexts. 
+
+Ambiguity is often caused by *polysemy*, i.e. the fact that one 
+expression can have more than one meaning, or by *homonymy*, in which independent 
+possess identical spelling, but bear different meanings.
+
+Ambiguity proves to be an obstacle in creating search strategies, 
 because any free text search with ambiguous terms will inevitably retrieve 
 records for all meanings of the term regardless of the context. In this case, it
 is an option to render such terms more specific by using phrases or proximity 
@@ -38,6 +44,16 @@ bone, the radius bone, the ulna bone or the metacarpal bones.
 kinds of arthropods: True crabs 
 ([Brachyura](https://www.ncbi.nlm.nih.gov/mesh/68003386)) or crab lice 
 ([Phthirus](https://www.ncbi.nlm.nih.gov/mesh/68020061)).
+5. `discharge` could mean the releasing an inpatient from a hospital or in 
+another context the releasing of an electric charge.
+6. `lead` can be the verb *to lead*, which can mean to direct something or 
+someone with authority, or the noun *lead*, which can mean various things, such 
+as a heavy metal element (Pb) or the thin graphite cylinder within pencils 
+("pencil lead").
+7. `dialysis` is a chemical technique of separating molecules in solution. It is 
+also the colloquial term for *renal dialysis*, a medical treatment using the 
+aforementioned technique to filter blood and thus temporarily replace the 
+kidney function.
 :::
 
 ## appendix {#sec-appendix}
@@ -671,6 +687,40 @@ All MeSH Categories
 The controlled vocabularies are regularly updated, new index terms are 
 introduced or hierarchies rearranged. (See 
 [What's New in MeSH](https://www.nlm.nih.gov/mesh/whatsnew.html) for example).
+
+## vocabulary mismatch {#sec-vocabularymismatch}
+
+Vocabulary mismatch occurs when an object or circumstance is called or described
+by different individuals using different expressions, which means the vocabularies 
+of these individuals do not match. This is a well-known phenomenon in 
+information retrieval. (@Furnas1987) 
+
+For instance, researchers attempt to retrieve literature using search terms 
+which seem relevant to them or are commonly used in their field, whereas authors 
+might use different (and sometimes unspecific) expressions to describe the same
+subject.
+
+::: {.callout-tip title="Example"}
+A research group is interested in hypertension, which is why they use the 
+search term `hypertension` in their free text search. However, some of the 
+studies relevant to their research question mention
+
+> ... patients with 140/90 mmHg and above.
+
+or 
+
+> ... participants with an elevated bp.
+
+instead of explicitly using the word *hypertension* in title or abstract of the 
+publications.
+
+::: 
+
+In order to mitigate this problem systematic literature searches usually 
+employ synonyms, [truncation](#sec-truncation), [index terms](#sec-indexterms), 
+and [proximity operators](#sec-proximityops), or are supplemented by non-Boolean
+techniques, such as [citation searching](#sec-citationsearching).
+
 
 ## wildcard {#sec-wildcard}
 
