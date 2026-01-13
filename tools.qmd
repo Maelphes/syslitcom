@@ -178,7 +178,35 @@ These programs are usually able to perform tasks with the records, such as
 
 For comparisons of reference management software see also <https://mediatum.ub.tum.de/1320978> and <https://en.wikipedia.org/wiki/Comparison_of_reference_management_software>.
 
-## searchbuildR
+## screening tools {#sec-screeningtools}
+
+The screening of records to classify them according to previously defined 
+[eligibility criteria](#sec-eligibilitycriteria) is a laborious task. 
+
+Tools have been developed which allow the management of references for this 
+particular task. They offer various features to accelerate or facilitate the
+selection process, such as deduplication, keyword highlighting, AI-based sorting 
+or automated exclusion of records. 
+
+The following table lists a few of those tools:
+
+::: {#tbl-screeningtools}
+| **Tool**    | **URL**                    | **Notes**                             |
+|:------------|:---------------------------|:--------------------------------------|
+| Abstrackr   | <https://abstrackr.com>    | free of charge                        |
+| ASReview    | <https://asreview.nl>      | free of charge, requires installation |
+| Catchii     | <https://catchii.org>      | free of charge                        |
+| colandr     | <https://www.colandrapp.com> | free of charge                      |
+| Covidence   | <https://covidence.org>    | fee-based, free trial project         |
+| PICO Portal | <https://picoportal.org>   | fee-based, free trial project         |
+| rayyan      | <https://www.rayyan.ai>    | fee-based, 3 review projects are free |
+| TERA        | <https://tera-tools.com>   | free of charge                        |
+: Different screening tools {.striped}
+:::
+
+See also: @Carey2022, @Bruin2025, @Halman2024, @KahiliHeede2021, @Ouzzani2016
+
+## searchbuildR {#sec-searchbuildr}
 [**searchbuildR**](https://github.com/IQWiG/searchbuildR) is a tool written 
 in [R](https://www.r-project.org/). Its purpose is to support 
 the development of [search strategies](#sec-searchstrategy) by identifing search 
@@ -233,7 +261,7 @@ a summary table containing [MeSH terms](#sec-indexterms) and
 
 ::: {#tbl-yalemeshanalyzer}
 | PMID            | 38644158                                                                                                                                                      | 30916023                                                                                                                                   | 38093118                                                                                                                                                                |
-|-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|:----------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Title**           | Ventilatory efficiency as a prognostic factor for postoperative...                                                                                            | Ventilatory inefficiency adversely affects outcomes and longer-...                                                                         | A retrospective analysis of the association of effort-independe...                                                                                                      |
 | **Author (Year)**   | Vetsch T (2024)                                                                                                                                               | Wilson RJT (2019)                                                                                                                          | Franssen RFW (2023)                                                                                                                                                     |
 | **MeSH Headings**  |                                                                                                                                                               | Aged <br>  Aged, 80 and over                                                                                                                     | Aged                                                                                                                                                                    |
