@@ -138,6 +138,7 @@ impact on the quality of the review. (@Gough2017, @Morrison2012, @Moher2003)
 
 BibTeX is also the name of a software package used to typeset references in [LaTeX](https://www.latex-project.org/). The references of this compendium are also managed and processed using the BibTeX format.
 
+More information about BibTeX can be found at <https://www.bibtex.org>.
 
 ## bibliographic database {#sec-bibdb}
 
