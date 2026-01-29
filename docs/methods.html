@@ -718,14 +718,15 @@ Figure&nbsp;4.4: Boolean Operators
 </section>
 <section id="sec-proximityops" class="level3" data-number="4.11.3">
 <h3 data-number="4.11.3" class="anchored" data-anchor-id="sec-proximityops"><span class="header-section-number">4.11.3</span> proximity operators</h3>
-<p>Many databases allow to search for terms depending on the word distance between each other. The so-called <strong>proximity searching</strong> search uses a <strong>proximity operator</strong> in which the allowed distance of the two expressions is defined by a number <em>N</em>, for example <strong>adj<em>N</em></strong> or <strong>NEAR/<em>N</em></strong>.</p>
-<div class="callout callout-style-default callout-tip callout-titled" title="Examples">
+<p>Many databases allow to search for terms depending on the word distance between each other. The so-called <strong>proximity searching</strong> search uses a <strong>proximity operator</strong> in which the allowed distance of the two expressions is defined by a number <em>N</em>, such as in <strong>adj<em>N</em></strong> or <strong>NEAR/<em>N</em></strong>.</p>
+<p>For example, the Ovid-syntax search query <code>((virtual or computer or learning or education) adj3 (simulation or dispensing)).ti,ab</code> can retrieve records with phrases such as “virtual dispensing” or “computer based simulation” or “simulation-based education” within the title or abstract.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Syntax examples">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Examples
+<span class="screen-reader-only">Tip</span>Syntax examples
 </div>
 </div>
 <div class="callout-body-container callout-body">

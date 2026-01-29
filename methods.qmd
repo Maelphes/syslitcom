@@ -360,9 +360,13 @@ which the term `pharmacy` occurs at least five times within the abstract.
 Many databases allow to search for terms depending on the word distance between
 each other. The so-called **proximity searching** search uses a 
 **proximity operator** in which the allowed distance of the two expressions is 
-defined by a number *N*, for example **adj*N*** or **NEAR/*N***.
+defined by a number *N*, such as in **adj*N*** or **NEAR/*N***.
 
-::: {.callout-tip title="Examples"}
+For example, the Ovid-syntax search query `((virtual or computer or learning or education) adj3 (simulation or dispensing)).ti,ab`
+can retrieve records with phrases such as "virtual dispensing" or "computer based simulation" or "simulation-based education" within the title or abstract. 
+
+
+::: {.callout-tip title="Syntax examples"}
 |                      |                                 |
 |----------------------|---------------------------------|
 | **PubMed**           | `"heart transplant"[TI:~2]`     |
@@ -374,6 +378,8 @@ defined by a number *N*, for example **adj*N*** or **NEAR/*N***.
 | **Scopus**           | `TITLE(heart W/2 transplant)`  |
 : Examples of proximity searching in different resources {.striped}
 :::
+
+
 
 :::{.callout-warning title="Please note"}
 - The number *N* sometimes defines the amount of words in between te 
