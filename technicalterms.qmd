@@ -392,6 +392,14 @@ they can be ordered using the
 [document delivery service](https://www.ub.unibe.ch/services/borrowing_and_ordering) 
 of a university library.
 
+In some cases, an article is published in more than one place at once. 
+There are full-text databases, such as [PubMed Central](#sec-pmc), which provide 
+access to a full text article parallel to the publisher. For example, the 
+guideline [PRISMA-S](#sec-prisma) by @Rethlefsen2021 is available via 
+[the journal website](https://doi.org/10.1186/s13643-020-01542-z) or as a 
+[PubMed Central record](https://pmc.ncbi.nlm.nih.gov/articles/PMC7839230/).
+
+
 :::{.callout-tip title="full-text retrieval tools"}
 There are tools that can help to identify the shortest path to the full-text:
 
@@ -404,6 +412,10 @@ Also [reference management programs](#sec-refmanagement) often provide ways to
 retrieve available full-texts for the managed references. Sometimes this 
 automated retrieval fails due to incompatibility or security measures of the 
 publishers, even when the full-text would be otherwise accessible (e.g. [EndNote](https://support.clarivate.com/Endnote/s/article/EndNote-Optimizing-Find-Full-Text-results-with-X2-and-later?language=en_US)).
+
+In case you are affiliated with a university or similar institution, it is 
+always a good idea to consult your institution's library catalog for all 
+options available to you for accessing a certain publication.
 :::
 
 
