@@ -83,21 +83,33 @@ FINER is an acronym for the five criteria **feasible**, **interesting**, **novel
 
 
 ::: {#tbl-finer}
-|                 |                                                                                                                                                                                                    |   |   |   |
-|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|---|---|
-| **feasible**    | The research question should not exceed the available resources, i.e. participants, expertise, time and money).                                                                                    |   |   |   |
-| **interesting** | The research question should in itself be interesting, not only to the researcher, but also to a broader public.                                                                                   |   |   |   |
-| **novel**       | The gain of knowledge and new information should be at the heart of the question. Research usually does not only reiterate already established data unless it is designed as a confirmatory study. |   |   |   |
-| **ethical**     | Proper research has to be ethical and must not bear unacceptable risks for its participants.                                                                                                       |   |   |   |
-| **relevant**    | The expected impact of the research on scientific knowledge and clinical processes can be a good measurement parameter for the relevance.                                                          |   |   |   |
+|                 |                                                                                                                                                                                                    |
+|:-----------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **feasible**    | The research question should not exceed the available resources, i.e. participants, expertise, time and money).                                                                                    |
+| **interesting** | The research question should in itself be interesting, not only to the researcher, but also to a broader public.                                                                                   |
+| **novel**       | The gain of knowledge and new information should be at the heart of the question. Research usually does not only reiterate already established data unless it is designed as a confirmatory study. |
+| **ethical**     | Proper research has to be ethical and must not bear unacceptable risks for its participants.                                                                                                       |
+| **relevant**    | The expected impact of the research on scientific knowledge and clinical processes can be a good measurement parameter for the relevance.                                                          |
 : The FINER criteria {.striped}
 :::
 
 ## PICO {#sec-pico}
-PICO is a mnemonic for the concepts *Population*, *Intervention*, *Comparison* 
-and *Outcome*. Concepts like these are used for defining research questions as 
+PICO is an acronym for the four concepts **Population**, **Intervention**, **Comparison** 
+and **Outcome**. Concepts like these are used for defining research questions as 
 well as eligibility criteria for the studies relevant for answering the 
 question.
+
+::: {#tbl-pico}
+|                   |                                                       |
+|:-------------------|:-------------------------------------------------------|
+| **Population**    | The patient group, problem or illness that should be diagnosed or treated as part of the study.   |
+| **Intervention**  | The diagnostic or therapeutic action to be examined in the study.      |
+| **Comparison**    | Diagnostic or therapeutic actions to compare the intervention with. This could be another established procedure, a placebo or no treatment at all.  |
+| **Outcome**       | A measure of effect of the intervention.       |
+
+: The PICO framework {.striped}
+:::
+
 
 There are other concepts and mnemonics for different kinds of research 
 questions, such as SPIDER, ECLIPSE, PIRD or PICOS. (@Munn2018a, @Methley2014, 
