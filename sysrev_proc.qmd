@@ -1,0 +1,138 @@
+# Conducting a systematic review
+
+This section describes the basic steps of conducting a systematic review. 
+There is more in-depth guidance in the literature.(@Muka2020, @Cherry2024, @Egger2022, @Gough2017)
+
+::: {.callout-tip title="Recommended reading"}
+- *Doing a Systematic Review* by @Cherry2024  
+- *Systematic Reviews in Health Research* by @Egger2022  
+- *An Introduction to Systematic Reviews* by @Gough2017
+:::
+
+## Research question
+
+Develop an answerable research question. Use the [FINER criteria](#sec-finer) 
+and frameworks such as [PICO](#sec-pico) to guide you through the process. 
+
+
+## Scoping search
+
+Run a quick scoping search (e.g. in [PubMed](https://pubmed.ncbi.nlm.nih.gov/) to achieve three goals: 
+		
+1. Find out whether a systematic review was recently published on your topic.
+
+2. Get a feeling how much primary literature is available on the topic.
+
+3. Find relevant [seed papers](#sec-seedpaper) to inform your systematic search.
+
+
+It is highly recommended to search relevant protocol registers ([PROSPERO](https://www.crd.york.ac.uk/prospero/), [OSF](https://osf.io/), [INPLASY](https://inplasy.com/)) for similar projects to avoid research waste.
+
+
+## Study design decision
+
+Systematic reviews are conducted by a team in a collaborative manner and take a 
+substantial amount of time to complete. Systematic reviews often take 
+approximately 12-18 months, from protocol to publication.
+
+Determine if a systematic review is an appropriate methodology for your 
+research question.(@Sutton2019, @Grant2009) Consider the [Review section](#sec-review) for guidance and 
+alternatives. The website [Right Review](https://whatreviewisrightforyou.knowledgetranslation.net/) 
+provides a tool to determine the most suitable study type for your research.
+
+
+
+##  Building a team
+
+A proper systematic review cannot be conducted by one person. Gather a team of 
+experts for your systematic review project, including:
+
+  - **Subject experts** with clinical and **methodological expertise**
+  - At least two **screeners** to review the results independently
+  - A third person or **tiebreaker** to make decisions if there is disagreement about a study meeting the inclusion criteria
+  - A **statistician**, if performing a meta-analysis
+  - An **information specialist** or a medical librarian trained to conduct a systematic literature search.
+
+
+:::{.callout-tip title="The role of information specialists"}
+
+Information specialists ...  
+
+- ... develop the search strategies which are essential for data acquisition.
+- ... document the systematic search in a transparent and reproducible manner.
+- ... draft the *Methods* section detailing the relevant steps of the search.
+- ... review and edit the manuscript and provide approval of the *Methods* section.
+- ... share all obligations as co-authors with the rest of the team.
+
+For more information on the role of information specialists see @Spencer2018, 
+@Metzendorf2016, @Foster2015, @Koffel2015, @Rethlefsen2015, @Schellinger2021, 
+@Meert2016.
+:::
+
+:::{.callout-note title="ICMJE Recommendations"}
+The [International Committee of Medical Journal Editors (ICMJE)](https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html). provides recommendations regarding the roles of authors and contributors, which 
+should be considered in decisions about co-authorship.
+::: 
+
+## Protocol registration
+
+A protocol is a detailed plan for your review. It includes a rationale for the 
+research project, the research question, the inclusion/exclusion criteria, 
+an outline of the planned literature search, methods for data abstraction, 
+data management and the quality assessment of the studies.
+
+The idea of a protocol is to counteract publication bias and other forms of bias, 
+and to inform the research community of your project and thus to avoid research waste.
+
+Write a protocol and register it in a register suitable to your review type, 
+such as [PROSPERO](https://www.crd.york.ac.uk/prospero/), [OSF](https://osf.io/) 
+or [INPLASY](https://inplasy.com/). Make sure to follow a reporting guideline, e.g. [PRISMA-P](#sec-prisma).
+
+
+## Literature search 
+
+Perform a [systematic search](#sec-syslitsearch) of the literature, preferably supported or conducted by information specialist.
+
+
+##  Screening of results
+
+Screen and classify studies based on the eligibility criteria defined in your 
+protocol. This is usually done by screening titles and abstracts first, then 
+full texts. 
+
+It is highly recommended to use [a screening tool](#sec-screeningtools). 
+Do this in a team of at least two screeners to counteract selection bias. 
+Make sure to keep track of the numbers of included and excluded records at 
+every stage of the screening process using a [PRISMA](#sec-prisma) flow diagram.  
+
+
+##  Data extraction
+
+Compile all the relevant information for data analysis from the eligible studies.
+
+
+## Quality assessment
+
+Perform a risk of bias analysis and [critical appraisal](https://casp-uk.net/what-is-critical-appraisal/) of the studies.
+Use a current [risk-of-bias tool](https://www.riskofbias.info/) and [checklists for critical appraisal](https://casp-uk.net/casp-tools-checklists/).
+
+See also @sec-criticalappraisal
+
+##  Synthesis of research
+
+Analyze the results from the compiled data. Consider performing a meta-analysis if the data is suitable and a statistical examination of the data makes sense.
+
+
+## Interpretation
+
+Draw conclusions from the your results and summarize your findings according to your target audience.
+
+
+## Write and publish
+
+Select a suitable journal for publication. Make sure to [avoid predatory publishers](https://thinkchecksubmit.org/). Draft a manuscript together with your co-authors and publish your systematic review. Make sure to properly document your review and your systematic search according to PRISMA and PRISMA-S. In case you need a reference management program, make sure you consult @sec-refmanagement for guidance.
+
+
+
+
+

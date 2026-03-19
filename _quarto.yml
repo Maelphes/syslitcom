@@ -11,12 +11,17 @@ book:
   cover-image: ./fig/logo_2.svg
   chapters:
     - index.qmd
-    - databases.qmd
-    - technicalterms.qmd
-    - tools.qmd
-    - methods.qmd
-    - publicationtypes.qmd
-    - references.qmd
+    - part: "Glossary"
+      chapters:
+        - databases.qmd
+        - technicalterms.qmd
+        - tools.qmd
+        - methods.qmd
+        - publicationtypes.qmd
+        - references.qmd
+    - part: "LibGuide"
+      chapters: 
+        - sysrev_proc.qmd
   navbar:
     logo: ./fig/logo_small.svg
     background: "#2a536b" 
