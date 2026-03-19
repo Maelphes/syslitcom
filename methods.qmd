@@ -11,6 +11,9 @@ known relevant articles, called [*seed papers*](#sec-seedpaper) (also known as
 The [TARCiS Statement](#sec-tarcis) provides a guideline for citation searching.
 (@Hirt2024)
 
+The software [citationchaser](#sec-citationchaser) provides a convenient tool 
+for citation searching.(@Haddaway2022b)
+
 Citation searching can be advisable at the very beginning of a systematic 
 literature search in order to find additional core papers and to identify 
 additional search terms. After finishing the final search it can be used to 

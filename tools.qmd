@@ -7,6 +7,10 @@ link-bibliography: true
 
 # Tools {#sec-tools}
 
+## citationchaser {#sec-citationchaser}
+
+**citationchaser** is a free tool for [citation searching](#sec-citationsearching). citationchaser is an [R package](https://github.com/nealhaddaway/citationchaser), deployed as a shinyapp at <https://estech.shinyapps.io/citationchaser/>. It uses the [Lens.org Scholarly API](https://www.lens.org/lens/user/subscriptions#scholar) for the retrieval of bibliographic information and for backward and forward citation searching.(@Haddaway2022b, @Haddaway2021)
+
 ## Entrez Programming Utilities {#sec-e-utilities}
 
 The **Entrez Programming Utilities** (E-utilities) are a set of nine 

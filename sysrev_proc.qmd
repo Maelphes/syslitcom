@@ -1,7 +1,7 @@
 # Conducting a systematic review
 
 This section describes the basic steps of conducting a systematic review. 
-There is more in-depth guidance in the literature.(@Muka2020, @Cherry2024, @Egger2022, @Gough2017)
+There is more in-depth guidance in the literature. (@Muka2020, @Cherry2024, @Egger2022, @Gough2017)
 
 ::: {.callout-tip title="Recommended reading"}
 - *Doing a Systematic Review* by @Cherry2024  
@@ -81,8 +81,8 @@ research project, the research question, the inclusion/exclusion criteria,
 an outline of the planned literature search, methods for data abstraction, 
 data management and the quality assessment of the studies.
 
-The idea of a protocol is to counteract publication bias and other forms of bias, 
-and to inform the research community of your project and thus to avoid research waste.
+The idea of a protocol is to counteract publication bias and to inform the 
+research community of your project and thus to avoid research waste. (@Editors2011)
 
 Write a protocol and register it in a register suitable to your review type, 
 such as [PROSPERO](https://www.crd.york.ac.uk/prospero/), [OSF](https://osf.io/) 
