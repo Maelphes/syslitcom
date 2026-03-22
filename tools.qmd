@@ -171,6 +171,21 @@ The PubReMiner is maintained by [Jan Koster](https://orcid.org/0000-0002-0890-75
 from the Amsterdam University Medical Centers (Amsterdam UMC).
 
 
+## RAISE {#sec-raise}
+
+RAISE is the abbreviation for **Responsible use of AI in evidence SynthEsis**,
+which is a project for providing guidance regarding the responsible use of 
+Artificial Intelligence in evidence synthesis. Currently, there are drafts of 
+three core documents: 
+
+- RAISE 1 - recommendations for practice
+- RAISE 2 - building and evaluating AI evidence synthesis tools
+- RAISE 3 - selecting and using AI evidence synthesis tools
+
+See @Thomas2025 for more details and the current document versions. RAISE is
+currently in preparation for peer-reviewed publication.
+
+
 ## Reference Management software {#sec-refmanagement}
 Bibliographic records and similar sets of data such as clinical study metadata 
 can be stored and managed using **reference management programs** (also called 
