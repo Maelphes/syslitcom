@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>3&nbsp; Tools – SysLit Compendium</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -60,7 +63,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -90,15 +92,14 @@ div.csl-indent {
 <link href="./technicalterms.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-a06763021a52c43c40a351ac8b799b8f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4666ebd988f99e28082c76482a351d50.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4025044f2401a00c6667f938102e08b1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -167,10 +168,6 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      </a>
-      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -259,22 +256,23 @@ div.csl-indent {
    
   <ul>
   <li><a href="#sec-citationchaser" id="toc-sec-citationchaser" class="nav-link active" data-scroll-target="#sec-citationchaser"><span class="header-section-number">3.1</span> citationchaser</a></li>
-  <li><a href="#sec-e-utilities" id="toc-sec-e-utilities" class="nav-link" data-scroll-target="#sec-e-utilities"><span class="header-section-number">3.2</span> Entrez Programming Utilities</a>
+  <li><a href="#sec-credit" id="toc-sec-credit" class="nav-link" data-scroll-target="#sec-credit"><span class="header-section-number">3.2</span> CRediT</a></li>
+  <li><a href="#sec-e-utilities" id="toc-sec-e-utilities" class="nav-link" data-scroll-target="#sec-e-utilities"><span class="header-section-number">3.3</span> Entrez Programming Utilities</a>
   <ul class="collapse">
-  <li><a href="#e-utilities-via-url" id="toc-e-utilities-via-url" class="nav-link" data-scroll-target="#e-utilities-via-url"><span class="header-section-number">3.2.1</span> E-utilities via URL</a></li>
-  <li><a href="#entrez-direct" id="toc-entrez-direct" class="nav-link" data-scroll-target="#entrez-direct"><span class="header-section-number">3.2.2</span> Entrez Direct</a></li>
+  <li><a href="#e-utilities-via-url" id="toc-e-utilities-via-url" class="nav-link" data-scroll-target="#e-utilities-via-url"><span class="header-section-number">3.3.1</span> E-utilities via URL</a></li>
+  <li><a href="#entrez-direct" id="toc-entrez-direct" class="nav-link" data-scroll-target="#entrez-direct"><span class="header-section-number">3.3.2</span> Entrez Direct</a></li>
   </ul></li>
-  <li><a href="#sec-finer" id="toc-sec-finer" class="nav-link" data-scroll-target="#sec-finer"><span class="header-section-number">3.3</span> FINER</a></li>
-  <li><a href="#sec-pico" id="toc-sec-pico" class="nav-link" data-scroll-target="#sec-pico"><span class="header-section-number">3.4</span> PICO</a></li>
-  <li><a href="#sec-press" id="toc-sec-press" class="nav-link" data-scroll-target="#sec-press"><span class="header-section-number">3.5</span> PRESS</a></li>
-  <li><a href="#sec-prisma" id="toc-sec-prisma" class="nav-link" data-scroll-target="#sec-prisma"><span class="header-section-number">3.6</span> PRISMA</a></li>
-  <li><a href="#sec-pubreminer" id="toc-sec-pubreminer" class="nav-link" data-scroll-target="#sec-pubreminer"><span class="header-section-number">3.7</span> PubReMiner</a></li>
-  <li><a href="#sec-raise" id="toc-sec-raise" class="nav-link" data-scroll-target="#sec-raise"><span class="header-section-number">3.8</span> RAISE</a></li>
-  <li><a href="#sec-refmanagement" id="toc-sec-refmanagement" class="nav-link" data-scroll-target="#sec-refmanagement"><span class="header-section-number">3.9</span> Reference Management software</a></li>
-  <li><a href="#sec-screeningtools" id="toc-sec-screeningtools" class="nav-link" data-scroll-target="#sec-screeningtools"><span class="header-section-number">3.10</span> screening tools</a></li>
-  <li><a href="#sec-searchbuildr" id="toc-sec-searchbuildr" class="nav-link" data-scroll-target="#sec-searchbuildr"><span class="header-section-number">3.11</span> searchbuildR</a></li>
-  <li><a href="#sec-tarcis" id="toc-sec-tarcis" class="nav-link" data-scroll-target="#sec-tarcis"><span class="header-section-number">3.12</span> TARCiS</a></li>
-  <li><a href="#sec-yalemeshanalyzer" id="toc-sec-yalemeshanalyzer" class="nav-link" data-scroll-target="#sec-yalemeshanalyzer"><span class="header-section-number">3.13</span> Yale MeSH Analyzer</a></li>
+  <li><a href="#sec-finer" id="toc-sec-finer" class="nav-link" data-scroll-target="#sec-finer"><span class="header-section-number">3.4</span> FINER</a></li>
+  <li><a href="#sec-pico" id="toc-sec-pico" class="nav-link" data-scroll-target="#sec-pico"><span class="header-section-number">3.5</span> PICO</a></li>
+  <li><a href="#sec-press" id="toc-sec-press" class="nav-link" data-scroll-target="#sec-press"><span class="header-section-number">3.6</span> PRESS</a></li>
+  <li><a href="#sec-prisma" id="toc-sec-prisma" class="nav-link" data-scroll-target="#sec-prisma"><span class="header-section-number">3.7</span> PRISMA</a></li>
+  <li><a href="#sec-pubreminer" id="toc-sec-pubreminer" class="nav-link" data-scroll-target="#sec-pubreminer"><span class="header-section-number">3.8</span> PubReMiner</a></li>
+  <li><a href="#sec-raise" id="toc-sec-raise" class="nav-link" data-scroll-target="#sec-raise"><span class="header-section-number">3.9</span> RAISE</a></li>
+  <li><a href="#sec-refmanagement" id="toc-sec-refmanagement" class="nav-link" data-scroll-target="#sec-refmanagement"><span class="header-section-number">3.10</span> Reference Management software</a></li>
+  <li><a href="#sec-screeningtools" id="toc-sec-screeningtools" class="nav-link" data-scroll-target="#sec-screeningtools"><span class="header-section-number">3.11</span> screening tools</a></li>
+  <li><a href="#sec-searchbuildr" id="toc-sec-searchbuildr" class="nav-link" data-scroll-target="#sec-searchbuildr"><span class="header-section-number">3.12</span> searchbuildR</a></li>
+  <li><a href="#sec-tarcis" id="toc-sec-tarcis" class="nav-link" data-scroll-target="#sec-tarcis"><span class="header-section-number">3.13</span> TARCiS</a></li>
+  <li><a href="#sec-yalemeshanalyzer" id="toc-sec-yalemeshanalyzer" class="nav-link" data-scroll-target="#sec-yalemeshanalyzer"><span class="header-section-number">3.14</span> Yale MeSH Analyzer</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://www.github.com/Maelphes/syslitcom/edit/gh-pages/tools.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/blob/gh-pages/tools.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -302,18 +300,116 @@ div.csl-indent {
 
 <section id="sec-citationchaser" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="sec-citationchaser"><span class="header-section-number">3.1</span> citationchaser</h2>
-<p><strong>citationchaser</strong> is a free tool for <a href="methods.html#sec-citationsearching">citation searching</a>. citationchaser is an <a href="https://github.com/nealhaddaway/citationchaser">R package</a>, deployed as a shinyapp at <a href="https://estech.shinyapps.io/citationchaser/" class="uri">https://estech.shinyapps.io/citationchaser/</a>. It uses the <a href="https://www.lens.org/lens/user/subscriptions#scholar">Lens.org Scholarly API</a> for the retrieval of bibliographic information and for backward and forward citation searching.(<span class="citation" data-cites="Haddaway2022b">Neal R. Haddaway, Grainger, and Gray (<a href="references.html#ref-Haddaway2022b" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="Haddaway2021">N. R. Haddaway, Grainger, and Gray (<a href="references.html#ref-Haddaway2021" role="doc-biblioref">2021</a>)</span>)</p>
+<p><strong>citationchaser</strong> is a free tool for <a href="methods.html#sec-citationsearching">citation searching</a>. citationchaser is an <a href="https://github.com/nealhaddaway/citationchaser">R package</a>, deployed as a shinyapp at <a href="https://estech.shinyapps.io/citationchaser/" class="uri">https://estech.shinyapps.io/citationchaser/</a>. It uses the <a href="https://www.lens.org/lens/user/subscriptions#scholar">Lens.org Scholarly API</a> for the retrieval of bibliographic information and for backward and forward citation searching.(<span class="citation" data-cites="Haddaway2022b">Haddaway et al. (<a href="references.html#ref-Haddaway2022b" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="Haddaway2021">Haddaway et al. (<a href="references.html#ref-Haddaway2021" role="doc-biblioref">2021</a>)</span>)</p>
 </section>
-<section id="sec-e-utilities" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="sec-e-utilities"><span class="header-section-number">3.2</span> Entrez Programming Utilities</h2>
+<section id="sec-credit" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sec-credit"><span class="header-section-number">3.2</span> CRediT</h2>
+<p>The <strong>Contributor Roles Taxonomy (CRediT)</strong> is an American National Standard developed by the <a href="https://www.niso.org">National Information Standards Organization (NISO)</a>. See <span class="citation" data-cites="NCWG2022">NISO CRediT Working Group (<a href="references.html#ref-NCWG2022" role="doc-biblioref">2022</a>)</span> and <a href="https://credit.niso.org/" class="uri">https://credit.niso.org/</a> for more information. It provides a convention for describing the contributions of authors in scholarly publications. (<span class="citation" data-cites="Allen2019">Allen et al. (<a href="references.html#ref-Allen2019" role="doc-biblioref">2019</a>)</span>)</p>
+<p>The idea behind the CRediT standard is to facilitate the recognition of author contributions and to make the authorship more transparent. When an article is submitted for publication, the contributions of each author can be described using the contributer roles described in the following table.</p>
+<div id="tbl-credit" class="striped quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-credit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3.1: Contributor roles as described in ANSI/NISO Z39.104-2022.
+</figcaption>
+<div aria-describedby="tbl-credit-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="table-striped caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 87%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Contributer Roles</th>
+<th style="text-align: left;">Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Conceptualization</td>
+<td style="text-align: left;">Ideas; formulation or evolution of overarching research goals and aims.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Data curation</td>
+<td style="text-align: left;">Management activities to annotate (produce metadata), scrub data and maintain research data (including software code, where it is necessary for interpreting the data itself) for initial use and later re-use.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Formal analysis</td>
+<td style="text-align: left;">Application of statistical, mathematical, computational, or other formal techniques to analyze or synthesize study data.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Funding acquisition</td>
+<td style="text-align: left;">Acquisition of the financial support for the project leading to this publication.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Investigation</td>
+<td style="text-align: left;">Conducting a research and investigation process, specifically performing the experiments, or data/evidence collection.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Methodology</td>
+<td style="text-align: left;">Development or design of methodology; creation of models.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Project administration</td>
+<td style="text-align: left;">Management and coordination responsibility for the research activity planning and execution.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Resources</td>
+<td style="text-align: left;">Provision of study materials, reagents, materials, patients, laboratory samples, animals, instrumentation, computing resources, or other analysis tools.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Software</td>
+<td style="text-align: left;">Programming, software development; designing computer programs; implementation of the computer code and supporting algorithms; testing of existing code components.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Supervision</td>
+<td style="text-align: left;">Oversight and leadership responsibility for the research activity planning and execution, including mentorship external to the core team.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Validation</td>
+<td style="text-align: left;">Verification, whether as a part of the activity or separate, of the overall replication/reproducibility of results/experiments and other research outputs.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Visualization</td>
+<td style="text-align: left;">Preparation, creation and/or presentation of the published work, specifically visualization/data presentation.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Writing – original draft</td>
+<td style="text-align: left;">Preparation, creation and/or presentation of the published work, specifically writing the initial draft (including substantive translation).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Writing – review &amp; editing</td>
+<td style="text-align: left;">Preparation, creation and/or presentation of the published work by those from the original research group, specifically critical review, commentary or revision - including pre- or post-publication stages</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example for using CRediT">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Example for using CRediT
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Author Contributions</strong></p>
+<p><strong>Jane Doe</strong>: Conceptualization, Methodology, Software, Writing - review &amp; editing. <strong>John Smith</strong>: Data curation, Writing - original draft. <strong>Alex Miller</strong>: Visualization, Investigation, Writing - original draft. <strong>Max Headroom</strong>: Supervision, Writing - reviewing &amp; editing.</p>
+</div>
+</div>
+</section>
+<section id="sec-e-utilities" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="sec-e-utilities"><span class="header-section-number">3.3</span> Entrez Programming Utilities</h2>
 <p>The <strong>Entrez Programming Utilities</strong> (E-utilities) are a set of nine programs which provide an <a href="https://en.wikipedia.org/wiki/API">API</a> to the <a href="databases.html#sec-entrez">Entrez</a> database system of the NCBI. Comprehensive information about the E-utilifies is available in the official <a href="https://www.ncbi.nlm.nih.gov/books/NBK25501/">E-utilities Help</a>.</p>
-<section id="e-utilities-via-url" class="level3" data-number="3.2.1">
-<h3 data-number="3.2.1" class="anchored" data-anchor-id="e-utilities-via-url"><span class="header-section-number">3.2.1</span> E-utilities via URL</h3>
+<section id="e-utilities-via-url" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="e-utilities-via-url"><span class="header-section-number">3.3.1</span> E-utilities via URL</h3>
 <p>These programs are server-based and can be deployed using different URLs. These URLs to query Entrez are composed of the base URL <code>https://eutils.ncbi.nlm.nih.gov/entrez/eutils/</code> to which a string with the desired utility and the query is attached, for instance <a href="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&amp;term=BMJ%5Bjournal%5D+AND+hernia+AND+2010%5Bpdat%5D"><code>esearch.fcgi?db=pubmed&amp;term=BMJ[journal]+AND+hernia+AND+2010[pdat]</code></a></p>
 <p>The results for these queries are usually returned as XML-structured data.</p>
 </section>
-<section id="entrez-direct" class="level3" data-number="3.2.2">
-<h3 data-number="3.2.2" class="anchored" data-anchor-id="entrez-direct"><span class="header-section-number">3.2.2</span> Entrez Direct</h3>
+<section id="entrez-direct" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="entrez-direct"><span class="header-section-number">3.3.2</span> Entrez Direct</h3>
 <p>The E-utilities are also available directly on a <a href="https://en.wikipedia.org/wiki/Unix_shell">Unix shell</a> under Linux or macOS by using the package <a href="https://www.ncbi.nlm.nih.gov/books/NBK179288/"><strong>Entrez Direct</strong></a> (EDirect).</p>
 <p>One of the main advantages of EDirect are the <a href="https://www.freecodecamp.org/news/the-linux-commands-handbook/">commands</a> that are available on the shell, for example <code>grep</code>, <code>sort</code>, <code>uniq</code> or <code>wc</code>, which allow the results to be processed directly. Also shell scripts can be used to automate the processing.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Example: Retrieve similar articles">
@@ -344,7 +440,7 @@ Figure&nbsp;3.1: Similar Articles via Entrez Direct
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Unix Shell on Windows">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -353,7 +449,7 @@ Figure&nbsp;3.1: Similar Articles via Entrez Direct
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>There is a quick and easy way to get access to Linux and its shell even when one is running a (modern) Windows PC: The Windows Subsystem for Linux (WSL) provides an environment to install Linux from within Windows (10 or later).</p>
 <p>For more on this, see</p>
@@ -367,7 +463,7 @@ Figure&nbsp;3.1: Similar Articles via Entrez Direct
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="EDirect-related resources">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -376,7 +472,7 @@ Figure&nbsp;3.1: Similar Articles via Entrez Direct
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li><a href="https://www.ncbi.nlm.nih.gov/books/NBK179288/">NCBI Bookshelf</a> (<span class="citation" data-cites="Kans2013">Kans (<a href="references.html#ref-Kans2013" role="doc-biblioref">2013</a>)</span>)</li>
@@ -389,13 +485,13 @@ Figure&nbsp;3.1: Similar Articles via Entrez Direct
 </div>
 </section>
 </section>
-<section id="sec-finer" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="sec-finer"><span class="header-section-number">3.3</span> FINER</h2>
-<p>FINER is an acronym for the five criteria <strong>feasible</strong>, <strong>interesting</strong>, <strong>novel</strong>, <strong>ethical</strong> and <strong>relevant</strong> which can be used as guidance when formulating a good clinical research question. See <a href="#tbl-finer" class="quarto-xref">Table&nbsp;<span>3.1</span></a>. (<span class="citation" data-cites="Cummings2013">Cummings, Browner, and Hulley (<a href="references.html#ref-Cummings2013" role="doc-biblioref">2013</a>)</span>)</p>
+<section id="sec-finer" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="sec-finer"><span class="header-section-number">3.4</span> FINER</h2>
+<p>FINER is an acronym for the five criteria <strong>feasible</strong>, <strong>interesting</strong>, <strong>novel</strong>, <strong>ethical</strong> and <strong>relevant</strong> which can be used as guidance when formulating a good clinical research question. See <a href="#tbl-finer" class="quarto-xref">Table&nbsp;<span>3.2</span></a>. (<span class="citation" data-cites="Cummings2013">Cummings et al. (<a href="references.html#ref-Cummings2013" role="doc-biblioref">2013</a>)</span>)</p>
 <div id="tbl-finer" class="striped quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-finer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3.1: The FINER criteria
+Table&nbsp;3.2: The FINER criteria
 </figcaption>
 <div aria-describedby="tbl-finer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-striped caption-top table">
@@ -430,13 +526,13 @@ Table&nbsp;3.1: The FINER criteria
 </figure>
 </div>
 </section>
-<section id="sec-pico" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="sec-pico"><span class="header-section-number">3.4</span> PICO</h2>
+<section id="sec-pico" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="sec-pico"><span class="header-section-number">3.5</span> PICO</h2>
 <p>PICO is an acronym for the four concepts <strong>Population</strong>, <strong>Intervention</strong>, <strong>Comparison</strong> and <strong>Outcome</strong>. Concepts like these are used for defining research questions as well as eligibility criteria for the studies relevant for answering the question.</p>
 <div id="tbl-pico" class="striped quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-pico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3.2: The PICO framework
+Table&nbsp;3.3: The PICO framework
 </figcaption>
 <div aria-describedby="tbl-pico-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-striped caption-top table">
@@ -468,19 +564,19 @@ Table&nbsp;3.2: The PICO framework
 </div>
 <p>There are other concepts and mnemonics for different kinds of research questions, such as SPIDER, ECLIPSE, PIRD or PICOS. (<span class="citation" data-cites="Munn2018a">Munn et al. (<a href="references.html#ref-Munn2018a" role="doc-biblioref">2018</a>)</span>, <span class="citation" data-cites="Methley2014">Methley et al. (<a href="references.html#ref-Methley2014" role="doc-biblioref">2014</a>)</span>, <span class="citation" data-cites="Eriksen2018">Eriksen and Frandsen (<a href="references.html#ref-Eriksen2018" role="doc-biblioref">2018</a>)</span>)</p>
 </section>
-<section id="sec-press" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="sec-press"><span class="header-section-number">3.5</span> PRESS</h2>
+<section id="sec-press" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="sec-press"><span class="header-section-number">3.6</span> PRESS</h2>
 <p><strong>Peer Review of Electronic Search Strategies (PRESS)</strong> by <span class="citation" data-cites="McGowan2016">McGowan et al. (<a href="references.html#ref-McGowan2016" role="doc-biblioref">2016</a>)</span> is an evidence-based guideline for the peer review of search strategies. It is mainly focused on systematic review projects, health technology assesments (HTAs) and other kinds of reviews. A main tool for PRESS is a checklist which guides the reader through the process of peer review.</p>
 </section>
-<section id="sec-prisma" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="sec-prisma"><span class="header-section-number">3.6</span> PRISMA</h2>
+<section id="sec-prisma" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="sec-prisma"><span class="header-section-number">3.7</span> PRISMA</h2>
 <p><strong>Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA)</strong> by <span class="citation" data-cites="Page2021a">Page, McKenzie, et al. (<a href="references.html#ref-Page2021a" role="doc-biblioref">2021</a>)</span> is a set of minimum requirements for the reporting and documentation of systematic reviews. The goal of PRISMA is to set standards for reporting and in doing so increase the overall quality of systematic reviews. A detailed explanatory paper was published by <span class="citation" data-cites="Page2021b">Page, Moher, et al. (<a href="references.html#ref-Page2021b" role="doc-biblioref">2021</a>)</span>.</p>
-<p>PRISMA also provides tools such as a checklist and a flowchart, which can be used for creating the recommended tables and figures for publication. (<span class="citation" data-cites="rethlefsen_page_2021">M. Rethlefsen and Page (<a href="references.html#ref-rethlefsen_page_2021" role="doc-biblioref">2021</a>)</span>)</p>
-<p>There are additional extensions of PRISMA for various purposes, such as PRISMA-S for the documentation of systematic literature searches (<span class="citation" data-cites="Rethlefsen2021">M. L. Rethlefsen et al. (<a href="references.html#ref-Rethlefsen2021" role="doc-biblioref">2021</a>)</span>) or PRISMA-ScR for scoping reviews (<span class="citation" data-cites="Tricco2018">Tricco et al. (<a href="references.html#ref-Tricco2018" role="doc-biblioref">2018</a>)</span>).</p>
+<p>PRISMA also provides tools such as a checklist and a flowchart, which can be used for creating the recommended tables and figures for publication. (<span class="citation" data-cites="rethlefsen_page_2021">Rethlefsen and Page (<a href="references.html#ref-rethlefsen_page_2021" role="doc-biblioref">2021</a>)</span>)</p>
+<p>There are additional extensions of PRISMA for various purposes, such as PRISMA-S for the documentation of systematic literature searches (<span class="citation" data-cites="Rethlefsen2021">Rethlefsen et al. (<a href="references.html#ref-Rethlefsen2021" role="doc-biblioref">2021</a>)</span>) or PRISMA-ScR for scoping reviews (<span class="citation" data-cites="Tricco2018">Tricco et al. (<a href="references.html#ref-Tricco2018" role="doc-biblioref">2018</a>)</span>).</p>
 <p>See also <a href="https://prisma-statement.org" class="uri">https://prisma-statement.org</a>.</p>
 </section>
-<section id="sec-pubreminer" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="sec-pubreminer"><span class="header-section-number">3.7</span> PubReMiner</h2>
+<section id="sec-pubreminer" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="sec-pubreminer"><span class="header-section-number">3.8</span> PubReMiner</h2>
 <p>The <a href="https://hgserver2.amc.nl/cgi-bin/miner/miner2.cgi"><strong>PubMed PubReMiner</strong></a> is an online tool that enables the user to extract information from the results of a <a href="databases.html#sec-pubmed">PubMed</a> query.</p>
 <p>Upon entering search terms (in valid <a href="technicalterms.html#sec-syntax">PubMed syntax</a>), PubReMiner summarizes the results of the query by creating tables with the following information:</p>
 <ul>
@@ -496,18 +592,18 @@ Table&nbsp;3.2: The PICO framework
 <p>The tool can be used to extract data from a set of <a href="technicalterms.html#sec-seedpaper">seed papers</a> simply by entering their PMIDs as a search query.</p>
 <p>The PubReMiner is maintained by <a href="https://orcid.org/0000-0002-0890-7585">Jan Koster</a> from the Amsterdam University Medical Centers (Amsterdam UMC).</p>
 </section>
-<section id="sec-raise" class="level2" data-number="3.8">
-<h2 data-number="3.8" class="anchored" data-anchor-id="sec-raise"><span class="header-section-number">3.8</span> RAISE</h2>
+<section id="sec-raise" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="sec-raise"><span class="header-section-number">3.9</span> RAISE</h2>
 <p>RAISE is the abbreviation for <strong>Responsible use of AI in evidence SynthEsis</strong>, which is a project for providing guidance regarding the responsible use of Artificial Intelligence in evidence synthesis. Currently, there are drafts of three core documents:</p>
 <ul>
 <li>RAISE 1 - recommendations for practice</li>
 <li>RAISE 2 - building and evaluating AI evidence synthesis tools</li>
 <li>RAISE 3 - selecting and using AI evidence synthesis tools</li>
 </ul>
-<p>See <span class="citation" data-cites="Thomas2025">Thomas, Flemyng, and Noel-Storr (<a href="references.html#ref-Thomas2025" role="doc-biblioref">2025</a>)</span> for more details and the current document versions. RAISE is currently in preparation for peer-reviewed publication.</p>
+<p>See <span class="citation" data-cites="Thomas2025">Thomas et al. (<a href="references.html#ref-Thomas2025" role="doc-biblioref">2025</a>)</span> for more details and the current document versions. RAISE is currently in preparation for peer-reviewed publication.</p>
 </section>
-<section id="sec-refmanagement" class="level2" data-number="3.9">
-<h2 data-number="3.9" class="anchored" data-anchor-id="sec-refmanagement"><span class="header-section-number">3.9</span> Reference Management software</h2>
+<section id="sec-refmanagement" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="sec-refmanagement"><span class="header-section-number">3.10</span> Reference Management software</h2>
 <p>Bibliographic records and similar sets of data such as clinical study metadata can be stored and managed using <strong>reference management programs</strong> (also called citation management software).</p>
 <p>These programs are usually able to perform tasks with the records, such as</p>
 <ul>
@@ -520,7 +616,7 @@ Table&nbsp;3.2: The PICO framework
 <div id="tbl-refmanagement" class="striped quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-refmanagement-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3.3: Examples of reference management tools
+Table&nbsp;3.4: Examples of reference management tools
 </figcaption>
 <div aria-describedby="tbl-refmanagement-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-striped caption-top table">
@@ -564,15 +660,15 @@ Table&nbsp;3.3: Examples of reference management tools
 </div>
 <p>For comparisons of reference management software see also <a href="https://mediatum.ub.tum.de/1320978" class="uri">https://mediatum.ub.tum.de/1320978</a> and <a href="https://en.wikipedia.org/wiki/Comparison_of_reference_management_software" class="uri">https://en.wikipedia.org/wiki/Comparison_of_reference_management_software</a>.</p>
 </section>
-<section id="sec-screeningtools" class="level2" data-number="3.10">
-<h2 data-number="3.10" class="anchored" data-anchor-id="sec-screeningtools"><span class="header-section-number">3.10</span> screening tools</h2>
+<section id="sec-screeningtools" class="level2" data-number="3.11">
+<h2 data-number="3.11" class="anchored" data-anchor-id="sec-screeningtools"><span class="header-section-number">3.11</span> screening tools</h2>
 <p>The screening of records to classify them according to previously defined <a href="technicalterms.html#sec-eligibilitycriteria">eligibility criteria</a> is a laborious task.</p>
 <p>Tools have been developed which allow the management of references for this particular task. They offer various features to accelerate or facilitate the selection process, such as deduplication, keyword highlighting, AI-based sorting or automated exclusion of records.</p>
 <p>The following table lists a few of those tools:</p>
 <div id="tbl-screeningtools" class="striped quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-screeningtools-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3.4: Different screening tools
+Table&nbsp;3.5: Different screening tools
 </figcaption>
 <div aria-describedby="tbl-screeningtools-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-striped caption-top table">
@@ -629,10 +725,10 @@ Table&nbsp;3.4: Different screening tools
 </div>
 </figure>
 </div>
-<p>See also: <span class="citation" data-cites="Carey2022">Carey, Harte, and Mc Cullagh (<a href="references.html#ref-Carey2022" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="Bruin2025">Bruin et al. (<a href="references.html#ref-Bruin2025" role="doc-biblioref">2025</a>)</span>, <span class="citation" data-cites="Halman2024">Halman and Oshlack (<a href="references.html#ref-Halman2024" role="doc-biblioref">2024</a>)</span>, <span class="citation" data-cites="KahiliHeede2021">Kahili-Heede and Hillgren (<a href="references.html#ref-KahiliHeede2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Ouzzani2016">Ouzzani et al. (<a href="references.html#ref-Ouzzani2016" role="doc-biblioref">2016</a>)</span></p>
+<p>See also: <span class="citation" data-cites="Carey2022">Carey et al. (<a href="references.html#ref-Carey2022" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="Bruin2025">Bruin et al. (<a href="references.html#ref-Bruin2025" role="doc-biblioref">2025</a>)</span>, <span class="citation" data-cites="Halman2024">Halman and Oshlack (<a href="references.html#ref-Halman2024" role="doc-biblioref">2024</a>)</span>, <span class="citation" data-cites="KahiliHeede2021">Kahili-Heede and Hillgren (<a href="references.html#ref-KahiliHeede2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Ouzzani2016">Ouzzani et al. (<a href="references.html#ref-Ouzzani2016" role="doc-biblioref">2016</a>)</span></p>
 </section>
-<section id="sec-searchbuildr" class="level2" data-number="3.11">
-<h2 data-number="3.11" class="anchored" data-anchor-id="sec-searchbuildr"><span class="header-section-number">3.11</span> searchbuildR</h2>
+<section id="sec-searchbuildr" class="level2" data-number="3.12">
+<h2 data-number="3.12" class="anchored" data-anchor-id="sec-searchbuildr"><span class="header-section-number">3.12</span> searchbuildR</h2>
 <p><a href="https://github.com/IQWiG/searchbuildR"><strong>searchbuildR</strong></a> is a tool written in <a href="https://www.r-project.org/">R</a>. Its purpose is to support the development of <a href="methods.html#sec-searchstrategy">search strategies</a> by identifing search terms from a set of <a href="technicalterms.html#sec-seedpaper">seed papers</a>.(<span class="citation" data-cites="Kapp2024">Kapp et al. (<a href="references.html#ref-Kapp2024" role="doc-biblioref">2024</a>)</span>)</p>
 <p>searchbuildR takes a set of references (e.g.&nbsp;as a RIS file) as input and identifies terms, which are overrepresented within this set compared with a large corpus of PubMed references.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Installing and Running searchbuildR">
@@ -662,18 +758,18 @@ Table&nbsp;3.4: Different screening tools
 </div>
 <p>searchbuildR is developed and maintained by <a href="https://www.iqwig.de/en/presse/press-releases/press-releases-detailpage_121282.html">IQWiG</a>.</p>
 </section>
-<section id="sec-tarcis" class="level2" data-number="3.12">
-<h2 data-number="3.12" class="anchored" data-anchor-id="sec-tarcis"><span class="header-section-number">3.12</span> TARCiS</h2>
+<section id="sec-tarcis" class="level2" data-number="3.13">
+<h2 data-number="3.13" class="anchored" data-anchor-id="sec-tarcis"><span class="header-section-number">3.13</span> TARCiS</h2>
 <p>The <a href="https://tarcis.unibas.ch/"><strong>TARCiS Statement</strong></a> by <span class="citation" data-cites="Hirt2024">Hirt et al. (<a href="references.html#ref-Hirt2024" role="doc-biblioref">2024</a>)</span> provides guidance on <strong>T</strong>erminology, <strong>A</strong>pplications, and the <strong>R</strong>eporting of <strong>Ci</strong>tation <strong>S</strong>earching in the context of <a href="#sec-syslitsearching">systematic searching</a>. It offers recommendations as well as a checklist for the most imporant items required to report in a review. Please refer to the section on <a href="methods.html#sec-citationsearching">citation searching</a> for more information about the techniques.</p>
 </section>
-<section id="sec-yalemeshanalyzer" class="level2" data-number="3.13">
-<h2 data-number="3.13" class="anchored" data-anchor-id="sec-yalemeshanalyzer"><span class="header-section-number">3.13</span> Yale MeSH Analyzer</h2>
+<section id="sec-yalemeshanalyzer" class="level2" data-number="3.14">
+<h2 data-number="3.14" class="anchored" data-anchor-id="sec-yalemeshanalyzer"><span class="header-section-number">3.14</span> Yale MeSH Analyzer</h2>
 <p>The <a href="https://mesh.med.yale.edu/"><strong>Yale MeSH Analyzer</strong></a> is an online tool for analyzing the bibliographic information of up to 20 <a href="databases.html#sec-pubmed">PubMed</a> records at once. It can be used to identify relevant search terms from the a set of <a href="#sec-seedpapers">seed papers</a>.</p>
-<p>In principle, upon entering <a href="technicalterms.html#sec-pmid-pmcid">PMIDs</a> into the tool, it creates a summary table containing <a href="methods.html#sec-indexterms">MeSH terms</a> and <a href="technicalterms.html#sec-authorkeywords">author keywords</a> for each publication (see <a href="#tbl-yalemeshanalyzer" class="quarto-xref">Table&nbsp;<span>3.5</span></a>).</p>
+<p>In principle, upon entering <a href="technicalterms.html#sec-pmid-pmcid">PMIDs</a> into the tool, it creates a summary table containing <a href="methods.html#sec-indexterms">MeSH terms</a> and <a href="technicalterms.html#sec-authorkeywords">author keywords</a> for each publication (see <a href="#tbl-yalemeshanalyzer" class="quarto-xref">Table&nbsp;<span>3.6</span></a>).</p>
 <div id="tbl-yalemeshanalyzer" class="hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-yalemeshanalyzer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;3.5: Example of a table created by the Yale MeSH Analyzer
+Table&nbsp;3.6: Example of a table created by the Yale MeSH Analyzer
 </figcaption>
 <div aria-describedby="tbl-yalemeshanalyzer-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-hover caption-top table">
@@ -790,33 +886,36 @@ Table&nbsp;3.5: Example of a table created by the Yale MeSH Analyzer
 <p>The Yale MeSH Analyzer is maintained by the <a href="https://library.medicine.yale.edu/">Cushing/Whitney Medical Library</a> at Yale University.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-Allen2019" class="csl-entry" role="listitem">
+Allen, Liz, Alison O’Connell, and Veronique Kiermer. 2019. <span>“<span class="nocase">How can we ensure visibility and diversity in research contributions? How the Contributor Role Taxonomy (CRediT) is helping the shift from authorship to contributorship</span>.”</span> <em>Learn Publ</em> 32 (1): 71–74. <a href="https://doi.org/10.1002/leap.1210">https://doi.org/10.1002/leap.1210</a>.
+</div>
 <div id="ref-Bruin2025" class="csl-entry" role="listitem">
-Bruin, Jonathan de, Peter Lombaers, Casper Kaandorp, Jelle Teijema, Timo van der Kuil, Berke Yazan, Angie Dong, and Rens van de Schoot. 2025. <span>“<span class="nocase">ASReview LAB v.2: Open-source text screening with multiple agents and a crowd of experts.</span>”</span> <em>Patterns (N Y)</em> 6 (July): 101318. <a href="https://doi.org/10.1016/j.patter.2025.101318">https://doi.org/10.1016/j.patter.2025.101318</a>.
+Bruin, Jonathan de, Peter Lombaers, Casper Kaandorp, et al. 2025. <span>“<span class="nocase">ASReview LAB v.2: Open-source text screening with multiple agents and a crowd of experts.</span>”</span> <em>Patterns (N Y)</em> (United States) 6 (July): 101318. <a href="https://doi.org/10.1016/j.patter.2025.101318">https://doi.org/10.1016/j.patter.2025.101318</a>.
 </div>
 <div id="ref-Carey2022" class="csl-entry" role="listitem">
-Carey, Niamh, Marie Harte, and Laura Mc Cullagh. 2022. <span>“A Text-Mining Tool Generated Title-Abstract Screening Workload Savings: Performance Evaluation Versus Single-Human Screening.”</span> <em>J Clin Epidemiol</em> 149 (September): 53–59. <a href="https://doi.org/10.1016/j.jclinepi.2022.05.017">https://doi.org/10.1016/j.jclinepi.2022.05.017</a>.
+Carey, Niamh, Marie Harte, and Laura Mc Cullagh. 2022. <span>“A Text-Mining Tool Generated Title-Abstract Screening Workload Savings: Performance Evaluation Versus Single-Human Screening.”</span> <em>J Clin Epidemiol</em> (United States) 149 (September): 53–59. <a href="https://doi.org/10.1016/j.jclinepi.2022.05.017">https://doi.org/10.1016/j.jclinepi.2022.05.017</a>.
 </div>
 <div id="ref-Cummings2013" class="csl-entry" role="listitem">
-Cummings, Steven R., Warren S. Browner, and Stephen B. Hulley. 2013. <span>“<span class="nocase">Conceiving the Research Question and Developing the Study Plan</span>.”</span> In <em><span>Designing Clinical Research</span></em>, edited by Stephen B. Hulley, Steven R. Cummings, Warren S. Browner, Deborah G. Grady, and Thomas B. Newman, 4. ed., 14–22. Philadelphia: Lippincott Williams &amp; Wilkins. <a href="https://swisscovery.slsp.ch/permalink/41SLSP_UBE/99pfpl/alma99117040391205511">https://swisscovery.slsp.ch/permalink/41SLSP_UBE/99pfpl/alma99117040391205511</a>.
+Cummings, Steven R., Warren S. Browner, and Stephen B. Hulley. 2013. <span>“<span class="nocase">Conceiving the Research Question and Developing the Study Plan</span>.”</span> Chap. 2 in <em><span>Designing Clinical Research</span></em>, 4., edited by Stephen B. Hulley, Steven R. Cummings, Warren S. Browner, Deborah G. Grady, and Thomas B. Newman. Lippincott Williams &amp; Wilkins. <a href="https://swisscovery.slsp.ch/permalink/41SLSP_UBE/99pfpl/alma99117040391205511">https://swisscovery.slsp.ch/permalink/41SLSP_UBE/99pfpl/alma99117040391205511</a>.
 </div>
 <div id="ref-Eriksen2018" class="csl-entry" role="listitem">
 Eriksen, Mette Brandt, and Tove Faber Frandsen. 2018. <span>“<span class="nocase">The impact of patient, intervention, comparison, outcome (PICO) as a search strategy tool on literature search quality: a systematic review</span>.”</span> <em>J Med Libr Assoc</em> 106 (4): 420–31. <a href="https://doi.org/10.5195/jmla.2018.345">https://doi.org/10.5195/jmla.2018.345</a>.
 </div>
 <div id="ref-Haddaway2021" class="csl-entry" role="listitem">
-Haddaway, N. R., M. J. Grainger, and C. T. Gray. 2021. <span>“<span class="nocase">citationchaser: an R package for forward and backward citations chasing in academic searching</span>.”</span> <a href="https://doi.org/10.5281/zenodo.4543513">https://doi.org/10.5281/zenodo.4543513</a>.
+Haddaway, N. R., M. J. Grainger, and C. T. Gray. 2021. <em><span class="nocase">citationchaser: an R package for forward and backward citations chasing in academic searching</span></em>. 0.0.3. <a href="https://doi.org/10.5281/zenodo.4543513">https://doi.org/10.5281/zenodo.4543513</a>.
 </div>
 <div id="ref-Haddaway2022b" class="csl-entry" role="listitem">
-Haddaway, Neal R., Matthew J. Grainger, and Charles T. Gray. 2022. <span>“Citationchaser: A Tool for Transparent and Efficient Forward and Backward Citation Chasing in Systematic Searching.”</span> <em>Res Synth Methods</em> 13 (July): 533–45. <a href="https://doi.org/10.1002/jrsm.1563">https://doi.org/10.1002/jrsm.1563</a>.
+Haddaway, Neal R., Matthew J. Grainger, and Charles T. Gray. 2022. <span>“Citationchaser: A Tool for Transparent and Efficient Forward and Backward Citation Chasing in Systematic Searching.”</span> <em>Res Synth Methods</em> (England) 13 (July): 533–45. <a href="https://doi.org/10.1002/jrsm.1563">https://doi.org/10.1002/jrsm.1563</a>.
 </div>
 <div id="ref-Halman2024" class="csl-entry" role="listitem">
-Halman, Andreas, and Alicia Oshlack. 2024. <span>“Catchii: Empowering Literature Review Screening in Healthcare.”</span> <em>Res Synth Methods</em> 15 (January): 157–65. <a href="https://doi.org/10.1002/jrsm.1675">https://doi.org/10.1002/jrsm.1675</a>.
+Halman, Andreas, and Alicia Oshlack. 2024. <span>“Catchii: Empowering Literature Review Screening in Healthcare.”</span> <em>Res Synth Methods</em> (England) 15 (January): 157–65. <a href="https://doi.org/10.1002/jrsm.1675">https://doi.org/10.1002/jrsm.1675</a>.
 </div>
 <div id="ref-Hirt2024" class="csl-entry" role="listitem">
 Hirt, Julian, Thomas Nordhausen, Thomas Fuerst, Hannah Ewald, and Christian Appenzeller-Herzog. 2024. <span>“<span class="nocase">Guidance on terminology, application, and reporting of citation searching: the TARCiS statement</span>.”</span> <em>BMJ</em> 385 (e078384): e078384. <a href="https://doi.org/10.1136/bmj-2023-078384">https://doi.org/10.1136/bmj-2023-078384</a>.
 </div>
 <div id="ref-KahiliHeede2021" class="csl-entry" role="listitem">
-Kahili-Heede, Melissa, and K. J. Hillgren. 2021. <span>“Colandr.”</span> <em>J Med Libr Assoc</em> 109 (July): 523–25. <a href="https://doi.org/10.5195/jmla.2021.1263">https://doi.org/10.5195/jmla.2021.1263</a>.
+Kahili-Heede, Melissa, and K. J. Hillgren. 2021. <span>“Colandr.”</span> <em>J Med Libr Assoc</em> (United States) 109 (July): 523–25. <a href="https://doi.org/10.5195/jmla.2021.1263">https://doi.org/10.5195/jmla.2021.1263</a>.
 </div>
 <div id="ref-Kans2013" class="csl-entry" role="listitem">
 Kans, Jonathan. 2013. <span>“<span class="nocase">Entrez Direct: E-utilities on the Unix Command Line</span>.”</span> In <em><span>Entrez Programming Utilities Help [Internet]</span></em>. <span>Bethesda (MD): National Center for Biotechnology Information (US)</span>.
@@ -833,26 +932,29 @@ Methley, Abigail M., Stephen Campbell, Carolyn Chew-Graham, Rosalind McNally, an
 <div id="ref-Munn2018a" class="csl-entry" role="listitem">
 Munn, Z., C. Stern, E. Aromataris, C. Lockwood, and Z. Jordan. 2018. <span>“<span class="nocase">What kind of systematic review should I conduct? A proposed typology and guidance for systematic reviewers in the medical and health sciences</span>.”</span> Journal Article. <em>BMC Med Res Methodol</em> 18 (1): 5. <a href="https://doi.org/10.1186/s12874-017-0468-4">https://doi.org/10.1186/s12874-017-0468-4</a>.
 </div>
+<div id="ref-NCWG2022" class="csl-entry" role="listitem">
+NISO CRediT Working Group. 2022. <em><span>ANSI/NISO Z39.104-2022, CRediT, Contributor Roles Taxonomy</span></em>. Technical report. NISO; National Information Standards Organization. <a href="https://doi.org/10.3789/ansi.niso.z39.104-2022">https://doi.org/10.3789/ansi.niso.z39.104-2022</a>.
+</div>
 <div id="ref-Ouzzani2016" class="csl-entry" role="listitem">
-Ouzzani, Mourad, Hossam Hammady, Zbys Fedorowicz, and Ahmed Elmagarmid. 2016. <span>“Rayyan-a Web and Mobile App for Systematic Reviews.”</span> <em>Syst Rev</em> 5 (December): 210. <a href="https://doi.org/10.1186/s13643-016-0384-4">https://doi.org/10.1186/s13643-016-0384-4</a>.
+Ouzzani, Mourad, Hossam Hammady, Zbys Fedorowicz, and Ahmed Elmagarmid. 2016. <span>“Rayyan-a Web and Mobile App for Systematic Reviews.”</span> <em>Syst Rev</em> (England) 5 (December): 210. <a href="https://doi.org/10.1186/s13643-016-0384-4">https://doi.org/10.1186/s13643-016-0384-4</a>.
 </div>
 <div id="ref-Page2021a" class="csl-entry" role="listitem">
-Page, Matthew J., Joanne E. McKenzie, Patrick M. Bossuyt, Isabelle Boutron, Tammy C. Hoffmann, Cynthia D. Mulrow, Larissa Shamseer, et al. 2021. <span>“<span class="nocase">The PRISMA 2020 statement: an updated guideline for reporting systematic reviews</span>.”</span> <em>BMJ</em> 372. <a href="https://doi.org/10.1136/bmj.n71">https://doi.org/10.1136/bmj.n71</a>.
+Page, Matthew J., Joanne E. McKenzie, Patrick M. Bossuyt, et al. 2021. <span>“<span class="nocase">The PRISMA 2020 statement: an updated guideline for reporting systematic reviews</span>.”</span> <em>BMJ</em> 372. <a href="https://doi.org/10.1136/bmj.n71">https://doi.org/10.1136/bmj.n71</a>.
 </div>
 <div id="ref-Page2021b" class="csl-entry" role="listitem">
-Page, Matthew J., David Moher, Patrick M. Bossuyt, Isabelle Boutron, Tammy C. Hoffmann, Cynthia D. Mulrow, Larissa Shamseer, et al. 2021. <span>“<span class="nocase">PRISMA 2020 explanation and elaboration: updated guidance and exemplars for reporting systematic reviews</span>.”</span> <em>BMJ</em> 372. <a href="https://doi.org/10.1136/bmj.n160">https://doi.org/10.1136/bmj.n160</a>.
+Page, Matthew J., David Moher, Patrick M. Bossuyt, et al. 2021. <span>“<span class="nocase">PRISMA 2020 explanation and elaboration: updated guidance and exemplars for reporting systematic reviews</span>.”</span> <em>BMJ</em> 372. <a href="https://doi.org/10.1136/bmj.n160">https://doi.org/10.1136/bmj.n160</a>.
 </div>
 <div id="ref-Rethlefsen2021" class="csl-entry" role="listitem">
-Rethlefsen, Melissa L., Shona Kirtley, Siw Waffenschmidt, Ana Patricia Ayala, David Moher, Matthew J. Page, Jonathan B. Koffel, et al. 2021. <span>“<span class="nocase">PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews</span>.”</span> <em>Syst Rev</em> 10 (1): 39. <a href="https://doi.org/10.1186/s13643-020-01542-z">https://doi.org/10.1186/s13643-020-01542-z</a>.
+Rethlefsen, Melissa L., Shona Kirtley, Siw Waffenschmidt, et al. 2021. <span>“<span class="nocase">PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews</span>.”</span> <em>Syst Rev</em> 10 (1): 39. <a href="https://doi.org/10.1186/s13643-020-01542-z">https://doi.org/10.1186/s13643-020-01542-z</a>.
 </div>
 <div id="ref-rethlefsen_page_2021" class="csl-entry" role="listitem">
-Rethlefsen, Melissa, and Matthew J. Page. 2021. <span>“<span class="nocase">PRISMA 2020 and PRISMA-S: Common Questions on Tracking Records and the Flow Diagram</span>.”</span> MetaArXiv. <a href="https://doi.org/10.31222/osf.io/439ju">https://doi.org/10.31222/osf.io/439ju</a>.
+Rethlefsen, Melissa, and Matthew J. Page. 2021. <em><span class="nocase">PRISMA 2020 and PRISMA-S: Common Questions on Tracking Records and the Flow Diagram</span></em>. MetaArXiv. <a href="https://doi.org/10.31222/osf.io/439ju">https://doi.org/10.31222/osf.io/439ju</a>.
 </div>
 <div id="ref-Thomas2025" class="csl-entry" role="listitem">
-Thomas, James, Ella Flemyng, and Anna Noel-Storr. 2025. <span>“<span class="nocase">Responsible use of AI in evidence SynthEsis (RAISE): recommendations and guidance</span>.”</span> <a href="https://doi.org/10.17605/OSF.IO/FWAUD">https://doi.org/10.17605/OSF.IO/FWAUD</a>.
+Thomas, James, Ella Flemyng, and Anna Noel-Storr. 2025. <em><span class="nocase">Responsible use of AI in evidence SynthEsis (RAISE): recommendations and guidance</span></em>. <a href="https://doi.org/10.17605/OSF.IO/FWAUD">https://doi.org/10.17605/OSF.IO/FWAUD</a>.
 </div>
 <div id="ref-Tricco2018" class="csl-entry" role="listitem">
-Tricco, A. C., E. Lillie, W. Zarin, K. K. O’Brien, H. Colquhoun, D. Levac, D. Moher, et al. 2018. <span>“<span class="nocase">PRISMA Extension for Scoping Reviews (PRISMA-ScR): Checklist and Explanation</span>.”</span> Journal Article. <em>Ann Intern Med</em> 169 (7): 467–73. <a href="https://doi.org/10.7326/M18-0850">https://doi.org/10.7326/M18-0850</a>.
+Tricco, A. C., E. Lillie, W. Zarin, et al. 2018. <span>“<span class="nocase">PRISMA Extension for Scoping Reviews (PRISMA-ScR): Checklist and Explanation</span>.”</span> Journal Article. <em>Ann Intern Med</em> 169 (7): 467–73. <a href="https://doi.org/10.7326/M18-0850">https://doi.org/10.7326/M18-0850</a>.
 </div>
 </div>
 </section>

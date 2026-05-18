@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.9.36">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>4&nbsp; Methods – SysLit Compendium</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -60,7 +63,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -90,15 +92,14 @@ div.csl-indent {
 <link href="./tools.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-a06763021a52c43c40a351ac8b799b8f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4666ebd988f99e28082c76482a351d50.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-4025044f2401a00c6667f938102e08b1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -167,10 +168,6 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      </a>
-      </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
         <div class="sidebar-search">
         <div id="quarto-search" class="" title="Search"></div>
@@ -313,7 +310,7 @@ div.csl-indent {
 <h2 data-number="4.1" class="anchored" data-anchor-id="sec-citationsearching"><span class="header-section-number">4.1</span> citation searching</h2>
 <p>Relevant references can be retrieved by analyzing citation relationships between known relevant articles, called <a href="technicalterms.html#sec-seedpaper"><em>seed papers</em></a> (also known as <em>core papers</em>) and cited or citing references. This technique is called <strong>citation searching</strong>, <strong>citation analysis</strong> or <strong>citation tracking</strong> (<span class="citation" data-cites="Hirt2024">Hirt et al. (<a href="references.html#ref-Hirt2024" role="doc-biblioref">2024</a>)</span>, <span class="citation" data-cites="Belter2016">Belter (<a href="references.html#ref-Belter2016" role="doc-biblioref">2016</a>)</span>, <span class="citation" data-cites="Hinde2015">Hinde and Spackman (<a href="references.html#ref-Hinde2015" role="doc-biblioref">2015</a>)</span>).</p>
 <p>The <a href="tools.html#sec-tarcis">TARCiS Statement</a> provides a guideline for citation searching. (<span class="citation" data-cites="Hirt2024">Hirt et al. (<a href="references.html#ref-Hirt2024" role="doc-biblioref">2024</a>)</span>)</p>
-<p>The software <a href="tools.html#sec-citationchaser">citationchaser</a> provides a convenient tool for citation searching.(<span class="citation" data-cites="Haddaway2022b">Haddaway, Grainger, and Gray (<a href="references.html#ref-Haddaway2022b" role="doc-biblioref">2022</a>)</span>)</p>
+<p>The software <a href="tools.html#sec-citationchaser">citationchaser</a> provides a convenient tool for citation searching.(<span class="citation" data-cites="Haddaway2022b">Haddaway et al. (<a href="references.html#ref-Haddaway2022b" role="doc-biblioref">2022</a>)</span>)</p>
 <p>Citation searching can be advisable at the very beginning of a systematic literature search in order to find additional core papers and to identify additional search terms. After finishing the final search it can be used to find additional relevant studies that were not retrieved by systematic searching using search strategies.</p>
 <p>Some research questions are hard to search by a conventional Boolean approach, for instance due to very ambiguous search terms or very recent research topics for which no index terms and no established terminology exists, yet. In these cases a citation search can be more useful than a Boolean search as it relies solely on the citation relationships between known and yet unknown publications.</p>
 <p>There are different approaches to searching citations: First, in the <strong>backward citation searching</strong> method the lists of references cited in the seed papers are screened for relevant articles. Second, the analysis of publications citing the seed paper as a reference is called <strong>forward citation searching</strong>. See <a href="#fig-citing-cited" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>.</p>
@@ -382,7 +379,7 @@ Figure&nbsp;4.3: co-citing citation searching retrieves publications which share
 </div>
 </div>
 </div>
-<p>See also: <span class="citation" data-cites="Twells2021">Twells (<a href="references.html#ref-Twells2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Buccheri2017">Buccheri and Sharifi (<a href="references.html#ref-Buccheri2017" role="doc-biblioref">2017</a>)</span>, <span class="citation" data-cites="FineoutOverholt2010b">Fineout-Overholt et al. (<a href="references.html#ref-FineoutOverholt2010b" role="doc-biblioref">2010a</a>)</span>, <span class="citation" data-cites="FineoutOverholt2010a">Fineout-Overholt et al. (<a href="references.html#ref-FineoutOverholt2010a" role="doc-biblioref">2010b</a>)</span>, <span class="citation" data-cites="FineoutOverholt2010">Fineout-Overholt et al. (<a href="references.html#ref-FineoutOverholt2010" role="doc-biblioref">2010c</a>)</span></p>
+<p>See also: <span class="citation" data-cites="Twells2021">Twells (<a href="references.html#ref-Twells2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Buccheri2017">Buccheri and Sharifi (<a href="references.html#ref-Buccheri2017" role="doc-biblioref">2017</a>)</span>, <span class="citation" data-cites="FineoutOverholt2010b">Fineout-Overholt et al. (<a href="references.html#ref-FineoutOverholt2010b" role="doc-biblioref">2010b</a>)</span>, <span class="citation" data-cites="FineoutOverholt2010a">Fineout-Overholt et al. (<a href="references.html#ref-FineoutOverholt2010a" role="doc-biblioref">2010c</a>)</span>, <span class="citation" data-cites="FineoutOverholt2010">Fineout-Overholt et al. (<a href="references.html#ref-FineoutOverholt2010" role="doc-biblioref">2010a</a>)</span></p>
 </section>
 <section id="sec-deduplication" class="level2" data-number="4.3">
 <h2 data-number="4.3" class="anchored" data-anchor-id="sec-deduplication"><span class="header-section-number">4.3</span> deduplication</h2>
@@ -393,7 +390,7 @@ Figure&nbsp;4.3: co-citing citation searching retrieves publications which share
 <section id="sec-filters" class="level2" data-number="4.4">
 <h2 data-number="4.4" class="anchored" data-anchor-id="sec-filters"><span class="header-section-number">4.4</span> filters</h2>
 <p><strong>Filters</strong> (also <em>search filters</em>, <em>filter strategies</em> or <em>hedges</em>) are <a href="#sec-searchstrategy">search strategies</a> designed to retrieve records for a specific concept of the research question.</p>
-<p>There are filters for specific patient groups or diseases, outcomes, study types (for instance to retrieve only randomized controlled trials (RCTs), or filters for other aspects of the research question, e.g.&nbsp;adverse effects, diagnostic accuracy or patient values. (<span class="citation" data-cites="Waffenschmidt2020">Waffenschmidt et al. (<a href="references.html#ref-Waffenschmidt2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="SalvadorOlivan2021">Salvador-Oliván, Marco-Cuenca, and Arquero-Avilés (<a href="references.html#ref-SalvadorOlivan2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Lee2012">Lee et al. (<a href="references.html#ref-Lee2012" role="doc-biblioref">2012</a>)</span>, <span class="citation" data-cites="Golder2006a">Golder et al. (<a href="references.html#ref-Golder2006a" role="doc-biblioref">2006</a>)</span>)</p>
+<p>There are filters for specific patient groups or diseases, outcomes, study types (for instance to retrieve only randomized controlled trials (RCTs), or filters for other aspects of the research question, e.g.&nbsp;adverse effects, diagnostic accuracy or patient values. (<span class="citation" data-cites="Waffenschmidt2020">Waffenschmidt et al. (<a href="references.html#ref-Waffenschmidt2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="SalvadorOlivan2021">Salvador-Oliván et al. (<a href="references.html#ref-SalvadorOlivan2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Lee2012">Lee et al. (<a href="references.html#ref-Lee2012" role="doc-biblioref">2012</a>)</span>, <span class="citation" data-cites="Golder2006a">Golder et al. (<a href="references.html#ref-Golder2006a" role="doc-biblioref">2006</a>)</span>)</p>
 <p>Validated filters are developed, tested and optimized for sensitivity and precision by experts. (<span class="citation" data-cites="Haynes2004">Haynes and Wilczynski (<a href="references.html#ref-Haynes2004" role="doc-biblioref">2004</a>)</span>, <span class="citation" data-cites="Glanville2008">Glanville et al. (<a href="references.html#ref-Glanville2008" role="doc-biblioref">2008</a>)</span>)</p>
 <p>Filter strategies can be implemented in a search strategy just like any concept of the research question. <a href="#tbl-filterstrategy" class="quarto-xref">Table&nbsp;<span>4.1</span></a> illustrates a search strategy with a short qualitative research filter in lines 8 to 11, which is added to the overall search in line 12.</p>
 <div id="tbl-filterstrategy" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -904,7 +901,7 @@ Figure&nbsp;4.4: Boolean Operators
 </ol>
 </div>
 </div>
-<p>Search strategies are supposed to be consistent with the predefined eligibility criteria of the research project (<span class="citation" data-cites="Gough2017">Gough, Oliver, and Thomas (<a href="references.html#ref-Gough2017" role="doc-biblioref">2017</a>)</span>).</p>
+<p>Search strategies are supposed to be consistent with the predefined eligibility criteria of the research project (<span class="citation" data-cites="Gough2017">Gough et al. (<a href="references.html#ref-Gough2017" role="doc-biblioref">2017</a>)</span>).</p>
 <p>Depending on the purpose and detail of the search, the extent of a search strategy might range from a simple search string to numerous lines of search terms connected by <a href="#sec-boolean">Boolean operators</a>.</p>
 <p><a href="#tbl-searchstrategy-pubmed" class="quarto-xref">Table&nbsp;<span>4.2</span></a> and <a href="#tbl-searchstrategy-ovid" class="quarto-xref">Table&nbsp;<span>4.3</span></a> show examples for both types of search strategies.</p>
 <div id="tbl-searchstrategy-pubmed" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -992,7 +989,7 @@ Table&nbsp;4.4: Testing the search strategy using seed papers.
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Systematic searches are best conducted or at least accompanied by information specialists or librarians. For more on this topic, see <span class="citation" data-cites="Spencer2018">Spencer and Eldredge (<a href="references.html#ref-Spencer2018" role="doc-biblioref">2018</a>)</span>, <span class="citation" data-cites="Metzendorf2016">Metzendorf (<a href="references.html#ref-Metzendorf2016" role="doc-biblioref">2016</a>)</span>, <span class="citation" data-cites="Foster2015">Foster (<a href="references.html#ref-Foster2015" role="doc-biblioref">2015</a>)</span>, <span class="citation" data-cites="Koffel2015">Koffel (<a href="references.html#ref-Koffel2015" role="doc-biblioref">2015</a>)</span>, <span class="citation" data-cites="Rethlefsen2015">Rethlefsen et al. (<a href="references.html#ref-Rethlefsen2015" role="doc-biblioref">2015</a>)</span>, <span class="citation" data-cites="Schellinger2021">Schellinger et al. (<a href="references.html#ref-Schellinger2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Meert2016">Meert, Torabi, and Costella (<a href="references.html#ref-Meert2016" role="doc-biblioref">2016</a>)</span>.</p>
+<p>Systematic searches are best conducted or at least accompanied by information specialists or librarians. For more on this topic, see <span class="citation" data-cites="Spencer2018">Spencer and Eldredge (<a href="references.html#ref-Spencer2018" role="doc-biblioref">2018</a>)</span>, <span class="citation" data-cites="Metzendorf2016">Metzendorf (<a href="references.html#ref-Metzendorf2016" role="doc-biblioref">2016</a>)</span>, <span class="citation" data-cites="Foster2015">Foster (<a href="references.html#ref-Foster2015" role="doc-biblioref">2015</a>)</span>, <span class="citation" data-cites="Koffel2015">Koffel (<a href="references.html#ref-Koffel2015" role="doc-biblioref">2015</a>)</span>, <span class="citation" data-cites="Rethlefsen2015">Rethlefsen et al. (<a href="references.html#ref-Rethlefsen2015" role="doc-biblioref">2015</a>)</span>, <span class="citation" data-cites="Schellinger2021">Schellinger et al. (<a href="references.html#ref-Schellinger2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Meert2016">Meert et al. (<a href="references.html#ref-Meert2016" role="doc-biblioref">2016</a>)</span>.</p>
 </div>
 </div>
 <p>The purpose of a systematic literature search is to find relevant literature in the desired degree of completeness. For a systematic review the search should be very <a href="technicalterms.html#sec-sensitivity">sensitive</a> as to find all the relevant evidence. In contrast, the literature search as part of a rapid review or narrative review may still be done systematically, but can be designed in a more <a href="technicalterms.html#sec-precision">precise</a> manner, since in those cases it may be acceptable to miss some relevant articles. (See <a href="technicalterms.html#sec-class-metrics" class="quarto-xref"><span>Section 2.8</span></a> about sensitivity and precision).</p>
@@ -1109,7 +1106,7 @@ Table&nbsp;4.5: Truncation examples in Ovid
 <p>Usually only free text terms are truncated. While it might be possible to truncate index terms, it is not very practical; truncated index terms are rarely used meaningfully, for instance in valiated <a href="#sec-filters">search filters</a>, such as the search term <code>diagnostic*[MeSH:noexp]</code> in the <a href="https://hiruweb.mcmaster.ca/hkr/hedges/medline/#diagnosis_embase">diagnosis filter</a> by <span class="citation" data-cites="Kastner2009">Kastner et al. (<a href="references.html#ref-Kastner2009" role="doc-biblioref">2009</a>)</span>.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
 <div id="ref-JBIManual2020" class="csl-entry" role="listitem">
 Aromataris, E., and Z. Munn, eds. 2020. <em><span class="nocase">JBI Manual for Evidence Synthesis</span></em>. Book. JBI. <a href="https://doi.org/10.46658/JBIMES-20-01">https://doi.org/10.46658/JBIMES-20-01</a>.
 </div>
@@ -1128,38 +1125,38 @@ Buccheri, Robin K., and Claire Sharifi. 2017. <span>“<span class="nocase">Crit
 <div id="ref-Ding2020" class="csl-entry" role="listitem">
 Ding, Ding, Binh Nguyen, Klaus Gebel, Adrian Bauman, and Lisa Bero. 2020. <span>“<span class="nocase">Duplicate and salami publication: a prevalence study of journal policies</span>.”</span> <em>Int J Epidemiol</em> 49 (1): 281–88. <a href="https://doi.org/10.1093/ije/dyz187">https://doi.org/10.1093/ije/dyz187</a>.
 </div>
+<div id="ref-FineoutOverholt2010" class="csl-entry" role="listitem">
+Fineout-Overholt, Ellen, Bernadette Mazurek Melnyk, Susan B. Stillwell, and Kathleen M. Williamson. 2010a. <span>“<span class="nocase">Evidence-Based Practice, Step by Step: Critical Appraisal of the Evidence Part III</span>.”</span> <em>Am J Nurs</em> (United States) 110 (11, 11): 43–51. <a href="https://doi.org/10.1097/01.naj.0000390523.99066.b5">https://doi.org/10.1097/01.naj.0000390523.99066.b5</a>.
+</div>
 <div id="ref-FineoutOverholt2010b" class="csl-entry" role="listitem">
-Fineout-Overholt, Ellen, Bernadette Mazurek Melnyk, Susan B. Stillwell, and Kathleen M. Williamson. 2010a. <span>“<span class="nocase">Evidence-Based Practice Step by Step: Critical Appraisal of the Evidence: Part I</span>.”</span> <em>Am J Nurs</em> 110 (7). <a href="https://doi.org/10.1097/01.NAJ.0000383935.22721.9c">https://doi.org/10.1097/01.NAJ.0000383935.22721.9c</a>.
+Fineout-Overholt, Ellen, Bernadette Mazurek Melnyk, Susan B. Stillwell, and Kathleen M. Williamson. 2010b. <span>“<span class="nocase">Evidence-Based Practice Step by Step: Critical Appraisal of the Evidence: Part I</span>.”</span> <em>Am J Nurs</em> 110 (7). <a href="https://doi.org/10.1097/01.NAJ.0000383935.22721.9c">https://doi.org/10.1097/01.NAJ.0000383935.22721.9c</a>.
 </div>
 <div id="ref-FineoutOverholt2010a" class="csl-entry" role="listitem">
-———. 2010b. <span>“<span class="nocase">Evidence-Based Practice, Step by Step: Critical Appraisal of the Evidence: Part II: Digging deeper—examining the <span>‘keeper’</span> studies.</span>”</span> <em>Am J Nurs</em> 110 (9, 9): 41–48. <a href="https://doi.org/10.1097/01.naj.0000388264.49427.f9">https://doi.org/10.1097/01.naj.0000388264.49427.f9</a>.
-</div>
-<div id="ref-FineoutOverholt2010" class="csl-entry" role="listitem">
-———. 2010c. <span>“<span class="nocase">Evidence-Based Practice, Step by Step: Critical Appraisal of the Evidence Part III</span>.”</span> <em>Am J Nurs</em> 110 (11, 11): 43–51. <a href="https://doi.org/10.1097/01.naj.0000390523.99066.b5">https://doi.org/10.1097/01.naj.0000390523.99066.b5</a>.
+Fineout-Overholt, Ellen, Bernadette Mazurek Melnyk, Susan B. Stillwell, and Kathleen M. Williamson. 2010c. <span>“<span class="nocase">Evidence-Based Practice, Step by Step: Critical Appraisal of the Evidence: Part II: Digging deeper—examining the <span>‘keeper’</span> studies.</span>”</span> <em>Am J Nurs</em> (United States) 110 (9, 9): 41–48. <a href="https://doi.org/10.1097/01.naj.0000388264.49427.f9">https://doi.org/10.1097/01.naj.0000388264.49427.f9</a>.
 </div>
 <div id="ref-Foster2015" class="csl-entry" role="listitem">
 Foster, Margaret J. 2015. <span>“Overview of the Role of Librarians in Systematic Reviews: From Expert Search to Project Manager.”</span> <em>JEAHIL</em> 11 (2): 3–7. <a href="https://hdl.handle.net/1969.1/169677">https://hdl.handle.net/1969.1/169677</a>.
 </div>
 <div id="ref-Fuchs2024" class="csl-entry" role="listitem">
-Fuchs, Alexander, Gabriela Koepp, Markus Huber, Jonas Aebli, Arash Afshari, Rachele Bonfiglio, Robert Greif, et al. 2024. <span>“Apnoeic Oxygenation During Paediatric Tracheal Intubation: A Systematic Review and Meta-Analysis.”</span> <em>Brit J Anaesth</em> 132 (February): 392–406. <a href="https://doi.org/10.1016/j.bja.2023.10.039">https://doi.org/10.1016/j.bja.2023.10.039</a>.
+Fuchs, Alexander, Gabriela Koepp, Markus Huber, et al. 2024. <span>“Apnoeic Oxygenation During Paediatric Tracheal Intubation: A Systematic Review and Meta-Analysis.”</span> <em>Brit J Anaesth</em> (England) 132 (February): 392–406. <a href="https://doi.org/10.1016/j.bja.2023.10.039">https://doi.org/10.1016/j.bja.2023.10.039</a>.
 </div>
 <div id="ref-Glanville2008" class="csl-entry" role="listitem">
-Glanville, Julie, Sue Bayliss, Andrew Booth, Yenal Dundar, Hasina Fernandes, Nigel David Fleeman, Louise Foster, et al. 2008. <span>“So Many Filters, so Little Time: The Development of a Search Filter Appraisal Checklist.”</span> <em>J Med Libr Assoc</em> 96 (18974813): 356–61. <a href="https://doi.org/10.3163/1536-5050.96.4.011">https://doi.org/10.3163/1536-5050.96.4.011</a>.
+Glanville, Julie, Sue Bayliss, Andrew Booth, et al. 2008. <span>“So Many Filters, so Little Time: The Development of a Search Filter Appraisal Checklist.”</span> <em>J Med Libr Assoc</em> 96 (18974813): 356–61. <a href="https://doi.org/10.3163/1536-5050.96.4.011">https://doi.org/10.3163/1536-5050.96.4.011</a>.
 </div>
 <div id="ref-Golder2006a" class="csl-entry" role="listitem">
-Golder, Su, Heather M. McIntosh, Steve Duffy, and Julie Glanville. 2006. <span>“<span class="nocase">Developing efficient search strategies to identify reports of adverse effects in MEDLINE and EMBASE.</span>”</span> <em>Health Info Libr J</em> 23 (March): 3–12. <a href="https://doi.org/10.1111/j.1471-1842.2006.00634.x">https://doi.org/10.1111/j.1471-1842.2006.00634.x</a>.
+Golder, Su, Heather M. McIntosh, Steve Duffy, and Julie Glanville. 2006. <span>“<span class="nocase">Developing efficient search strategies to identify reports of adverse effects in MEDLINE and EMBASE.</span>”</span> <em>Health Info Libr J</em> (England) 23 (March): 3–12. <a href="https://doi.org/10.1111/j.1471-1842.2006.00634.x">https://doi.org/10.1111/j.1471-1842.2006.00634.x</a>.
 </div>
 <div id="ref-Gough2017" class="csl-entry" role="listitem">
-Gough, David, Sandy Oliver, and James Thomas. 2017. <em><span class="nocase">An Introduction to Systematic Reviews</span></em>. Second. London: SAGE Publications.
+Gough, David, Sandy Oliver, and James Thomas. 2017. <em><span class="nocase">An Introduction to Systematic Reviews</span></em>. Second. SAGE Publications.
 </div>
 <div id="ref-Haddaway2022b" class="csl-entry" role="listitem">
-Haddaway, Neal R., Matthew J. Grainger, and Charles T. Gray. 2022. <span>“Citationchaser: A Tool for Transparent and Efficient Forward and Backward Citation Chasing in Systematic Searching.”</span> <em>Res Synth Methods</em> 13 (July): 533–45. <a href="https://doi.org/10.1002/jrsm.1563">https://doi.org/10.1002/jrsm.1563</a>.
+Haddaway, Neal R., Matthew J. Grainger, and Charles T. Gray. 2022. <span>“Citationchaser: A Tool for Transparent and Efficient Forward and Backward Citation Chasing in Systematic Searching.”</span> <em>Res Synth Methods</em> (England) 13 (July): 533–45. <a href="https://doi.org/10.1002/jrsm.1563">https://doi.org/10.1002/jrsm.1563</a>.
 </div>
 <div id="ref-Haynes2004" class="csl-entry" role="listitem">
 Haynes, R. Brian, and Nancy L. Wilczynski. 2004. <span>“<span class="nocase">Optimal search strategies for retrieving scientifically strong studies of diagnosis from Medline: analytical survey</span>.”</span> <em>BMJ</em> 328 (7447): 1040. <a href="https://doi.org/10.1136/bmj.38068.557998.EE">https://doi.org/10.1136/bmj.38068.557998.EE</a>.
 </div>
 <div id="ref-cochranehandbook6.3" class="csl-entry" role="listitem">
-Higgins, Julian P. T., James Thomas, Jacqueline Chandler, Miranda Cumpston, Tianjing Li, Matthew J. Page, and Vivian A. Welch, eds. 2022. <em><span class="nocase">Cochrane Handbook for Systematic Reviews of Interventions</span></em>. 6.3 ed. Cochrane; Cochrane. <a href="https://training.cochrane.org/handbook">https://training.cochrane.org/handbook</a>.
+Higgins, Julian P. T., James Thomas, Jacqueline Chandler, et al., eds. 2022. <em><span class="nocase">Cochrane Handbook for Systematic Reviews of Interventions</span></em>. 6.3. Cochrane; Cochrane. <a href="https://training.cochrane.org/handbook">https://training.cochrane.org/handbook</a>.
 </div>
 <div id="ref-Hinde2015" class="csl-entry" role="listitem">
 Hinde, Sebastian, and Eldon Spackman. 2015. <span>“<span class="nocase">Bidirectional Citation Searching to Completion: An Exploration of Literature Searching Methods</span>.”</span> <em>PharmacoEconomics</em> 33 (1): 5–11. <a href="https://doi.org/10.1007/s40273-014-0205-3">https://doi.org/10.1007/s40273-014-0205-3</a>.
@@ -1192,7 +1189,7 @@ McGowan, Jessie, Margaret Sampson, Douglas M. Salzwedel, Elise Cogo, Vicki Foers
 McKeown, Sandra, and Zuhaib M. Mir. 2021. <span>“Considerations for Conducting Systematic Reviews: Evaluating the Performance of Different Methods for de-Duplicating References.”</span> <em>Syst Rev</em> 10 (1): 38. <a href="https://doi.org/10.1186/s13643-021-01583-y">https://doi.org/10.1186/s13643-021-01583-y</a>.
 </div>
 <div id="ref-Meert2016" class="csl-entry" role="listitem">
-Meert, Deborah, Nazi Torabi, and John Costella. 2016. <span>“Impact of Librarians on Reporting of the Literature Searching Component of Pediatric Systematic Reviews.”</span> <em>J Med Libr Assoc</em> 104 (October): 267–77. <a href="https://doi.org/10.3163/1536-5050.104.4.004">https://doi.org/10.3163/1536-5050.104.4.004</a>.
+Meert, Deborah, Nazi Torabi, and John Costella. 2016. <span>“Impact of Librarians on Reporting of the Literature Searching Component of Pediatric Systematic Reviews.”</span> <em>J Med Libr Assoc</em> (United States) 104 (October): 267–77. <a href="https://doi.org/10.3163/1536-5050.104.4.004">https://doi.org/10.3163/1536-5050.104.4.004</a>.
 </div>
 <div id="ref-Metzendorf2016" class="csl-entry" role="listitem">
 Metzendorf, Maria-Inti. 2016. <span>“<span class="nocase">Why medical information specialists should routinely form part of teams producing high quality systematic reviews - a Cochrane perspective</span>.”</span> <em>JEAHIL</em> 12 (4): 6–9. <a href="http://ojs.eahil.eu/ojs/index.php/JEAHIL/issue/view/85/12_4">http://ojs.eahil.eu/ojs/index.php/JEAHIL/issue/view/85/12_4</a>.
@@ -1207,28 +1204,28 @@ Munn, Z., C. Stern, E. Aromataris, C. Lockwood, and Z. Jordan. 2018. <span>“<s
 O’Regan, Gerard. 2012. <em><span class="nocase">A Brief History of Computing</span></em>. Second. Springer, London. <a href="https://doi.org/10.1007/978-1-4471-2359-0">https://doi.org/10.1007/978-1-4471-2359-0</a>.
 </div>
 <div id="ref-Paez2017" class="csl-entry" role="listitem">
-Paez, Arsenio. 2017. <span>“Gray Literature: An Important Resource in Systematic Reviews.”</span> <em>J Evid Based Med</em> 10 (August): 233–40. <a href="https://doi.org/10.1111/jebm.12266">https://doi.org/10.1111/jebm.12266</a>.
+Paez, Arsenio. 2017. <span>“Gray Literature: An Important Resource in Systematic Reviews.”</span> <em>J Evid Based Med</em> (England) 10 (August): 233–40. <a href="https://doi.org/10.1111/jebm.12266">https://doi.org/10.1111/jebm.12266</a>.
 </div>
 <div id="ref-Pearson2015" class="csl-entry" role="listitem">
 Pearson, A., H. White, F. Bath-Hextall, S. Salmond, J. Apostolo, and P. Kirkpatrick. 2015. <span>“A Mixed-Methods Approach to Systematic Reviews.”</span> Journal Article. <em>Int J Evid Based Healthc</em> 13 (3): 121–31. <a href="https://doi.org/10.1097/XEB.0000000000000052">https://doi.org/10.1097/XEB.0000000000000052</a>.
 </div>
 <div id="ref-Rethlefsen2015" class="csl-entry" role="listitem">
-Rethlefsen, Melissa L., Ann M. Farrell, Leah C. Osterhaus Trzasko, and Tara J. Brigham. 2015. <span>“Librarian Co-Authors Correlated with Higher Quality Reported Search Strategies in General Internal Medicine Systematic Reviews.”</span> <em>J Clin Epidemiol</em> 68 (June): 617–26. <a href="https://doi.org/10.1016/j.jclinepi.2014.11.025">https://doi.org/10.1016/j.jclinepi.2014.11.025</a>.
+Rethlefsen, Melissa L., Ann M. Farrell, Leah C. Osterhaus Trzasko, and Tara J. Brigham. 2015. <span>“Librarian Co-Authors Correlated with Higher Quality Reported Search Strategies in General Internal Medicine Systematic Reviews.”</span> <em>J Clin Epidemiol</em> (United States) 68 (June): 617–26. <a href="https://doi.org/10.1016/j.jclinepi.2014.11.025">https://doi.org/10.1016/j.jclinepi.2014.11.025</a>.
 </div>
 <div id="ref-Rethlefsen2021" class="csl-entry" role="listitem">
-Rethlefsen, Melissa L., Shona Kirtley, Siw Waffenschmidt, Ana Patricia Ayala, David Moher, Matthew J. Page, Jonathan B. Koffel, et al. 2021. <span>“<span class="nocase">PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews</span>.”</span> <em>Syst Rev</em> 10 (1): 39. <a href="https://doi.org/10.1186/s13643-020-01542-z">https://doi.org/10.1186/s13643-020-01542-z</a>.
+Rethlefsen, Melissa L., Shona Kirtley, Siw Waffenschmidt, et al. 2021. <span>“<span class="nocase">PRISMA-S: an extension to the PRISMA Statement for Reporting Literature Searches in Systematic Reviews</span>.”</span> <em>Syst Rev</em> 10 (1): 39. <a href="https://doi.org/10.1186/s13643-020-01542-z">https://doi.org/10.1186/s13643-020-01542-z</a>.
 </div>
 <div id="ref-SalvadorOlivan2021" class="csl-entry" role="listitem">
 Salvador-Oliván, José Antonio, Gonzalo Marco-Cuenca, and Rosario Arquero-Avilés. 2021. <span>“<span class="nocase">Development of an efficient search filter to retrieve systematic reviews from PubMed</span>.”</span> <em>J Med Libr Assoc</em> 109 (4). <a href="https://doi.org/10.5195/jmla.2021.1223">https://doi.org/10.5195/jmla.2021.1223</a>.
 </div>
 <div id="ref-Schellinger2021" class="csl-entry" role="listitem">
-Schellinger, Jana, Kerry Sewell, Jamie E. Bloss, Tristan Ebron, and Carrie Forbes. 2021. <span>“The Effect of Librarian Involvement on the Quality of Systematic Reviews in Dental Medicine.”</span> <em>PLoS One</em> 16: e0256833. <a href="https://doi.org/10.1371/journal.pone.0256833">https://doi.org/10.1371/journal.pone.0256833</a>.
+Schellinger, Jana, Kerry Sewell, Jamie E. Bloss, Tristan Ebron, and Carrie Forbes. 2021. <span>“The Effect of Librarian Involvement on the Quality of Systematic Reviews in Dental Medicine.”</span> <em>PLoS One</em> (United States) 16: e0256833. <a href="https://doi.org/10.1371/journal.pone.0256833">https://doi.org/10.1371/journal.pone.0256833</a>.
 </div>
 <div id="ref-Spencer2018" class="csl-entry" role="listitem">
-Spencer, Angela J., and Jonathan D. Eldredge. 2018. <span>“Roles for Librarians in Systematic Reviews: A Scoping Review.”</span> <em>J Med Libr Assoc</em> 106 (January): 46–56. <a href="https://doi.org/10.5195/jmla.2018.82">https://doi.org/10.5195/jmla.2018.82</a>.
+Spencer, Angela J., and Jonathan D. Eldredge. 2018. <span>“Roles for Librarians in Systematic Reviews: A Scoping Review.”</span> <em>J Med Libr Assoc</em> (United States) 106 (January): 46–56. <a href="https://doi.org/10.5195/jmla.2018.82">https://doi.org/10.5195/jmla.2018.82</a>.
 </div>
 <div id="ref-Twells2021" class="csl-entry" role="listitem">
-Twells, Laurie K. 2021. <span>“<span>Evidence-Based Decision-Making 1: Critical Appraisal</span>.”</span> In <em>Clinical Epidemiology: Practice and Methods</em>, edited by Patrick S. Parfrey and Brendan J. Barrett, 389–404. New York, NY: Springer US. <a href="https://doi.org/10.1007/978-1-0716-1138-8_21">https://doi.org/10.1007/978-1-0716-1138-8_21</a>.
+Twells, Laurie K. 2021. <span>“<span>Evidence-Based Decision-Making 1: Critical Appraisal</span>.”</span> In <em>Clinical Epidemiology: Practice and Methods</em>, edited by Patrick S. Parfrey and Brendan J. Barrett. Springer US. <a href="https://doi.org/10.1007/978-1-0716-1138-8_21">https://doi.org/10.1007/978-1-0716-1138-8_21</a>.
 </div>
 <div id="ref-Waffenschmidt2020" class="csl-entry" role="listitem">
 Waffenschmidt, Siw, Tamara Navarro-Ruan, Nick Hobson, Elke Hausner, Stefan Sauerland, and R. Brian Haynes. 2020. <span>“<span class="nocase">Development and validation of study filters for identifying controlled non-randomized studies in PubMed and Ovid MEDLINE</span>.”</span> <em>Res Syn Meth</em> 11 (5): 617–26. <a href="https://doi.org/10.1002/jrsm.1425">https://doi.org/10.1002/jrsm.1425</a>.

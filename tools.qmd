@@ -11,6 +11,41 @@ link-bibliography: true
 
 **citationchaser** is a free tool for [citation searching](#sec-citationsearching). citationchaser is an [R package](https://github.com/nealhaddaway/citationchaser), deployed as a shinyapp at <https://estech.shinyapps.io/citationchaser/>. It uses the [Lens.org Scholarly API](https://www.lens.org/lens/user/subscriptions#scholar) for the retrieval of bibliographic information and for backward and forward citation searching.(@Haddaway2022b, @Haddaway2021)
 
+
+## CRediT {#sec-credit}
+
+The **Contributor Roles Taxonomy (CRediT)** is an American National Standard developed by the [National Information Standards Organization (NISO)](https://www.niso.org). See @NCWG2022 and <https://credit.niso.org/> for more information. It provides a convention for describing the contributions of authors in scholarly publications. (@Allen2019)
+
+The idea behind the CRediT standard is to facilitate the recognition of author contributions and to make the authorship more transparent. When an article is submitted for publication, the contributions of each author can be described using the contributer roles described in the following table.
+
+::: {#tbl-credit}
+
+| Contributer Roles           | Definition                                                                                                                                                                                                       |
+|:----------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Conceptualization          | Ideas; formulation or evolution of overarching research goals and aims.                                                                                                                                         |
+| Data curation              | Management activities to annotate (produce metadata), scrub data and maintain research data (including software code, where it is necessary for interpreting the data itself) for initial use and later re-use. |
+| Formal analysis            | Application of statistical, mathematical, computational, or other formal techniques to analyze or synthesize study data.                                                                                        |
+| Funding acquisition        | Acquisition of the financial support for the project leading to this publication.                                                                                                                               |
+| Investigation              | Conducting a research and investigation process, specifically performing the experiments, or data/evidence collection.                                                                                          |
+| Methodology                | Development or design of methodology; creation of models.                                                                                                                                                       |
+| Project administration     | Management and coordination responsibility for the research activity planning and execution.                                                                                                                    |
+| Resources                  | Provision of study materials, reagents, materials, patients, laboratory samples, animals, instrumentation, computing resources, or other analysis tools.                                                        |
+| Software                   | Programming, software development; designing computer programs; implementation of the computer code and supporting algorithms; testing of existing code components.                                             |
+| Supervision                | Oversight and leadership responsibility for the research activity planning and execution, including mentorship external to the core team.                                                                       |
+| Validation                 | Verification, whether as a part of the activity or separate, of the overall replication/reproducibility of results/experiments and other research outputs.                                                      |
+| Visualization              | Preparation, creation and/or presentation of the published work, specifically visualization/data presentation.                                                                                                  |
+| Writing – original draft   | Preparation, creation and/or presentation of the published work, specifically writing the initial draft (including substantive translation).                                                                    |
+| Writing – review & editing | Preparation, creation and/or presentation of the published work by those from the original research group, specifically critical review, commentary or revision - including pre- or post-publication stages     |
+: Contributor roles as described in ANSI/NISO Z39.104-2022. {.striped}
+:::
+
+:::{.callout-tip title="Example for using CRediT"}
+**Author Contributions**
+
+**Jane Doe**: Conceptualization, Methodology, Software, Writing - review & editing. **John Smith**: Data curation, Writing - original draft. **Alex Miller**: Visualization, Investigation, Writing - original draft. **Max Headroom**: Supervision, Writing - reviewing & editing.
+:::
+
+
 ## Entrez Programming Utilities {#sec-e-utilities}
 
 The **Entrez Programming Utilities** (E-utilities) are a set of nine 
