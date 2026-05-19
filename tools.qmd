@@ -132,6 +132,75 @@ FINER is an acronym for the five criteria **feasible**, **interesting**, **novel
 : The FINER criteria {.striped}
 :::
 
+
+## GRADE {#sec-grade}
+
+GRADE is short for *Grades of Recommendation, Assessment, Development, and Evaluation*. The GRADE approach provides guidance for rating quality of evidence and grading strength of recommendations in health care. (@Guyatt2011b) 
+
+The GRADE approach is described in several publications (see info box below) developed by the [GRADE working group](http://www.gradeworkinggroup.org/), a collaboration of experts working in the field of evidence-based medicine. 
+
+More information can be found in the online [GRADE book](https://book.gradepro.org/).
+
+::: {.callout-note title="GRADE guidelines (in numeric order)" collapse="true"}
+
+**Introductory articles**
+
+1. Introduction and summary of findings tables (@Guyatt2011)
+2. Framing the question and deciding on the importance of outcomes (@Guyatt2011h)
+3. Rating the quality of evidence (@Balshem2011)
+
+**Rating the quality of evidence**
+
+4. Rating the quality of evidence -- study limitations (risk of bias) (@Guyatt2011g)
+5. Rating the quality of evidence -- publication bias (@Guyatt2011f)
+6. Rating the quality of evidence -- imprecision  (@Guyatt2011a)
+7. Rating the quality of evidence -- inconsistency (@Guyatt2011e)
+8. Rating the quality of evidence -- indirectness (@Guyatt2011d)
+9. Rating up the quality of evidence (@Guyatt2011c)
+10. Considering resource use and rating the quality of economic evidence (@Brunetti2013)
+
+**Summarizing the evidence**
+
+11. Making an overall rating of confidence in effect estimates for a single outcome and for all outcomes (@Guyatt2013c)
+12. Preparing summary of findings tables -- binary outcomes (@Guyatt2013b)
+13. Preparing summary of findings tables and evidence profiles -- continuous outcomes (@Guyatt2013a)
+
+**Further guidelines**
+
+14. Going from evidence to recommendations: the significance and presentation of recommendations (@Andrews2013a)
+15. Going from evidence to recommendation -- determinants of a recommendation's direction and strength (@Andrews2013)
+16. GRADE evidence to decision frameworks for tests in clinical practice and public health (@Schuenemann2016)
+17. Assessing the risk of bias associated with missing participant outcome data in a body of evidence (@Guyatt2017)
+18. How ROBINS-I and other tools to assess risk of bias in nonrandomized studies should be used to rate the certainty of a body of evidence (@Schuenemann2019a)
+19. Assessing the certainty of evidence in the importance of outcomes or values and preferences -- risk of bias and indirectness (@Zhang2019a)
+20. Assessing the certainty of evidence in the importance of outcomes or values and preferences -- inconsistency, imprecision, and other domains (@Zhang2019)
+21. Guideline 21 - test accuracy
+	1. Part 1. Study design, risk of bias, and indirectness in rating the certainty across a body of evidence for test accuracy (@Schuenemann2020a)
+	2. Part 2. Test accuracy: inconsistency, imprecision, publication bias, and other domains for rating the certainty of evidence and presenting it in evidence profiles and summary of findings tables (@Schuenemann2020)
+22. The GRADE approach for tests and strategies -- from test accuracy to patient-important outcomes and recommendations (@Schuenemann2019)
+23. Considering cost-effectiveness evidence in moving from evidence to health-related recommendations (@Xie2023)
+24. Optimizing the integration of randomized and non-randomized studies of interventions in evidence syntheses and health guidelines (@CuelloGarcia2022)
+25. --
+26. Informative statements to communicate the findings of systematic reviews of interventions (@Santesso2020)
+27. How to calculate absolute effects for time-to-event outcomes in summary of findings tables and Evidence Profiles (@Skoetz2020)
+28. Use of GRADE for the assessment of evidence about prognostic factors: rating certainty in identification of groups of patients with different absolute risks (@Foroutan2020)
+29. Rating the certainty in time-to-event outcomes—Study limitations due to censoring of participants with missing data in intervention studies (@Goldkuhle2021)
+30. The GRADE approach to assessing the certainty of modeled evidence -- An overview in the context of health decision-making (@Brozek2021)
+31. Assessing the certainty across a body of evidence for comparative test accuracy (@Yang2021)
+32. GRADE offers guidance on choosing targets of GRADE certainty of evidence ratings (@Zeng2021)
+33. Addressing imprecision in a network meta-analysis (@BrignardelloPetersen2021)
+34. Update on rating imprecision using a minimally contextualized approach (@Zeng2022)
+35. Update on rating imprecision for assessing contextualized certainty of evidence and making decisions (@Schuenemann2022)
+36. Updates to GRADE's approach to addressing inconsistency (@Guyatt2023)
+37. Rating imprecision in a body of evidence on test accuracy (@Mustafa2024)
+38. Updated guidance for rating up certainty of evidence due to a dose-response gradient (@Murad2023)
+39. Using GRADE-ADOLOPMENT to adopt, adapt or create contextualized recommendations from source guidelines and evidence syntheses (@Klugar2024)
+
+:::
+
+
+
+
 ## PICO {#sec-pico}
 PICO is an acronym for the four concepts **Population**, **Intervention**, **Comparison** 
 and **Outcome**. Concepts like these are used for defining research questions as 
