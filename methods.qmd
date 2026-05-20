@@ -110,29 +110,31 @@ Validated filters are developed, tested and optimized for sensitivity and
 precision by experts. (@Haynes2004, @Glanville2008)
 
 Filter strategies can be implemented in a search strategy just like any concept 
-of the research question. @tbl-filterstrategy illustrates a search strategy with
-a short qualitative research filter in lines 8 to 11, which is added to the 
-overall search in line 12.
+of the research question as shown in the example below. 
 
 
-::: {#tbl-filterstrategy}
+::: {.callout-tip title="Example of an applied filter" collapse="true"}
 ```python
-1	hypertension/
-2	(hypertension or high blood pressure).ti,ab.
-3	1 or 2
-4	exp patient attitude/
-5	*patient satisfaction/
-6	(choice$ or empower$).ti.
-7	or/4-6
-8	interview$.mp.
-9	experience$.mp.
-10	qualitative.tw.
-11	or/8-10
-12	3 and 7 and 11
+hypertension/
+(hypertension or high blood pressure).ti,ab.
+1 or 2
+exp patient attitude/
+*patient satisfaction/
+(choice$ or empower$).ti.
+or/4-6
+interview$.mp.
+experience$.mp.
+qualitative.tw.
+or/8-10
+3 and 7 and 11
 ```
+
+A short qualitative research filter was added in lines 8 to 11, which is 
+combined with the other parts of the search strategy in line 12.
+
 :::
 
-::: {.callout-tip title="Sources of filter strategies" collapse="true"}
+::: {.callout-note title="Sources of filter strategies" collapse="true"}
 - [ISSG Search Filter Resource](https://sites.google.com/a/york.ac.uk/issg-search-filters-resource)
 - [Canadian Agency for Drugs and Technologies in Health (CADTH)](https://searchfilters.cadth.ca/)
 - [SIGN Health Improvement Scotland](https://www.sign.ac.uk/what-we-do/methodology/search-filters)
@@ -331,7 +333,8 @@ The Boolean operators `AND` and `OR` possess similar properties as the
 multiplication and addition. (@ORegan2012)
 
 ::: {.callout-info title="Properties of the Boolean Operators"}
-```python
+
+```tex
  (a OR b) = (b OR a)                        # <1>
  (a AND b) = (b AND a)                      # <1>
  ----
@@ -498,25 +501,22 @@ Depending on the purpose and detail of the search, the extent of a search
 strategy might range from a simple search string to numerous lines of search 
 terms connected by [Boolean operators](#sec-boolean).
 
-@tbl-searchstrategy-pubmed and @tbl-searchstrategy-ovid show examples for both 
-types of search strategies.
 
-::: {#tbl-searchstrategy-pubmed}
-```default
-"analgesics"[MH] OR "analgesic*"[TIAB] OR "analgesic*"[PA] OR "anodynes"[TIAB] 
-OR "antinociceptive*"[TIAB]) AND "pain management"[MAJR]
-```
-Single-line [PubMed Search strategy](https://pubmed.ncbi.nlm.nih.gov/?term=%28%22analgesics%22%5BMH%5D+OR+%22analgesic%2A%22%5BTIAB%5D+OR+%22analgesic%2A%22%5BPA%5D+OR+%22anodynes%22%5BTIAB%5D+OR+%22antinociceptive%2A%22%5BTIAB%5D%29+AND+%22pain+management%22%5BMAJR%5D)
-:::
+::: {.callout-tip title="Single vs. multiline search strategies"}
+**Single-line [PubMed Search strategy](https://pubmed.ncbi.nlm.nih.gov/?term=%28%22analgesics%22%5BMH%5D+OR+%22analgesic%2A%22%5BTIAB%5D+OR+%22analgesic%2A%22%5BPA%5D+OR+%22anodynes%22%5BTIAB%5D+OR+%22antinociceptive%2A%22%5BTIAB%5D%29+AND+%22pain+management%22%5BMAJR%5D)**
 
-::: {#tbl-searchstrategy-ovid}
 ```python
-1 exp analgesics/
-2 (analge#ic? or anodyne? or antinoceptive?).ti,ab,kw.
-3 *pain management/
-4 (1 or 2) and 3
+"analgesics"[MH] OR "analgesic*"[TIAB] OR "analgesic*"[PA] OR "anodynes"[TIAB] OR "antinociceptive*"[TIAB]) AND "pain management"[MAJR]
 ```
-Multi-line search strategy for Ovid MEDLINE
+
+**Multi-line search strategy for Ovid MEDLINE**
+
+```python
+exp analgesics/
+(analge#ic? or anodyne? or antinoceptive?).ti,ab,kw.
+*pain management/
+(1 or 2) and 3
+```
 :::
 
 ::: {.callout-tip title="Testing your search strategy"}
@@ -524,20 +524,18 @@ You can use [seed papers](#sec-seedpaper) to test whether your search strategy
 picks them up. In the first step you search for the seed papers using their
 unique identifiers such as [PMID or PMCID](#sec-pmid-pmcid) or [DOI](#sec-doi).
 Second, you connect the found seed papers with the rest of your search strategy 
-using the [Boolean operator](#sec-boolean) `AND` as shown below in 
-@tbl-test-searchstrategy -- if the search results for lines 4 and 5 are the same, 
+using the [Boolean operator](#sec-boolean) `AND` as shown below -- if the search 
+results for lines 4 and 5 are the same, 
 all the seed papers were retrieved by the search strategy.
-:::
-
-::: {#tbl-test-searchstrategy}
+ 
 ```python
-1 hypertension/ or antihypertensive agents/
-2 deprescriptions/
-3 1 and 2
-4 ("39209778" or "39094592" or "28437544" or "26591140" or "29678989").ui.
-5 3 and 4
+hypertension/ or antihypertensive agents/
+deprescriptions/
+1 and 2
+("39209778" or "39094592" or "28437544" or "26591140" or "29678989").ui.
+3 and 4
 ```
-Testing the search strategy using seed papers.
+
 :::
 
 ## subheading {#sec-subheading}

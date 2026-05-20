@@ -392,39 +392,46 @@ Figure&nbsp;4.3: co-citing citation searching retrieves publications which share
 <p><strong>Filters</strong> (also <em>search filters</em>, <em>filter strategies</em> or <em>hedges</em>) are <a href="#sec-searchstrategy">search strategies</a> designed to retrieve records for a specific concept of the research question.</p>
 <p>There are filters for specific patient groups or diseases, outcomes, study types (for instance to retrieve only randomized controlled trials (RCTs), or filters for other aspects of the research question, e.g.&nbsp;adverse effects, diagnostic accuracy or patient values. (<span class="citation" data-cites="Waffenschmidt2020">Waffenschmidt et al. (<a href="references.html#ref-Waffenschmidt2020" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="SalvadorOlivan2021">Salvador-Oliván et al. (<a href="references.html#ref-SalvadorOlivan2021" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="Lee2012">Lee et al. (<a href="references.html#ref-Lee2012" role="doc-biblioref">2012</a>)</span>, <span class="citation" data-cites="Golder2006a">Golder et al. (<a href="references.html#ref-Golder2006a" role="doc-biblioref">2006</a>)</span>)</p>
 <p>Validated filters are developed, tested and optimized for sensitivity and precision by experts. (<span class="citation" data-cites="Haynes2004">Haynes and Wilczynski (<a href="references.html#ref-Haynes2004" role="doc-biblioref">2004</a>)</span>, <span class="citation" data-cites="Glanville2008">Glanville et al. (<a href="references.html#ref-Glanville2008" role="doc-biblioref">2008</a>)</span>)</p>
-<p>Filter strategies can be implemented in a search strategy just like any concept of the research question. <a href="#tbl-filterstrategy" class="quarto-xref">Table&nbsp;<span>4.1</span></a> illustrates a search strategy with a short qualitative research filter in lines 8 to 11, which is added to the overall search in line 12.</p>
-<div id="tbl-filterstrategy" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-filterstrategy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.1
-</figcaption>
-<div aria-describedby="tbl-filterstrategy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span>   hypertension<span class="op">/</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span>   (hypertension <span class="kw">or</span> high blood pressure).ti,ab.</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span>   <span class="dv">1</span> <span class="kw">or</span> <span class="dv">2</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span>   exp patient attitude<span class="op">/</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span>   <span class="op">*</span>patient satisfaction<span class="op">/</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="dv">6</span>   (choice$ <span class="kw">or</span> empower$).ti.</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="dv">7</span>   <span class="kw">or</span><span class="op">/</span><span class="dv">4</span><span class="op">-</span><span class="dv">6</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span>   interview$.mp.</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="dv">9</span>   experience$.mp.</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span>  qualitative.tw.</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="dv">11</span>  <span class="kw">or</span><span class="op">/</span><span class="dv">8</span><span class="op">-</span><span class="dv">10</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="dv">12</span>  <span class="dv">3</span> <span class="kw">and</span> <span class="dv">7</span> <span class="kw">and</span> <span class="dv">11</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</figure>
-</div>
-<div class="callout callout-style-default callout-tip callout-titled" title="Sources of filter strategies">
+<p>Filter strategies can be implemented in a search strategy just like any concept of the research question as shown in the example below.</p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Example of an applied filter">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Sources of filter strategies
+<span class="screen-reader-only">Tip</span>Example of an applied filter
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1"></a>hypertension<span class="op">/</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>(hypertension <span class="kw">or</span> high blood pressure).ti,ab.</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="dv">1</span> <span class="kw">or</span> <span class="dv">2</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>exp patient attitude<span class="op">/</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="op">*</span>patient satisfaction<span class="op">/</span></span>
+<span id="cb1-6"><a href="#cb1-6"></a>(choice$ <span class="kw">or</span> empower$).ti.</span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="kw">or</span><span class="op">/</span><span class="dv">4</span><span class="op">-</span><span class="dv">6</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>interview$.mp.</span>
+<span id="cb1-9"><a href="#cb1-9"></a>experience$.mp.</span>
+<span id="cb1-10"><a href="#cb1-10"></a>qualitative.tw.</span>
+<span id="cb1-11"><a href="#cb1-11"></a><span class="kw">or</span><span class="op">/</span><span class="dv">8</span><span class="op">-</span><span class="dv">10</span></span>
+<span id="cb1-12"><a href="#cb1-12"></a><span class="dv">3</span> <span class="kw">and</span> <span class="dv">7</span> <span class="kw">and</span> <span class="dv">11</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>A short qualitative research filter was added in lines 8 to 11, which is combined with the other parts of the search strategy in line 12.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Sources of filter strategies">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Sources of filter strategies
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ul>
 <li><a href="https://sites.google.com/a/york.ac.uk/issg-search-filters-resource">ISSG Search Filter Resource</a></li>
@@ -497,7 +504,7 @@ Table&nbsp;4.1
 <p><strong>Grey literature</strong> (also <em>gray literature</em>) is so-called <em>non-conventional</em> or <em>informal literature</em> which “cannot readily be obtained through normal bookselling channels”, for example conference proceedings, reports, specifications, supplementary publications, technical notes, theses, translations.(<span class="citation" data-cites="Wood1982">Wood (<a href="references.html#ref-Wood1982" role="doc-biblioref">1982</a>)</span>, <span class="citation" data-cites="Auger2017">Auger (<a href="references.html#ref-Auger2017" role="doc-biblioref">2017</a>)</span>)</p>
 <p>According to <span class="citation" data-cites="Paez2017">Paez (<a href="references.html#ref-Paez2017" role="doc-biblioref">2017</a>)</span> the search for grey literature can be an important resource for <a href="#sec-syslitsearch">systematic literature searching</a>.</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Sources for grey literature searching">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -506,7 +513,7 @@ Table&nbsp;4.1
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <table class="table-striped caption-top table">
 <thead>
@@ -701,14 +708,14 @@ Figure&nbsp;4.4: Boolean Operators
 </div>
 <p>The Boolean operators <code>AND</code> and <code>OR</code> possess similar properties as the multiplication and addition. (<span class="citation" data-cites="ORegan2012">O’Regan (<a href="references.html#ref-ORegan2012" role="doc-biblioref">2012</a>)</span>)</p>
 <div class="callout-info" title="Properties of the Boolean Operators">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="annotated-cell-2"><pre class="sourceCode python code-annotation-code code-with-copy code-annotated"><code class="sourceCode python"><a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-2-1" class="code-annotation-target"><a href="#annotated-cell-2-1" aria-hidden="true" tabindex="-1"></a> (a OR b) <span class="op">=</span> (b OR a)</span>
-<span id="annotated-cell-2-2"><a href="#annotated-cell-2-2" aria-hidden="true" tabindex="-1"></a> (a AND b) <span class="op">=</span> (b AND a)</span>
-<span id="annotated-cell-2-3"><a href="#annotated-cell-2-3" aria-hidden="true" tabindex="-1"></a> <span class="op">----</span></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-2-4" class="code-annotation-target"><a href="#annotated-cell-2-4" aria-hidden="true" tabindex="-1"></a> (a OR b) OR c <span class="op">=</span> a OR (b OR c)</span>
-<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5" aria-hidden="true" tabindex="-1"></a> (a AND b) AND c <span class="op">=</span> a AND (b AND c)</span>
-<span id="annotated-cell-2-6"><a href="#annotated-cell-2-6" aria-hidden="true" tabindex="-1"></a> <span class="op">----</span></span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="3" onclick="event.preventDefault();">3</a><span id="annotated-cell-2-7" class="code-annotation-target"><a href="#annotated-cell-2-7" aria-hidden="true" tabindex="-1"></a> a AND (b OR c) <span class="op">=</span> (a AND b) OR (a AND c)</span>
-<span id="annotated-cell-2-8"><a href="#annotated-cell-2-8" aria-hidden="true" tabindex="-1"></a> a OR (b AND c) <span class="op">=</span> (a OR b) AND (a OR c)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="annotated-cell-2"><pre class="sourceCode numberSource tex code-annotation-code number-lines code-with-copy code-annotated"><code class="sourceCode latex"><a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-2-1" class="code-annotation-target"><a href="#annotated-cell-2-1"></a> (a OR b) = (b OR a)</span>
+<span id="annotated-cell-2-2"><a href="#annotated-cell-2-2"></a> (a AND b) = (b AND a)</span>
+<span id="annotated-cell-2-3"><a href="#annotated-cell-2-3"></a> ----</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-2-4" class="code-annotation-target"><a href="#annotated-cell-2-4"></a> (a OR b) OR c = a OR (b OR c)</span>
+<span id="annotated-cell-2-5"><a href="#annotated-cell-2-5"></a> (a AND b) AND c = a AND (b AND c)</span>
+<span id="annotated-cell-2-6"><a href="#annotated-cell-2-6"></a> ----</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-2" data-target-annotation="3" onclick="event.preventDefault();">3</a><span id="annotated-cell-2-7" class="code-annotation-target"><a href="#annotated-cell-2-7"></a> a AND (b OR c) = (a AND b) OR (a AND c)</span>
+<span id="annotated-cell-2-8"><a href="#annotated-cell-2-8"></a> a OR (b AND c) = (a OR b) AND (a OR c)</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <dl class="code-annotation-container-grid">
 <dt data-target-cell="annotated-cell-2" data-target-annotation="1">1</dt>
 <dd>
@@ -903,30 +910,24 @@ Figure&nbsp;4.4: Boolean Operators
 </div>
 <p>Search strategies are supposed to be consistent with the predefined eligibility criteria of the research project (<span class="citation" data-cites="Gough2017">Gough et al. (<a href="references.html#ref-Gough2017" role="doc-biblioref">2017</a>)</span>).</p>
 <p>Depending on the purpose and detail of the search, the extent of a search strategy might range from a simple search string to numerous lines of search terms connected by <a href="#sec-boolean">Boolean operators</a>.</p>
-<p><a href="#tbl-searchstrategy-pubmed" class="quarto-xref">Table&nbsp;<span>4.2</span></a> and <a href="#tbl-searchstrategy-ovid" class="quarto-xref">Table&nbsp;<span>4.3</span></a> show examples for both types of search strategies.</p>
-<div id="tbl-searchstrategy-pubmed" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-searchstrategy-pubmed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.2: Single-line <a href="https://pubmed.ncbi.nlm.nih.gov/?term=%28%22analgesics%22%5BMH%5D+OR+%22analgesic%2A%22%5BTIAB%5D+OR+%22analgesic%2A%22%5BPA%5D+OR+%22anodynes%22%5BTIAB%5D+OR+%22antinociceptive%2A%22%5BTIAB%5D%29+AND+%22pain+management%22%5BMAJR%5D">PubMed Search strategy</a>
-</figcaption>
-<div aria-describedby="tbl-searchstrategy-pubmed-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>"analgesics"[MH] OR "analgesic*"[TIAB] OR "analgesic*"[PA] OR "anodynes"[TIAB] </span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>OR "antinociceptive*"[TIAB]) AND "pain management"[MAJR]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-tip callout-titled" title="Single vs. multiline search strategies">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-</figure>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Single vs.&nbsp;multiline search strategies
 </div>
-<div id="tbl-searchstrategy-ovid" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-searchstrategy-ovid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.3: Multi-line search strategy for Ovid MEDLINE
-</figcaption>
-<div aria-describedby="tbl-searchstrategy-ovid-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> exp analgesics<span class="op">/</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> (analge<span class="co">#ic? or anodyne? or antinoceptive?).ti,ab,kw.</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="op">*</span>pain management<span class="op">/</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span> (<span class="dv">1</span> <span class="kw">or</span> <span class="dv">2</span>) <span class="kw">and</span> <span class="dv">3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</figure>
+<div class="callout-body-container callout-body">
+<p><strong>Single-line <a href="https://pubmed.ncbi.nlm.nih.gov/?term=%28%22analgesics%22%5BMH%5D+OR+%22analgesic%2A%22%5BTIAB%5D+OR+%22analgesic%2A%22%5BPA%5D+OR+%22anodynes%22%5BTIAB%5D+OR+%22antinociceptive%2A%22%5BTIAB%5D%29+AND+%22pain+management%22%5BMAJR%5D">PubMed Search strategy</a></strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">"analgesics"</span>[MH] OR <span class="st">"analgesic*"</span>[TIAB] OR <span class="st">"analgesic*"</span>[PA] OR <span class="st">"anodynes"</span>[TIAB] OR <span class="st">"antinociceptive*"</span>[TIAB]) AND <span class="st">"pain management"</span>[MAJR]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Multi-line search strategy for Ovid MEDLINE</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>exp analgesics<span class="op">/</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a>(analge<span class="co">#ic? or anodyne? or antinoceptive?).ti,ab,kw.</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="op">*</span>pain management<span class="op">/</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a>(<span class="dv">1</span> <span class="kw">or</span> <span class="dv">2</span>) <span class="kw">and</span> <span class="dv">3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled" title="Testing your search strategy">
 <div class="callout-header d-flex align-content-center">
@@ -938,22 +939,13 @@ Table&nbsp;4.3: Multi-line search strategy for Ovid MEDLINE
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>You can use <a href="technicalterms.html#sec-seedpaper">seed papers</a> to test whether your search strategy picks them up. In the first step you search for the seed papers using their unique identifiers such as <a href="technicalterms.html#sec-pmid-pmcid">PMID or PMCID</a> or <a href="technicalterms.html#sec-doi">DOI</a>. Second, you connect the found seed papers with the rest of your search strategy using the <a href="#sec-boolean">Boolean operator</a> <code>AND</code> as shown below in <a href="#tbl-test-searchstrategy" class="quarto-xref">Table&nbsp;<span>4.4</span></a> – if the search results for lines 4 and 5 are the same, all the seed papers were retrieved by the search strategy.</p>
+<p>You can use <a href="technicalterms.html#sec-seedpaper">seed papers</a> to test whether your search strategy picks them up. In the first step you search for the seed papers using their unique identifiers such as <a href="technicalterms.html#sec-pmid-pmcid">PMID or PMCID</a> or <a href="technicalterms.html#sec-doi">DOI</a>. Second, you connect the found seed papers with the rest of your search strategy using the <a href="#sec-boolean">Boolean operator</a> <code>AND</code> as shown below – if the search results for lines 4 and 5 are the same, all the seed papers were retrieved by the search strategy.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>hypertension<span class="op">/</span> <span class="kw">or</span> antihypertensive agents<span class="op">/</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>deprescriptions<span class="op">/</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="dv">1</span> <span class="kw">and</span> <span class="dv">2</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>(<span class="st">"39209778"</span> <span class="kw">or</span> <span class="st">"39094592"</span> <span class="kw">or</span> <span class="st">"28437544"</span> <span class="kw">or</span> <span class="st">"26591140"</span> <span class="kw">or</span> <span class="st">"29678989"</span>).ui.</span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="dv">3</span> <span class="kw">and</span> <span class="dv">4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-</div>
-<div id="tbl-test-searchstrategy" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-test-searchstrategy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.4: Testing the search strategy using seed papers.
-</figcaption>
-<div aria-describedby="tbl-test-searchstrategy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> hypertension<span class="op">/</span> <span class="kw">or</span> antihypertensive agents<span class="op">/</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> deprescriptions<span class="op">/</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="dv">1</span> <span class="kw">and</span> <span class="dv">2</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span> (<span class="st">"39209778"</span> <span class="kw">or</span> <span class="st">"39094592"</span> <span class="kw">or</span> <span class="st">"28437544"</span> <span class="kw">or</span> <span class="st">"26591140"</span> <span class="kw">or</span> <span class="st">"29678989"</span>).ui.</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span> <span class="dv">3</span> <span class="kw">and</span> <span class="dv">4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</figure>
 </div>
 </section>
 <section id="sec-subheading" class="level2" data-number="4.14">
@@ -1063,7 +1055,7 @@ Table&nbsp;4.4: Testing the search strategy using seed papers.
 <div id="tbl-truncations" class="hover quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-truncations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Table&nbsp;4.5: Truncation examples in Ovid
+Table&nbsp;4.1: Truncation examples in Ovid
 </figcaption>
 <div aria-describedby="tbl-truncations-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <table class="table-hover caption-top table">

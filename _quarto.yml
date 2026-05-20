@@ -40,6 +40,7 @@ format:
     link-external-newwindow: true
     linkcolor: "#5080AA"
     highlight-style: github
+    code-line-numbers: true
   pdf:
     documentclass: scrreprt
 

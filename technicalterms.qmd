@@ -106,7 +106,7 @@ Results perceived as "positive" are more likely to be published than those
 results which are perceived as "negative", which gives the positive results more
 weight. (@Gough2017)
 
-### language of publication bias
+### language bias
 In systematic literature searches it is often tempting to restrict the search 
 to languages which are easily understood by the screeners and researchers. 
 Not only will this practive keep the number of records at a more manageable 
@@ -119,7 +119,7 @@ impact on the quality of the review. (@Gough2017, @Morrison2012, @Moher2003)
 **BibTeX** is a bibliographic file format which is supported by most [reference management programs](#sec-refmanagement), in particular [JabRef](https://www.jabref.org/), which supports it natively, and it is often available as an export format in [bibliographic databases](#sec-bibdb) and on publisher websites. BibTeX files possess the file extension `.bib`.
 
 :::{.callout-tip title="Example: BibTeX format"}
-```
+```latex
 @article{watson2020,
   author   = {Watson, Mandy},
   journal  = {Br J Nurs},
@@ -208,6 +208,14 @@ $$
 A high-precision search tries to retrieve as few non-relevant records as 
 possible, usually missing out on relevant records.
 
+### NNR {#sec-nnr}
+The **Number Needed to Read (NNR)** is another common metric, defined as the 
+number of records necessary to screen to find a relevant record. The NNR is 
+simply the inverse of the precision:
+
+$$
+\text{NNR} = \tfrac{tp + fp}{tp} = \tfrac{1}{\text{precision}}
+$$
 
 ### sensitivity {#sec-sensitivity}
 
@@ -223,6 +231,42 @@ $$
 $$
 The idea of a sensitive search is to retrieve as many relevant records as 
 possible, which results in retrieving more non-relevant records in the process.
+
+## CSV {#sec-csv}
+
+**Comma-separated values (CSV)** is a plain text data format to store tabular information, such as bibliographic records. CSV is described in detail in [RFC 4180](https://www.rfc-editor.org/rfc/rfc4180). 
+
+A CSV file consists of multiple lines of comma-separated [data fields](#sec-datafield). The first line can be used as a header line listing the names of all columns. Otherwise, each line in the file contains one record with its field values separated by commas. To be interpreted correctly the fields must maintain the same order over all lines and empty fields must not be omitted.
+
+::: {.callout-tip title="Example"}
+
+**CSV in plain text** 
+
+```tex
+Title,Year,Volume,Issue,Start Page,End Page
+Design Automation and Implementation of Machine Learning Classifier Chips,2020,8,,192155,192164
+Performance Verification of a Target Tracking System With a Laser Rangefinder,2021,9,,30993,31009
+Signature-Coordinated Digital Multirelay Protection for Microgrid Systems,2014,29,9,4614,4623
+Knowledge Graph-Enabled Cancer Data Analytics,2020,24,7,1952,1967
+Failure Analysis of Metal Oxide Arresters under Harmonic Distortion,2016,107,3,167,176
+Novel Data-Driven Geolocation Approach for Detecting Smuggled Internet Traffic,2025,13,,36306,36320
+```
+
+
+**CSV displayed as a table**
+
+| Title                                                                          | Year             | Volume | Issue | Start Page | End Page |
+|--------------------------------------------------------------------------------|------------------|--------|-------|------------|----------|
+| Design Automation and Implementation of Machine Learning Classifier Chips      | 2020             | 8      |       | 192155     | 192164   |
+| Performance Verification of a Target Tracking System With a Laser Rangefinder  | 2021             | 9      |       | 30993      | 31009    |
+| Signature-Coordinated Digital Multirelay Protection for Microgrid Systems      | 2014             | 29     | 9     | 4614       | 4623     |
+| Knowledge Graph-Enabled Cancer Data Analytics                                  | 2020             | 24     | 7     | 1952       | 1967     |
+| Failure Analysis of Metal Oxide Arresters under Harmonic Distortion            | 2016             | 107    | 3     | 167        | 176      |
+| Novel Data-Driven Geolocation Approach for Detecting Smuggled Internet Traffic | 2025             | 13     |       | 36306      | 36320    |
+
+:::
+
+
 
 
 ## data field {#sec-datafield}
@@ -436,18 +480,21 @@ to the overall result of the database search. In case a search query within a
 search strategy is not connected (using operators) to the rest of the search 
 strategy, it is called an **orphan line**.
 
-::: {#tbl-orphanline}
+::: {.callout-tip title="Example"}
+
 ```python
-1	hypertension/
-2	(hypertension or high blood pressure).ti,ab.
-3	*patient attitude/
-4	*patient satisfaction/
-5	(choice$ or empower$).ti.
-6	1 or 2
-7	3 or 4
-8	6 and 7
+hypertension/
+(hypertension or high blood pressure).ti,ab.
+*patient attitude/
+*patient satisfaction/
+(choice$ or empower$).ti.
+1 or 2
+3 or 4
+6 and 7
 ```
+
 Line 5 is an orphan line.
+
 :::
 
 
@@ -463,8 +510,9 @@ Plain text is normally used when formatting is not important, such as when writi
 |----------------------------------------------	|------------------------------------	|
 | [vim](https://www.vim.org/)                  	| Windows, Unix, macOS, iOS, Android 	|
 | [emacs](https://www.gnu.org/software/emacs/) 	| Windows, Linux, macOS              	|
+| [nano](https://nano-editor.org/) 	            | Windows, Linux, macOS              	|
 | [Notepad++](https://notepad-plus-plus.org/)  	| Windows                            	|
-: Free plain text editors and the platforms they are available on {.striped}
+: {.striped}
 :::
 
 
@@ -504,7 +552,7 @@ and it must end with a line `ER  - `, which marks the end of the reference.
 (See archived [RIS Format Specifications](https://web.archive.org/web/20110930172154/http://www.refman.com/support/risformat_intro.asp))
 
 :::{.callout-tip title="Example: RIS format"}
-```
+```latex
 TY  - JOUR
 T1  - How to undertake a literature search: a step-by-step guide
 AU  - Watson, Mandy

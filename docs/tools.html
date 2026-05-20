@@ -424,8 +424,8 @@ Table&nbsp;3.1: Contributor roles as described in ANSI/NISO Z39.104-2022.
 </div>
 <div class="callout-body-container callout-body">
 <p>The command</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">elink</span> <span class="at">-db</span> pubmed <span class="at">-id</span> 25554246,29463298 <span class="at">-related</span> <span class="at">-cmd</span> neighbor <span class="dt">\</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">|</span> <span class="ex">xtract</span> <span class="at">-pattern</span> LinkSetDb <span class="at">-element</span> Id</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">elink</span> <span class="at">-db</span> pubmed <span class="at">-id</span> 25554246,29463298 <span class="at">-related</span> <span class="at">-cmd</span> neighbor </span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">|</span> <span class="ex">xtract</span> <span class="at">-pattern</span> LinkSetDb <span class="at">-element</span> Id</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>will return all <a href="technicalterms.html#sec-pmid-pmcid">PMIDs</a> of publications which PubMed identifies as <a href="https://pubmed.ncbi.nlm.nih.gov/help/#similar-articles"><em>Similar Articles</em></a> for the PMIDs <a href="https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed&amp;from_uid=25554246">25554246</a> and <a href="https://pubmed.ncbi.nlm.nih.gov/?linkname=pubmed_pubmed&amp;from_uid=29463298">29463298</a>.</p>
 <div id="fig-edirect" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -820,16 +820,16 @@ Table&nbsp;3.5: Different screening tools
 <div class="callout-body-container callout-body">
 <p>searchbuildR is an R package, which can be installed from GitHub and run locally as a Shiny App in R:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install and load the "remotes" package which is required to install remotely from github</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(remotes)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co"># install and load the searchbuildR package</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"https://github.com/IQWiG/searchbuildR"</span>)</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(searchbuildR)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># run the shiny app</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">run_app</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># install and load the "remotes" package which is required to install remotely from github</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="fu">library</span>(remotes)</span>
+<span id="cb2-4"><a href="#cb2-4"></a></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="co"># install and load the searchbuildR package</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"https://github.com/IQWiG/searchbuildR"</span>)</span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="fu">library</span>(searchbuildR)</span>
+<span id="cb2-8"><a href="#cb2-8"></a></span>
+<span id="cb2-9"><a href="#cb2-9"></a><span class="co"># run the shiny app</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="fu">run_app</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </div>
