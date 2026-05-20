@@ -6,11 +6,11 @@ There are several types of reviews which differ in scope, purpose, target
 audience and amount of work involved.(@Sutton2019, @Munn2018a, @Munn2018) 
 Among them the most prominent types are:
 
-- Narrative / traditional review
+- [Narrative / traditional review](#sec-narrativerev)
 - Scoping review (ScR)
 - [Systematic review](#sec-sysrev) (SR)
 - [Rapid review](#sec-rapidrev) (RR)
-- Umbrella review
+- [Umbrella review](#sec-umbrellarev)
 
 The free online tool ['Right Review'](https://whatreviewisrightforyou.knowledgetranslation.net/) 
 is designed to provide guidance and supporting material when choosing any kind 
@@ -20,6 +20,29 @@ of knowledge synthesis.
 
 ![What Type of Review is Right for you? - adopted from @cornell2021](./fig/decisiontree.svg){#fig-decisiontree width=80%}
 
+### narrative review {#sec-narrativerev}
+
+A **narrative review**, sometimes just **literature review** is a qualitative 
+summary of literature for a specific research question. @Sukhera2022a concludes:
+
+>"Well-done narrative reviews provide a readable, thoughtful, and practical synthesis 
+on a topic. They allow review authors to advance new ideas while describing and 
+interpreting literature in the field."
+
+Although narrative reviews are considered non-systematic, it does not mean they 
+are done carelessly. Before [systematic reviews](#sec-sysrev) became popular, 
+the narrative review was a very common scientific publication and still 
+constitutes a meaningful kind of literature synthesis. (@Gregory2018, @Greenhalgh2018, @Thorne2018, @Sukhera2022a)
+
+::: {.callout-tip title="Recommended reading"}
+- *Doing a Literature Review in Health and Social Care: A Practical Guide* by @Aveyard2023
+- *Narrative Reviews: Flexible, Rigorous, and Practical.* by @Sukhera2022a
+- *Narrative Reviews in Medical Education: Key Steps for Researchers.* by @Sukhera2022
+- *An Introduction to Writing Narrative and Systematic Reviews — Tasks, Tips and Traps for Aspiring Authors* by @Gregory2018
+- *How to conduct a literature review* by @Keary2012
+:::
+
+
 ### rapid review {#sec-rapidrev}
 
 **Rapid reviews** (RR) are a quicker alternative to the traditional 
@@ -27,7 +50,6 @@ of knowledge synthesis.
 decision makers require synthesized evidence in a time frame insufficient for a 
 full SR and where limitations due to methodological shortcuts are acceptable.
 
-::: {.callout-note title="Cochrane Definition"}
 The [Cochrane Rapid Reviews Methods Group](https://methods.cochrane.org/rapidreviews/)
 recommends the following definition (@Garritty2024a):
 
@@ -39,7 +61,6 @@ up the ways we plan, do, and/or share the results of conventional structured
 (systematic) reviews, by simplifying or omitting a variety of methods that 
 should be clearly defined bythe authors."
 
-:::
 
 ::: {.callout-note title="Methodology"}
 There is a series of publications from the [Cochrane Rapid Reviews Methods Group](https://methods.cochrane.org/rapidreviews/)
@@ -56,6 +77,17 @@ which provides methodological guidance in conducting rapid reviews:
 - Guidance on the use of supportive software (@Affengruber2024)
 - Guidance on rapid scoping, mapping and evidence and gap maps (@Campbell2025)
 :::
+
+### realist review {#sec-realistrev}
+A **realist review** or **realist synthesis** is concerned with questions of 
+mechanisms rather than effect size. Realist reviews try to elucidate how an 
+intervention influences contexts, which trigger mechanisms that effect certain 
+outcomes. Usually the question format "What works for whom under what 
+circumstances, how and why?" is typical for realist syntheses. A current 
+publication standard for realist reviews is RAMESES (Realist And MEta-narrative
+Evidence Syntheses: Evolving Standards). (@Wong2013)
+
+
 
 ### systematic review {#sec-sysrev}
 
@@ -75,3 +107,9 @@ the results of the systematic review. (See @Murad2014, @Nagendrababu2020, @Mulro
 - *Systematic Reviews in Health Research* by @Egger2022  
 - *An Introduction to Systematic Reviews* by @Gough2017
 :::
+
+### umbrella reviews {#sec-umbrellarev}
+An **umbrella review** is a type of evidence synthesis that sums up other 
+reviews, most prominently systematic reviews and meta-analyses, thus it is also
+called **review of reviews**. Methodological guidance on umbrella reviews is 
+developed by JBI and available in the JBI manual. (@Aromataris2015, @Aromataris2020)
