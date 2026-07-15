@@ -91,7 +91,18 @@
     "href": "technicalterms.html",
     "title": "2  Technical terms",
     "section": "",
-    "text": "2.1 abstract\nAn abstract is the short summary at the beginning of scientific publications, e.g. journal articles, theses or conference papers. The abstract is among the most important parts of a publication as it is usually the only part of the text which is freely available and can be retrieved from bibliographic databases. Title and abstract are the key elements of a textword search. (Cals and Kotz (2013), Pitkin and Branagan (1998))",
+    "text": "2.1 abstract\nAn abstract is the short summary at the beginning of scientific publications, e.g. journal articles, theses or conference papers. The abstract is among the most important parts of a publication, as it is usually the only part of the text which is freely available and can be retrieved from bibliographic databases. Title and abstract are the key elements of a textword search. (Cals and Kotz (2013), Pitkin and Branagan (1998))\nAn structured abstract (as shown below in Figure 2.1) features labeled subsections, similar to the IMRaD format (Introduction, Methods, Results and Discussion) used for structuring scientific articles. A main purpose of such a structure is to make the abstract more informative to the reader.",
+    "crumbs": [
+      "Glossary",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Technical terms</span>"
+    ]
+  },
+  {
+    "objectID": "technicalterms.html#sec-abstract",
+    "href": "technicalterms.html#sec-abstract",
+    "title": "2  Technical terms",
+    "section": "",
+    "text": "Figure 2.1: Structured Abstract for the PRISMA-S Extension by Rethlefsen et al. (2021)",
     "crumbs": [
       "Glossary",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Technical terms</span>"
@@ -124,7 +135,7 @@
     "href": "technicalterms.html#sec-authorkeywords",
     "title": "2  Technical terms",
     "section": "2.4 author keyword",
-    "text": "2.4 author keyword\nPublishers often require the authors of a publication to provide keywords describing the content of the publication. These keywords don’t necessarily correspond to controlled vocabulary (i.e. index terms, which are assigned to the records by the database) and should not be confused with them. (Névéol et al. (2010))\nAuthor keywords are often used as part of the free text search. (DE: Stichwortsuche)\n\n\n\n\n\n\nTipExamples\n\n\n\nWithin PubMed the data field [Other Term]) can be searched for author keywords. This field is automatically searched when [Title/Abstract] or [Text Word] are used. (See PubMed Search Field Tags).\nIn Ovid MEDLINE the corresponding field codes .kw or .kf can be used for searching the author keywords.",
+    "text": "2.4 author keyword\nPublishers often require the authors of a publication to provide keywords describing the content of the publication. These keywords are usually part of or located close to the abstract, as shown in Figure 2.1.\nAuthor keywords don’t necessarily correspond to controlled vocabulary (i.e. index terms, which are assigned to the records by the database) and should not be confused with them. (Névéol et al. (2010))\n\n\n\n\n\n\nTipExamples\n\n\n\nWithin PubMed the data field [Other Term]) can be searched for author keywords. The PubMed Record for the PRISMA-S Extension by Rethlefsen et al. (2021) features the following Keywords in PubMed (as seen in as Figure 2.1):\nOT  - Information retrieval\nOT  - Literature search\nOT  - Reporting guidelines\nOT  - Reproducibility\nOT  - Search strategies\nOT  - Systematic reviews\n\n\nThey are usually searched as part of the free text search. (DE: Stichwortsuche)\nIn PubMed, the OT field containing the author keywords is automatically searched when [Title/Abstract] or [Text Word] are used. (See PubMed Search Field Tags).\nIn Ovid MEDLINE, the corresponding field codes .kw or .kf can be used for searching the author keywords.",
     "crumbs": [
       "Glossary",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Technical terms</span>"
@@ -245,7 +256,7 @@
     "href": "technicalterms.html#sec-ebm",
     "title": "2  Technical terms",
     "section": "2.15 evidence-based medicine",
-    "text": "2.15 evidence-based medicine\nEvidence-based medicine (EBM) is commonly understood as the “conscientious, explicit, and judicious use of current best evidence in making decisions about the care of individual patients. The practice of evidence based medicine means integrating individual clinical expertise with the best available external clinical evidence from systematic research.”(Sackett et al. (1996))\n\n\n\n\n\n\nFigure 2.1: Evidence-based medicine\n\n\n\n\n2.15.1 types of evidence\nThere are various types of research with a varying degree of evidence. This is often represented in the form of a so-called evidence pyramid (see Figure 2.2).\n\n\n\n\n\n\nFigure 2.2: Evidence pyramid\n\n\n\nThe pyramid shape suggests the availability of a high amount of fundamental research and personal experience as a foundation for scientific studies with an increasing level of evidence. The very top of the pyramid encompasses various types of evidence synthesis, i.e. various kinds of (systematic) reviews (see Section 5.1) which summarize primary studies.",
+    "text": "2.15 evidence-based medicine\nEvidence-based medicine (EBM) is commonly understood as the “conscientious, explicit, and judicious use of current best evidence in making decisions about the care of individual patients. The practice of evidence based medicine means integrating individual clinical expertise with the best available external clinical evidence from systematic research.”(Sackett et al. (1996))\n\n\n\n\n\n\nFigure 2.2: Evidence-based medicine\n\n\n\n\n2.15.1 types of evidence\nThere are various types of research with a varying degree of evidence. This is often represented in the form of a so-called evidence pyramid (see Figure 2.3).\n\n\n\n\n\n\nFigure 2.3: Evidence pyramid\n\n\n\nThe pyramid shape suggests the availability of a high amount of fundamental research and personal experience as a foundation for scientific studies with an increasing level of evidence. The very top of the pyramid encompasses various types of evidence synthesis, i.e. various kinds of (systematic) reviews (see Section 5.1) which summarize primary studies.",
     "crumbs": [
       "Glossary",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Technical terms</span>"

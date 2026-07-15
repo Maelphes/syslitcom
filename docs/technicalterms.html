@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.36">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -96,7 +96,7 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-a06763021a52c43c40a351ac8b799b8f.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-de63f62b328812d8e578a4d74e282472.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-4025044f2401a00c6667f938102e08b1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -356,7 +356,18 @@ window.Quarto = {
 
 <section id="sec-abstract" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="sec-abstract"><span class="header-section-number">2.1</span> abstract</h2>
-<p>An abstract is the short summary at the beginning of scientific publications, e.g.&nbsp;journal articles, theses or conference papers. The abstract is among the most important parts of a publication as it is usually the only part of the text which is freely available and can be retrieved from bibliographic databases. Title and abstract are the key elements of a textword search. (<span class="citation" data-cites="Cals2013">Cals and Kotz (<a href="references.html#ref-Cals2013" role="doc-biblioref">2013</a>)</span>, <span class="citation" data-cites="Pitkin1998">Pitkin and Branagan (<a href="references.html#ref-Pitkin1998" role="doc-biblioref">1998</a>)</span>)</p>
+<p>An <strong>abstract</strong> is the short summary at the beginning of scientific publications, e.g.&nbsp;journal articles, theses or conference papers. The abstract is among the most important parts of a publication, as it is usually the only part of the text which is freely available and can be retrieved from bibliographic databases. Title and abstract are the key elements of a textword search. (<span class="citation" data-cites="Cals2013">Cals and Kotz (<a href="references.html#ref-Cals2013" role="doc-biblioref">2013</a>)</span>, <span class="citation" data-cites="Pitkin1998">Pitkin and Branagan (<a href="references.html#ref-Pitkin1998" role="doc-biblioref">1998</a>)</span>)</p>
+<p>An <strong>structured abstract</strong> (as shown below in <a href="#fig-abstract" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>) features labeled subsections, similar to the IMRaD format (Introduction, Methods, Results and Discussion) used for structuring scientific articles. A main purpose of such a structure is to make the abstract more informative to the reader.</p>
+<div id="fig-abstract" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-abstract-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./fig/abstract.png" class="img-fluid figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-abstract-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: Structured Abstract for the PRISMA-S Extension by <span class="citation" data-cites="Rethlefsen2021">Rethlefsen et al. (<a href="references.html#ref-Rethlefsen2021" role="doc-biblioref">2021</a>)</span>
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="sec-ambiguity" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="sec-ambiguity"><span class="header-section-number">2.2</span> ambiguity</h2>
@@ -392,8 +403,8 @@ window.Quarto = {
 </section>
 <section id="sec-authorkeywords" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="sec-authorkeywords"><span class="header-section-number">2.4</span> author keyword</h2>
-<p>Publishers often require the authors of a publication to provide keywords describing the content of the publication. These keywords don’t necessarily correspond to <a href="#sec-thesaurus">controlled vocabulary</a> (i.e.&nbsp;index terms, which are assigned to the records by the database) and should not be confused with them. (<span class="citation" data-cites="Neveol2010">Névéol et al. (<a href="references.html#ref-Neveol2010" role="doc-biblioref">2010</a>)</span>)</p>
-<p>Author keywords are often used as part of the free text search. (DE: <em>Stichwortsuche</em>)</p>
+<p>Publishers often require the authors of a publication to provide keywords describing the content of the publication. These keywords are usually part of or located close to the <a href="#sec-abstract">abstract</a>, as shown in <a href="#fig-abstract" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>.</p>
+<p>Author keywords don’t necessarily correspond to <a href="#sec-thesaurus">controlled vocabulary</a> (i.e.&nbsp;index terms, which are assigned to the records by the database) and should not be confused with them. (<span class="citation" data-cites="Neveol2010">Névéol et al. (<a href="references.html#ref-Neveol2010" role="doc-biblioref">2010</a>)</span>)</p>
 <div class="callout callout-style-default callout-tip callout-titled" title="Examples">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -404,10 +415,18 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Within PubMed the <a href="#sec-datafield">data field</a> <code>[Other Term]</code>) can be searched for author keywords. This field is automatically searched when <code>[Title/Abstract]</code> or <code>[Text Word]</code> are used. (See <a href="https://pubmed.ncbi.nlm.nih.gov/help/?otool=ichsublib#ot">PubMed Search Field Tags</a>).</p>
-<p>In Ovid MEDLINE the corresponding field codes <code>.kw</code> or <code>.kf</code> can be used for searching the author keywords.</p>
+<p>Within PubMed the <a href="#sec-datafield">data field</a> <code>[Other Term]</code>) can be searched for author keywords. The <a href="https://pubmed.ncbi.nlm.nih.gov/33499930/?format=pubmed">PubMed Record for the PRISMA-S Extension</a> by <span class="citation" data-cites="Rethlefsen2021">Rethlefsen et al. (<a href="references.html#ref-Rethlefsen2021" role="doc-biblioref">2021</a>)</span> features the following Keywords in PubMed (as seen in as <a href="#fig-abstract" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>):</p>
+<pre><code>OT  - Information retrieval
+OT  - Literature search
+OT  - Reporting guidelines
+OT  - Reproducibility
+OT  - Search strategies
+OT  - Systematic reviews</code></pre>
 </div>
 </div>
+<p>They are usually searched as part of the free text search. (DE: <em>Stichwortsuche</em>)</p>
+<p>In PubMed, the <code>OT</code> field containing the author keywords is automatically searched when <code>[Title/Abstract]</code> or <code>[Text Word]</code> are used. (See <a href="https://pubmed.ncbi.nlm.nih.gov/help/?otool=ichsublib#ot">PubMed Search Field Tags</a>).</p>
+<p>In <a href="https://ospguides.ovid.com/OSPguides/medline.htm#KF">Ovid MEDLINE</a>, the corresponding field codes <code>.kw</code> or <code>.kf</code> can be used for searching the author keywords.</p>
 </section>
 <section id="sec-bias" class="level2" data-number="2.5">
 <h2 data-number="2.5" class="anchored" data-anchor-id="sec-bias"><span class="header-section-number">2.5</span> bias</h2>
@@ -439,18 +458,18 @@ window.Quarto = {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource latex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb1-1"><a href="#cb1-1"></a>@article{watson2020,</span>
-<span id="cb1-2"><a href="#cb1-2"></a>  author   = {Watson, Mandy},</span>
-<span id="cb1-3"><a href="#cb1-3"></a>  journal  = {Br J Nurs},</span>
-<span id="cb1-4"><a href="#cb1-4"></a>  title    = {How to undertake a literature search: a step-by-step guide},</span>
-<span id="cb1-5"><a href="#cb1-5"></a>  year     = {2020},</span>
-<span id="cb1-6"><a href="#cb1-6"></a>  note     = {PMID: 32279549},</span>
-<span id="cb1-7"><a href="#cb1-7"></a>  number   = {7},</span>
-<span id="cb1-8"><a href="#cb1-8"></a>  pages    = {431--435},</span>
-<span id="cb1-9"><a href="#cb1-9"></a>  volume   = {29},</span>
-<span id="cb1-10"><a href="#cb1-10"></a>  abstract = {Undertaking a literature search can be a daunting prospect. Breaking the exercise down into smaller steps will make the process more manageable. This article suggests 10 steps that will help readers complete this task, from identifying key concepts to choosing databases for the search and saving the results and search strategy. It discusses each of the steps in a little more detail, with examples and suggestions on where to get help. This structured approach will help readers obtain a more focused set of results and, ultimately, save time and effort.},</span>
-<span id="cb1-11"><a href="#cb1-11"></a>  doi      = {10.12968/bjon.2020.29.7.431},</span>
-<span id="cb1-12"><a href="#cb1-12"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource latex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1"></a>@article{watson2020,</span>
+<span id="cb2-2"><a href="#cb2-2"></a>  author   = {Watson, Mandy},</span>
+<span id="cb2-3"><a href="#cb2-3"></a>  journal  = {Br J Nurs},</span>
+<span id="cb2-4"><a href="#cb2-4"></a>  title    = {How to undertake a literature search: a step-by-step guide},</span>
+<span id="cb2-5"><a href="#cb2-5"></a>  year     = {2020},</span>
+<span id="cb2-6"><a href="#cb2-6"></a>  note     = {PMID: 32279549},</span>
+<span id="cb2-7"><a href="#cb2-7"></a>  number   = {7},</span>
+<span id="cb2-8"><a href="#cb2-8"></a>  pages    = {431--435},</span>
+<span id="cb2-9"><a href="#cb2-9"></a>  volume   = {29},</span>
+<span id="cb2-10"><a href="#cb2-10"></a>  abstract = {Undertaking a literature search can be a daunting prospect. Breaking the exercise down into smaller steps will make the process more manageable. This article suggests 10 steps that will help readers complete this task, from identifying key concepts to choosing databases for the search and saving the results and search strategy. It discusses each of the steps in a little more detail, with examples and suggestions on where to get help. This structured approach will help readers obtain a more focused set of results and, ultimately, save time and effort.},</span>
+<span id="cb2-11"><a href="#cb2-11"></a>  doi      = {10.12968/bjon.2020.29.7.431},</span>
+<span id="cb2-12"><a href="#cb2-12"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 <p>BibTeX is also the name of a software package used to typeset references in <a href="https://www.latex-project.org/">LaTeX</a>. The references of this compendium are also managed and processed using the BibTeX format.</p>
@@ -542,13 +561,13 @@ Table&nbsp;2.1: Truth table
 </div>
 <div class="callout-body-container callout-body">
 <p><strong>CSV in plain text</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource tex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb2-1"><a href="#cb2-1"></a>Title,Year,Volume,Issue,Start Page,End Page</span>
-<span id="cb2-2"><a href="#cb2-2"></a>Design Automation and Implementation of Machine Learning Classifier Chips,2020,8,,192155,192164</span>
-<span id="cb2-3"><a href="#cb2-3"></a>Performance Verification of a Target Tracking System With a Laser Rangefinder,2021,9,,30993,31009</span>
-<span id="cb2-4"><a href="#cb2-4"></a>Signature-Coordinated Digital Multirelay Protection for Microgrid Systems,2014,29,9,4614,4623</span>
-<span id="cb2-5"><a href="#cb2-5"></a>Knowledge Graph-Enabled Cancer Data Analytics,2020,24,7,1952,1967</span>
-<span id="cb2-6"><a href="#cb2-6"></a>Failure Analysis of Metal Oxide Arresters under Harmonic Distortion,2016,107,3,167,176</span>
-<span id="cb2-7"><a href="#cb2-7"></a>Novel Data-Driven Geolocation Approach for Detecting Smuggled Internet Traffic,2025,13,,36306,36320</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource tex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb3-1"><a href="#cb3-1"></a>Title,Year,Volume,Issue,Start Page,End Page</span>
+<span id="cb3-2"><a href="#cb3-2"></a>Design Automation and Implementation of Machine Learning Classifier Chips,2020,8,,192155,192164</span>
+<span id="cb3-3"><a href="#cb3-3"></a>Performance Verification of a Target Tracking System With a Laser Rangefinder,2021,9,,30993,31009</span>
+<span id="cb3-4"><a href="#cb3-4"></a>Signature-Coordinated Digital Multirelay Protection for Microgrid Systems,2014,29,9,4614,4623</span>
+<span id="cb3-5"><a href="#cb3-5"></a>Knowledge Graph-Enabled Cancer Data Analytics,2020,24,7,1952,1967</span>
+<span id="cb3-6"><a href="#cb3-6"></a>Failure Analysis of Metal Oxide Arresters under Harmonic Distortion,2016,107,3,167,176</span>
+<span id="cb3-7"><a href="#cb3-7"></a>Novel Data-Driven Geolocation Approach for Detecting Smuggled Internet Traffic,2025,13,,36306,36320</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>CSV displayed as a table</strong></p>
 <table class="caption-top table">
 <colgroup>
@@ -739,20 +758,20 @@ Table&nbsp;2.2: Data fields PMID, AU, TI shown for three records
 <img src="./fig/ebm.svg" class="img-fluid figure-img" style="width:50.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ebm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.1: Evidence-based medicine
+Figure&nbsp;2.2: Evidence-based medicine
 </figcaption>
 </figure>
 </div>
 <section id="types-of-evidence" class="level3" data-number="2.15.1">
 <h3 data-number="2.15.1" class="anchored" data-anchor-id="types-of-evidence"><span class="header-section-number">2.15.1</span> types of evidence</h3>
-<p>There are various types of research with a varying degree of evidence. This is often represented in the form of a so-called evidence pyramid (see <a href="#fig-evidpyr" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>).</p>
+<p>There are various types of research with a varying degree of evidence. This is often represented in the form of a so-called evidence pyramid (see <a href="#fig-evidpyr" class="quarto-xref">Figure&nbsp;<span>2.3</span></a>).</p>
 <div id="fig-evidpyr" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-evidpyr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="./fig/evidencepyramid.svg" class="img-fluid figure-img" style="width:100.0%">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-evidpyr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2.2: Evidence pyramid
+Figure&nbsp;2.3: Evidence pyramid
 </figcaption>
 </figure>
 </div>
@@ -859,14 +878,14 @@ Figure&nbsp;2.2: Evidence pyramid
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1"></a>hypertension<span class="op">/</span></span>
-<span id="cb3-2"><a href="#cb3-2"></a>(hypertension <span class="kw">or</span> high blood pressure).ti,ab.</span>
-<span id="cb3-3"><a href="#cb3-3"></a><span class="op">*</span>patient attitude<span class="op">/</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a><span class="op">*</span>patient satisfaction<span class="op">/</span></span>
-<span id="cb3-5"><a href="#cb3-5"></a>(choice$ <span class="kw">or</span> empower$).ti.</span>
-<span id="cb3-6"><a href="#cb3-6"></a><span class="dv">1</span> <span class="kw">or</span> <span class="dv">2</span></span>
-<span id="cb3-7"><a href="#cb3-7"></a><span class="dv">3</span> <span class="kw">or</span> <span class="dv">4</span></span>
-<span id="cb3-8"><a href="#cb3-8"></a><span class="dv">6</span> <span class="kw">and</span> <span class="dv">7</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1"></a>hypertension<span class="op">/</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>(hypertension <span class="kw">or</span> high blood pressure).ti,ab.</span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="op">*</span>patient attitude<span class="op">/</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="op">*</span>patient satisfaction<span class="op">/</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a>(choice$ <span class="kw">or</span> empower$).ti.</span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="dv">1</span> <span class="kw">or</span> <span class="dv">2</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a><span class="dv">3</span> <span class="kw">or</span> <span class="dv">4</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a><span class="dv">6</span> <span class="kw">and</span> <span class="dv">7</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Line 5 is an orphan line.</p>
 </div>
 </div>
@@ -948,29 +967,29 @@ Figure&nbsp;2.2: Evidence pyramid
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode numberSource latex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb4-1"><a href="#cb4-1"></a>TY  - JOUR</span>
-<span id="cb4-2"><a href="#cb4-2"></a>T1  - How to undertake a literature search: a step-by-step guide</span>
-<span id="cb4-3"><a href="#cb4-3"></a>AU  - Watson, Mandy</span>
-<span id="cb4-4"><a href="#cb4-4"></a>Y1  - 2020/04/09</span>
-<span id="cb4-5"><a href="#cb4-5"></a>PY  - 2020</span>
-<span id="cb4-6"><a href="#cb4-6"></a>DA  - 2020/04/09</span>
-<span id="cb4-7"><a href="#cb4-7"></a>N1  - doi: 10.12968/bjon.2020.29.7.431</span>
-<span id="cb4-8"><a href="#cb4-8"></a>DO  - 10.12968/bjon.2020.29.7.431</span>
-<span id="cb4-9"><a href="#cb4-9"></a>T2  - British Journal of Nursing</span>
-<span id="cb4-10"><a href="#cb4-10"></a>JF  - British Journal of Nursing</span>
-<span id="cb4-11"><a href="#cb4-11"></a>JO  - Br J Nurs</span>
-<span id="cb4-12"><a href="#cb4-12"></a>SP  - 431</span>
-<span id="cb4-13"><a href="#cb4-13"></a>EP  - 435</span>
-<span id="cb4-14"><a href="#cb4-14"></a>VL  - 29</span>
-<span id="cb4-15"><a href="#cb4-15"></a>IS  - 7</span>
-<span id="cb4-16"><a href="#cb4-16"></a>PB  - Mark Allen Group</span>
-<span id="cb4-17"><a href="#cb4-17"></a>N2  - Undertaking a literature search can be a daunting prospect. Breaking the exercise down into smaller steps will make the process more manageable. This article suggests 10 steps that will help readers complete this task, from identifying key concepts to choosing databases for the search and saving the results and search strategy. It discusses each of the steps in a little more detail, with examples and suggestions on where to get help. This structured approach will help readers obtain a more focused set of results and, ultimately, save time and effort.</span>
-<span id="cb4-18"><a href="#cb4-18"></a>AB  - Undertaking a literature search can be a daunting prospect. Breaking the exercise down into smaller steps will make the process more manageable. This article suggests 10 steps that will help readers complete this task, from identifying key concepts to choosing databases for the search and saving the results and search strategy. It discusses each of the steps in a little more detail, with examples and suggestions on where to get help. This structured approach will help readers obtain a more focused set of results and, ultimately, save time and effort.</span>
-<span id="cb4-19"><a href="#cb4-19"></a>SN  - 0966-0461</span>
-<span id="cb4-20"><a href="#cb4-20"></a>M3  - doi: 10.12968/bjon.2020.29.7.431</span>
-<span id="cb4-21"><a href="#cb4-21"></a>UR  - https://doi.org/10.12968/bjon.2020.29.7.431</span>
-<span id="cb4-22"><a href="#cb4-22"></a>Y2  - 2025/07/09</span>
-<span id="cb4-23"><a href="#cb4-23"></a>ER  - </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode numberSource latex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb5-1"><a href="#cb5-1"></a>TY  - JOUR</span>
+<span id="cb5-2"><a href="#cb5-2"></a>T1  - How to undertake a literature search: a step-by-step guide</span>
+<span id="cb5-3"><a href="#cb5-3"></a>AU  - Watson, Mandy</span>
+<span id="cb5-4"><a href="#cb5-4"></a>Y1  - 2020/04/09</span>
+<span id="cb5-5"><a href="#cb5-5"></a>PY  - 2020</span>
+<span id="cb5-6"><a href="#cb5-6"></a>DA  - 2020/04/09</span>
+<span id="cb5-7"><a href="#cb5-7"></a>N1  - doi: 10.12968/bjon.2020.29.7.431</span>
+<span id="cb5-8"><a href="#cb5-8"></a>DO  - 10.12968/bjon.2020.29.7.431</span>
+<span id="cb5-9"><a href="#cb5-9"></a>T2  - British Journal of Nursing</span>
+<span id="cb5-10"><a href="#cb5-10"></a>JF  - British Journal of Nursing</span>
+<span id="cb5-11"><a href="#cb5-11"></a>JO  - Br J Nurs</span>
+<span id="cb5-12"><a href="#cb5-12"></a>SP  - 431</span>
+<span id="cb5-13"><a href="#cb5-13"></a>EP  - 435</span>
+<span id="cb5-14"><a href="#cb5-14"></a>VL  - 29</span>
+<span id="cb5-15"><a href="#cb5-15"></a>IS  - 7</span>
+<span id="cb5-16"><a href="#cb5-16"></a>PB  - Mark Allen Group</span>
+<span id="cb5-17"><a href="#cb5-17"></a>N2  - Undertaking a literature search can be a daunting prospect. Breaking the exercise down into smaller steps will make the process more manageable. This article suggests 10 steps that will help readers complete this task, from identifying key concepts to choosing databases for the search and saving the results and search strategy. It discusses each of the steps in a little more detail, with examples and suggestions on where to get help. This structured approach will help readers obtain a more focused set of results and, ultimately, save time and effort.</span>
+<span id="cb5-18"><a href="#cb5-18"></a>AB  - Undertaking a literature search can be a daunting prospect. Breaking the exercise down into smaller steps will make the process more manageable. This article suggests 10 steps that will help readers complete this task, from identifying key concepts to choosing databases for the search and saving the results and search strategy. It discusses each of the steps in a little more detail, with examples and suggestions on where to get help. This structured approach will help readers obtain a more focused set of results and, ultimately, save time and effort.</span>
+<span id="cb5-19"><a href="#cb5-19"></a>SN  - 0966-0461</span>
+<span id="cb5-20"><a href="#cb5-20"></a>M3  - doi: 10.12968/bjon.2020.29.7.431</span>
+<span id="cb5-21"><a href="#cb5-21"></a>UR  - https://doi.org/10.12968/bjon.2020.29.7.431</span>
+<span id="cb5-22"><a href="#cb5-22"></a>Y2  - 2025/07/09</span>
+<span id="cb5-23"><a href="#cb5-23"></a>ER  - </span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </section>

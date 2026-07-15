@@ -9,12 +9,20 @@ filters:
 # Technical terms {#sec-technicalterms}
 
 ## abstract {#sec-abstract}
-An abstract is the short summary at the beginning of scientific publications, 
+An **abstract** is the short summary at the beginning of scientific publications, 
 e.g. journal articles, theses or conference papers. The abstract is among the 
-most important parts of a publication as it is usually the only part of the 
+most important parts of a publication, as it is usually the only part of the 
 text which is freely available and can be retrieved from bibliographic 
 databases. Title and abstract are the key elements of a textword search. 
 (@Cals2013, @Pitkin1998)
+
+An **structured abstract** (as shown below in @fig-abstract) features labeled 
+subsections, similar to the IMRaD format (Introduction, Methods, Results and 
+Discussion) used for structuring scientific articles. A main purpose of such a 
+structure is to make the abstract more informative to the reader.
+
+
+![Structured Abstract for the PRISMA-S Extension by @Rethlefsen2021](./fig/abstract.png){#fig-abstract width=100%}
 
 
 ## ambiguity {#sec-ambiguity}
@@ -68,21 +76,36 @@ independently in online repositories.
 
 ## author keyword {#sec-authorkeywords}
 Publishers often require the authors of a publication to provide keywords 
-describing the content of the publication. These keywords don't necessarily 
-correspond to [controlled vocabulary](#sec-thesaurus) (i.e. index terms, 
-which are assigned to the records by the database) and should not be confused 
-with them. (@Neveol2010)
+describing the content of the publication. These keywords are usually part of or 
+located close to the [abstract](#sec-abstract), as shown in @fig-abstract. 
 
-Author keywords are often used as part of the free text search. (DE: *Stichwortsuche*)
+Author keywords don't necessarily correspond to [controlled vocabulary](#sec-thesaurus) 
+(i.e. index terms, which are assigned to the records by the database) and should not be confused 
+with them. (@Neveol2010)
 
 ::: {.callout-tip title="Examples"}
 Within PubMed the [data field](#sec-datafield) `[Other Term]`) 
-can be searched for author keywords. This field is automatically searched 
+can be searched for author keywords. The [PubMed Record for the PRISMA-S Extension](https://pubmed.ncbi.nlm.nih.gov/33499930/?format=pubmed) by @Rethlefsen2021 features the following Keywords in PubMed (as seen in as @fig-abstract):
+
+```
+OT  - Information retrieval
+OT  - Literature search
+OT  - Reporting guidelines
+OT  - Reproducibility
+OT  - Search strategies
+OT  - Systematic reviews
+```
+:::
+
+They are usually searched as part of the free text search. (DE: *Stichwortsuche*)
+
+In PubMed, the `OT` field containing the author keywords is automatically searched 
 when `[Title/Abstract]` or `[Text Word]` are used. (See [PubMed Search Field Tags](https://pubmed.ncbi.nlm.nih.gov/help/?otool=ichsublib#ot)).
 
-In Ovid MEDLINE the corresponding field codes `.kw` or `.kf` can be used for 
+In [Ovid MEDLINE](https://ospguides.ovid.com/OSPguides/medline.htm#KF), the corresponding field codes `.kw` or `.kf` can be used for 
 searching the author keywords.
-:::
+
+
 
 ## bias {#sec-bias}
 Bias is a systematic deviation between results and facts that may lead to under-
