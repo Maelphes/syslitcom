@@ -10,16 +10,20 @@ filters:
 
 ## abstract {#sec-abstract}
 An **abstract** is the short summary at the beginning of scientific publications, 
-e.g. journal articles, theses or conference papers. The abstract is among the 
-most important parts of a publication, as it is usually the only part of the 
-text which is freely available and can be retrieved from bibliographic 
-databases. Title and abstract are the key elements of a textword search. 
+e.g. journal articles, theses or conference papers. 
+A study by @Shiely2024 found that the abstract is one of the most important parts
+of a publication, as it is usually the first part and sometimes the only part of
+the paper which is read. It is usually the only part of the full text that is 
+freely available, it is easy to read and can be retrieved from bibliographic 
+databases. Title, abstract are the key elements of a textword search. 
 (@Cals2013, @Pitkin1998)
 
+
+
 An **structured abstract** (as shown below in @fig-abstract) features labeled 
-subsections, similar to the IMRaD format (Introduction, Methods, Results and 
-Discussion) used for structuring scientific articles. A main purpose of such a 
-structure is to make the abstract more informative to the reader.
+subsections, similar to the [IMRaD format](#sec-imrad) used for structuring 
+scientific articles. A main purpose of such a structure is to make the abstract 
+more informative to the reader.
 
 
 ![Structured Abstract for the PRISMA-S Extension by @Rethlefsen2021](./fig/abstract.png){#fig-abstract width=100%}
@@ -388,6 +392,12 @@ explicit, and judicious use of current best evidence in making decisions
 about the care of individual patients. The practice of evidence
 based medicine means integrating individual clinical expertise
 with the best available external clinical evidence from systematic research."(@Sackett1996)
+
+@Greenhalgh2025 defines evidence-based medicine as "the use of mathematical 
+estimates of the risk of benefit and harm, derived from high-quality research 
+on population samples, to inform clinical decision-making in the diagnosis, 
+investigation or management of individual patients."
+
 
 ![Evidence-based medicine](./fig/ebm.svg){#fig-ebm width=50%}
 

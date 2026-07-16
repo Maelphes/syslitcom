@@ -25,7 +25,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -201,7 +220,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
+  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
+  <ul class="collapse">
+  <li><a href="#about" id="toc-about" class="nav-link" data-scroll-target="#about">About</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://www.github.com/Maelphes/syslitcom/edit/gh-pages/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li><li><a href="https://www.github.com/Maelphes/syslitcom/blob/gh-pages/index.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li></ul></div></nav>
     </div>
@@ -250,10 +272,23 @@ ul.task-list li input[type="checkbox"] {
 <p>Chapter <a href="methods.html" class="quarto-xref"><span>4&nbsp; Methods</span></a> describes various techniques of building and conducting a systematic search.</p>
 <p>In chapter <a href="publicationtypes.html" class="quarto-xref"><span>5&nbsp; Publication Types</span></a> different types of publications will be described.</p>
 <p>Since the author is a native German speaker, important German expressions are sometimes provided in parentheses, preceded by “DE:”, for the benefit of the German-speaking audience.</p>
-<p>This website is created and maintained by Marc von Gernler (Medical Library, University Library of Bern, University of Bern). The “compendium” was originally written in German as a glossary for lectures and as a mnemonic for the author. It was originally typeset in LaTeX (<a href="https://www.ub.unibe.ch/unibe/portal/unibiblio/content/e6250/e6264/e984201/e1237678/e1237679/pane1237693/e1237707/e1377201/Glossar_ger.pdf">Link to the original document</a>).</p>
+<section id="about" class="level2">
+<h2 class="anchored" data-anchor-id="about">About</h2>
+<p>This website is created and maintained by Dr.&nbsp;Marc von Gernler (Medical Library, University Library of Bern, University of Bern). The “compendium” was originally written in German as a glossary for lectures and as a mnemonic for the author. It was originally typeset in LaTeX (<a href="https://www.ub.unibe.ch/unibe/portal/unibiblio/content/e6250/e6264/e984201/e1237678/e1237679/pane1237693/e1237707/e1377201/Glossar_ger.pdf">Link to the original document</a>). (<span class="citation" data-cites="Gernler2023"><span class="nocase">von Gernler</span> (<a href="references.html#ref-Gernler2023" role="doc-biblioref">2023</a>)</span>, <span class="citation" data-cites="Gernler2025"><span class="nocase">von Gernler</span> (<a href="references.html#ref-Gernler2025" role="doc-biblioref">2025</a>)</span>)</p>
 <p><a href="https://github.com/SFTtech/sticker/tree/master/human-generated-content"><img src="fig/hgc.svg" class="img-fluid" style="width:3.5in" alt="A badge indicating that this website contains human-generated content. The badge is licensed under the Apache License Version 2.0."></a></p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-Gernler2023" class="csl-entry" role="listitem">
+<span class="nocase">von Gernler, M.</span> 2023. <span>“<span class="nocase">Glossar für die Systematische Literaturrecherche – ein Wegbegleiter auf der Suche nach Evidenz</span>.”</span> <em>GMS Med Bibl Inf</em> 23 (2): Doc22. https://doi.org/<a href="https://doi.org/10.3205/mbi000572
+
+Published:	December 19, 2023">10.3205/mbi000572 Published: December 19, 2023</a>.
+</div>
+<div id="ref-Gernler2025" class="csl-entry" role="listitem">
+<span class="nocase">von Gernler, M.</span> 2025. <span>“<span class="nocase">Das SysLit Compendium – eine Kerze in der Dunkelheit</span>.”</span> <em>GMS Med Bibl Inf</em> 25 (3): Doc23. <a href="https://doi.org/10.3205/mbi000636">https://doi.org/10.3205/mbi000636</a>.
+</div>
+</div>
+</section>
 </section>
 
 </main> <!-- /main -->

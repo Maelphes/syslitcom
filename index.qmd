@@ -25,10 +25,13 @@ Since the author is a native German speaker, important German expressions are
 sometimes provided in parentheses, preceded by "DE:", for the benefit of the 
 German-speaking audience.
 
-This website is created and maintained by Marc von Gernler (Medical Library, 
+
+## About
+
+This website is created and maintained by Dr. Marc von Gernler (Medical Library, 
 University Library of Bern, University of Bern). The "compendium" was originally 
 written in German as a glossary for lectures and as a mnemonic for the author. 
-It was originally typeset in LaTeX ([Link to the original document](https://www.ub.unibe.ch/unibe/portal/unibiblio/content/e6250/e6264/e984201/e1237678/e1237679/pane1237693/e1237707/e1377201/Glossar_ger.pdf)).
+It was originally typeset in LaTeX ([Link to the original document](https://www.ub.unibe.ch/unibe/portal/unibiblio/content/e6250/e6264/e984201/e1237678/e1237679/pane1237693/e1237707/e1377201/Glossar_ger.pdf)). (@Gernler2023, @Gernler2025)
 
 
 [![](fig/hgc.svg){width=3.5in fig-alt="A badge indicating that this website contains human-generated content. The badge is licensed under the Apache License Version 2.0."}](https://github.com/SFTtech/sticker/tree/master/human-generated-content)

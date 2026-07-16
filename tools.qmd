@@ -199,9 +199,29 @@ More information can be found in the online [GRADE book](https://book.gradepro.o
 :::
 
 
+## IMRaD {#sec-imrad}
+
+**IMRaD** is the acronym for *Introduction, Methods, Results and Discussion* and
+constitutes a structured format for scientific articles, which appears to be in 
+use since the 19th century. (@Day1989)
+
+::: {#tbl-imrad}
+|       | **Section**  | **Purpose**                                                |
+|:-----:|:-------------|:-----------------------------------------------------------|
+| **I** | Introduction | Rationale **why** the research was done                    |
+| **M** | Methods      | Description **how** the results were obtained and analysed |
+| **R** | Results      | Detailed report of **what was found**                      |
+| **D** | Discussion   | Interpretation **what the findings mean**                  |
+
+: The IMRaD format {.striped}
+:::
+
+Although this format is well-established, it is not necessarily the preferred 
+order in which scientific papers are read, as a study by @Shiely2024 shows.
 
 
 ## PICO {#sec-pico}
+
 PICO is an acronym for the four concepts **Population**, **Intervention**, **Comparison** 
 and **Outcome**. Concepts like these are used for defining research questions as 
 well as eligibility criteria for the studies relevant for answering the 
