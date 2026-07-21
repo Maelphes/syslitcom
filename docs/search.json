@@ -299,7 +299,7 @@
     "href": "technicalterms.html#sec-indexing",
     "title": "2  Technical terms",
     "section": "2.18 indexing",
-    "text": "2.18 indexing\nIndexing is the process in which index terms are assigned to records. This is done by the database provider in order to indicate what the referenced document is about, independent of its explicit title or abstract. In other words, an indexed record can be retrieved systematically based on its contextual meaning and implicit contents, rather than by searching verbatim expressions in the text.",
+    "text": "2.18 indexing\nSubject indexing or just indexing (DE: Beschlagwortung, Verschlagwortung) is the process in which index terms are assigned to records. This is done by the library or database provider in order to indicate what the referenced document or medium is about, independent of its explicit title or abstract. In other words, an indexed record can be retrieved systematically based on its contextual meaning and implicit contents, rather than by searching verbatim expressions in the text.",
     "crumbs": [
       "Glossary",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Technical terms</span>"

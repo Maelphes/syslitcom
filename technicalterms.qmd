@@ -498,12 +498,13 @@ options available to you for accessing a certain publication.
 
 ## indexing {#sec-indexing}
 
-Indexing is the process in which [index terms](#sec-indexterms) are assigned to 
-[records](#sec-dataset). This is done by the database provider in order to 
-indicate what the referenced document is about, independent of its explicit 
-title or abstract. In other words, an indexed record can be retrieved 
-systematically based on its contextual meaning and implicit contents, rather 
-than by searching verbatim expressions in the text.
+**Subject indexing** or just **indexing** (DE: Beschlagwortung, Verschlagwortung) 
+is the process in which [index terms](#sec-indexterms) are assigned to 
+[records](#sec-dataset). This is done by the library or database provider in 
+order to indicate what the referenced document or medium is about, independent 
+of its explicit title or abstract. In other words, an indexed record can be 
+retrieved systematically based on its contextual meaning and implicit contents, 
+rather than by searching verbatim expressions in the text.
 
 
 ## orphan line {#sec-orphanline}
