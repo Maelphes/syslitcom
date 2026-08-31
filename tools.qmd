@@ -268,6 +268,16 @@ PRISMA-S for the documentation of systematic literature searches
 
 See also <https://prisma-statement.org>.
 
+:::{.callout-important title="Improper use of PRISMA"}
+Be aware that PRISMA is a *reporting* guideline. Unfortunately, researchers 
+often cite PRISMA as their guidance to *conduct* the review. This is problematic, 
+because PRISMA does not provide methods of conducting systematic reviews.
+
+@Oestengaard2026 examined this misuse and describe the misinterpretation 
+of PRISMA as a part of "a larger problem concerning inadequate use of scientific 
+references".
+:::
+
 
 ## PubReMiner {#sec-pubreminer}
 
